@@ -9,12 +9,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100207192339) do
+ActiveRecord::Schema.define(:version => 20100208113900) do
 
   create_table "events", :force => true do |t|
     t.string   "title"
     t.text     "body"
     t.boolean  "published"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "partner_links", :force => true do |t|
+    t.string   "title"
+    t.string   "tag"
+    t.boolean  "visible"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

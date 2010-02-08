@@ -1,13 +1,29 @@
 <table width='100%' height='100%' border='1'>
-<tr valign='top' align='left'>
+<tr valign='top'>
   <td width='150'>
-    
-  </td>
+    <table width='100%' height='100%' border='1'>
+    <tr>
+      <td style='text-align:center;font-family:arial'>
+        <%= render :partial => 'layouts/event_list' %>
+      </td>
+    </tr>
+    <tr>
+      <td style='text-align:center;font-family:arial'>
+        Map
+      </td>
+    </tr>
+    <tr>
+      <td style='text-align:center;font-family:arial'>
+        <%= render :partial => 'layouts/partner_link_list' %>
+      </td>
+    </tr>
+    </table>
+  </td> 
   <td>
     <%= yield %>    
   </td>
   <td width='150'>
-    
+    as
   </td>
 </tr>
 </table>

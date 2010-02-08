@@ -1,0 +1,24 @@
+<h1>Listing partner_links</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Tag</th>
+    <th>Visible</th>
+  </tr>
+
+<% @partner_links.each do |partner_link| %>
+  <tr>
+    <td><%=h partner_link.title %></td>
+    <td><%=h partner_link.tag %></td>
+    <td><%=h partner_link.visible %></td>
+    <td><%= link_to 'Show', partner_link %></td>
+    <td><%= link_to 'Edit', edit_partner_link_path(partner_link) %></td>
+    <td><%= link_to 'Destroy', partner_link, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New partner_link', new_partner_link_path %>

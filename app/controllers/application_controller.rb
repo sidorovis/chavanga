@@ -5,6 +5,16 @@ class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
 
+  before_filter :load_events, :load_partner_links
+  
+  def load_events
+    @left_column_events = Event.all :limit => 5
+  end
+
+  def load_partner_links
+    @left_column_partner_links = PartnerLink.all
+  end
+
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
 end
