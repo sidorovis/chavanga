@@ -8,11 +8,20 @@
 </head>
 <body>
 
-<table width='800' height='100%' border='1' align='center'>
+<table width='90%' height='100%' border='1' align='center'>
 <tr>
-  <td valign='top'>
+  <td valign='top' height='150'>
+    <%= render :partial => 'layouts/logo' %>
+  </td>
+</tr>
+<tr>
+  <td valign='top' height='50'>
     <%= render :partial => 'layouts/main_menu' %>
-    <%= yield %>
+  </td>
+</tr>
+<tr>
+  <td valign='top' height='50'>
+    <%= render :partial => 'layouts/full_widget' %>
   </td>
 </tr>
 </table>
