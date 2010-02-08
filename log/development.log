@@ -2433,3 +2433,2077 @@ Rendered layouts/_event_list (5.0ms)
 Rendered layouts/_partner_link_list (4.4ms)
 Rendered layouts/_full_widget (17.2ms)
 Completed in 28ms (View: 17, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+/!\ FAILSAFE /!\  Mon Feb 08 13:56:58 +0200 2010
+  Status: 500 Internal Server Error
+  /Users/rilley_elf/_dev/rails/chavanga/app/controllers/application_controller.rb:12: syntax error, unexpected kEND
+/Users/rilley_elf/_dev/rails/chavanga/app/controllers/application_controller.rb:20: syntax error, unexpected $end, expecting kEND
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:379:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:80:in `const_missing'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:92:in `const_missing'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+/!\ FAILSAFE /!\  Mon Feb 08 13:56:59 +0200 2010
+  Status: 500 Internal Server Error
+  /Users/rilley_elf/_dev/rails/chavanga/app/controllers/application_controller.rb:12: syntax error, unexpected kEND
+/Users/rilley_elf/_dev/rails/chavanga/app/controllers/application_controller.rb:20: syntax error, unexpected $end, expecting kEND
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:379:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:80:in `const_missing'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:92:in `const_missing'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+/!\ FAILSAFE /!\  Mon Feb 08 13:56:59 +0200 2010
+  Status: 500 Internal Server Error
+  /Users/rilley_elf/_dev/rails/chavanga/app/controllers/application_controller.rb:12: syntax error, unexpected kEND
+/Users/rilley_elf/_dev/rails/chavanga/app/controllers/application_controller.rb:20: syntax error, unexpected $end, expecting kEND
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:379:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:80:in `const_missing'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:92:in `const_missing'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+/!\ FAILSAFE /!\  Mon Feb 08 13:57:14 +0200 2010
+  Status: 500 Internal Server Error
+  /Users/rilley_elf/_dev/rails/chavanga/app/controllers/application_controller.rb:12: syntax error, unexpected kEND
+/Users/rilley_elf/_dev/rails/chavanga/app/controllers/application_controller.rb:20: syntax error, unexpected $end, expecting kEND
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:379:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:80:in `const_missing'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:92:in `const_missing'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+/!\ FAILSAFE /!\  Mon Feb 08 13:57:34 +0200 2010
+  Status: 500 Internal Server Error
+  /Users/rilley_elf/_dev/rails/chavanga/app/controllers/application_controller.rb:12: syntax error, unexpected kEND
+/Users/rilley_elf/_dev/rails/chavanga/app/controllers/application_controller.rb:20: syntax error, unexpected $end, expecting kEND
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:379:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:80:in `const_missing'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:92:in `const_missing'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+/!\ FAILSAFE /!\  Mon Feb 08 13:57:37 +0200 2010
+  Status: 500 Internal Server Error
+  /Users/rilley_elf/_dev/rails/chavanga/app/controllers/application_controller.rb:12: syntax error, unexpected kEND
+/Users/rilley_elf/_dev/rails/chavanga/app/controllers/application_controller.rb:20: syntax error, unexpected $end, expecting kEND
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:379:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:80:in `const_missing'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:92:in `const_missing'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+/!\ FAILSAFE /!\  Mon Feb 08 13:58:00 +0200 2010
+  Status: 500 Internal Server Error
+  /Users/rilley_elf/_dev/rails/chavanga/app/controllers/application_controller.rb:12: syntax error, unexpected kEND
+/Users/rilley_elf/_dev/rails/chavanga/app/controllers/application_controller.rb:15: syntax error, unexpected '=', expecting kEND
+....all :conditions => :visible = "true"
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/controllers/application_controller.rb:20: syntax error, unexpected $end, expecting kEND
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:379:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:80:in `const_missing'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:92:in `const_missing'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+/!\ FAILSAFE /!\  Mon Feb 08 13:58:02 +0200 2010
+  Status: 500 Internal Server Error
+  /Users/rilley_elf/_dev/rails/chavanga/app/controllers/application_controller.rb:12: syntax error, unexpected kEND
+/Users/rilley_elf/_dev/rails/chavanga/app/controllers/application_controller.rb:15: syntax error, unexpected '=', expecting kEND
+....all :conditions => :visible = true
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/controllers/application_controller.rb:20: syntax error, unexpected $end, expecting kEND
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:379:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:80:in `const_missing'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:92:in `const_missing'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+/!\ FAILSAFE /!\  Mon Feb 08 13:58:23 +0200 2010
+  Status: 500 Internal Server Error
+  /Users/rilley_elf/_dev/rails/chavanga/app/controllers/application_controller.rb:12: syntax error, unexpected kEND
+/Users/rilley_elf/_dev/rails/chavanga/app/controllers/application_controller.rb:20: syntax error, unexpected $end, expecting kEND
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:379:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:80:in `const_missing'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:92:in `const_missing'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+/!\ FAILSAFE /!\  Mon Feb 08 14:02:12 +0200 2010
+  Status: 500 Internal Server Error
+  /Users/rilley_elf/_dev/rails/chavanga/app/controllers/application_controller.rb:12: syntax error, unexpected kEND
+/Users/rilley_elf/_dev/rails/chavanga/app/controllers/application_controller.rb:20: syntax error, unexpected $end, expecting kEND
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:379:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:80:in `const_missing'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:92:in `const_missing'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+/!\ FAILSAFE /!\  Mon Feb 08 14:02:13 +0200 2010
+  Status: 500 Internal Server Error
+  /Users/rilley_elf/_dev/rails/chavanga/app/controllers/application_controller.rb:12: syntax error, unexpected kEND
+/Users/rilley_elf/_dev/rails/chavanga/app/controllers/application_controller.rb:20: syntax error, unexpected $end, expecting kEND
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:379:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:80:in `const_missing'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:92:in `const_missing'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+/!\ FAILSAFE /!\  Mon Feb 08 14:02:18 +0200 2010
+  Status: 500 Internal Server Error
+  /Users/rilley_elf/_dev/rails/chavanga/app/controllers/application_controller.rb:12: syntax error, unexpected kEND
+/Users/rilley_elf/_dev/rails/chavanga/app/controllers/application_controller.rb:20: syntax error, unexpected $end, expecting kEND
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:379:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:80:in `const_missing'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:92:in `const_missing'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-08 14:02:33) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (visible = true) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.4ms)
+Rendered layouts/_main_menu (0.1ms)
+  [4;36;1mEvent Columns (30.0ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (32.4ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (36.1ms)
+Completed in 57ms (View: 18, DB: 32) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-08 14:03:02) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.3ms)
+Rendered layouts/_main_menu (0.1ms)
+  [4;36;1mEvent Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.5ms)
+  [4;35;1mPartnerLink Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (7.3ms)
+Completed in 198ms (View: 7, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-08 14:03:45) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.3ms)
+Rendered layouts/_main_menu (0.1ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.3ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (7.5ms)
+Completed in 17ms (View: 7, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-08 14:03:46) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.3ms)
+Rendered layouts/_main_menu (0.1ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.8ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (7.5ms)
+Completed in 17ms (View: 7, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-02-08 14:03:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+  [4;36;1mEvent Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Rendered layouts/_logo (0.2ms)
+Rendered layouts/_main_menu (0.1ms)
+Rendered layouts/_event_list (0.5ms)
+  [4;36;1mPartnerLink Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (4.3ms)
+Completed in 18ms (View: 7, DB: 3) | 200 OK [http://127.0.0.1/events/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-02-08 14:03:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.3ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+  [4;35;1mEvent Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mEvent Load (0.2ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Rendered layouts/_logo (0.2ms)
+Rendered layouts/_main_menu (0.1ms)
+Rendered layouts/_event_list (0.5ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (4.2ms)
+Completed in 18ms (View: 7, DB: 3) | 200 OK [http://127.0.0.1/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-08 14:03:52) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.3ms)
+Rendered layouts/_main_menu (0.1ms)
+  [4;36;1mEvent Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.7ms)
+  [4;35;1mPartnerLink Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.2ms)
+Rendered layouts/_full_widget (7.6ms)
+Completed in 17ms (View: 7, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-02-08 14:03:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+  [4;36;1mEvent Columns (7.8ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEvent Load (0.2ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Rendered layouts/_logo (0.2ms)
+Rendered layouts/_main_menu (0.1ms)
+Rendered layouts/_event_list (0.5ms)
+  [4;36;1mPartnerLink Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.2ms)
+Rendered layouts/_full_widget (4.4ms)
+Completed in 25ms (View: 7, DB: 10) | 200 OK [http://127.0.0.1/events/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-08 14:03:57) [GET]
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.3ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.3ms)
+Rendered layouts/_main_menu (0.1ms)
+  [4;35;1mEvent Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.8ms)
+  [4;36;1mPartnerLink Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (7.5ms)
+Completed in 17ms (View: 7, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-02-08 14:03:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.2ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+  [4;35;1mEvent Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mEvent Load (0.8ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Rendered layouts/_logo (0.2ms)
+Rendered layouts/_main_menu (0.1ms)
+Rendered layouts/_event_list (0.5ms)
+  [4;35;1mPartnerLink Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.4ms)
+Rendered layouts/_full_widget (5.1ms)
+Completed in 20ms (View: 7, DB: 4) | 200 OK [http://127.0.0.1/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-08 14:04:00) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.3ms)
+Rendered layouts/_main_menu (0.1ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.4ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (7.1ms)
+Completed in 16ms (View: 7, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-08 14:32:44) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.3ms)
+Rendered layouts/_main_menu (0.1ms)
+  [4;36;1mEvent Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.8ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (7.6ms)
+Completed in 86ms (View: 8, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-08 14:40:01) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.6ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.3ms)
+Rendered layouts/_main_menu (0.1ms)
+  [4;36;1mEvent Columns (26.6ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (29.3ms)
+  [4;35;1mPartnerLink Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.8ms)
+Rendered layouts/_full_widget (34.1ms)
+Completed in 103ms (View: 9, DB: 29) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-02-08 14:41:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Redirected to http://127.0.0.1:3000/
+Filter chain halted as [:go_home] rendered_or_redirected.
+Completed in 8ms (DB: 1) | 302 Found [http://127.0.0.1/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-08 14:41:27) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.4ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.4ms)
+Rendered layouts/_main_menu (0.4ms)
+  [4;36;1mEvent Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.9ms)
+  [4;35;1mPartnerLink Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.5ms)
+Rendered layouts/_full_widget (9.2ms)
+Completed in 23ms (View: 10, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-02-08 14:41:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEvent Load (0.5ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Redirected to http://127.0.0.1:3000/
+Filter chain halted as [:go_home] rendered_or_redirected.
+Completed in 8ms (DB: 2) | 302 Found [http://127.0.0.1/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-08 14:41:28) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.3ms)
+Rendered layouts/_main_menu (0.1ms)
+  [4;36;1mEvent Columns (9.9ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (12.9ms)
+  [4;35;1mPartnerLink Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (4.3ms)
+Rendered layouts/_full_widget (17.9ms)
+Completed in 28ms (View: 8, DB: 13) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-02-08 14:44:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEvent Load (0.2ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Rendered layouts/_logo (0.2ms)
+Rendered layouts/_main_menu (0.1ms)
+Rendered layouts/_event_list (0.5ms)
+  [4;36;1mPartnerLink Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.3ms)
+Rendered layouts/_full_widget (4.5ms)
+Completed in 75ms (View: 7, DB: 3) | 200 OK [http://127.0.0.1/events/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventsController#edit (for 127.0.0.1 at 2010-02-08 14:44:18) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.2ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Redirected to http://127.0.0.1:3000/
+Filter chain halted as [:go_home] rendered_or_redirected.
+Completed in 6ms (DB: 1) | 302 Found [http://127.0.0.1/events/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-08 14:44:19) [GET]
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.2ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.3ms)
+Rendered layouts/_main_menu (0.1ms)
+  [4;35;1mEvent Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.5ms)
+  [4;36;1mPartnerLink Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (2.9ms)
+Rendered layouts/_full_widget (7.1ms)
+Completed in 16ms (View: 7, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-02-08 14:44:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.2ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+  [4;35;1mEvent Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mEvent Load (0.2ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Rendered layouts/_logo (0.2ms)
+Rendered layouts/_main_menu (0.1ms)
+Rendered layouts/_event_list (0.5ms)
+  [4;35;1mPartnerLink Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.3ms)
+Rendered layouts/_full_widget (4.6ms)
+Completed in 18ms (View: 7, DB: 3) | 200 OK [http://127.0.0.1/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-02-08 14:44:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+  [4;36;1mEvent Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEvent Load (0.2ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Rendered layouts/_logo (0.2ms)
+Rendered layouts/_main_menu (0.1ms)
+Rendered layouts/_event_list (0.5ms)
+  [4;36;1mPartnerLink Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.4ms)
+Rendered layouts/_full_widget (4.6ms)
+Completed in 19ms (View: 8, DB: 4) | 200 OK [http://127.0.0.1/events/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-02-08 14:44:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.3ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+  [4;35;1mEvent Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mEvent Load (0.2ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Rendered layouts/_logo (0.2ms)
+Rendered layouts/_main_menu (0.1ms)
+Rendered layouts/_event_list (0.5ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.8ms)
+Rendered layouts/_full_widget (5.0ms)
+Completed in 21ms (View: 8, DB: 4) | 200 OK [http://127.0.0.1/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-02-08 14:45:02) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+  [4;36;1mEvent Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEvent Load (0.2ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Rendered layouts/_logo (0.2ms)
+Rendered layouts/_main_menu (0.1ms)
+Rendered layouts/_event_list (0.5ms)
+  [4;36;1mPartnerLink Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.3ms)
+Rendered layouts/_full_widget (4.5ms)
+Completed in 19ms (View: 7, DB: 3) | 200 OK [http://127.0.0.1/events/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-02-08 14:45:04) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.2ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+  [4;35;1mEvent Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mEvent Load (0.2ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`id` = 2) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Event with ID=2):
+  app/controllers/events_controller.rb:18:in `show'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (38.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-02-08 14:45:05) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.3ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+  [4;35;1mEvent Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mEvent Load (0.2ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`id` = 2) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Event with ID=2):
+  app/controllers/events_controller.rb:18:in `show'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (96.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-08 14:45:11) [GET]
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.2ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.3ms)
+Rendered layouts/_main_menu (0.1ms)
+  [4;35;1mEvent Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.7ms)
+  [4;36;1mPartnerLink Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.4ms)
+Rendered layouts/_full_widget (7.7ms)
+Completed in 17ms (View: 7, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-02-08 14:45:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.9ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+  [4;35;1mEvent Columns (4.1ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mEvent Load (0.9ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Rendered layouts/_logo (0.3ms)
+Rendered layouts/_main_menu (0.1ms)
+Rendered layouts/_event_list (0.6ms)
+  [4;35;1mPartnerLink Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (4.0ms)
+Rendered layouts/_full_widget (5.2ms)
+Completed in 26ms (View: 7, DB: 8) | 200 OK [http://127.0.0.1/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-02-08 14:45:15) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEvent Load (0.2ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Rendered layouts/_logo (0.3ms)
+Rendered layouts/_main_menu (0.1ms)
+Rendered layouts/_event_list (0.6ms)
+  [4;36;1mPartnerLink Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.2ms)
+Rendered layouts/_full_widget (4.5ms)
+Completed in 19ms (View: 7, DB: 3) | 200 OK [http://127.0.0.1/events/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-02-08 14:45:34) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.2ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+  [4;35;1mEvent Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mEvent Load (0.2ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Rendered layouts/_logo (0.3ms)
+Rendered layouts/_main_menu (0.1ms)
+Rendered layouts/_event_list (0.7ms)
+  [4;35;1mPartnerLink Columns (27.5ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (29.7ms)
+Rendered layouts/_full_widget (31.2ms)
+Completed in 49ms (View: 11, DB: 30) | 200 OK [http://127.0.0.1/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-02-08 14:45:44) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEvent Load (0.2ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Rendered layouts/_logo (0.3ms)
+Rendered layouts/_main_menu (0.1ms)
+Rendered layouts/_event_list (0.7ms)
+  [4;36;1mPartnerLink Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.3ms)
+Rendered layouts/_full_widget (4.8ms)
+Completed in 22ms (View: 11, DB: 3) | 200 OK [http://127.0.0.1/events/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-02-08 14:45:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.2ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+  [4;35;1mEvent Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mEvent Load (0.2ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Rendered layouts/_logo (0.3ms)
+Rendered layouts/_main_menu (0.1ms)
+Rendered layouts/_event_list (0.8ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (4.5ms)
+Completed in 22ms (View: 10, DB: 3) | 200 OK [http://127.0.0.1/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-02-08 14:45:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+  [4;36;1mEvent Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEvent Load (0.2ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Rendered layouts/_logo (0.3ms)
+Rendered layouts/_main_menu (0.1ms)
+Rendered layouts/_event_list (0.7ms)
+  [4;36;1mPartnerLink Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (4.4ms)
+Completed in 22ms (View: 10, DB: 3) | 200 OK [http://127.0.0.1/events/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-02-08 14:46:02) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.3ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+  [4;35;1mEvent Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mEvent Load (0.2ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Rendered layouts/_logo (0.3ms)
+Rendered layouts/_main_menu (0.1ms)
+Rendered layouts/_event_list (0.8ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (4.5ms)
+Completed in 22ms (View: 11, DB: 4) | 200 OK [http://127.0.0.1/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-02-08 14:46:06) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+  [4;36;1mEvent Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEvent Load (11.6ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Rendered layouts/_logo (0.3ms)
+Rendered layouts/_main_menu (0.1ms)
+Rendered layouts/_event_list (0.6ms)
+  [4;36;1mPartnerLink Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.3ms)
+Rendered layouts/_full_widget (4.6ms)
+Completed in 37ms (View: 11, DB: 18) | 200 OK [http://127.0.0.1/events/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-02-08 14:46:33) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.3ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+  [4;35;1mEvent Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Rendered layouts/_logo (0.3ms)
+Rendered layouts/_main_menu (0.1ms)
+Rendered layouts/_event_list (1.2ms)
+  [4;35;1mPartnerLink Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (4.2ms)
+Rendered layouts/_full_widget (6.4ms)
+Completed in 25ms (View: 12, DB: 4) | 200 OK [http://127.0.0.1/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-02-08 14:46:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Rendered layouts/_logo (0.3ms)
+Rendered layouts/_main_menu (0.1ms)
+Rendered layouts/_event_list (0.7ms)
+  [4;36;1mPartnerLink Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (4.3ms)
+Completed in 23ms (View: 11, DB: 4) | 200 OK [http://127.0.0.1/events/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-08 14:46:49) [GET]
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.3ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.3ms)
+Rendered layouts/_main_menu (0.1ms)
+  [4;35;1mEvent Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.9ms)
+  [4;36;1mPartnerLink Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.5ms)
+Rendered layouts/_full_widget (8.1ms)
+Completed in 17ms (View: 8, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-02-08 14:46:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.3ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+  [4;35;1mEvent Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mEvent Load (0.2ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Rendered layouts/_logo (0.3ms)
+Rendered layouts/_main_menu (0.1ms)
+Rendered layouts/_event_list (0.6ms)
+  [4;35;1mPartnerLink Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (4.5ms)
+Completed in 76ms (View: 65, DB: 4) | 200 OK [http://127.0.0.1/events/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 192.168.1.2 at 2010-02-08 23:37:15) [GET]
+
+ActionController::RoutingError (No route matches "/images" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 192.168.1.2 at 2010-02-08 23:37:18) [GET]
+
+ActionController::RoutingError (No route matches "/images/" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 192.168.1.2 at 2010-02-08 23:37:23) [GET]
+
+ActionController::RoutingError (No route matches "/images/max_example.jpg" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 192.168.1.2 at 2010-02-08 23:37:24) [GET]
+
+ActionController::RoutingError (No route matches "/images/max_example.jpg" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 192.168.1.2 at 2010-02-08 23:39:44) [GET]
+
+ActionController::RoutingError (No route matches "/images/max_example.jpg" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-08 23:39:46) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (15.4ms)
+Rendered layouts/_main_menu (4.3ms)
+  [4;36;1mEvent Columns (23.0ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (265.6ms)
+  [4;35;1mPartnerLink Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (21.7ms)
+Rendered layouts/_full_widget (310.4ms)
+Completed in 574ms (View: 390, DB: 25) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 192.168.1.2 at 2010-02-08 23:39:47) [GET]
+
+ActionController::RoutingError (No route matches "/images/images/max_example.jpg" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-08 23:39:53) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.3ms)
+Rendered layouts/_main_menu (54.7ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.5ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.2ms)
+Rendered layouts/_full_widget (8.6ms)
+Completed in 76ms (View: 67, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 192.168.1.2 at 2010-02-08 23:39:53) [GET]
+
+ActionController::RoutingError (No route matches "/images/images/max_example.jpg" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-08 23:39:59) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.3ms)
+Rendered layouts/_main_menu (0.1ms)
+  [4;36;1mEvent Columns (11.8ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (14.8ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (19.9ms)
+Completed in 34ms (View: 13, DB: 14) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 192.168.1.2 at 2010-02-08 23:39:59) [GET]
+
+ActionController::RoutingError (No route matches "/images/images/map_example.jpg" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-08 23:40:16) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.4ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.3ms)
+Rendered layouts/_main_menu (0.1ms)
+  [4;36;1mEvent Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.8ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (8.8ms)
+Completed in 23ms (View: 13, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-08 23:42:18) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.3ms)
+Rendered layouts/_main_menu (0.1ms)
+  [4;36;1mEvent Columns (19.7ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (22.3ms)
+  [4;35;1mPartnerLink Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.2ms)
+Rendered layouts/_full_widget (27.5ms)
+Completed in 54ms (View: 26, DB: 22) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-08 23:42:55) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.3ms)
+Rendered layouts/_main_menu (0.1ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.5ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.4ms)
+Rendered layouts/_full_widget (8.8ms)
+Completed in 22ms (View: 12, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-08 23:42:59) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.3ms)
+Rendered layouts/_main_menu (0.1ms)
+  [4;36;1mEvent Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.7ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.3ms)
+Rendered layouts/_full_widget (9.1ms)
+Completed in 69ms (View: 59, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-08 23:43:43) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.3ms)
+Rendered layouts/_main_menu (0.1ms)
+  [4;36;1mEvent Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.7ms)
+  [4;35;1mPartnerLink Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (4.1ms)
+Rendered layouts/_full_widget (12.8ms)
+Completed in 23ms (View: 13, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-08 23:43:54) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.3ms)
+Rendered layouts/_main_menu (0.1ms)
+  [4;36;1mEvent Columns (277.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (280.2ms)
+  [4;35;1mPartnerLink Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.9ms)
+Rendered layouts/_full_widget (288.9ms)
+Completed in 299ms (View: 13, DB: 279) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-08 23:44:08) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.3ms)
+Rendered layouts/_main_menu (0.1ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.8ms)
+  [4;35;1mPartnerLink Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (5.3ms)
+Rendered layouts/_full_widget (14.7ms)
+Completed in 28ms (View: 16, DB: 5) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-08 23:44:20) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.3ms)
+Rendered layouts/_main_menu (0.1ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.5ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (8.7ms)
+Completed in 22ms (View: 12, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-08 23:46:17) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (1.0ms)
+Rendered layouts/_main_menu (0.1ms)
+  [4;36;1mEvent Columns (35.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (37.7ms)
+  [4;35;1mPartnerLink Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.2ms)
+Rendered layouts/_full_widget (42.0ms)
+Completed in 56ms (View: 12, DB: 37) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 192.168.1.2 at 2010-02-08 23:46:17) [GET]
+
+ActionController::RoutingError (No route matches "/images/logo/1.jpg" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-08 23:46:18) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.5ms)
+Rendered layouts/_main_menu (0.1ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.8ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (2.9ms)
+Rendered layouts/_full_widget (7.9ms)
+Completed in 18ms (View: 8, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 192.168.1.2 at 2010-02-08 23:46:18) [GET]
+
+ActionController::RoutingError (No route matches "/images/logo/1.jpg" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-08 23:46:46) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (0.1ms)
+  [4;36;1mEvent Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.9ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (8.0ms)
+Completed in 18ms (View: 8, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-08 23:47:04) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.4ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (1.0ms)
+Rendered layouts/_main_menu (0.1ms)
+  [4;36;1mEvent Columns (213.1ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (215.5ms)
+  [4;35;1mPartnerLink Columns (56.4ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (58.4ms)
+Rendered layouts/_full_widget (275.4ms)
+Completed in 290ms (View: 12, DB: 270) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-08 23:47:18) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (1.3ms)
+Rendered layouts/_main_menu (0.1ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.6ms)
+  [4;35;1mPartnerLink Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.9ms)
+Rendered layouts/_full_widget (8.8ms)
+Completed in 24ms (View: 13, DB: 4) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-08 23:47:22) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (1.1ms)
+Rendered layouts/_main_menu (0.1ms)
+  [4;36;1mEvent Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.8ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (2.9ms)
+Rendered layouts/_full_widget (7.9ms)
+Completed in 23ms (View: 12, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-08 23:47:26) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (1.1ms)
+Rendered layouts/_main_menu (0.1ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.6ms)
+  [4;35;1mPartnerLink Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (7.8ms)
+Completed in 22ms (View: 12, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-08 23:47:30) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (1.1ms)
+Rendered layouts/_main_menu (0.1ms)
+  [4;36;1mEvent Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.4ms)
+  [4;35;1mPartnerLink Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (4.1ms)
+Rendered layouts/_full_widget (8.7ms)
+Completed in 24ms (View: 13, DB: 4) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-08 23:47:40) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+ERROR: compiling _run_erb_app47views47layouts47_logo46erb_locals_logo_object RAISED compile error
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_logo.erb:1: syntax error, unexpected ')'
+...height => 200, :width => 100%), :controller => 'home' ).to_s...
+                              ^
+Function body:           def _run_erb_app47views47layouts47_logo46erb_locals_logo_object(local_assigns)
+            old_output_buffer = output_buffer;logo = local_assigns[:logo];object = local_assigns[:object];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat(( link_to image_tag('logo/1.jpg', :height => 200, :width => 100%), :controller => 'home' ).to_s); @output_buffer.concat "\n"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_logo.erb:5:in `compile!'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:20:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:19:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/partials.rb:184:in `render_partial'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:267:in `render'
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/application.html.erb:14:in `_run_erb_app47views47layouts47application46html46erb'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:306:in `with_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:30:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:352:in `_render_with_layout'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1338:in `perform_action_without_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+
+ActionView::TemplateError (compile error
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_logo.erb:1: syntax error, unexpected ')'
+...height => 200, :width => 100%), :controller => 'home' ).to_s...
+                              ^) on line #1 of app/views/layouts/_logo.erb:
+1: <%= link_to image_tag('logo/1.jpg', :height => 200, :width => 100%), :controller => 'home' %>
+
+    app/views/layouts/_logo.erb:5:in `compile!'
+    app/views/layouts/application.html.erb:14
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (106.7ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-08 23:47:45) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (1.2ms)
+Rendered layouts/_main_menu (0.1ms)
+  [4;36;1mEvent Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.8ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.2ms)
+Rendered layouts/_full_widget (8.1ms)
+Completed in 22ms (View: 12, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-08 23:47:54) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (1.5ms)
+Rendered layouts/_main_menu (0.1ms)
+  [4;36;1mEvent Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (49.8ms)
+  [4;35;1mPartnerLink Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.2ms)
+Rendered layouts/_full_widget (54.2ms)
+Completed in 69ms (View: 59, DB: 3) | 200 OK [http://192.168.1.2/]

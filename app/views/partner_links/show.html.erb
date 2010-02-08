@@ -1,6 +1,5 @@
 <p>
-  <b>Title:</b>
-  <%=h @partner_link.title %>
+  <b><%=h @partner_link.title %></b>
 </p>
 
 <p>
@@ -12,7 +11,3 @@
   <b>Visible:</b>
   <%=h @partner_link.visible %>
 </p>
-
-
-<%= link_to 'Edit', edit_partner_link_path(@partner_link) %> |
-<%= link_to 'Back', partner_links_path %>

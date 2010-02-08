@@ -1,6 +1,8 @@
 class EventsController < ApplicationController
   # GET /events
   # GET /events.xml
+  before_filter :go_home, :except => [:show]
+  
   def index
     @events = Event.all
 

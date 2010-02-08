@@ -8,13 +8,16 @@ class ApplicationController < ActionController::Base
   before_filter :load_events, :load_partner_links
   
   def load_events
-    @left_column_events = Event.all :limit => 5
+    @left_column_events = Event.all :limit => 5, :conditions => { :published => true }
   end
 
   def load_partner_links
-    @left_column_partner_links = PartnerLink.all
+    @left_column_partner_links = PartnerLink.all( :conditions => { :visible => true } )
   end
 
+  def go_home
+    redirect_to( :controller => :home )
+  end
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
 end
