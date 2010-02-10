@@ -7812,3 +7812,2399 @@ Rendered layouts/_event_list (3.6ms)
 Rendered layouts/_partner_link_list (3.0ms)
 Rendered layouts/_full_widget (7.7ms)
 Completed in 48ms (View: 38, DB: 3) | 200 OK [http://192.168.1.2/fishing]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#index (for 192.168.1.2 at 2010-02-10 22:52:51) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering news/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (13.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (15.9ms)
+  [4;35;1mPartnerLink Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.7ms)
+Rendered layouts/_full_widget (20.9ms)
+Completed in 134ms (View: 32, DB: 15) | 200 OK [http://192.168.1.2/news]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 192.168.1.2 at 2010-02-10 22:52:59) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.6ms)
+  [4;35;1mPartnerLink Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.4ms)
+Rendered layouts/_full_widget (8.8ms)
+Completed in 61ms (View: 49, DB: 3) | 200 OK [http://192.168.1.2/fishing]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BootingController#index (for 192.168.1.2 at 2010-02-10 22:53:00) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.8ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering booting/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.9ms)
+  [4;35;1mPartnerLink Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.4ms)
+Rendered layouts/_full_widget (8.3ms)
+Completed in 22ms (View: 10, DB: 4) | 200 OK [http://192.168.1.2/booting]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GuestRoomController#index (for 192.168.1.2 at 2010-02-10 22:53:01) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering guest_room/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.2ms)
+  [4;35;1mPartnerLink Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.4ms)
+Rendered layouts/_full_widget (9.0ms)
+Completed in 22ms (View: 11, DB: 4) | 200 OK [http://192.168.1.2/guest_room]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 192.168.1.2 at 2010-02-10 22:53:03) [GET]
+  [4;36;1mEvent Load (0.6ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering contact/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (2.3ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.8ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (8.1ms)
+Completed in 23ms (View: 11, DB: 4) | 200 OK [http://192.168.1.2/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 192.168.1.2 at 2010-02-10 22:54:19) [GET]
+  [4;36;1mEvent Load (0.5ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering contact/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (2.8ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.6ms)
+  [4;35;1mPartnerLink Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.7ms)
+Rendered layouts/_full_widget (8.5ms)
+Completed in 30ms (View: 20, DB: 3) | 200 OK [http://192.168.1.2/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 192.168.1.2 at 2010-02-10 22:54:48) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.5ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering contact/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (3.0ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.7ms)
+  [4;35;1mPartnerLink Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.6ms)
+Rendered layouts/_full_widget (8.5ms)
+Completed in 27ms (View: 16, DB: 4) | 200 OK [http://192.168.1.2/contact]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 192.168.1.2 at 2010-02-10 22:55:14) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering contact/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.3ms)
+  [4;35;1mPartnerLink Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.2ms)
+Rendered layouts/_full_widget (8.6ms)
+Completed in 26ms (View: 15, DB: 4) | 200 OK [http://192.168.1.2/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 192.168.1.2 at 2010-02-10 22:55:22) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering contact/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.0ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.2ms)
+Rendered layouts/_full_widget (8.7ms)
+Completed in 26ms (View: 15, DB: 3) | 200 OK [http://192.168.1.2/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 192.168.1.2 at 2010-02-10 22:56:01) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering contact/index
+Rendered layouts/_logo (1.3ms)
+Rendered layouts/_main_menu (2.8ms)
+  [4;36;1mEvent Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.0ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.3ms)
+Rendered layouts/_full_widget (9.4ms)
+Completed in 36ms (View: 26, DB: 4) | 200 OK [http://192.168.1.2/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 192.168.1.2 at 2010-02-10 22:56:10) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering contact/index
+Rendered layouts/_logo (1.3ms)
+Rendered layouts/_main_menu (2.2ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.5ms)
+  [4;35;1mPartnerLink Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.9ms)
+Rendered layouts/_full_widget (61.3ms)
+Completed in 79ms (View: 68, DB: 4) | 200 OK [http://192.168.1.2/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 192.168.1.2 at 2010-02-10 22:56:29) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.4ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering contact/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.2ms)
+  [4;35;1mPartnerLink Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (4.5ms)
+Rendered layouts/_full_widget (10.4ms)
+Completed in 39ms (View: 23, DB: 5) | 200 OK [http://192.168.1.2/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PressaController#index (for 192.168.1.2 at 2010-02-10 22:56:32) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering pressa/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (14.8ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (17.4ms)
+  [4;35;1mPartnerLink Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (5.1ms)
+Rendered layouts/_full_widget (23.7ms)
+Completed in 36ms (View: 11, DB: 18) | 200 OK [http://192.168.1.2/pressa]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 192.168.1.2 at 2010-02-10 22:56:33) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering gallery/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.8ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (7.9ms)
+Completed in 20ms (View: 10, DB: 3) | 200 OK [http://192.168.1.2/gallery]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 192.168.1.2 at 2010-02-10 22:56:34) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (5.4ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.3ms)
+Rendered layouts/_full_widget (9.9ms)
+Completed in 22ms (View: 10, DB: 5) | 200 OK [http://192.168.1.2/fishing]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventsController#show (for 192.168.1.2 at 2010-02-10 22:59:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEvent Load (0.2ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Rendered layouts/_logo (0.8ms)
+Rendered layouts/_main_menu (1.8ms)
+Rendered layouts/_event_list (0.6ms)
+  [4;36;1mPartnerLink Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (4.7ms)
+Completed in 112ms (View: 42, DB: 4) | 200 OK [http://192.168.1.2/events/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventsController#1 (for 192.168.1.2 at 2010-02-10 22:59:47) [GET]
+  Parameters: {"id"=>"exit"}
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.2ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Redirected to http://192.168.1.2:3000/
+Filter chain halted as [:go_home] rendered_or_redirected.
+Completed in 6ms (DB: 1) | 302 Found [http://192.168.1.2/events/1/exit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 22:59:48) [GET]
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.3ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;35;1mEvent Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.0ms)
+  [4;36;1mPartnerLink Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (4.0ms)
+Rendered layouts/_full_widget (9.3ms)
+Completed in 23ms (View: 12, DB: 4) | 200 OK [http://192.168.1.2/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PressaController#index (for 192.168.1.2 at 2010-02-10 22:59:52) [GET]
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.3ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering pressa/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (2.0ms)
+  [4;35;1mEvent Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.4ms)
+  [4;36;1mPartnerLink Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.5ms)
+Rendered layouts/_full_widget (9.3ms)
+Completed in 23ms (View: 11, DB: 4) | 200 OK [http://192.168.1.2/pressa]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GuestRoomController#index (for 192.168.1.2 at 2010-02-10 22:59:53) [GET]
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.3ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering guest_room/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;35;1mEvent Columns (16.6ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (19.2ms)
+  [4;36;1mPartnerLink Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (23.4ms)
+Completed in 98ms (View: 10, DB: 19) | 200 OK [http://192.168.1.2/guest_room]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GuestRoomController#index (for 192.168.1.2 at 2010-02-10 23:05:51) [GET]
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.2ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering guest_room/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;35;1mEvent Columns (46.1ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (48.9ms)
+  [4;36;1mPartnerLink Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (4.7ms)
+Rendered layouts/_full_widget (54.9ms)
+Completed in 114ms (View: 58, DB: 49) | 200 OK [http://192.168.1.2/guest_room]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GuestRoomController#index (for 192.168.1.2 at 2010-02-10 23:07:27) [GET]
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.3ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering guest_room/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.9ms)
+  [4;35;1mEvent Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.3ms)
+  [4;36;1mPartnerLink Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (8.6ms)
+Completed in 22ms (View: 11, DB: 4) | 200 OK [http://192.168.1.2/guest_room]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GuestRoomController#index (for 192.168.1.2 at 2010-02-10 23:08:23) [GET]
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.3ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering guest_room/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;35;1mEvent Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.0ms)
+  [4;36;1mPartnerLink Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.3ms)
+Rendered layouts/_full_widget (8.5ms)
+Completed in 22ms (View: 10, DB: 4) | 200 OK [http://192.168.1.2/guest_room]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#index (for 192.168.1.2 at 2010-02-10 23:08:25) [GET]
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.7ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering news/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;35;1mEvent Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.1ms)
+  [4;36;1mPartnerLink Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.7ms)
+Rendered layouts/_full_widget (9.0ms)
+Completed in 22ms (View: 11, DB: 4) | 200 OK [http://192.168.1.2/news]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 23:08:27) [GET]
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.2ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;35;1mEvent Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.6ms)
+  [4;36;1mPartnerLink Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.6ms)
+Rendered layouts/_full_widget (8.4ms)
+Completed in 23ms (View: 12, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 192.168.1.2 at 2010-02-10 23:08:35) [GET]
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.3ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering gallery/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (2.2ms)
+  [4;35;1mEvent Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.6ms)
+  [4;36;1mPartnerLink Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (8.7ms)
+Completed in 22ms (View: 11, DB: 4) | 200 OK [http://192.168.1.2/gallery]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#index (for 192.168.1.2 at 2010-02-10 23:08:38) [GET]
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.2ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering news/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;35;1mEvent Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.7ms)
+  [4;36;1mPartnerLink Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (8.0ms)
+Completed in 23ms (View: 11, DB: 3) | 200 OK [http://192.168.1.2/news]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#index (for 192.168.1.2 at 2010-02-10 23:09:19) [GET]
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.2ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering news/index
+Rendered layouts/_logo (1.2ms)
+Rendered layouts/_main_menu (2.0ms)
+  [4;35;1mEvent Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.0ms)
+  [4;36;1mPartnerLink Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (8.2ms)
+Completed in 26ms (View: 15, DB: 3) | 200 OK [http://192.168.1.2/news]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#index (for 192.168.1.2 at 2010-02-10 23:09:59) [GET]
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.2ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering news/index
+Rendered layouts/_logo (1.5ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;35;1mEvent Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.3ms)
+  [4;36;1mPartnerLink Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.2ms)
+Rendered layouts/_full_widget (8.7ms)
+Completed in 49ms (View: 39, DB: 3) | 200 OK [http://192.168.1.2/news]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#index (for 192.168.1.2 at 2010-02-10 23:10:12) [GET]
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.3ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering news/index
+Rendered layouts/_logo (1.4ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;35;1mEvent Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.7ms)
+  [4;36;1mPartnerLink Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (4.4ms)
+Rendered layouts/_full_widget (9.4ms)
+Completed in 27ms (View: 16, DB: 4) | 200 OK [http://192.168.1.2/news]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#index (for 192.168.1.2 at 2010-02-10 23:10:16) [GET]
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.2ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering news/index
+Rendered layouts/_logo (1.2ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;35;1mEvent Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.1ms)
+  [4;36;1mPartnerLink Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (8.3ms)
+Completed in 25ms (View: 15, DB: 4) | 200 OK [http://192.168.1.2/news]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 192.168.1.2 at 2010-02-10 23:10:19) [GET]
+  [4;35;1mEvent Load (0.8ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.3ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering gallery/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;35;1mEvent Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.8ms)
+  [4;36;1mPartnerLink Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (8.0ms)
+Completed in 22ms (View: 10, DB: 4) | 200 OK [http://192.168.1.2/gallery]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PressaController#index (for 192.168.1.2 at 2010-02-10 23:10:20) [GET]
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.3ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering pressa/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;35;1mEvent Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.3ms)
+  [4;36;1mPartnerLink Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.3ms)
+Rendered layouts/_full_widget (9.0ms)
+Completed in 23ms (View: 11, DB: 4) | 200 OK [http://192.168.1.2/pressa]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventsController#show (for 192.168.1.2 at 2010-02-10 23:10:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.8ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.3ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+  [4;35;1mEvent Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mEvent Load (0.7ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (2.0ms)
+Rendered layouts/_event_list (0.6ms)
+  [4;35;1mPartnerLink Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.2ms)
+Rendered layouts/_full_widget (4.9ms)
+Completed in 27ms (View: 10, DB: 5) | 200 OK [http://192.168.1.2/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#index (for 192.168.1.2 at 2010-02-10 23:10:22) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering news/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.8ms)
+  [4;35;1mPartnerLink Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (4.2ms)
+Rendered layouts/_full_widget (9.4ms)
+Completed in 22ms (View: 10, DB: 4) | 200 OK [http://192.168.1.2/news]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 23:10:23) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.7ms)
+  [4;35;1mPartnerLink Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.3ms)
+Rendered layouts/_full_widget (8.1ms)
+Completed in 21ms (View: 12, DB: 4) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#index (for 192.168.1.2 at 2010-02-10 23:10:37) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering news/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (2.0ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.5ms)
+  [4;35;1mPartnerLink Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (7.7ms)
+Completed in 20ms (View: 10, DB: 3) | 200 OK [http://192.168.1.2/news]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 23:10:45) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (2.3ms)
+  [4;36;1mEvent Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.4ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (8.6ms)
+Completed in 23ms (View: 13, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 23:12:59) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (1.1ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.9ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (8.4ms)
+Completed in 27ms (View: 16, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 192.168.1.2 at 2010-02-10 23:13:21) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.9ms)
+Rendered layouts/_main_menu (1.9ms)
+  [4;36;1mEvent Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.0ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (8.3ms)
+Completed in 22ms (View: 11, DB: 3) | 200 OK [http://192.168.1.2/fishing]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 192.168.1.2 at 2010-02-10 23:13:22) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering gallery/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.7ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (2.9ms)
+Rendered layouts/_full_widget (7.8ms)
+Completed in 21ms (View: 10, DB: 3) | 200 OK [http://192.168.1.2/gallery]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#index (for 192.168.1.2 at 2010-02-10 23:13:23) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering news/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.8ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (2.9ms)
+Rendered layouts/_full_widget (7.8ms)
+Completed in 20ms (View: 10, DB: 3) | 200 OK [http://192.168.1.2/news]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 23:13:24) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (5.6ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (9.8ms)
+Completed in 24ms (View: 14, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 23:14:34) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.3ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.2ms)
+Rendered layouts/_full_widget (9.7ms)
+Completed in 27ms (View: 18, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 192.168.1.2 at 2010-02-10 23:14:37) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering gallery/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (21.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (23.9ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (28.2ms)
+Completed in 41ms (View: 11, DB: 23) | 200 OK [http://192.168.1.2/gallery]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 192.168.1.2 at 2010-02-10 23:14:42) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering gallery/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.8ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (7.9ms)
+Completed in 21ms (View: 10, DB: 3) | 200 OK [http://192.168.1.2/gallery]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 192.168.1.2 at 2010-02-10 23:14:43) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.8ms)
+  [4;35;1mPartnerLink Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.2ms)
+Rendered layouts/_full_widget (8.2ms)
+Completed in 22ms (View: 11, DB: 3) | 200 OK [http://192.168.1.2/fishing]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#index (for 192.168.1.2 at 2010-02-10 23:14:44) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering news/index
+Rendered layouts/_logo (57.0ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.7ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.2ms)
+Rendered layouts/_full_widget (8.1ms)
+Completed in 78ms (View: 67, DB: 3) | 200 OK [http://192.168.1.2/news]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 23:14:44) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.6ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (2.9ms)
+Rendered layouts/_full_widget (7.6ms)
+Completed in 22ms (View: 11, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 23:16:05) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.9ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (9.0ms)
+Completed in 27ms (View: 17, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 23:18:41) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.6ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (7.7ms)
+Completed in 21ms (View: 11, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 23:19:19) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (2.9ms)
+  [4;36;1mEvent Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.0ms)
+  [4;35;1mPartnerLink Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (9.1ms)
+Completed in 28ms (View: 18, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 23:20:36) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.9ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.8ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (9.0ms)
+Completed in 30ms (View: 17, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 23:24:42) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (28.6ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (31.1ms)
+  [4;35;1mPartnerLink Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (36.2ms)
+Completed in 100ms (View: 17, DB: 30) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 192.168.1.2 at 2010-02-10 23:24:46) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering gallery/index
+Rendered layouts/_logo (0.9ms)
+Rendered layouts/_main_menu (2.1ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.6ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (7.7ms)
+Completed in 33ms (View: 24, DB: 3) | 200 OK [http://192.168.1.2/gallery]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 192.168.1.2 at 2010-02-10 23:25:14) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering gallery/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.1ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (8.2ms)
+Completed in 24ms (View: 14, DB: 3) | 200 OK [http://192.168.1.2/gallery]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PressaController#index (for 192.168.1.2 at 2010-02-10 23:25:39) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering pressa/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.8ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (7.8ms)
+Completed in 20ms (View: 10, DB: 3) | 200 OK [http://192.168.1.2/pressa]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 192.168.1.2 at 2010-02-10 23:25:40) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (5.1ms)
+  [4;35;1mPartnerLink Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.3ms)
+Rendered layouts/_full_widget (9.6ms)
+Completed in 22ms (View: 12, DB: 3) | 200 OK [http://192.168.1.2/fishing]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#index (for 192.168.1.2 at 2010-02-10 23:25:41) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering news/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.5ms)
+  [4;35;1mPartnerLink Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (7.6ms)
+Completed in 93ms (View: 25, DB: 3) | 200 OK [http://192.168.1.2/news]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 23:26:14) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.9ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (8.2ms)
+Completed in 22ms (View: 12, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 192.168.1.2 at 2010-02-10 23:26:15) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering contact/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.7ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (8.0ms)
+Completed in 20ms (View: 10, DB: 3) | 200 OK [http://192.168.1.2/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BootingController#index (for 192.168.1.2 at 2010-02-10 23:26:22) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering booting/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.9ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (8.0ms)
+Completed in 20ms (View: 10, DB: 3) | 200 OK [http://192.168.1.2/booting]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GuestRoomController#index (for 192.168.1.2 at 2010-02-10 23:26:24) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering guest_room/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.5ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (7.6ms)
+Completed in 19ms (View: 10, DB: 3) | 200 OK [http://192.168.1.2/guest_room]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 23:26:25) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.6ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (8.8ms)
+Completed in 25ms (View: 14, DB: 4) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BootingController#index (for 192.168.1.2 at 2010-02-10 23:26:27) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering booting/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.7ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.2ms)
+Rendered layouts/_full_widget (8.0ms)
+Completed in 20ms (View: 10, DB: 3) | 200 OK [http://192.168.1.2/booting]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 23:26:28) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.9ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (8.0ms)
+Completed in 22ms (View: 12, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 23:26:49) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.6ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (8.8ms)
+Completed in 26ms (View: 16, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PressaController#index (for 192.168.1.2 at 2010-02-10 23:26:51) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering pressa/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.6ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.3ms)
+Rendered layouts/_full_widget (8.0ms)
+Completed in 65ms (View: 10, DB: 3) | 200 OK [http://192.168.1.2/pressa]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 23:26:52) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.4ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (7.7ms)
+Completed in 21ms (View: 11, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PressaController#index (for 192.168.1.2 at 2010-02-10 23:26:54) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering pressa/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.7ms)
+  [4;35;1mPartnerLink Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.5ms)
+Rendered layouts/_full_widget (8.4ms)
+Completed in 20ms (View: 10, DB: 4) | 200 OK [http://192.168.1.2/pressa]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 23:26:55) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.5ms)
+  [4;35;1mPartnerLink Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (8.2ms)
+Completed in 21ms (View: 12, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 23:27:59) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.8ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (8.9ms)
+Completed in 26ms (View: 16, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 23:28:32) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (48.3ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.7ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (8.9ms)
+Completed in 73ms (View: 63, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 192.168.1.2 at 2010-02-10 23:28:37) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.7ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (7.7ms)
+Completed in 40ms (View: 30, DB: 3) | 200 OK [http://192.168.1.2/fishing]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#index (for 192.168.1.2 at 2010-02-10 23:28:39) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering news/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.6ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (7.9ms)
+Completed in 21ms (View: 11, DB: 3) | 200 OK [http://192.168.1.2/news]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#index (for 192.168.1.2 at 2010-02-10 23:28:40) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering news/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.5ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (7.6ms)
+Completed in 19ms (View: 10, DB: 3) | 200 OK [http://192.168.1.2/news]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#index (for 127.0.0.1 at 2010-02-10 23:30:45) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering news/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.4ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (2.9ms)
+Rendered layouts/_full_widget (12.8ms)
+Completed in 29ms (View: 18, DB: 3) | 200 OK [http://127.0.0.1/news/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#index (for 127.0.0.1 at 2010-02-10 23:30:46) [GET]
+  [4;36;1mEvent Load (0.5ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering news/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (14.6ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (17.0ms)
+  [4;35;1mPartnerLink Columns (24.3ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (26.5ms)
+Rendered layouts/_full_widget (44.6ms)
+Completed in 127ms (View: 10, DB: 40) | 200 OK [http://127.0.0.1/news/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#index (for 127.0.0.1 at 2010-02-10 23:30:47) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering news/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (5.0ms)
+  [4;35;1mPartnerLink Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (9.6ms)
+Completed in 22ms (View: 10, DB: 5) | 200 OK [http://127.0.0.1/news/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#index (for 127.0.0.1 at 2010-02-10 23:30:57) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering news/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.5ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (12.0ms)
+Completed in 37ms (View: 14, DB: 3) | 200 OK [http://127.0.0.1/news/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#index (for 127.0.0.1 at 2010-02-10 23:31:03) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering news/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.8ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (71.1ms)
+Completed in 83ms (View: 73, DB: 3) | 200 OK [http://127.0.0.1/news/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#index (for 127.0.0.1 at 2010-02-10 23:31:14) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering news/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.1ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (8.1ms)
+Completed in 20ms (View: 10, DB: 3) | 200 OK [http://127.0.0.1/news]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-10 23:31:14) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (160.0ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (162.4ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (166.7ms)
+Completed in 180ms (View: 11, DB: 162) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-10 23:32:14) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (3.1ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.6ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (2.9ms)
+Rendered layouts/_full_widget (7.7ms)
+Completed in 27ms (View: 16, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-10 23:32:15) [GET]
+
+ActionController::RoutingError (No route matches "/team" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-10 23:32:18) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (2.1ms)
+  [4;36;1mEvent Columns (17.4ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (19.7ms)
+  [4;35;1mPartnerLink Columns (8.9ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (11.0ms)
+Rendered layouts/_full_widget (31.8ms)
+Completed in 46ms (View: 12, DB: 27) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 127.0.0.1 at 2010-02-10 23:32:18) [GET]
+  [4;36;1mEvent Load (0.5ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (2.2ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.7ms)
+  [4;35;1mPartnerLink Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.8ms)
+Rendered layouts/_full_widget (8.6ms)
+Completed in 35ms (View: 24, DB: 4) | 200 OK [http://127.0.0.1/fishing]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 127.0.0.1 at 2010-02-10 23:32:20) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering gallery/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.8ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (7.9ms)
+Completed in 20ms (View: 11, DB: 3) | 200 OK [http://127.0.0.1/gallery]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 127.0.0.1 at 2010-02-10 23:32:21) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering gallery/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.9ms)
+  [4;35;1mPartnerLink Columns (35.5ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (37.6ms)
+Rendered layouts/_full_widget (42.7ms)
+Completed in 55ms (View: 10, DB: 38) | 200 OK [http://127.0.0.1/gallery]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TeamController#index (for 127.0.0.1 at 2010-02-10 23:32:29) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering team/index
+Rendered layouts/_logo (1.4ms)
+Rendered layouts/_main_menu (4.2ms)
+  [4;36;1mEvent Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (149.6ms)
+  [4;35;1mPartnerLink Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.9ms)
+Rendered layouts/_full_widget (213.2ms)
+Completed in 305ms (View: 262, DB: 4) | 200 OK [http://127.0.0.1/team]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 127.0.0.1 at 2010-02-10 23:32:30) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.7ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.4ms)
+Rendered layouts/_full_widget (8.3ms)
+Completed in 27ms (View: 17, DB: 3) | 200 OK [http://127.0.0.1/fishing]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 127.0.0.1 at 2010-02-10 23:32:31) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering gallery/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.6ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (7.7ms)
+Completed in 26ms (View: 16, DB: 3) | 200 OK [http://127.0.0.1/gallery]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PressaController#index (for 127.0.0.1 at 2010-02-10 23:32:32) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering pressa/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.5ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (2.9ms)
+Rendered layouts/_full_widget (7.5ms)
+Completed in 28ms (View: 16, DB: 3) | 200 OK [http://127.0.0.1/pressa]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BootingController#index (for 127.0.0.1 at 2010-02-10 23:32:33) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering booting/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.1ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (2.9ms)
+Rendered layouts/_full_widget (8.1ms)
+Completed in 27ms (View: 17, DB: 3) | 200 OK [http://127.0.0.1/booting]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GuestRoomController#index (for 127.0.0.1 at 2010-02-10 23:32:33) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering guest_room/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.7ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (7.7ms)
+Completed in 26ms (View: 16, DB: 3) | 200 OK [http://127.0.0.1/guest_room]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2010-02-10 23:32:34) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering contact/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.6ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.2ms)
+Rendered layouts/_full_widget (7.9ms)
+Completed in 83ms (View: 16, DB: 3) | 200 OK [http://127.0.0.1/contact]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-10 23:32:34) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.5ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (2.9ms)
+Rendered layouts/_full_widget (7.5ms)
+Completed in 36ms (View: 26, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-10 23:33:10) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (1.3ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.0ms)
+  [4;35;1mPartnerLink Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (6.3ms)
+Rendered layouts/_full_widget (11.7ms)
+Completed in 30ms (View: 20, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-10 23:33:36) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (2.8ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.6ms)
+  [4;35;1mPartnerLink Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (2.9ms)
+Rendered layouts/_full_widget (7.6ms)
+Completed in 25ms (View: 16, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 127.0.0.1 at 2010-02-10 23:33:38) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (449.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (451.8ms)
+  [4;35;1mPartnerLink Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (4.1ms)
+Rendered layouts/_full_widget (457.1ms)
+Completed in 469ms (View: 10, DB: 452) | 200 OK [http://127.0.0.1/fishing]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TeamController#index (for 127.0.0.1 at 2010-02-10 23:33:39) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering team/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.7ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (7.8ms)
+Completed in 20ms (View: 10, DB: 3) | 200 OK [http://127.0.0.1/team]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TeamController#index (for 127.0.0.1 at 2010-02-10 23:33:40) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering team/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.7ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (7.9ms)
+Completed in 20ms (View: 10, DB: 3) | 200 OK [http://127.0.0.1/team]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-10 23:33:41) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.1ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (8.2ms)
+Completed in 22ms (View: 12, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-10 23:34:14) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.7ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (8.7ms)
+Completed in 26ms (View: 16, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 127.0.0.1 at 2010-02-10 23:34:15) [GET]
+  [4;36;1mEvent Load (0.5ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.6ms)
+  [4;35;1mPartnerLink Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.4ms)
+Rendered layouts/_full_widget (9.1ms)
+Completed in 22ms (View: 11, DB: 3) | 200 OK [http://127.0.0.1/fishing]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TeamController#index (for 127.0.0.1 at 2010-02-10 23:34:18) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering team/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (18.4ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (20.8ms)
+  [4;35;1mPartnerLink Columns (74.5ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (76.5ms)
+Rendered layouts/_full_widget (98.4ms)
+Completed in 110ms (View: 10, DB: 94) | 200 OK [http://127.0.0.1/team]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-10 23:34:19) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.6ms)
+  [4;35;1mPartnerLink Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.3ms)
+Rendered layouts/_full_widget (8.0ms)
+Completed in 21ms (View: 11, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-10 23:34:39) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.2ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (8.3ms)
+Completed in 27ms (View: 16, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 127.0.0.1 at 2010-02-10 23:34:42) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (4.4ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (6.8ms)
+  [4;35;1mPartnerLink Columns (6.3ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (8.5ms)
+Rendered layouts/_full_widget (74.0ms)
+Completed in 86ms (View: 68, DB: 11) | 200 OK [http://127.0.0.1/fishing]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 127.0.0.1 at 2010-02-10 23:34:43) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering gallery/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.4ms)
+  [4;35;1mPartnerLink Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.5ms)
+Rendered layouts/_full_widget (8.1ms)
+Completed in 20ms (View: 10, DB: 3) | 200 OK [http://127.0.0.1/gallery]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TeamController#index (for 127.0.0.1 at 2010-02-10 23:34:44) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.5ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering team/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.5ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (8.9ms)
+Completed in 23ms (View: 12, DB: 4) | 200 OK [http://127.0.0.1/team]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-10 23:34:45) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (57.4ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.8ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (8.1ms)
+Completed in 78ms (View: 68, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GuestRoomController#index (for 127.0.0.1 at 2010-02-10 23:34:50) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering guest_room/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.2ms)
+  [4;35;1mPartnerLink Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (8.4ms)
+Completed in 20ms (View: 10, DB: 3) | 200 OK [http://127.0.0.1/guest_room]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BootingController#index (for 127.0.0.1 at 2010-02-10 23:34:50) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering booting/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.9ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.5ms)
+  [4;35;1mPartnerLink Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.6ms)
+Rendered layouts/_full_widget (8.3ms)
+Completed in 20ms (View: 10, DB: 3) | 200 OK [http://127.0.0.1/booting]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BootingController#index (for 127.0.0.1 at 2010-02-10 23:37:18) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering booting/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (19.5ms)
+  [4;35;1mPartnerLink Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (4.0ms)
+Rendered layouts/_full_widget (32.6ms)
+Completed in 60ms (View: 35, DB: 18) | 200 OK [http://127.0.0.1/booting]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BootingController#index (for 127.0.0.1 at 2010-02-10 23:37:20) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering booting/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.7ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (8.2ms)
+Completed in 21ms (View: 10, DB: 3) | 200 OK [http://127.0.0.1/booting]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TeamController#index (for 127.0.0.1 at 2010-02-10 23:37:21) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering team/index
+Rendered layouts/_logo (1.1ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.6ms)
+  [4;35;1mPartnerLink Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (2.9ms)
+Rendered layouts/_full_widget (7.6ms)
+Completed in 20ms (View: 10, DB: 3) | 200 OK [http://127.0.0.1/team]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TeamController#index (for 127.0.0.1 at 2010-02-10 23:37:56) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering team/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.9ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.2ms)
+Rendered layouts/_full_widget (9.2ms)
+Completed in 25ms (View: 15, DB: 3) | 200 OK [http://127.0.0.1/team]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TeamController#index (for 127.0.0.1 at 2010-02-10 23:38:05) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering team/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.8ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (8.9ms)
+Completed in 24ms (View: 15, DB: 3) | 200 OK [http://127.0.0.1/team]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TeamController#index (for 127.0.0.1 at 2010-02-10 23:38:19) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering team/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.1ms)
+  [4;35;1mPartnerLink Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (2.8ms)
+Rendered layouts/_full_widget (8.9ms)
+Completed in 24ms (View: 14, DB: 3) | 200 OK [http://127.0.0.1/team]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 127.0.0.1 at 2010-02-10 23:38:21) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.6ms)
+  [4;35;1mPartnerLink Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.5ms)
+Rendered layouts/_full_widget (62.6ms)
+Completed in 74ms (View: 64, DB: 3) | 200 OK [http://127.0.0.1/fishing]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 127.0.0.1 at 2010-02-10 23:38:40) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.4ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (12.1ms)
+Completed in 24ms (View: 14, DB: 3) | 200 OK [http://127.0.0.1/fishing]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 127.0.0.1 at 2010-02-10 23:40:15) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.1ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_left_menu (8.9ms)
+Rendered layouts/_full_widget (13.2ms)
+Completed in 29ms (View: 19, DB: 3) | 200 OK [http://127.0.0.1/fishing]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-10 23:40:17) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.5ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.2ms)
+Rendered layouts/_left_menu (7.8ms)
+Rendered layouts/_full_widget (8.2ms)
+Completed in 41ms (View: 31, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TeamController#index (for 127.0.0.1 at 2010-02-10 23:40:17) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering team/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.7ms)
+  [4;35;1mPartnerLink Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.9ms)
+Rendered layouts/_left_menu (9.0ms)
+Rendered layouts/_full_widget (9.4ms)
+Completed in 22ms (View: 11, DB: 4) | 200 OK [http://127.0.0.1/team]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-10 23:40:18) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.6ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.2ms)
+Rendered layouts/_left_menu (8.3ms)
+Rendered layouts/_full_widget (8.7ms)
+Completed in 22ms (View: 12, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 127.0.0.1 at 2010-02-10 23:40:20) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.7ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_left_menu (7.9ms)
+Rendered layouts/_full_widget (8.3ms)
+Completed in 20ms (View: 10, DB: 3) | 200 OK [http://127.0.0.1/fishing]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 127.0.0.1 at 2010-02-10 23:41:41) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.4ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.9ms)
+  [4;36;1mEvent Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.0ms)
+  [4;35;1mPartnerLink Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.6ms)
+Rendered layouts/_left_menu (8.9ms)
+
+ActionView::TemplateError (Missing layout layouts/_reight_menu.erb in view path app/views) on line #10 of app/views/layouts/_full_widget.erb:
+7:     <%= yield %>    
+8:   </td>
+9:   <td width='150' class='right_menu' >
+10:     <%= render :partial => 'layouts/reight_menu' %>
+11:   </td>
+12: </tr>
+13: </table>
+
+    app/views/layouts/_full_widget.erb:10
+    app/views/layouts/application.html.erb:24
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (61.4ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 127.0.0.1 at 2010-02-10 23:41:55) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.9ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.2ms)
+Rendered layouts/_left_menu (8.4ms)
+Rendered layouts/_right_menu (0.5ms)
+Rendered layouts/_full_widget (14.6ms)
+Completed in 30ms (View: 20, DB: 3) | 200 OK [http://127.0.0.1/fishing]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PressaController#index (for 127.0.0.1 at 2010-02-10 23:42:06) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering pressa/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.9ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_left_menu (8.2ms)
+Rendered layouts/_right_menu (0.1ms)
+Rendered layouts/_full_widget (9.1ms)
+Completed in 22ms (View: 11, DB: 3) | 200 OK [http://127.0.0.1/pressa]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 127.0.0.1 at 2010-02-10 23:42:07) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering gallery/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.5ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_left_menu (7.6ms)
+Rendered layouts/_right_menu (0.1ms)
+Rendered layouts/_full_widget (8.4ms)
+Completed in 20ms (View: 10, DB: 3) | 200 OK [http://127.0.0.1/gallery]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 127.0.0.1 at 2010-02-10 23:42:08) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.7ms)
+  [4;35;1mPartnerLink Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.3ms)
+Rendered layouts/_left_menu (8.2ms)
+Rendered layouts/_right_menu (0.1ms)
+Rendered layouts/_full_widget (9.0ms)
+Completed in 22ms (View: 11, DB: 3) | 200 OK [http://127.0.0.1/fishing]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TeamController#index (for 127.0.0.1 at 2010-02-10 23:42:08) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering team/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.6ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_left_menu (8.0ms)
+Rendered layouts/_right_menu (0.1ms)
+Rendered layouts/_full_widget (8.7ms)
+Completed in 20ms (View: 11, DB: 3) | 200 OK [http://127.0.0.1/team]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BootingController#index (for 127.0.0.1 at 2010-02-10 23:42:10) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering booting/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.7ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.2ms)
+Rendered layouts/_left_menu (8.0ms)
+Rendered layouts/_right_menu (0.1ms)
+Rendered layouts/_full_widget (8.7ms)
+Completed in 21ms (View: 11, DB: 3) | 200 OK [http://127.0.0.1/booting]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-10 23:42:10) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (57.5ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.8ms)
+  [4;35;1mPartnerLink Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_left_menu (8.0ms)
+Rendered layouts/_right_menu (0.1ms)
+Rendered layouts/_full_widget (8.9ms)
+Completed in 78ms (View: 68, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GuestRoomController#index (for 127.0.0.1 at 2010-02-10 23:42:11) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering guest_room/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (2.2ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.7ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_left_menu (8.0ms)
+Rendered layouts/_right_menu (0.1ms)
+Rendered layouts/_full_widget (8.8ms)
+Completed in 22ms (View: 11, DB: 3) | 200 OK [http://127.0.0.1/guest_room]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 127.0.0.1 at 2010-02-10 23:42:12) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.4ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering contact/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (2.3ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.5ms)
+  [4;35;1mPartnerLink Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.7ms)
+Rendered layouts/_left_menu (9.5ms)
+Rendered layouts/_right_menu (0.1ms)
+Rendered layouts/_full_widget (10.3ms)
+Completed in 23ms (View: 13, DB: 4) | 200 OK [http://127.0.0.1/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-10 23:42:13) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (2.0ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.6ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.4ms)
+Rendered layouts/_left_menu (8.5ms)
+Rendered layouts/_right_menu (0.1ms)
+Rendered layouts/_full_widget (9.3ms)
+Completed in 23ms (View: 13, DB: 3) | 200 OK [http://127.0.0.1/]

@@ -1,8 +1,9 @@
+<table><tr><td></td></tr></table>
 News
- <table width='100%' border=0>
+ <table width='100%' border=0 cellpadding='0' cellspacing='0'>
  <% for event in @left_column_events %>
    <tr valign='top'>
-     <td style='font-size:8pt;font-family:arial;text-align:left'>
+     <td class='event_list'>
        <% t = event.created_at %>
        <%= t.day.to_s+"."+t.month.to_s+"."+t.year.to_s %><br/>
        <%= link_to event.title, event_path(event.id) %>
