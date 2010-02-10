@@ -5,22 +5,23 @@
 <head>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <title> <%= controller.controller_name.capitalize %></title>
+  <%= stylesheet_link_tag 'application' %>
 </head>
 <body>
 
-<table width='90%' height='100%' border='1' align='center'>
+<table width='800' height='100%' border='0' align='center' class='main' cellspacing='0' cellpadding='0'>
 <tr>
   <td valign='top' height='150'>
     <%= render :partial => 'layouts/logo' %>
   </td>
 </tr>
 <tr>
-  <td valign='top' height='50'>
+  <td valign='top'>
     <%= render :partial => 'layouts/main_menu' %>
   </td>
 </tr>
 <tr>
-  <td valign='top' height='50'>
+  <td valign='top'>
     <%= render :partial => 'layouts/full_widget' %>
   </td>
 </tr>

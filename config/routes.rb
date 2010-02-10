@@ -1,6 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :partner_links
 
+  map.resources :partner_links
   map.resources :events
 
   # The priority is based upon order of creation: first created -> highest priority.

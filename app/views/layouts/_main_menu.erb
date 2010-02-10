@@ -1,25 +1,25 @@
-<table name='main_menu' width=100% height='100%' border='1'>
-<tr valign='top' align='left'>
+<table name='main_menu' width=100% height='100%' border='0' cellspacing='0'>
+<tr valign='top' align='left' class='main_menu'>
   <td width='14%'>
-    a
+    <%= link_to "NEWS", { :controller => :news }, :class => 'main_menu' %>
   </td>
   <td width='14%'>
-    b
+    <%= link_to "FISHING", { :controller => :fishing }, :class => 'main_menu' %>
   </td>
   <td width='14%'>
-    c
+    <%= link_to "GALLERY", { :controller => :gallery }, :class => 'main_menu' %>
   </td>
   <td width='14%'>
-    d
+    <%= link_to "PRESSA", { :controller => :pressa }, :class => 'main_menu' %>
   </td>
   <td width='14%'>
-    e
+    <%= link_to "BOOTING", { :controller => :booting }, :class => 'main_menu' %>
   </td>
   <td width='14%'>
-    f
+    <%= link_to "GUEST ROOM", { :controller => :guest_room }, :class => 'main_menu' %>
   </td>
   <td width='14%'>
-    g
+    <%= link_to "CONTACT", { :controller => :contact }, :class => 'main_menu' %>
   </td>
 </tr>
 </table>

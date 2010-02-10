@@ -4986,3 +4986,2829 @@ Rendered layouts/_event_list (3.8ms)
 Rendered layouts/_partner_link_list (3.0ms)
 Rendered layouts/_full_widget (7.9ms)
 Completed in 25ms (View: 15, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 21:31:02) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (20.7ms)
+Rendered layouts/_main_menu (25.1ms)
+  [4;36;1mEvent Columns (33.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (230.2ms)
+  [4;35;1mPartnerLink Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (30.8ms)
+Rendered layouts/_full_widget (272.3ms)
+Completed in 463ms (View: 390, DB: 35) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 21:41:05) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (0.1ms)
+  [4;36;1mEvent Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (9.1ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (13.2ms)
+Completed in 36ms (View: 21, DB: 8) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 21:46:03) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (0.6ms)
+  [4;36;1mEvent Columns (13.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (15.8ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (48.0ms)
+Rendered layouts/_full_widget (65.0ms)
+Completed in 91ms (View: 69, DB: 15) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 21:46:26) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (0.6ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.6ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.3ms)
+Rendered layouts/_full_widget (8.1ms)
+Completed in 24ms (View: 14, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 21:46:45) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (0.6ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.2ms)
+  [4;35;1mPartnerLink Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (4.7ms)
+Rendered layouts/_full_widget (10.1ms)
+Completed in 26ms (View: 14, DB: 5) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 21:47:32) [GET]
+  [4;36;1mEvent Load (0.5ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (0.6ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.6ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (2.9ms)
+Rendered layouts/_full_widget (7.7ms)
+Completed in 28ms (View: 18, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 21:47:54) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (0.7ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.7ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (7.9ms)
+Completed in 25ms (View: 15, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 21:47:57) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.4ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (0.7ms)
+  [4;36;1mEvent Columns (19.0ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (21.6ms)
+  [4;35;1mPartnerLink Columns (14.0ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (16.4ms)
+Rendered layouts/_full_widget (39.2ms)
+Completed in 57ms (View: 15, DB: 34) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 21:48:33) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+ERROR: compiling _run_erb_app47views47layouts47_logo46erb_locals_logo_object RAISED compile error
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_logo.erb:1: syntax error, unexpected tSTRING_BEG, expecting tASSOC
+...ontroller => 'home', :border='0' ).to_s); @output_buffer.con...
+                              ^
+Function body:           def _run_erb_app47views47layouts47_logo46erb_locals_logo_object(local_assigns)
+            old_output_buffer = output_buffer;logo = local_assigns[:logo];object = local_assigns[:object];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat(( link_to image_tag('logo/1.jpg', :height => "100%", :width => "100%"), :controller => 'home', :border='0' ).to_s); @output_buffer.concat "\n"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_logo.erb:5:in `compile!'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:20:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:19:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/partials.rb:184:in `render_partial'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:267:in `render'
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/application.html.erb:14:in `_run_erb_app47views47layouts47application46html46erb'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:306:in `with_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:30:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:352:in `_render_with_layout'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1338:in `perform_action_without_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+
+ActionView::TemplateError (compile error
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_logo.erb:1: syntax error, unexpected tSTRING_BEG, expecting tASSOC
+...ontroller => 'home', :border='0' ).to_s); @output_buffer.con...
+                              ^) on line #1 of app/views/layouts/_logo.erb:
+1: <%= link_to image_tag('logo/1.jpg', :height => "100%", :width => "100%"), :controller => 'home', :border='0' %>
+
+    app/views/layouts/_logo.erb:5:in `compile!'
+    app/views/layouts/application.html.erb:14
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (60.3ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 21:48:44) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (64.5ms)
+Rendered layouts/_main_menu (0.1ms)
+  [4;36;1mEvent Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (6.1ms)
+  [4;35;1mPartnerLink Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (4.2ms)
+Rendered layouts/_full_widget (11.5ms)
+Completed in 91ms (View: 80, DB: 4) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 21:49:31) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (1.2ms)
+Rendered layouts/_main_menu (0.6ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.8ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.2ms)
+Rendered layouts/_full_widget (8.1ms)
+Completed in 30ms (View: 20, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 21:49:45) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.3ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.0ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.2ms)
+Rendered layouts/_full_widget (8.4ms)
+Completed in 25ms (View: 15, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 192.168.1.2 at 2010-02-10 21:49:46) [GET]
+
+ActionController::RoutingError (No route matches "/news" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 192.168.1.2 at 2010-02-10 21:50:41) [GET]
+
+ActionController::RoutingError (No route matches "/news" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 192.168.1.2 at 2010-02-10 21:50:42) [GET]
+
+ActionController::RoutingError (No route matches "/news" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#index (for 192.168.1.2 at 2010-02-10 21:51:46) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering news/index
+Rendered layouts/_logo (1.1ms)
+Rendered layouts/_main_menu (0.5ms)
+  [4;36;1mEvent Columns (31.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (34.0ms)
+  [4;35;1mPartnerLink Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.2ms)
+Rendered layouts/_full_widget (38.3ms)
+Completed in 103ms (View: 63, DB: 33) | 200 OK [http://192.168.1.2/news]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 21:51:49) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (0.2ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.8ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.2ms)
+Rendered layouts/_full_widget (8.0ms)
+Completed in 34ms (View: 24, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#index (for 192.168.1.2 at 2010-02-10 21:51:52) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering news/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (0.2ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.7ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (2.9ms)
+Rendered layouts/_full_widget (7.8ms)
+Completed in 19ms (View: 8, DB: 3) | 200 OK [http://192.168.1.2/news]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 21:51:53) [GET]
+  [4;36;1mEvent Load (0.7ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (0.3ms)
+  [4;36;1mEvent Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.9ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (7.9ms)
+Completed in 21ms (View: 10, DB: 4) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 21:51:54) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (0.3ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.9ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (8.0ms)
+Completed in 20ms (View: 10, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 21:53:02) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.9ms)
+Rendered layouts/_main_menu (1.1ms)
+  [4;36;1mEvent Columns (12.5ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (15.1ms)
+  [4;35;1mPartnerLink Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.3ms)
+Rendered layouts/_full_widget (19.8ms)
+Completed in 47ms (View: 25, DB: 15) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 21:53:20) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (0.9ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.5ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.5ms)
+Rendered layouts/_full_widget (8.2ms)
+Completed in 25ms (View: 15, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 21:53:45) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (0.9ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.7ms)
+  [4;35;1mPartnerLink Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.6ms)
+Rendered layouts/_full_widget (8.4ms)
+Completed in 26ms (View: 14, DB: 4) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 21:53:52) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (0.9ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.5ms)
+  [4;35;1mPartnerLink Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (7.6ms)
+Completed in 57ms (View: 14, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 21:54:07) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (0.9ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.9ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (8.1ms)
+Completed in 24ms (View: 14, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 21:54:12) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.0ms)
+  [4;36;1mEvent Columns (22.4ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (25.0ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (29.0ms)
+Completed in 45ms (View: 14, DB: 24) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 21:54:23) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (0.9ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.1ms)
+  [4;35;1mPartnerLink Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (4.5ms)
+Rendered layouts/_full_widget (9.8ms)
+Completed in 26ms (View: 16, DB: 4) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 21:54:29) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (0.9ms)
+  [4;36;1mEvent Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.9ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (8.0ms)
+Completed in 23ms (View: 14, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#index (for 192.168.1.2 at 2010-02-10 21:54:48) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering news/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (0.2ms)
+  [4;36;1mEvent Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.0ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (8.1ms)
+Completed in 18ms (View: 8, DB: 4) | 200 OK [http://192.168.1.2/news]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 21:54:52) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (0.2ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.5ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.6ms)
+Rendered layouts/_full_widget (8.4ms)
+Completed in 20ms (View: 10, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 21:55:14) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (0.2ms)
+  [4;36;1mEvent Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.8ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (2.9ms)
+Rendered layouts/_full_widget (8.2ms)
+Completed in 24ms (View: 14, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#index (for 192.168.1.2 at 2010-02-10 21:55:18) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering news/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (0.2ms)
+  [4;36;1mEvent Columns (14.7ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (17.4ms)
+  [4;35;1mPartnerLink Columns (80.6ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (82.6ms)
+Rendered layouts/_full_widget (101.1ms)
+Completed in 111ms (View: 8, DB: 96) | 200 OK [http://192.168.1.2/news]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 21:55:21) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.4ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (0.3ms)
+  [4;36;1mEvent Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.8ms)
+  [4;35;1mPartnerLink Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.2ms)
+Rendered layouts/_full_widget (8.1ms)
+Completed in 59ms (View: 10, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 21:59:42) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.4ms)
+  [4;36;1mEvent Columns (11.9ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (14.4ms)
+  [4;35;1mPartnerLink Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (4.4ms)
+Rendered layouts/_full_widget (19.9ms)
+Completed in 58ms (View: 35, DB: 15) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 192.168.1.2 at 2010-02-10 21:59:44) [GET]
+
+ActionController::RoutingError (No route matches "/fishing" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 192.168.1.2 at 2010-02-10 21:59:58) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (1.3ms)
+Rendered layouts/_main_menu (0.8ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.7ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.3ms)
+Rendered layouts/_full_widget (8.2ms)
+Completed in 83ms (View: 73, DB: 3) | 200 OK [http://192.168.1.2/fishing]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#index (for 192.168.1.2 at 2010-02-10 22:00:02) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.9ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering news/index
+Rendered layouts/_logo (0.8ms)
+Rendered layouts/_main_menu (0.5ms)
+  [4;36;1mEvent Columns (13.6ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (16.1ms)
+  [4;35;1mPartnerLink Columns (28.2ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (30.5ms)
+Rendered layouts/_full_widget (47.8ms)
+Completed in 60ms (View: 10, DB: 43) | 200 OK [http://192.168.1.2/news]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#index (for 192.168.1.2 at 2010-02-10 22:00:08) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering news/index
+Rendered layouts/_logo (0.9ms)
+Rendered layouts/_main_menu (0.7ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.6ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.3ms)
+Rendered layouts/_full_widget (8.0ms)
+Completed in 19ms (View: 9, DB: 3) | 200 OK [http://192.168.1.2/news]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 192.168.1.2 at 2010-02-10 22:00:09) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (0.4ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.6ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (2.9ms)
+Rendered layouts/_full_widget (7.7ms)
+Completed in 19ms (View: 8, DB: 3) | 200 OK [http://192.168.1.2/fishing]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#index (for 192.168.1.2 at 2010-02-10 22:00:10) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering news/index
+Rendered layouts/_logo (0.8ms)
+Rendered layouts/_main_menu (0.5ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.9ms)
+  [4;35;1mPartnerLink Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.3ms)
+Rendered layouts/_full_widget (8.6ms)
+Completed in 20ms (View: 10, DB: 3) | 200 OK [http://192.168.1.2/news]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 22:00:12) [GET]
+  [4;36;1mEvent Load (0.5ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (0.4ms)
+  [4;36;1mEvent Columns (83.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (85.6ms)
+  [4;35;1mPartnerLink Columns (104.5ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (106.6ms)
+Rendered layouts/_full_widget (193.3ms)
+Completed in 207ms (View: 10, DB: 189) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 192.168.1.2 at 2010-02-10 22:00:14) [GET]
+  [4;36;1mEvent Load (0.8ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (0.4ms)
+  [4;36;1mEvent Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.9ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.5ms)
+Rendered layouts/_full_widget (8.6ms)
+Completed in 21ms (View: 9, DB: 4) | 200 OK [http://192.168.1.2/fishing]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#index (for 192.168.1.2 at 2010-02-10 22:00:15) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering news/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (0.4ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.9ms)
+  [4;35;1mPartnerLink Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.7ms)
+Rendered layouts/_full_widget (8.8ms)
+Completed in 19ms (View: 9, DB: 4) | 200 OK [http://192.168.1.2/news]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 22:00:17) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (0.4ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.7ms)
+  [4;35;1mPartnerLink Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (7.9ms)
+Completed in 20ms (View: 10, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventsController#show (for 192.168.1.2 at 2010-02-10 22:00:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEvent Load (0.2ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Rendered layouts/_logo (1.1ms)
+Rendered layouts/_main_menu (0.8ms)
+Rendered layouts/_event_list (0.7ms)
+  [4;36;1mPartnerLink Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.2ms)
+Rendered layouts/_full_widget (4.9ms)
+Completed in 115ms (View: 103, DB: 3) | 200 OK [http://192.168.1.2/events/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 192.168.1.2 at 2010-02-10 22:00:43) [GET]
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.3ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (0.4ms)
+  [4;35;1mEvent Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.1ms)
+  [4;36;1mPartnerLink Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (8.2ms)
+Completed in 19ms (View: 9, DB: 3) | 200 OK [http://192.168.1.2/fishing]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 192.168.1.2 at 2010-02-10 22:01:32) [GET]
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.2ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (0.4ms)
+  [4;35;1mEvent Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.9ms)
+  [4;36;1mPartnerLink Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (5.3ms)
+Rendered layouts/_full_widget (10.7ms)
+Completed in 22ms (View: 11, DB: 3) | 200 OK [http://192.168.1.2/fishing]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 192.168.1.2 at 2010-02-10 22:02:51) [GET]
+  [4;35;1mEvent Load (0.5ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.3ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (3.3ms)
+  [4;35;1mEvent Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.1ms)
+  [4;36;1mPartnerLink Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (8.2ms)
+Completed in 28ms (View: 16, DB: 3) | 200 OK [http://192.168.1.2/fishing]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 192.168.1.2 at 2010-02-10 22:02:53) [GET]
+
+ActionController::RoutingError (No route matches "/gallery" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 192.168.1.2 at 2010-02-10 22:02:54) [GET]
+
+ActionController::RoutingError (No route matches "/gallery" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 192.168.1.2 at 2010-02-10 22:02:55) [GET]
+
+ActionController::RoutingError (No route matches "/gallery" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 192.168.1.2 at 2010-02-10 22:02:57) [GET]
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.2ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.2ms)
+  [4;35;1mEvent Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.5ms)
+  [4;36;1mPartnerLink Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (9.5ms)
+Completed in 21ms (View: 11, DB: 3) | 200 OK [http://192.168.1.2/fishing]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 192.168.1.2 at 2010-02-10 22:03:03) [GET]
+  [4;35;1mEvent Load (0.5ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.3ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.2ms)
+  [4;35;1mEvent Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.6ms)
+  [4;36;1mPartnerLink Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (7.9ms)
+Completed in 20ms (View: 9, DB: 3) | 200 OK [http://192.168.1.2/fishing]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#index (for 192.168.1.2 at 2010-02-10 22:03:04) [GET]
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.2ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering news/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.3ms)
+  [4;35;1mEvent Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.7ms)
+  [4;36;1mPartnerLink Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (7.8ms)
+Completed in 19ms (View: 10, DB: 3) | 200 OK [http://192.168.1.2/news]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 192.168.1.2 at 2010-02-10 22:03:05) [GET]
+
+ActionController::RoutingError (No route matches "/gallery" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 192.168.1.2 at 2010-02-10 22:03:06) [GET]
+
+ActionController::RoutingError (No route matches "/gallery" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 22:03:29) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (1.6ms)
+Rendered layouts/_main_menu (3.5ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (155.4ms)
+  [4;35;1mPartnerLink Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (29.1ms)
+Rendered layouts/_full_widget (247.1ms)
+Completed in 363ms (View: 303, DB: 4) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GuestRoomController#index (for 192.168.1.2 at 2010-02-10 22:03:33) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering guest_room/index
+Rendered layouts/_logo (0.8ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (122.9ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (125.7ms)
+  [4;35;1mPartnerLink Columns (222.9ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (225.0ms)
+Rendered layouts/_full_widget (351.9ms)
+Completed in 373ms (View: 19, DB: 347) | 200 OK [http://192.168.1.2/guest_room]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactController#index (for 192.168.1.2 at 2010-02-10 22:03:35) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering contact/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.2ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.6ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (7.8ms)
+Completed in 26ms (View: 16, DB: 3) | 200 OK [http://192.168.1.2/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BootingController#index (for 192.168.1.2 at 2010-02-10 22:03:37) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering booting/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.4ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.5ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (7.8ms)
+Completed in 26ms (View: 16, DB: 3) | 200 OK [http://192.168.1.2/booting]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PressaController#index (for 192.168.1.2 at 2010-02-10 22:03:38) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering pressa/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.3ms)
+  [4;36;1mEvent Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.7ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (7.9ms)
+Completed in 26ms (View: 16, DB: 3) | 200 OK [http://192.168.1.2/pressa]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 192.168.1.2 at 2010-02-10 22:03:39) [GET]
+  [4;36;1mEvent Load (1.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering gallery/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.2ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.3ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (8.5ms)
+Completed in 30ms (View: 17, DB: 4) | 200 OK [http://192.168.1.2/gallery]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 192.168.1.2 at 2010-02-10 22:03:40) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.8ms)
+Rendered layouts/_main_menu (1.4ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.6ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.2ms)
+Rendered layouts/_full_widget (7.9ms)
+Completed in 87ms (View: 17, DB: 3) | 200 OK [http://192.168.1.2/fishing]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#index (for 192.168.1.2 at 2010-02-10 22:03:41) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering news/index
+Rendered layouts/_logo (0.8ms)
+Rendered layouts/_main_menu (1.2ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.8ms)
+  [4;35;1mPartnerLink Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.4ms)
+Rendered layouts/_full_widget (8.3ms)
+Completed in 27ms (View: 16, DB: 3) | 200 OK [http://192.168.1.2/news]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 192.168.1.2 at 2010-02-10 22:13:47) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering gallery/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.3ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.6ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (7.7ms)
+Completed in 20ms (View: 9, DB: 3) | 200 OK [http://192.168.1.2/gallery]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 192.168.1.2 at 2010-02-10 22:15:44) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering gallery/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (2.3ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (64.4ms)
+  [4;35;1mPartnerLink Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.4ms)
+Rendered layouts/_full_widget (69.1ms)
+Completed in 91ms (View: 80, DB: 3) | 200 OK [http://192.168.1.2/gallery]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#index (for 192.168.1.2 at 2010-02-10 22:15:46) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering news/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.2ms)
+  [4;36;1mEvent Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.7ms)
+  [4;35;1mPartnerLink Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.7ms)
+Rendered layouts/_full_widget (8.6ms)
+Completed in 21ms (View: 10, DB: 4) | 200 OK [http://192.168.1.2/news]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PressaController#index (for 192.168.1.2 at 2010-02-10 22:15:49) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering pressa/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.2ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.7ms)
+  [4;35;1mPartnerLink Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.5ms)
+Rendered layouts/_full_widget (8.3ms)
+Completed in 20ms (View: 10, DB: 4) | 200 OK [http://192.168.1.2/pressa]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PressaController#index (for 192.168.1.2 at 2010-02-10 22:16:10) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering pressa/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.2ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.7ms)
+  [4;35;1mPartnerLink Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.8ms)
+Rendered layouts/_full_widget (8.7ms)
+Completed in 21ms (View: 10, DB: 3) | 200 OK [http://192.168.1.2/pressa]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PressaController#index (for 192.168.1.2 at 2010-02-10 22:16:14) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering pressa/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.3ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.6ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (7.9ms)
+Completed in 21ms (View: 10, DB: 3) | 200 OK [http://192.168.1.2/pressa]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PressaController#index (for 192.168.1.2 at 2010-02-10 22:16:18) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering pressa/index
+Rendered layouts/_logo (0.8ms)
+Rendered layouts/_main_menu (1.5ms)
+  [4;36;1mEvent Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.3ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.3ms)
+Rendered layouts/_full_widget (8.9ms)
+Completed in 68ms (View: 13, DB: 4) | 200 OK [http://192.168.1.2/pressa]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PressaController#index (for 192.168.1.2 at 2010-02-10 22:16:22) [GET]
+  [4;36;1mEvent Load (0.5ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering pressa/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.2ms)
+  [4;36;1mEvent Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.4ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (8.5ms)
+Completed in 21ms (View: 10, DB: 4) | 200 OK [http://192.168.1.2/pressa]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PressaController#index (for 192.168.1.2 at 2010-02-10 22:16:27) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering pressa/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.2ms)
+  [4;36;1mEvent Columns (3.7ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (6.5ms)
+  [4;35;1mPartnerLink Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.5ms)
+Rendered layouts/_full_widget (11.4ms)
+Completed in 23ms (View: 10, DB: 6) | 200 OK [http://192.168.1.2/pressa]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#index (for 192.168.1.2 at 2010-02-10 22:16:30) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering news/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.3ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.2ms)
+  [4;35;1mPartnerLink Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.5ms)
+Rendered layouts/_full_widget (9.0ms)
+Completed in 22ms (View: 12, DB: 3) | 200 OK [http://192.168.1.2/news]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 192.168.1.2 at 2010-02-10 22:16:31) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.2ms)
+  [4;36;1mEvent Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.9ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (8.0ms)
+Completed in 20ms (View: 10, DB: 3) | 200 OK [http://192.168.1.2/fishing]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 192.168.1.2 at 2010-02-10 22:17:37) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.2ms)
+  [4;36;1mEvent Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.5ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (8.7ms)
+Completed in 21ms (View: 10, DB: 4) | 200 OK [http://192.168.1.2/fishing]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 192.168.1.2 at 2010-02-10 22:17:48) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.2ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.6ms)
+  [4;35;1mPartnerLink Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (47.7ms)
+Rendered layouts/_full_widget (53.0ms)
+Completed in 65ms (View: 55, DB: 3) | 200 OK [http://192.168.1.2/fishing]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 192.168.1.2 at 2010-02-10 22:19:24) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.3ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.7ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (7.9ms)
+Completed in 27ms (View: 17, DB: 3) | 200 OK [http://192.168.1.2/fishing]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 192.168.1.2 at 2010-02-10 22:20:17) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.3ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.9ms)
+  [4;35;1mPartnerLink Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (5.1ms)
+Rendered layouts/_full_widget (10.4ms)
+Completed in 27ms (View: 16, DB: 4) | 200 OK [http://192.168.1.2/fishing]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 192.168.1.2 at 2010-02-10 22:20:29) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.2ms)
+  [4;36;1mEvent Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.8ms)
+  [4;35;1mPartnerLink Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (5.4ms)
+Rendered layouts/_full_widget (11.4ms)
+Completed in 23ms (View: 12, DB: 5) | 200 OK [http://192.168.1.2/fishing]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 192.168.1.2 at 2010-02-10 22:20:51) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.4ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.2ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.6ms)
+  [4;35;1mPartnerLink Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (7.7ms)
+Completed in 22ms (View: 9, DB: 3) | 200 OK [http://192.168.1.2/fishing]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 192.168.1.2 at 2010-02-10 22:20:57) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.2ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.7ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (7.8ms)
+Completed in 20ms (View: 10, DB: 3) | 200 OK [http://192.168.1.2/fishing]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 192.168.1.2 at 2010-02-10 22:22:51) [GET]
+  [4;36;1mEvent Load (0.5ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.0ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.9ms)
+Rendered layouts/_full_widget (9.3ms)
+Completed in 27ms (View: 16, DB: 3) | 200 OK [http://192.168.1.2/fishing]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 192.168.1.2 at 2010-02-10 22:22:52) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering gallery/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.3ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.1ms)
+  [4;35;1mPartnerLink Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (4.6ms)
+Rendered layouts/_full_widget (9.9ms)
+Completed in 22ms (View: 12, DB: 3) | 200 OK [http://192.168.1.2/gallery]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PressaController#index (for 192.168.1.2 at 2010-02-10 22:22:54) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering pressa/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.2ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.3ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.5ms)
+Rendered layouts/_full_widget (9.0ms)
+Completed in 22ms (View: 11, DB: 3) | 200 OK [http://192.168.1.2/pressa]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BootingController#index (for 192.168.1.2 at 2010-02-10 22:22:55) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering booting/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.7ms)
+  [4;35;1mPartnerLink Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.7ms)
+Rendered layouts/_full_widget (8.6ms)
+Completed in 21ms (View: 11, DB: 3) | 200 OK [http://192.168.1.2/booting]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GuestRoomController#index (for 192.168.1.2 at 2010-02-10 22:22:57) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering guest_room/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.2ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.6ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (4.0ms)
+Rendered layouts/_full_widget (9.3ms)
+Completed in 21ms (View: 11, DB: 3) | 200 OK [http://192.168.1.2/guest_room]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#index (for 192.168.1.2 at 2010-02-10 22:23:01) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering news/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.8ms)
+  [4;35;1mPartnerLink Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (8.2ms)
+Completed in 44ms (View: 34, DB: 3) | 200 OK [http://192.168.1.2/news]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventsController#show (for 192.168.1.2 at 2010-02-10 22:23:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEvent Load (0.7ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+  [4;36;1mEvent Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEvent Load (0.2ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.4ms)
+Rendered layouts/_event_list (1.0ms)
+  [4;36;1mPartnerLink Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (4.3ms)
+Rendered layouts/_full_widget (7.1ms)
+Completed in 109ms (View: 97, DB: 4) | 200 OK [http://192.168.1.2/events/1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#index (for 192.168.1.2 at 2010-02-10 22:23:05) [GET]
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.3ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering news/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.4ms)
+  [4;35;1mEvent Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.7ms)
+  [4;36;1mPartnerLink Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.5ms)
+Rendered layouts/_full_widget (8.3ms)
+Completed in 21ms (View: 11, DB: 3) | 200 OK [http://192.168.1.2/news]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#index (for 192.168.1.2 at 2010-02-10 22:24:29) [GET]
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.3ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering news/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.2ms)
+  [4;35;1mEvent Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.1ms)
+  [4;36;1mPartnerLink Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.2ms)
+Rendered layouts/_full_widget (8.8ms)
+Completed in 26ms (View: 15, DB: 3) | 200 OK [http://192.168.1.2/news]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#index (for 192.168.1.2 at 2010-02-10 22:24:55) [GET]
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.5ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering news/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (2.5ms)
+  [4;35;1mEvent Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.7ms)
+  [4;36;1mPartnerLink Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.9ms)
+Rendered layouts/_full_widget (8.7ms)
+Completed in 71ms (View: 61, DB: 3) | 200 OK [http://192.168.1.2/news]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#index (for 192.168.1.2 at 2010-02-10 22:24:57) [GET]
+  Parameters: {"class"=>"main_menu"}
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.5ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering news/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.3ms)
+  [4;35;1mEvent Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.8ms)
+  [4;36;1mPartnerLink Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (8.0ms)
+Completed in 22ms (View: 10, DB: 4) | 200 OK [http://192.168.1.2/news?class=main_menu]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 192.168.1.2 at 2010-02-10 22:24:59) [GET]
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.3ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (2.1ms)
+  [4;35;1mEvent Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.8ms)
+  [4;36;1mPartnerLink Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.6ms)
+Rendered layouts/_full_widget (8.9ms)
+Completed in 22ms (View: 11, DB: 4) | 200 OK [http://192.168.1.2/fishing]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 192.168.1.2 at 2010-02-10 22:25:02) [GET]
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.2ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (2.7ms)
+  [4;35;1mEvent Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.9ms)
+  [4;36;1mPartnerLink Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.2ms)
+Rendered layouts/_full_widget (8.3ms)
+Completed in 25ms (View: 15, DB: 3) | 200 OK [http://192.168.1.2/fishing]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 192.168.1.2 at 2010-02-10 22:33:39) [GET]
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.3ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.7ms)
+ERROR: compiling _run_erb_app47views47layouts47_main_menu46erb_locals_main_menu_object RAISED compile error
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:4: syntax error, unexpected tSTRING_BEG, expecting ')'
+... "NEWS", :controller => :news' ).to_s); @output_buffer.conca...
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:4: syntax error, unexpected tINTEGER, expecting ')'
+...at "\n  </td>\n  <td width='14%'>\n    "
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:7: syntax error, unexpected tINTEGER, expecting ')'
+...at "\n  </td>\n  <td width='14%'>\n    "
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:10: syntax error, unexpected tINTEGER, expecting ')'
+...at "\n  </td>\n  <td width='14%'>\n    "
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:13: syntax error, unexpected tINTEGER, expecting ')'
+...at "\n  </td>\n  <td width='14%'>\n    "
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:16: syntax error, unexpected tINTEGER, expecting ')'
+...at "\n  </td>\n  <td width='14%'>\n    "
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:19: syntax error, unexpected tINTEGER, expecting ')'
+...at "\n  </td>\n  <td width='14%'>\n    "
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:19: unterminated string meets end of file
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:19: syntax error, unexpected $end, expecting ')'
+Function body:           def _run_erb_app47views47layouts47_main_menu46erb_locals_main_menu_object(local_assigns)
+            old_output_buffer = output_buffer;main_menu = local_assigns[:main_menu];object = local_assigns[:object];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<table name='main_menu' width=100% height='100%' border='0' cellspacing='0'>\n<tr valign='top' align='left' style='font-family:arial;text-align:center;font-size:11pt;color:white;background-color:black'>\n  <td width='14%'>\n    "
+
+
+; @output_buffer.concat(( link_to "NEWS", :controller => :news' ).to_s); @output_buffer.concat "\n  </td>\n  <td width='14%'>\n    "
+
+
+; @output_buffer.concat(( link_to "FISHING", :controller => :fishing ).to_s); @output_buffer.concat "\n  </td>\n  <td width='14%'>\n    "
+
+
+; @output_buffer.concat(( link_to "GALLERY", :controller => :gallery ).to_s); @output_buffer.concat "\n  </td>\n  <td width='14%'>\n    "
+
+
+; @output_buffer.concat(( link_to "PRESSA", :controller => :pressa ).to_s); @output_buffer.concat "\n  </td>\n  <td width='14%'>\n    "
+
+
+; @output_buffer.concat(( link_to "BOOTING", :controller => :booting ).to_s); @output_buffer.concat "\n  </td>\n  <td width='14%'>\n    "
+
+
+; @output_buffer.concat(( link_to "GUEST ROOM", :controller => :guest_room ).to_s); @output_buffer.concat "\n  </td>\n  <td width='14%'>\n    "
+
+
+; @output_buffer.concat(( link_to "CONTACT", :controller => :contact ).to_s); @output_buffer.concat "\n  </td>\n</tr>\n</table>\n"
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:19:in `compile!'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:20:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:19:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/partials.rb:184:in `render_partial'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:267:in `render'
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/application.html.erb:20:in `_run_erb_app47views47layouts47application46html46erb'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:306:in `with_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:30:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:352:in `_render_with_layout'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+
+ActionView::TemplateError (compile error
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:4: syntax error, unexpected tSTRING_BEG, expecting ')'
+... "NEWS", :controller => :news' ).to_s); @output_buffer.conca...
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:4: syntax error, unexpected tINTEGER, expecting ')'
+...at "\n  </td>\n  <td width='14%'>\n    "
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:7: syntax error, unexpected tINTEGER, expecting ')'
+...at "\n  </td>\n  <td width='14%'>\n    "
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:10: syntax error, unexpected tINTEGER, expecting ')'
+...at "\n  </td>\n  <td width='14%'>\n    "
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:13: syntax error, unexpected tINTEGER, expecting ')'
+...at "\n  </td>\n  <td width='14%'>\n    "
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:16: syntax error, unexpected tINTEGER, expecting ')'
+...at "\n  </td>\n  <td width='14%'>\n    "
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:19: syntax error, unexpected tINTEGER, expecting ')'
+...at "\n  </td>\n  <td width='14%'>\n    "
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:19: unterminated string meets end of file
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:19: syntax error, unexpected $end, expecting ')') on line #4 of app/views/layouts/_main_menu.erb:
+1: <table name='main_menu' width=100% height='100%' border='0' cellspacing='0'>
+2: <tr valign='top' align='left' style='font-family:arial;text-align:center;font-size:11pt;color:white;background-color:black'>
+3:   <td width='14%'>
+4:     <%= link_to "NEWS", :controller => :news' %>
+5:   </td>
+6:   <td width='14%'>
+7:     <%= link_to "FISHING", :controller => :fishing %>
+
+    app/views/layouts/_main_menu.erb:19:in `compile!'
+    app/views/layouts/application.html.erb:20
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (58.0ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 192.168.1.2 at 2010-02-10 22:34:58) [GET]
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.2ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.7ms)
+ERROR: compiling _run_erb_app47views47layouts47_main_menu46erb_locals_main_menu_object RAISED compile error
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:4: syntax error, unexpected tSTRING_BEG, expecting ')'
+... "NEWS", :controller => :news' ).to_s); @output_buffer.conca...
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:4: syntax error, unexpected tINTEGER, expecting ')'
+...at "\n  </td>\n  <td width='14%'>\n    "
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:7: syntax error, unexpected tINTEGER, expecting ')'
+...at "\n  </td>\n  <td width='14%'>\n    "
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:10: syntax error, unexpected tINTEGER, expecting ')'
+...at "\n  </td>\n  <td width='14%'>\n    "
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:13: syntax error, unexpected tINTEGER, expecting ')'
+...at "\n  </td>\n  <td width='14%'>\n    "
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:16: syntax error, unexpected tINTEGER, expecting ')'
+...at "\n  </td>\n  <td width='14%'>\n    "
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:19: syntax error, unexpected tINTEGER, expecting ')'
+...at "\n  </td>\n  <td width='14%'>\n    "
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:19: unterminated string meets end of file
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:19: syntax error, unexpected $end, expecting ')'
+Function body:           def _run_erb_app47views47layouts47_main_menu46erb_locals_main_menu_object(local_assigns)
+            old_output_buffer = output_buffer;main_menu = local_assigns[:main_menu];object = local_assigns[:object];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<table name='main_menu' width=100% height='100%' border='0' cellspacing='0'>\n<tr valign='top' align='left' class='main_menu'>\n  <td width='14%'>\n    "
+
+
+; @output_buffer.concat(( link_to "NEWS", :controller => :news' ).to_s); @output_buffer.concat "\n  </td>\n  <td width='14%'>\n    "
+
+
+; @output_buffer.concat(( link_to "FISHING", :controller => :fishing ).to_s); @output_buffer.concat "\n  </td>\n  <td width='14%'>\n    "
+
+
+; @output_buffer.concat(( link_to "GALLERY", :controller => :gallery ).to_s); @output_buffer.concat "\n  </td>\n  <td width='14%'>\n    "
+
+
+; @output_buffer.concat(( link_to "PRESSA", :controller => :pressa ).to_s); @output_buffer.concat "\n  </td>\n  <td width='14%'>\n    "
+
+
+; @output_buffer.concat(( link_to "BOOTING", :controller => :booting ).to_s); @output_buffer.concat "\n  </td>\n  <td width='14%'>\n    "
+
+
+; @output_buffer.concat(( link_to "GUEST ROOM", :controller => :guest_room ).to_s); @output_buffer.concat "\n  </td>\n  <td width='14%'>\n    "
+
+
+; @output_buffer.concat(( link_to "CONTACT", :controller => :contact ).to_s); @output_buffer.concat "\n  </td>\n</tr>\n</table>\n"
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:19:in `compile!'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:20:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:19:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/partials.rb:184:in `render_partial'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:267:in `render'
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/application.html.erb:20:in `_run_erb_app47views47layouts47application46html46erb'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:306:in `with_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:30:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:352:in `_render_with_layout'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+
+ActionView::TemplateError (compile error
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:4: syntax error, unexpected tSTRING_BEG, expecting ')'
+... "NEWS", :controller => :news' ).to_s); @output_buffer.conca...
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:4: syntax error, unexpected tINTEGER, expecting ')'
+...at "\n  </td>\n  <td width='14%'>\n    "
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:7: syntax error, unexpected tINTEGER, expecting ')'
+...at "\n  </td>\n  <td width='14%'>\n    "
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:10: syntax error, unexpected tINTEGER, expecting ')'
+...at "\n  </td>\n  <td width='14%'>\n    "
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:13: syntax error, unexpected tINTEGER, expecting ')'
+...at "\n  </td>\n  <td width='14%'>\n    "
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:16: syntax error, unexpected tINTEGER, expecting ')'
+...at "\n  </td>\n  <td width='14%'>\n    "
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:19: syntax error, unexpected tINTEGER, expecting ')'
+...at "\n  </td>\n  <td width='14%'>\n    "
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:19: unterminated string meets end of file
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:19: syntax error, unexpected $end, expecting ')') on line #4 of app/views/layouts/_main_menu.erb:
+1: <table name='main_menu' width=100% height='100%' border='0' cellspacing='0'>
+2: <tr valign='top' align='left' class='main_menu'>
+3:   <td width='14%'>
+4:     <%= link_to "NEWS", :controller => :news' %>
+5:   </td>
+6:   <td width='14%'>
+7:     <%= link_to "FISHING", :controller => :fishing %>
+
+    app/views/layouts/_main_menu.erb:19:in `compile!'
+    app/views/layouts/application.html.erb:20
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (56.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 192.168.1.2 at 2010-02-10 22:35:07) [GET]
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.4ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.7ms)
+ERROR: compiling _run_erb_app47views47layouts47_main_menu46erb_locals_main_menu_object RAISED compile error
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:4: syntax error, unexpected tSTRING_BEG, expecting ')'
+... "NEWS", :controller => :news' ).to_s); @output_buffer.conca...
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:4: syntax error, unexpected tINTEGER, expecting ')'
+...at "\n  </td>\n  <td width='14%'>\n    "
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:7: syntax error, unexpected tINTEGER, expecting ')'
+...at "\n  </td>\n  <td width='14%'>\n    "
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:10: syntax error, unexpected tINTEGER, expecting ')'
+...at "\n  </td>\n  <td width='14%'>\n    "
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:13: syntax error, unexpected tINTEGER, expecting ')'
+...at "\n  </td>\n  <td width='14%'>\n    "
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:16: syntax error, unexpected tINTEGER, expecting ')'
+...at "\n  </td>\n  <td width='14%'>\n    "
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:19: syntax error, unexpected tINTEGER, expecting ')'
+...at "\n  </td>\n  <td width='14%'>\n    "
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:19: unterminated string meets end of file
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:19: syntax error, unexpected $end, expecting ')'
+Function body:           def _run_erb_app47views47layouts47_main_menu46erb_locals_main_menu_object(local_assigns)
+            old_output_buffer = output_buffer;main_menu = local_assigns[:main_menu];object = local_assigns[:object];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<table name='main_menu' width=100% height='100%' border='0' cellspacing='0'>\n<tr valign='top' align='left' class='main_menu'>\n  <td width='14%'>\n    "
+
+
+; @output_buffer.concat(( link_to "NEWS", :controller => :news' ).to_s); @output_buffer.concat "\n  </td>\n  <td width='14%'>\n    "
+
+
+; @output_buffer.concat(( link_to "FISHING", :controller => :fishing ).to_s); @output_buffer.concat "\n  </td>\n  <td width='14%'>\n    "
+
+
+; @output_buffer.concat(( link_to "GALLERY", :controller => :gallery ).to_s); @output_buffer.concat "\n  </td>\n  <td width='14%'>\n    "
+
+
+; @output_buffer.concat(( link_to "PRESSA", :controller => :pressa ).to_s); @output_buffer.concat "\n  </td>\n  <td width='14%'>\n    "
+
+
+; @output_buffer.concat(( link_to "BOOTING", :controller => :booting ).to_s); @output_buffer.concat "\n  </td>\n  <td width='14%'>\n    "
+
+
+; @output_buffer.concat(( link_to "GUEST ROOM", :controller => :guest_room ).to_s); @output_buffer.concat "\n  </td>\n  <td width='14%'>\n    "
+
+
+; @output_buffer.concat(( link_to "CONTACT", :controller => :contact ).to_s); @output_buffer.concat "\n  </td>\n</tr>\n</table>\n"
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:19:in `compile!'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:20:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:19:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/partials.rb:184:in `render_partial'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:267:in `render'
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/application.html.erb:20:in `_run_erb_app47views47layouts47application46html46erb'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:306:in `with_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:30:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:352:in `_render_with_layout'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+
+ActionView::TemplateError (compile error
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:4: syntax error, unexpected tSTRING_BEG, expecting ')'
+... "NEWS", :controller => :news' ).to_s); @output_buffer.conca...
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:4: syntax error, unexpected tINTEGER, expecting ')'
+...at "\n  </td>\n  <td width='14%'>\n    "
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:7: syntax error, unexpected tINTEGER, expecting ')'
+...at "\n  </td>\n  <td width='14%'>\n    "
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:10: syntax error, unexpected tINTEGER, expecting ')'
+...at "\n  </td>\n  <td width='14%'>\n    "
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:13: syntax error, unexpected tINTEGER, expecting ')'
+...at "\n  </td>\n  <td width='14%'>\n    "
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:16: syntax error, unexpected tINTEGER, expecting ')'
+...at "\n  </td>\n  <td width='14%'>\n    "
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:19: syntax error, unexpected tINTEGER, expecting ')'
+...at "\n  </td>\n  <td width='14%'>\n    "
+                              ^
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:19: unterminated string meets end of file
+/Users/rilley_elf/_dev/rails/chavanga/app/views/layouts/_main_menu.erb:19: syntax error, unexpected $end, expecting ')') on line #4 of app/views/layouts/_main_menu.erb:
+1: <table name='main_menu' width=100% height='100%' border='0' cellspacing='0'>
+2: <tr valign='top' align='left' class='main_menu'>
+3:   <td width='14%'>
+4:     <%= link_to "NEWS", :controller => :news' %>
+5:   </td>
+6:   <td width='14%'>
+7:     <%= link_to "FISHING", :controller => :fishing %>
+
+    app/views/layouts/_main_menu.erb:19:in `compile!'
+    app/views/layouts/application.html.erb:20
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (58.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 192.168.1.2 at 2010-02-10 22:35:29) [GET]
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.3ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (2.2ms)
+  [4;35;1mEvent Columns (19.9ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (22.7ms)
+  [4;36;1mPartnerLink Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (27.0ms)
+Completed in 44ms (View: 14, DB: 22) | 200 OK [http://192.168.1.2/fishing]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 192.168.1.2 at 2010-02-10 22:35:31) [GET]
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.2ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering gallery/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.2ms)
+  [4;35;1mEvent Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.6ms)
+  [4;36;1mPartnerLink Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (7.7ms)
+Completed in 20ms (View: 9, DB: 3) | 200 OK [http://192.168.1.2/gallery]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PressaController#index (for 192.168.1.2 at 2010-02-10 22:35:33) [GET]
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.6ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering pressa/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.3ms)
+  [4;35;1mEvent Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.0ms)
+  [4;36;1mPartnerLink Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.3ms)
+Rendered layouts/_full_widget (8.7ms)
+Completed in 21ms (View: 10, DB: 5) | 200 OK [http://192.168.1.2/pressa]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#index (for 192.168.1.2 at 2010-02-10 22:36:36) [GET]
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.6ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering news/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.2ms)
+  [4;35;1mEvent Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.8ms)
+  [4;36;1mPartnerLink Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.2ms)
+Rendered layouts/_full_widget (8.1ms)
+Completed in 34ms (View: 24, DB: 4) | 200 OK [http://192.168.1.2/news]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 192.168.1.2 at 2010-02-10 22:36:37) [GET]
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.2ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.2ms)
+  [4;35;1mEvent Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.1ms)
+  [4;36;1mPartnerLink Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (8.4ms)
+Completed in 20ms (View: 10, DB: 3) | 200 OK [http://192.168.1.2/fishing]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 192.168.1.2 at 2010-02-10 22:36:54) [GET]
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.3ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.2ms)
+  [4;35;1mEvent Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (6.5ms)
+  [4;36;1mPartnerLink Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (4.5ms)
+Rendered layouts/_full_widget (12.2ms)
+Completed in 29ms (View: 14, DB: 7) | 200 OK [http://192.168.1.2/fishing]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 192.168.1.2 at 2010-02-10 22:37:16) [GET]
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.2ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.3ms)
+  [4;35;1mEvent Columns (13.9ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (16.6ms)
+  [4;36;1mPartnerLink Columns (17.4ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (19.8ms)
+Rendered layouts/_full_widget (37.7ms)
+Completed in 50ms (View: 11, DB: 32) | 200 OK [http://192.168.1.2/fishing]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 192.168.1.2 at 2010-02-10 22:37:37) [GET]
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.3ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.3ms)
+  [4;35;1mEvent Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.2ms)
+  [4;36;1mPartnerLink Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.3ms)
+Rendered layouts/_full_widget (8.7ms)
+Completed in 72ms (View: 62, DB: 3) | 200 OK [http://192.168.1.2/fishing]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 192.168.1.2 at 2010-02-10 22:39:48) [GET]
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.3ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (2.3ms)
+  [4;35;1mEvent Columns (19.4ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (22.0ms)
+  [4;36;1mPartnerLink Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (26.3ms)
+Completed in 53ms (View: 24, DB: 22) | 200 OK [http://192.168.1.2/fishing]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 192.168.1.2 at 2010-02-10 22:40:36) [GET]
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.5ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (2.8ms)
+  [4;35;1mEvent Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.5ms)
+  [4;36;1mPartnerLink Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.4ms)
+Rendered layouts/_full_widget (11.2ms)
+Completed in 28ms (View: 18, DB: 3) | 200 OK [http://192.168.1.2/fishing]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventsController#show (for 192.168.1.2 at 2010-02-10 22:40:40) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.3ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+  [4;35;1mEvent Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mEvent Load (0.2ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.8ms)
+Rendered layouts/_event_list (0.6ms)
+  [4;35;1mPartnerLink Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (4.8ms)
+Completed in 36ms (View: 23, DB: 3) | 200 OK [http://192.168.1.2/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#index (for 192.168.1.2 at 2010-02-10 22:40:42) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering news/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.2ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_full_widget (8.5ms)
+Completed in 39ms (View: 29, DB: 3) | 200 OK [http://192.168.1.2/news]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventsController#show (for 192.168.1.2 at 2010-02-10 22:40:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (1.6ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEvent Load (0.2ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.8ms)
+Rendered layouts/_event_list (0.6ms)
+  [4;36;1mPartnerLink Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.3ms)
+Rendered layouts/_full_widget (4.9ms)
+Completed in 23ms (View: 10, DB: 5) | 200 OK [http://192.168.1.2/events/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 22:40:44) [GET]
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.3ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;35;1mEvent Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.3ms)
+  [4;36;1mPartnerLink Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.4ms)
+Rendered layouts/_full_widget (9.0ms)
+Completed in 97ms (View: 31, DB: 3) | 200 OK [http://192.168.1.2/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventsController#show (for 192.168.1.2 at 2010-02-10 22:40:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.3ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+  [4;35;1mEvent Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mEvent Load (0.2ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.8ms)
+Rendered layouts/_event_list (0.7ms)
+  [4;35;1mPartnerLink Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (4.5ms)
+Rendered layouts/_full_widget (6.3ms)
+Completed in 23ms (View: 10, DB: 4) | 200 OK [http://192.168.1.2/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventsController#show (for 192.168.1.2 at 2010-02-10 22:41:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEvent Load (1.1ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEvent Load (0.2ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.9ms)
+Rendered layouts/_event_list (0.7ms)
+  [4;36;1mPartnerLink Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.3ms)
+Rendered layouts/_full_widget (5.2ms)
+Completed in 23ms (View: 10, DB: 4) | 200 OK [http://192.168.1.2/events/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventsController#show (for 192.168.1.2 at 2010-02-10 22:41:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.3ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+  [4;35;1mEvent Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mEvent Load (0.2ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.9ms)
+Rendered layouts/_event_list (0.7ms)
+  [4;35;1mPartnerLink Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.7ms)
+Rendered layouts/_full_widget (5.6ms)
+Completed in 23ms (View: 10, DB: 4) | 200 OK [http://192.168.1.2/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventsController#show (for 192.168.1.2 at 2010-02-10 22:41:36) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEvent Load (0.2ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.8ms)
+Rendered layouts/_event_list (0.7ms)
+  [4;36;1mPartnerLink Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (6.2ms)
+Rendered layouts/_full_widget (8.1ms)
+Completed in 24ms (View: 11, DB: 5) | 200 OK [http://192.168.1.2/events/1]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventsController#show (for 192.168.1.2 at 2010-02-10 22:41:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.3ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+  [4;35;1mEvent Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mEvent Load (0.2ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.9ms)
+Rendered layouts/_event_list (0.7ms)
+  [4;35;1mPartnerLink Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (4.0ms)
+Rendered layouts/_full_widget (5.8ms)
+Completed in 22ms (View: 10, DB: 4) | 200 OK [http://192.168.1.2/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventsController#show (for 192.168.1.2 at 2010-02-10 22:42:13) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.8ms)
+Rendered layouts/_event_list (0.7ms)
+  [4;36;1mPartnerLink Columns (3.3ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (5.5ms)
+Rendered layouts/_full_widget (7.3ms)
+Completed in 24ms (View: 10, DB: 6) | 200 OK [http://192.168.1.2/events/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventsController#show (for 192.168.1.2 at 2010-02-10 22:42:19) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (1.3ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+  [4;35;1mEvent Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.8ms)
+Rendered layouts/_event_list (0.6ms)
+  [4;35;1mPartnerLink Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (4.0ms)
+Rendered layouts/_full_widget (5.8ms)
+Completed in 24ms (View: 10, DB: 5) | 200 OK [http://192.168.1.2/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventsController#show (for 192.168.1.2 at 2010-02-10 22:42:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.9ms)
+Rendered layouts/_event_list (0.7ms)
+  [4;36;1mPartnerLink Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.8ms)
+Rendered layouts/_full_widget (5.5ms)
+Completed in 22ms (View: 10, DB: 4) | 200 OK [http://192.168.1.2/events/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventsController#show (for 192.168.1.2 at 2010-02-10 22:42:48) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;36;1mPartnerLink Load (0.3ms)[0m   [0;1mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+  [4;35;1mEvent Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mEvent Load (0.2ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.8ms)
+Rendered layouts/_event_list (0.6ms)
+  [4;35;1mPartnerLink Columns (32.0ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (34.2ms)
+Rendered layouts/_full_widget (35.8ms)
+Completed in 53ms (View: 9, DB: 34) | 200 OK [http://192.168.1.2/events/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.1.2 at 2010-02-10 22:44:14) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.9ms)
+  [4;36;1mEvent Columns (12.4ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (15.0ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (19.2ms)
+Completed in 34ms (View: 12, DB: 14) | 200 OK [http://192.168.1.2/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing GalleryController#index (for 192.168.1.2 at 2010-02-10 22:44:26) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering gallery/index
+Rendered layouts/_logo (0.6ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.8ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (7.9ms)
+Completed in 48ms (View: 38, DB: 3) | 200 OK [http://192.168.1.2/gallery]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FishingController#index (for 192.168.1.2 at 2010-02-10 22:44:31) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering fishing/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.6ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_full_widget (7.7ms)
+Completed in 48ms (View: 38, DB: 3) | 200 OK [http://192.168.1.2/fishing]

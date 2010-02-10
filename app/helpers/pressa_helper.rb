@@ -1,0 +1,2 @@
+module PressaHelper
+end

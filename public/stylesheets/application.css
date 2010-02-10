@@ -1,0 +1,35 @@
+body { background-color: #cccccc; }
+
+table.main { 
+    background-color: #ffffff; 
+    color:#000000;
+    text-align:justify;
+    cellspacing:0;
+}
+
+tr.main_menu {
+    font-family:arial;
+    text-align:center;
+    font-size:11pt;
+    color:white;
+    background-color:black;
+}
+
+a { 
+    color: #000000;
+}
+a:visited { 
+    color: #000000;
+}
+a:hover {
+    color:#555555;
+}
+a.main_menu { 
+    color: #000;
+}
+a.main_menu:visited { 
+    color: #999999;
+}
+a.main_menu:hover { 
+    color: #fff;
+}
