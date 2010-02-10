@@ -24,8 +24,9 @@ a:visited {
 a:hover {
     color:#555555;
 }
+
 a.main_menu { 
-    color: #000;
+    color: #999999;
 }
 a.main_menu:visited { 
     color: #999999;
