@@ -22,7 +22,7 @@ class ApplicationController < ActionController::Base
   end
   
   def load_google_map
-    @map_header = GMap.header
+#    @map_header = GMap.header
     application_id = 'ABQIAAAAshX1rAk9Jx09XvfOOnHuVBQMTomGlBTa1OkUsqCzpm816lUX3xRvBtPiXkn3hacxzl4krqAa9fr7KA'
     @map = GMap.new(application_id)
     @map.control_init(:small_map => true,:map_type => true)
