@@ -4,8 +4,8 @@
 
 # google api key: chavanga.heroku.com: 'ABQIAAAAshX1rAk9Jx09XvfOOnHuVBQMTomGlBTa1OkUsqCzpm816lUX3xRvBtPiXkn3hacxzl4krqAa9fr7KA'
 
-#require 'rubygems'
-#require 'google_geocode'
+require 'rubygems'
+require 'google_geocode'
 
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
