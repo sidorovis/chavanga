@@ -22,12 +22,11 @@ class ApplicationController < ActionController::Base
   end
   
   def load_google_map
-#    @map_header = GMap.header
-#    application_id = 'ABQIAAAAshX1rAk9Jx09XvfOOnHuVBQMTomGlBTa1OkUsqCzpm816lUX3xRvBtPiXkn3hacxzl4krqAa9fr7KA'
+    @application_key = "ABQIAAAAshX1rAk9Jx09XvfOOnHuVBRi_j0U6kJrkFvY4-OX2XYmEAa76BTG-4LiqhKF9GnvE0AzrNjmJcLp_g"
     @map = GMap.new("map_div")
     @map.control_init(:small_map => true,:map_type => true)
     @map.center_zoom_init([75.5,-42.56],4)
-    @map.overlay_init(GMarker.new([75.6,-42.467],:title => "Chavanga Map", :info_window => "See Chavanga Map"))
+#    @map.overlay_init(GMarker.new([75.6,-42.467],:title => "Chavanga Map", :info_window => "See Chavanga Map"))
   end
 
   def go_home
