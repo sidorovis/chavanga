@@ -8,24 +8,9 @@
   <%= stylesheet_link_tag 'application' %>
 </head>
 
-<script language="JavaScript">
-  logo_image_change_interval = 5000;
-  logo_image_size = 12;
-  logo_pictures = new Array();
-  for( i = 0 ; i < logo_image_size ; i++)
-  {
-    logo_pictures[i] = new Image()
-    logo_pictures[i].src = '/images/logo/1A-'+(i+1)+'.jpg';
-  }
-
-  function changeLogoImage(i)
-  {
-        document.logo_image.src = logo_pictures[i].src;
-        if (i == logo_pictures.length - 1) i = -1;
-        nextImageFunc = "changeLogoImage( "+(i+1)+" );";
-        setTimeout( nextImageFunc, logo_image_change_interval );
-  }
-</script>
+<%= javascript_include_tag "application" %>
+<%= GMap.header %>
+<%= @map.to_html %>
 
 <body onLoad="logoTimer = setTimeout( 'changeLogoImage( 1 );', logo_image_change_interval );">
 
