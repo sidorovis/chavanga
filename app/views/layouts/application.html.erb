@@ -6,8 +6,6 @@
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <title> <%= controller.controller_name.capitalize %></title>
   <%= stylesheet_link_tag 'application' %>
-
-    <%= javascript_include_tag "application" %>
     
     <script src="http://maps.google.com/maps?file=api&amp;v=2.x&amp;key=<%= @application_key %>&amp;hl=&amp;sensor=false" type="text/javascript"></script>
     <script src="/javascripts/ym4r-gm.js" type="text/javascript"></script>
@@ -15,6 +13,10 @@
     </style>
 
     <%= @map.to_html unless @map.blank? %>
+
+    <%= javascript_include_tag "application" %>
+
+
 </head>
 
 <body >

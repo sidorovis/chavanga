@@ -1068,3 +1068,22 @@ Rendered layouts/_left_menu (8.3ms)
 Rendered layouts/_right_menu (0.1ms)
 Rendered layouts/_full_widget (9.0ms)
 Completed in 28ms (View: 17, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-11 19:17:45) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.6ms)
+  [4;35;1mPartnerLink Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.1ms)
+Rendered layouts/_left_menu (7.4ms)
+Rendered layouts/_right_menu (0.1ms)
+Rendered layouts/_full_widget (8.1ms)
+Completed in 27ms (View: 17, DB: 3) | 200 OK [http://127.0.0.1/]
