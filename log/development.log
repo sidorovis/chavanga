@@ -1,0 +1,76 @@
+# Logfile created on Thu Feb 11 15:01:37 +0200 2010  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-11 15:02:03) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (1.5ms)
+Rendered layouts/_main_menu (3.8ms)
+  [4;36;1mEvent Columns (33.5ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (133.6ms)
+  [4;35;1mPartnerLink Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (4.5ms)
+Rendered layouts/_left_menu (147.4ms)
+Rendered layouts/_right_menu (0.6ms)
+Rendered layouts/_full_widget (157.0ms)
+Completed in 311ms (View: 248, DB: 36) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-11 15:02:17) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.3ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.8ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (13.5ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (16.5ms)
+  [4;35;1mPartnerLink Columns (397.2ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (399.4ms)
+Rendered layouts/_left_menu (416.7ms)
+Rendered layouts/_right_menu (0.1ms)
+Rendered layouts/_full_widget (417.4ms)
+Completed in 433ms (View: 13, DB: 412) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-11 15:02:31) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.7ms)
+  [4;36;1mEvent Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (3.6ms)
+  [4;35;1mPartnerLink Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.5ms)
+Rendered layouts/_left_menu (7.9ms)
+Rendered layouts/_right_menu (0.1ms)
+Rendered layouts/_full_widget (8.7ms)
+Completed in 23ms (View: 13, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-11 15:03:42) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM `events` WHERE (`events`.`published` = 1) LIMIT 5[0m
+  [4;35;1mPartnerLink Load (0.2ms)[0m   [0mSELECT * FROM `partner_links` WHERE (`partner_links`.`visible` = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_logo (0.7ms)
+Rendered layouts/_main_menu (1.8ms)
+  [4;36;1mEvent Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+Rendered layouts/_event_list (4.0ms)
+  [4;35;1mPartnerLink Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partner_links`[0m
+Rendered layouts/_partner_link_list (3.0ms)
+Rendered layouts/_left_menu (8.3ms)
+Rendered layouts/_right_menu (0.1ms)
+Rendered layouts/_full_widget (9.1ms)
+Completed in 28ms (View: 17, DB: 3) | 200 OK [http://127.0.0.1/]
