@@ -22,14 +22,11 @@ class ApplicationController < ActionController::Base
   end
   
   def load_google_map
-    if (RAILS_ENV == 'development')
-        @application_key = "ABQIAAAAshX1rAk9Jx09XvfOOnHuVBRi_j0U6kJrkFvY4-OX2XYmEAa76BTG-4LiqhKF9GnvE0AzrNjmJcLp_g"
-    else
-        @application_key = "ABQIAAAAshX1rAk9Jx09XvfOOnHuVBQMTomGlBTa1OkUsqCzpm816lUX3xRvBtPiXkn3hacxzl4krqAa9fr7KA"
-    end
+    @application_key = YAML.load_file(RAILS_ROOT + '/config/gmaps_api_key.yml')[ENV['RAILS_ENV']]
     @map = GMap.new("chavanga_map")
-    @map.control_init(:large_map => true, :map_type => true)
-    @map.center_zoom_init([41.8921254,-87.6096669],14)
+    @map.set_map_type_init(GMapType::G_SATELLITE_MAP)
+    @map.control_init(:smapp_map => true, :map_type => true, :owerview_map => false)
+    @map.center_zoom_init([66.126005,37.747779], 13)
   end
 
   def go_home

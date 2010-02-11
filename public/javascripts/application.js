@@ -17,3 +17,4 @@ function changeLogoImage(i)
     nextImageFunc = "changeLogoImage( "+(i+1)+" );";
     setTimeout( nextImageFunc, logo_image_change_interval );
 }
+logoTimer = setTimeout( 'changeLogoImage( 1 );', logo_image_change_interval );"
