@@ -27,10 +27,9 @@ class ApplicationController < ActionController::Base
     else
         @application_key = "ABQIAAAAshX1rAk9Jx09XvfOOnHuVBQMTomGlBTa1OkUsqCzpm816lUX3xRvBtPiXkn3hacxzl4krqAa9fr7KA"
     end
-    @map = GMap.new("map_div")
-    @map.control_init(:small_map => true,:map_type => true)
-    @map.center_zoom_init([75.5,-42.56],4)
-#    @map.overlay_init(GMarker.new([75.6,-42.467],:title => "Chavanga Map", :info_window => "See Chavanga Map"))
+    @map = GMap.new("chavanga_map")
+    @map.control_init(:large_map => true, :map_type => true)
+    @map.center_zoom_init([41.8921254,-87.6096669],14)
   end
 
   def go_home
