@@ -2,7 +2,7 @@
   <b><%=h @event.title %></b>
 </p>
 <p>
-  <%=h @event.body.split("\n").join("</br>") %>
+  <%= @event.body.split("\n").join("<br/>") %>
 </p>
 <p>
   <b>Published:</b>

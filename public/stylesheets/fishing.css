@@ -1,0 +1,14 @@
+td.fishing_program_title {
+    text-align:center;
+    font-size:13pt;
+    font-weight:bold;
+}
+
+td.fishing_program_description {
+    text-align:center;
+    font-size:11pt;
+}
+p.fishing_main_text {
+    text-align:justify;
+    text-indent:40px;
+}

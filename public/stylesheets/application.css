@@ -1,4 +1,4 @@
-body { background-color: #cccccc; }
+body { background-color: #000000; }
 
 table.main { 
     background-color: #ffffff; 
@@ -16,34 +16,45 @@ tr.main_menu {
 }
 
 td.left_menu {
-    background-color:#cccccc;
+    background-color:#ffffff;
 }
 
 td.event_list {
     font-size:8pt;
     font-family:arial;
     text-align:left;
+    font-weight:normal;
 }
 
 td.partner_link_list {
-    font-size:8pt;
+    font-size:10pt;
     font-family:arial;
     text-align:left;
+    font-weight:normal;
 }
 
 table.left_menu {
     text-align:center;
     font-family:arial;
+    font-size:10pt;
+    font-weight:bold;
 }
 
 
 td.main_widget {
     text-align:justify;
-    font-family:arial;
+    font-family:times;
+    font-size:14pt;
+}
+
+p.page_title {
+    text-align:center;
+    font-weight:bold;
+    font-size:15pt;
 }
 
 td.right_menu {
-    background-color:#cccccc;
+    background-color:#ffffff;
 }
 
 
@@ -59,10 +70,11 @@ a:hover {
 
 a.main_menu { 
     color: #999999;
+    font-size:13pt;
 }
 a.main_menu:visited { 
     color: #999999;
 }
 a.main_menu:hover { 
-    color: #fff;
+    color: #ffffff;
 }

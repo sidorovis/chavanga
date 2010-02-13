@@ -1,19 +1,20 @@
-<table width='100%' border='0' class='left_menu' cellspacing='0' cellpadding='0'>
-<tr valign=top>
+<td width='155' class='left_menu'>
+  <table width='100%' border='0' class='left_menu' cellspacing='0' cellpadding='0'>
+  <tr valign=top>
     <td>
-        <%= render :partial => 'layouts/event_list' %>
+        <p>MAPS</p>
+        <%= image_tag 'map_example.jpg', :height => 150, :width => 150, :alt => 'Chavanga map example' %>
     </td>
-</tr>
-<tr>
+  </tr>
+  <tr valign=top>
     <td>
-        Map<br/>
-        <%= @map.div(:width => 150, :height => 150) %>
-        <hr size=1 />
+        <p><%= render :partial => 'layouts/event_list' %></p>
     </td>
-</tr>
-<tr>
+  </tr>
+  <tr>
     <td>
         <%= render :partial => 'layouts/partner_link_list' %>
     </td>
-</tr>
-</table>
+  </tr>
+  </table>
+</td> 
