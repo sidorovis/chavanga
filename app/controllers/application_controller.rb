@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
 
-  before_filter :load_events, :load_partner_links, :load_google_map
+  before_filter :load_events, :load_partner_links, :load_google_map, :load_fishing_programs
   
   def load_events
     @left_column_events = Event.all :limit => 5, :conditions => { :published => true }
@@ -32,6 +32,9 @@ class ApplicationController < ActionController::Base
 #    @map.center_zoom_init([66.126005,37.747779], 13)
   end
 
+  def load_fishing_programs
+    @fps = FishingProgram.all
+  end
   def go_home
     redirect_to( :controller => :home )
   end

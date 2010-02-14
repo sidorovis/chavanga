@@ -4,8 +4,17 @@
   <td width='14%' height=25>
     <%= link_to "TEAM", { :controller => :team }, :class => 'main_menu' %>
   </td>
-  <td width='14%'>
-    <%= link_to "FISHING", { :controller => :fishing }, :class => 'main_menu' %>
+  <td width='14%' onmouseover='showSubMenu("fishing_programs");' onmouseout='hideSubMenu("fishing_programs");'>
+    <table align='center'><tr><td>
+    <%= link_to "FISHING", { :controller => :fishing }, :class => 'main_menu'%>
+    <div id='fishing_programs' style='position:absolute;display:none;text-align:left;background-color:black'>
+        <table><tr><td> </td><td>
+        <% @fps.each do |fp| %>
+            <%= link_to fp.title, fp, :class => 'main_menu' %><br/>
+        <% end %>
+        </td><td> </td></tr></table>
+    </div>
+    </td></tr></table>
   </td>
   <td width='14%'>
     <%= link_to "GALLERY", { :controller => :gallery }, :class => 'main_menu' %>

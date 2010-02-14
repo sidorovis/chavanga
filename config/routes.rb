@@ -3,6 +3,9 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :partner_links
   map.resources :events
 
+  map.connect 'fishing', :controller => 'fishing', :action => 'index'
+  map.connect 'fishing/:id', :controller => 'fishing', :action => 'show'
+
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:

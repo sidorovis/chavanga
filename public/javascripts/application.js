@@ -21,3 +21,12 @@ function changeLogoImage(i)
 window.onload = addCodeToFunction(window.onload,function() {
     setTimeout( 'changeLogoImage( 1 );', logo_image_change_interval )
 });
+
+function showSubMenu( menu_id )
+{
+    document.getElementById(menu_id).style.display = 'block';
+}
+function hideSubMenu( menu_id )
+{
+    document.getElementById(menu_id).style.display = 'none';
+}

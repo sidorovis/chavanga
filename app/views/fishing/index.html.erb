@@ -23,7 +23,7 @@ TO TRANSLATE
 <tr>
     <% @fishing_programs.each do |fp| %>
         <td class='fishing_program_title'>
-            <%= fp.title %>
+            <%= link_to fp.title, fp %>
         </td>
     <% end %>
 </tr>
