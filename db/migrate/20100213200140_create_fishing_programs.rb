@@ -3,6 +3,7 @@ class CreateFishingPrograms < ActiveRecord::Migration
     create_table :fishing_programs do |t|
       t.string :title
       t.text :description
+      t.text :page_content
 
       t.timestamps
     end

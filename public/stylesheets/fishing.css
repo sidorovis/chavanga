@@ -12,3 +12,9 @@ p.fishing_main_text {
     text-align:justify;
     text-indent:40px;
 }
+
+h2.fishing_tour_name {
+    font-size:20pt;
+    text-align:center;
+    font-style:italic;
+}

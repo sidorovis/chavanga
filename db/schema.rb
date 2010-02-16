@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(:version => 20100213200417) do
   create_table "fishing_programs", :force => true do |t|
     t.string   "title"
     t.text     "description"
+    t.text     "page_content"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
