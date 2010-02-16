@@ -57,20 +57,11 @@ Unless something else is necessary?
 </td></tr></table>
 <table align=center>
 <tr>
+<% (1..4).map do |program_index| %>
 <td>
- <%= image_tag 'home/p1.jpg', :width => 260 %>
-</td>
-<td>
- <%= image_tag 'home/p2.jpg', :width => 260 %>
-</td>
-</tr>
-<tr>
-<td>
- <%= image_tag 'home/p3.jpg', :width => 260 %>
-</td>
-<td>
- <%= image_tag 'home/p4.jpg', :width => 260 %>
-</td>
+ <%= link_to (image_tag 'home/p'+program_index.to_s+'.jpg', :width => 150), FishingProgram.find(program_index) %>
+</td>    
+<% end %>
 </tr>
 </table>
 <br/>
