@@ -3,7 +3,9 @@
  <tr valign='top'>
     <%= render :partial => 'layouts/left_menu' %>
     <td class='main_widget' width='790'>
-        <%= yield %>    
+        <table align='center' width='95%'><tr><td>
+        <%= yield %>
+        </td></tr></table>
     </td>
     <%= render :partial => 'layouts/right_menu' %>
  </tr>

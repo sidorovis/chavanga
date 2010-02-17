@@ -1,0 +1,18 @@
+h2.booking_title {
+    text-align:center;
+    font-weight:bold;
+}
+
+h4.booking_chapter_header {
+    padding-left:60px;
+    text-align:justify;
+}
+
+p.booking_main_text {
+    text-align:justify;
+    text-indent:40px;
+}
+
+font.booking_red_text {
+    text-color:red;
+}

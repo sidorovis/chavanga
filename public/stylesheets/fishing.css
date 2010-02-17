@@ -8,6 +8,10 @@ td.fishing_program_description {
     text-align:center;
     font-size:11pt;
 }
+h4.fishing_chapter_header {
+    text-align:justify;
+    text-indent:60px;
+}
 p.fishing_main_text {
     text-align:justify;
     text-indent:40px;

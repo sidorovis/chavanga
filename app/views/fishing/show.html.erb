@@ -1,2 +1,5 @@
 <%= stylesheet_link_tag 'fishing' %>
-<%= @fishing_program.page_content %>
+<% if @fishing_program.page_content != "" %>
+    <%= @fishing_program.page_content %>
+<% end %>
+
