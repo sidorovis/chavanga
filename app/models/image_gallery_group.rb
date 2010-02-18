@@ -13,7 +13,7 @@ class ImageGalleryGroup < ActiveRecord::Base
                 :dependent => :destroy
     validates_presence_of :title
     def all_images
-        result = images
+        result = images.all( :conditions => { :visible => true } )
         subgroups.each { |group| result += group.all_images }
         result
     end

@@ -13,10 +13,29 @@
     </ul>
 <% end %>
 <br/>
+<% link_to 'New Image', new_image_gallery_group_image_gallery_image_path( @image_gallery_group) %>
+
 <table align='center'>
-<% @image_gallery_group.all_images.each do |image| %>
-<tr><td>
-    <%= image_tag image.tag, :width => '600' %>
-</td></tr>
+<% if @all_images.size < BORDER() %>
+    <% @all_images.each do |image| %>
+    <tr><td>
+        <%= image_tag image.tag, :width => '600' %>
+        <% link_to 'Edit', edit_image_gallery_group_image_gallery_image_path( image.group, image ) %>
+    </td></tr>
+    <% end %>
+<% else %>
+    <% @all_images.in_groups_of(PER_COLUMN(),nil) do |row| %>
+    <tr>
+        <% row.each do |image| %>
+        <td>
+            <% if image %>
+                <%= image_tag image.tag, :width => '170' %>
+                <% link_to 'Edit', edit_image_gallery_group_image_gallery_image_path( image.group, image ) %>
+            <% end %>
+        </td>
+        <% end %>
+    </tr>
+    <% end %>
 <% end %>
+
 </table>

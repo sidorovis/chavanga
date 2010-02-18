@@ -18,6 +18,7 @@ class ImageGalleryGroupsController < ApplicationController
   # GET /image_gallery_groups/1.xml
   def show
     @image_gallery_group = ImageGalleryGroup.find(params[:id])
+    @all_images = @image_gallery_group.all_images
 
     respond_to do |format|
       format.html # show.html.erb
