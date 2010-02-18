@@ -78,3 +78,9 @@ a.main_menu:visited {
 a.main_menu:hover { 
     color: #ffffff;
 }
+
+div.logo {
+    position:absolute;
+    margin-left:890px;
+    top:15px;
+}
