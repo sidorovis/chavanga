@@ -1,7 +1,7 @@
 class ImageGalleryGroupsController < ApplicationController
 
 
-  before_filter :go_home, :except => [:show]
+#  before_filter :go_home, :except => [:show]
 
   # GET /image_gallery_groups
   # GET /image_gallery_groups.xml

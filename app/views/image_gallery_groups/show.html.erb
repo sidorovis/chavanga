@@ -1,14 +1,22 @@
-<p>
-  <b>Title:</b>
-  <%=h @image_gallery_group.title %>
-</p>
+<%= stylesheet_link_tag 'gallery' %>
 
-<p>
-  <b>Description:</b>
-  <%=h @image_gallery_group.description %>
-</p>
-
-<p>
-  <b>Parent group:</b>
-  <%=h @image_gallery_group.parent_group.title %>
-</p>
+<%= (@image_gallery_group.id != @image_gallery_group.parent_group_id)?
+        (link_to(@image_gallery_group.parent_group.title,@image_gallery_group.parent_group)+"<br/>"):
+        ("") %>
+<h2 class='gallery_title'><%= @image_gallery_group.title %></h2>
+<% if @image_gallery_group.subgroups.size > 0 %>
+    <ul>
+    Sub Groups:
+    <% @image_gallery_group.subgroups.each do |group| %>
+        <li><%= link_to group.title, group %> ( images: <%= group.all_images.size %> )</li>
+    <% end %>
+    </ul>
+<% end %>
+<br/>
+<table align='center'>
+<% @image_gallery_group.all_images.each do |image| %>
+<tr><td>
+    <%= image_tag image.tag, :width => '600' %>
+</td></tr>
+<% end %>
+</table>

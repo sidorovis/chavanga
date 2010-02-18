@@ -1,6 +1,9 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :image_gallery_groups
+#  map.resources :image_gallery_images
 
+#  map.resources :image_gallery_groups, :has_many => [ :image_gallery_images ]
+  map.connect 'image_gallery_group', :controller => 'ImageGalleryGroups', :action => 'index'
+  map.connect 'image_gallery_group/:id', :controller => 'ImageGalleryGroups', :action => 'show'
 
   map.resources :partner_links
   map.resources :events

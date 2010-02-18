@@ -1,0 +1,28 @@
+<p>
+  <b>Title:</b>
+  <%=h @image_gallery_image.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @image_gallery_image.description %>
+</p>
+
+<p>
+  <b>Tag:</b>
+  <%=h @image_gallery_image.tag %>
+</p>
+
+<p>
+  <b>Visible:</b>
+  <%=h @image_gallery_image.visible %>
+</p>
+
+<p>
+  <b>Image gallery group:</b>
+  <%=h @image_gallery_image.image_gallery_group_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_image_gallery_image_path(@image_gallery_image) %> |
+<%= link_to 'Back', image_gallery_images_path %>

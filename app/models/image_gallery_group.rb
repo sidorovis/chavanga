@@ -7,5 +7,15 @@ class ImageGalleryGroup < ActiveRecord::Base
                 :foreign_key => :parent_group_id, 
                 :conditions => [ "parent_group_id != id" ], 
                 :dependent => :destroy
+    has_many    :images, 
+                :class_name => 'ImageGalleryImage', 
+                :foreign_key => :image_gallery_group_id, 
+                :dependent => :destroy
     validates_presence_of :title
+    def all_images
+        result = images
+        subgroups.each { |group| result += group.all_images }
+        result
+    end
+    
 end
