@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
 
-  before_filter :load_events, :load_partner_links, :load_google_map, :load_fishing_programs
+  before_filter :load_events, :load_partner_links, :load_google_map, :load_fishing_programs, :load_gallery_groups
   
   def load_events
     @left_column_events = Event.all :limit => 5, :conditions => { :published => true }
@@ -21,20 +21,26 @@ class ApplicationController < ActionController::Base
     @left_column_partner_links = PartnerLink.all( :conditions => { :visible => true } )
   end
   
-  def load_google_map
-    @application_key = YAML.load_file(RAILS_ROOT + '/config/gmaps_api_key.yml')[ENV['RAILS_ENV']]
-    if (ENV['RAILS_ENV'] == "production")
-        @application_key = @application_key["chavanga.heroku.com"]
-    end
+    def load_google_map
+        @application_key = YAML.load_file(RAILS_ROOT + '/config/gmaps_api_key.yml')[ENV['RAILS_ENV']]
+        if (ENV['RAILS_ENV'] == "production")
+            @application_key = @application_key["chavanga.heroku.com"]
+        end
 #    @map = GMap.new("chavanga_map")
 #    @map.set_map_type_init(GMapType::G_SATELLITE_MAP)
 #    @map.control_init(:smapp_map => true, :map_type => true, :owerview_map => false)
 #    @map.center_zoom_init([66.126005,37.747779], 13)
-  end
+    end
 
-  def load_fishing_programs
-    @fps = FishingProgram.all
-  end
+    def load_fishing_programs
+        @fishing_programs = FishingProgram.all
+    end
+  
+    def load_gallery_groups
+        @gallery_group = ImageGalleryGroup.first( :conditions => [ "parent_group_id = id" ])
+    end
+
+  
   def go_home
     redirect_to( :controller => :home )
   end

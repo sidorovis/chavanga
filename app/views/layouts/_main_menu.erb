@@ -7,17 +7,26 @@
   <td width='14%' onmouseover='showSubMenu("fishing_programs");' onmouseout='hideSubMenu("fishing_programs");'>
     <table align='center'><tr><td>
     <%= link_to "FISHING", { :controller => :fishing }, :class => 'main_menu'%>
-    <div id='fishing_programs' style='position:absolute;display:none;text-align:left;background-color:black'>
-        <table><tr><td> </td><td>
-        <% @fps.each do |fp| %>
-            <%= link_to fp.title, fp, :class => 'main_menu' %><br/>
+    <div id='fishing_programs' class='drop_down_menu'>
+        <table><tr><td>
+        <ul style='margin-left:-15px;'>
+        <% @fishing_programs.each do |fp| %>
+            <li><%= link_to fp.title, fp, :class => 'main_menu' %></li>
         <% end %>
-        </td><td> </td></tr></table>
+        </ul>
+        </td><td width='5'> </td></tr></table>
     </div>
     </td></tr></table>
   </td>
-  <td width='14%'>
-    <%= link_to "GALLERY", { :controller => :gallery }, :class => 'main_menu' %>
+  <td width='14%' onmouseover='showSubMenu("gallery_groups");' onmouseout='hideSubMenu("gallery_groups");'>
+    <table align='center'><tr><td>
+    <%= link_to "GALLERY", @gallery_group, :class => 'main_menu' %>
+    <div id='gallery_groups' class='drop_down_menu'>
+        <table><tr><td>
+            <%= render :partial => 'layouts/gallery_drop_down_menu', :object => @gallery_group %>
+        </td><td width='5'> </td></tr></table>
+    </div>
+    </td></tr></table>
   </td>
   <td width='14%'>
     <%= link_to "PRESSA", { :controller => :pressa }, :class => 'main_menu' %>

@@ -15,6 +15,13 @@ tr.main_menu {
     background-color:black;
 }
 
+div.drop_down_menu{
+    position:absolute;
+    display:none;
+    text-align:left;
+    background-color:black;
+}
+
 td.left_menu {
     background-color:#ffffff;
 }
@@ -81,6 +88,6 @@ a.main_menu:hover {
 
 div.logo {
     position:absolute;
-    margin-left:890px;
+    margin-left:950px;
     top:15px;
 }

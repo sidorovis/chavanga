@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :image_gallery_groups
+
 
   map.resources :partner_links
   map.resources :events

@@ -1,6 +1,10 @@
 class PartnerLinksController < ApplicationController
   # GET /partner_links
   # GET /partner_links.xml
+
+  before_filter :go_home
+
+
   def index
     @partner_links = PartnerLink.all
 
