@@ -1,4 +1,7 @@
-body { background-color: #000000; }
+body { 
+    background-color: #000000; 
+    font-align:arial;
+}
 
 table.main { 
     background-color: #ffffff; 
@@ -57,14 +60,15 @@ table.left_menu {
 
 td.main_widget {
     text-align:justify;
-    font-family:times;
-    font-size:14pt;
+    font-family:Verdana, Geneva, Arial;
+    font-size:11pt;
 }
 
 p.page_title {
     text-align:center;
     font-weight:bold;
-    font-size:15pt;
+    font-family:Verdana, Geneva, Arial;
+    font-size:13pt;
 }
 
 td.right_menu {
@@ -83,8 +87,9 @@ a:hover {
 }
 
 a.main_menu { 
+    font-family:Verdana, Geneva, Arial;
     color: #999999;
-    font-size:13pt;
+    font-size:12pt;
 }
 a.main_menu:visited { 
     color: #999999;

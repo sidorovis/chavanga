@@ -58,9 +58,7 @@ Unless something else is necessary?
 <table align=center>
 <tr>
 <% (1..4).map do |program_index| %>
-<td>
- <%= link_to (image_tag 'home/p'+program_index.to_s+'.jpg', :width => 150), FishingProgram.find(program_index) %>
-</td>    
+    <td><%= link_to (image_tag 'home/p'+program_index.to_s+'.jpg', :width => 150, :border=>0), FishingProgram.find(program_index) %></td>    
 <% end %>
 </tr>
 </table>

@@ -1,10 +1,13 @@
 p.home_why_chavanga {
     font-weight:bold;
-    font-size:15pt;
+    font-size:11pt;
     text-indent: 50px;
+    font-family:Verdana, Geneva, Arial;
 }
 
 p.home_main_text {
+    font-family:Verdana, Geneva, Arial;
     text-align:justify;
     text-indent:40px;
+    text-size:11pt;
 }
