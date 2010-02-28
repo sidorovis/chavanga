@@ -3,7 +3,7 @@ class ImageGalleryImagesController < ApplicationController
   # GET /image_gallery_images.xml
   
     before_filter :load_image_gallery_group
-  #  before_filter :go_home, :except => [:show]
+#    before_filter :go_home
     
     def load_image_gallery_group
         @image_gallery_group = ImageGalleryGroup.find(params[:image_gallery_group_id])

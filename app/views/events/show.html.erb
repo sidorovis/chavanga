@@ -1,10 +1,6 @@
-<p style='font-family:arial;text-align:center;'>
-  <b><%=h @event.title %></b>
+<p class='page_title'>
+  <%=h @event.title %>
 </p>
 <p>
   <%= @event.body.split("\n").join("<br/>") %>
-</p>
-<p>
-  <b>Published:</b>
-  <%=h @event.published %>
 </p>

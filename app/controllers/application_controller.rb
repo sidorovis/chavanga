@@ -14,7 +14,7 @@ class ApplicationController < ActionController::Base
   before_filter :load_events, :load_partner_links, :load_google_map, :load_fishing_programs, :load_gallery_groups
   
   def load_events
-    @left_column_events = Event.all :limit => 5, :conditions => { :published => true }
+    @left_column_events = Event.all :limit => 5, :conditions => { :published => true }, :order => 'created_at DESC'
   end
 
   def load_partner_links
