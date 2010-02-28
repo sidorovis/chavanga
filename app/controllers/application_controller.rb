@@ -22,10 +22,10 @@ class ApplicationController < ActionController::Base
   end
   
     def load_google_map
-        @application_key = YAML.load_file(RAILS_ROOT + '/config/gmaps_api_key.yml')[ENV['RAILS_ENV']]
-        if (ENV['RAILS_ENV'] == "production")
-            @application_key = @application_key["chavanga.heroku.com"]
-        end
+#        @application_key = YAML.load_file(RAILS_ROOT + '/config/gmaps_api_key.yml')[ENV['RAILS_ENV']]
+#        if (ENV['RAILS_ENV'] == "production")
+#            @application_key = @application_key["chavanga.heroku.com"]
+#        end
 #    @map = GMap.new("chavanga_map")
 #    @map.set_map_type_init(GMapType::G_SATELLITE_MAP)
 #    @map.control_init(:smapp_map => true, :map_type => true, :owerview_map => false)

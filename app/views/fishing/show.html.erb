@@ -1,5 +1,18 @@
 <%= stylesheet_link_tag 'fishing' %>
 <% if @fishing_program.page_content != "" %>
     <%= @fishing_program.page_content %>
+    <% if @fishing_program.image_gallery_group_id? %>
+        <table align=center>
+        <% @fishing_program.image_gallery_group.subgroups.each do |group| %>
+            <tr><td>
+                <%= group.title %>
+            </td><td>
+                <% if group.images.count > 0 %>
+                    <%= image_tag( group.images[0].tag, :width => 250 ) %>
+                <% end %>
+            </td></tr>
+        <% end %>
+        </table>
+    <% end %>
 <% end %>
 

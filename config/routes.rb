@@ -6,7 +6,8 @@ ActionController::Routing::Routes.draw do |map|
   map.connect 'image_gallery_groups/:id', :controller => 'ImageGalleryGroups', :action => 'show'
 
   map.resources :partner_links
-  map.resources :events
+  map.connect 'events/:id', :controller => 'Events', :action => 'show'
+#  map.resources :events
 
   map.connect 'fishing', :controller => 'fishing', :action => 'index'
   map.connect 'fishing/:id', :controller => 'fishing', :action => 'show'

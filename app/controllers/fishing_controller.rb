@@ -4,6 +4,5 @@ class FishingController < ApplicationController
   end
   def show
     @fishing_program = FishingProgram.find(params[:id])
-    
   end
 end
