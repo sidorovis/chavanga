@@ -1,0 +1,5 @@
+<font class='guest_room_title'><%=h post.title %></font> 
+<font class='guest_room_time'>[<%= generate_time(post.created_at) %>]</font><br/>
+<p class='guest_room_body'>
+<%= h(post.body).split("\n").join("<br/>") %></p>
+<hr size='0' />

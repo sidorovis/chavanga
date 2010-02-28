@@ -1,13 +1,13 @@
 ActionController::Routing::Routes.draw do |map|
-#  map.resources :image_gallery_images
 
+  map.connect 'guest_room', :controller => 'GuestRoom', :action => 'create', :conditions => { :method => :post }
+#  map.resources :image_gallery_images
 #  map.resources :image_gallery_groups, :has_many => [ :image_gallery_images ]
   map.connect 'image_gallery_groups', :controller => 'ImageGalleryGroups', :action => 'index'
   map.connect 'image_gallery_groups/:id', :controller => 'ImageGalleryGroups', :action => 'show'
 
-  map.resources :partner_links
+#  map.resources :partner_links
   map.connect 'events/:id', :controller => 'Events', :action => 'show'
-#  map.resources :events
 
   map.connect 'fishing', :controller => 'fishing', :action => 'index'
   map.connect 'fishing/:id', :controller => 'fishing', :action => 'show'

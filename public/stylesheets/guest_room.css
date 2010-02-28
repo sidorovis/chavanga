@@ -1,0 +1,14 @@
+font.guest_room_title {
+    font-size:11pt;
+    font-weight:bold;
+    font-family:Verdana;
+}
+
+font.guest_room_time {
+    font-size:10pt;
+}
+p.guest_room_body {
+    text-indent:40px;
+    font-size:10pt;
+    font-family:Arial;
+}
