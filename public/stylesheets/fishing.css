@@ -22,3 +22,7 @@ h2.fishing_tour_name {
     text-align:center;
     font-style:italic;
 }
+
+div.fishing_program_gallery {
+    position:block;
+}
