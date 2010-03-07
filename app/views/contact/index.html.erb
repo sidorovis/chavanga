@@ -1,2 +1,56 @@
-<h1>Contact#index</h1>
-<p>Find me in app/views/contact/index.html.erb</p>
+<%= stylesheet_link_tag 'contact' %>
+
+<p class='page_title'>Chavanga company</p>
+<h4 style='text-align:center'>Chavanga village, Terski region, Murmansk, Russia</h4>
+<h3 style='text-align:center'>Salmon Fishing Tours</h3>
+<p align='center'>
+<%= image_tag( "contact/sever 2006 041.jpg" ) %>
+</p>
+<table align=center border='0' width='340'>
+<tr>
+ <td>
+  -Flag G.B.<br/>
+  <br/>
+ </td>
+ <td valign=top>
+  Basyl
+ </td>
+ <td valign=top>
+  +44 7804040285
+ </td>
+</tr>
+<tr>
+ <td>
+  -Flag RU<br/>
+  -Flag LT<br/>
+  -Flag LV<br/>
+  -Flag PL<br/>
+  <br/>
+ </td>
+ <td valign=top>
+  Vasyl
+ </td>
+ <td valign=top>
+  +375 297815546
+ </td>
+</tr>
+<tr>
+ <td>
+  -Flag PL<br/>
+  -Flag FR<br/>
+  <br/>
+ </td>
+ <td valign=top>
+  Pawel
+ </td>
+ <td valign=top>
+  +48 506009721
+ </td>
+</tr>
+<tr>
+ <td colspan=3>
+    E-mail: <%= link_to "chavanga.flyfishing@gmail.com", "mailto:chavanga.flyfishing@gmail.com", :class => 'contacts' %><br/>
+    E-mail: <%= link_to "chavangafishing@gmail.com", "mailto:chavangafishing@gmail.com", :class => 'contacts' %>
+ </td>
+</tr>
+</table>

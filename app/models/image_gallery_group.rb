@@ -14,7 +14,7 @@ class ImageGalleryGroup < ActiveRecord::Base
     validates_presence_of :title
     def all_images
         result = images.all( :conditions => { :visible => true } )
-        subgroups.each { |group| result += group.all_images }
+        subgroups.each { |group| (result += group.all_images if result.size < 18 ) }
         result
     end
     

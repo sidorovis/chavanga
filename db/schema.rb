@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100228165842) do
+ActiveRecord::Schema.define(:version => 20100307101422) do
 
   create_table "events", :force => true do |t|
     t.string   "title"
@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(:version => 20100228165842) do
     t.datetime "updated_at"
     t.text     "page_content"
     t.integer  "image_gallery_group_id"
+    t.boolean  "hidden"
   end
 
   create_table "image_gallery_groups", :force => true do |t|

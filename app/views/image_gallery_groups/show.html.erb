@@ -1,9 +1,7 @@
-<%= stylesheet_link_tag 'gallery' %>
-
 <%= (@image_gallery_group.id != @image_gallery_group.parent_group_id)?
         (link_to(@image_gallery_group.parent_group.title,@image_gallery_group.parent_group)+"<br/>"):
         ("") %>
-<h2 class='gallery_title'><%= @image_gallery_group.title %></h2>
+<p class='page_title'><%= @image_gallery_group.title %></h2>
 <% if @image_gallery_group.subgroups.size > 0 %>
     <ul>
     Sub Groups:

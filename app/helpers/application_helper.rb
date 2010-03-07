@@ -28,7 +28,7 @@ module ApplicationHelper
             <div id='fishing_programs' class='drop_down_menu'>
                 <table><tr><td>
                 <ul style='margin-left:-15px;'>"
-        @fishing_programs.each do |fp|
+        @menu_fishing_programs.each do |fp|
             result += "<li>"+ link_to(fp.title, fp, :class => 'main_menu')+"</li>"
         end
         result += " </ul></td><td width='5'> </td>

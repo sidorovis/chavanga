@@ -33,7 +33,7 @@ class ApplicationController < ActionController::Base
     end
 
     def load_fishing_programs
-        @fishing_programs = FishingProgram.all
+        @menu_fishing_programs = FishingProgram.all
     end
   
     def load_gallery_groups

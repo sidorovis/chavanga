@@ -68,7 +68,8 @@ p.page_title {
     text-align:center;
     font-weight:bold;
     font-family:Verdana, Geneva, Arial;
-    font-size:13pt;
+    font-size:14pt;
+    font-style:italic;
 }
 
 td.right_menu {

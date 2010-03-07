@@ -12,6 +12,9 @@ h4.fishing_chapter_header {
     text-align:justify;
     text-indent:60px;
 }
+h3.fishing_river_title {
+    text-align:center;
+}
 p.fishing_main_text {
     text-align:justify;
     text-indent:40px;
