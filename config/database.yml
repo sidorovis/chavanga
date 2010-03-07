@@ -43,6 +43,7 @@ production:
   reconnect: false
   database: chavanga_production
   pool: 5
-  username: root
-  password: 
-  socket: /opt/local/var/run/mysql5/mysqld.sock
+  username: chavanga
+  password: chavpass
+  socket: /var/run/mysqld/mysqld.sock
+
