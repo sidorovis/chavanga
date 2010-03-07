@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+#  map.resources :articles
+
 
   map.connect 'guest_room', :controller => 'GuestRoom', :action => 'create', :conditions => { :method => :post }
 #  map.resources :image_gallery_images
