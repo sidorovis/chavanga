@@ -18,6 +18,17 @@ function changeLogoImage(i)
     setTimeout( nextImageFunc, logo_image_change_interval );
 }
 
+function addCodeToFunction(func,code){
+    if(func == undefined)
+        return code;
+    else{
+        return function(){
+            func();
+            code();
+        }
+    }
+}
+
 window.onload = addCodeToFunction(window.onload,function() {
     setTimeout( 'changeLogoImage( 1 );', logo_image_change_interval )
 });
