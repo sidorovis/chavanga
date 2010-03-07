@@ -1,0 +1,25 @@
+<p class='page_title'>Peshe Mouche</p>
+
+<table align=center>
+<tr>
+<td>
+<%= image_tag("press/Peshe Muoche/foto.jpg", :width => 600) %><br/>
+<table width=100%>
+<% [1,2,3,4,5,6,7].in_groups_of(2,nil) do |row| %>
+    <tr>
+        <% row.each do |i| %>
+        <td>
+            <% if i %>
+                <%= image_tag("press/Peshe Muoche/"+i.to_s+".jpg", :width => 300) %>
+            <% end %>
+        </td>
+        <% end %>
+    </tr>
+    <% end %>
+</table>
+
+</td>
+</tr>
+</table>
+
+

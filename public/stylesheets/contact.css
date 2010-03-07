@@ -1,0 +1,9 @@
+a.contacts { 
+    color: #0000FF;
+}
+a.contacts:visited { 
+    color: #0000FF;
+}
+a.contacts:hover {
+    color:#0000FF;
+}
