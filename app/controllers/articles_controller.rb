@@ -1,6 +1,9 @@
 class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.xml
+
+  before_filter :go_home
+
   def index
     @articles = Article.all
 
