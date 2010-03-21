@@ -1,0 +1,9 @@
+<% if @group %>
+    <div align='center'>
+        <br/>
+        <% @group.all_images.each do |image| %>
+            <%= image_tag image.tag, :width => 600 %><br/><br/>
+        <% end %>
+        <br/>
+    </div>
+<% end %>
