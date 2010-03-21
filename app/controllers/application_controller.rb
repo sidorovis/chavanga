@@ -41,6 +41,7 @@ class ApplicationController < ActionController::Base
     end
 
     def load_image_gallery_flies
+        @flies_all = ImageGalleryGroup.first( :conditions => { "id" => 55 } )
         @flies_1 = ImageGalleryGroup.first( :conditions => { "id" => 56 } )
         @flies_2 = ImageGalleryGroup.first( :conditions => { "id" => 57 } )
         @flies_3 = ImageGalleryGroup.first( :conditions => { "id" => 58 } )

@@ -5,7 +5,8 @@
     <%= @fishing_program.page_content %>
     <% if @fishing_program.image_gallery_group_id? %>
         <table align=center>
-        <% @fishing_program.image_gallery_group.subgroups.each do |group| %>
+        <% @fishing_program.image_gallery_group.subgroups.first(4).each do |group| %>
+            <% if group.images.size > 0 %>
             <tr><td>
                 <%= group.title %>
             </td><td>
@@ -13,6 +14,7 @@
                         group.images[0].tag, 
                         :width => 250 ) %>
             </td></tr>
+            <% end %>
         <% end %>
         </table>
     <% end %>

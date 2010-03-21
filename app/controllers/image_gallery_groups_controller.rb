@@ -19,6 +19,8 @@ class ImageGalleryGroupsController < ApplicationController
   def show
     @image_gallery_group = ImageGalleryGroup.find(params[:id])
     @all_images = @image_gallery_group.all_images
+#    @page = params[:page]
+#    @page |= 0
 
     respond_to do |format|
       format.html # show.html.erb

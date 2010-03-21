@@ -1,3 +1,15 @@
+<%= javascript_include_tag "gallery" %>
+<div style='display:none;position:fixed;background-color:white' 
+    onclick="this.style.display='none';" 
+    onmouseover="document.body.style.cursor = 'pointer';",
+    onmouseout="document.body.style.cursor = 'default';"
+    id='photo_zoomer_handler'>
+  <table bgcolor=black><tr><td bgcolor=white><p align=center><b>Click to hide</b></p>
+    <div id='photo_zoomer'>
+    </div>
+  </td></tr></table>
+</div>
+
 <%= (@image_gallery_group.id != @image_gallery_group.parent_group_id)?
         (link_to(@image_gallery_group.parent_group.title,@image_gallery_group.parent_group)+"<br/>"):
         ("") %>
@@ -18,7 +30,12 @@
     <% row.each do |image| %>
     <td>
         <% if image %>
-            <%= image_tag image.tag, :width => '170' %>
+            <%= image_tag image.tag, 
+                    :width => '170', 
+                    :onclick => "show_full_image('"+"http://chavanga.com/images/"+image.tag+"')", 
+                    :onmouseover => "document.body.style.cursor = 'pointer';",
+                    :onmouseout => "document.body.style.cursor = 'default';"
+                    %>
         <% end %>
     </td>
     <% end %>
