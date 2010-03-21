@@ -12,9 +12,22 @@ class ImageGalleryGroup < ActiveRecord::Base
                 :foreign_key => :image_gallery_group_id, 
                 :dependent => :destroy
     validates_presence_of :title
-    def all_images
-        result = images.all( :conditions => { :visible => true } )
-        subgroups.each { |group| (result += group.all_images if result.size < 18 ) }
+    def all_images(limit = 20)
+        places = limit
+        result = images.all( :conditions => { :visible => true }, :limit => places )
+        places = places - result.size
+        subgroups.each do |group| 
+            group_images = group.all_images( places )
+            places -= group_images.size
+            result += group_images
+        end
+        result
+    end
+    def all_images_size
+        result = images.count( :conditions => { :visible => true } )
+        subgroups.each do |group| 
+            result += group.all_images_size
+        end
         result
     end
     

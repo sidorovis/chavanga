@@ -6,16 +6,12 @@
     <% if @fishing_program.image_gallery_group_id? %>
         <table align=center>
         <% @fishing_program.image_gallery_group.subgroups.each do |group| %>
-        <% image_group_name = "fishing_program_image_"+group.id.to_s+"" %>
-        <% image_name = "'fishing_program_image_"+group.id.to_s+"'" %>
             <tr><td>
                 <%= group.title %>
             </td><td>
-                <% if group.images.count > 0 %>
-                    <div id='fishing_program_gallery_<%= group.id %>' class='fishing_program_gallery'>
-                        <%= image_tag( group.images[0].tag, :width => 250, :onclick => fishing_program_on_click( image_name ), :name => image_name ) %>
-                    </div>
-                <% end %>
+                <%= image_tag( 
+                        group.images[0].tag, 
+                        :width => 250 ) %>
             </td></tr>
         <% end %>
         </table>
