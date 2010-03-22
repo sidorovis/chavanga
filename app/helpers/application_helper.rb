@@ -29,7 +29,11 @@ module ApplicationHelper
                 <table><tr><td>
                 <ul style='margin-left:-15px;'>"
         @menu_fishing_programs.each do |fp|
-            result += "<li>"+ link_to(fp.title, fp, :class => 'main_menu')+"</li>"
+            result += "<li>"+ link_to( fp.title, fp, :class => 'main_menu' )
+                fp.SubFishingPrograms.all(:conditions => { :visible => true } ).each do |sp|
+                    result += "<ul style='margin-left:-15px;'><li>" + link_to( sp.title, sp, :class => 'main_menu' ) + "</li></ul>"
+                end
+            result += "</li>"
         end
         result += " </ul></td><td width='5'> </td>
                     </tr></table>

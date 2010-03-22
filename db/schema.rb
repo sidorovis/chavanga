@@ -9,7 +9,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100307101422) do
+ActiveRecord::Schema.define(:version => 20100322134813) do
+
+  create_table "articles", :force => true do |t|
+    t.string   "title"
+    t.text     "body"
+    t.boolean  "published"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "events", :force => true do |t|
     t.string   "title"
@@ -68,6 +76,15 @@ ActiveRecord::Schema.define(:version => 20100307101422) do
     t.string   "title"
     t.text     "body"
     t.boolean  "published"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "sub_fishing_programs", :force => true do |t|
+    t.string   "title"
+    t.text     "body"
+    t.boolean  "visible"
+    t.integer  "fishing_program_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
