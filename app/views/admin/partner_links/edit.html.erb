@@ -1,0 +1,24 @@
+<h1>Editing partner_link</h1>
+
+<% form_for([:admin,@partner_link]) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :tag %><br />
+    <%= f.text_field :tag %>
+  </p>
+  <p>
+    <%= f.label :visible %><br />
+    <%= f.check_box :visible %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', admin_partner_link_path(@partner_link) %> |
+<%= link_to 'Back', admin_partner_links_path %>

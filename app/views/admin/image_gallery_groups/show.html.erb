@@ -1,0 +1,31 @@
+<%= (@image_gallery_group.id != @image_gallery_group.parent_group_id)?
+        (link_to(@image_gallery_group.parent_group.title,@image_gallery_group.parent_group)+"<br/>"):
+        ("") %>
+<p class='page_title'><%= @image_gallery_group.title %></p>
+<% if @image_gallery_group.subgroups.size > 0 %>
+    <ul>
+    Sub Groups:
+    <% @image_gallery_group.subgroups.each do |group| %>
+        <li><%= link_to group.title, group %> ( images: <%= group.all_images_size %> )</li>
+    <% end %>
+    </ul>
+<% end %>
+<br/>
+<%= link_to 'New Image', new_admin_image_gallery_group_image_gallery_image_path( @image_gallery_group) %>
+
+<table align='center'>
+<% puts methods %>
+<% @all_images.in_groups_of(PER_COLUMN(),nil) do |row| %>
+<tr>
+    <% row.each do |image| %>
+    <td>
+        <% if image %>
+            <%= image_tag image.tag, :width => '170' %>
+            <%= link_to 'Edit', edit_admin_image_gallery_group_image_gallery_image_path( image.group, image ) %>
+        <% end %>
+    </td>
+    <% end %>
+</tr>
+<% end %>
+
+</table>
