@@ -11,12 +11,14 @@ function show_full_image( image_tag )
 {
     handler_div = document.getElementById('photo_zoomer_handler');
     zoomer_div = document.getElementById('photo_zoomer');
-    inner_html = '<img src="'+image_tag+'" width=650 />';
+    window_size = document.body.clientWidth - 100;
+    inner_html = '<img src="'+image_tag+'" width='+window_size+' />';
     zoomer_div.innerHTML = inner_html;
-    handler_div.style.left = 'auto';
+    handler_div.style.left = '50px';
     handler_div.style.right = 'auto';
-    handler_div.style.top = '10pt';
+    y_place = window.pageYOffset+7;
+    handler_div.style.top = y_place+'px';
     handler_div.style.bottom = 'auto';
-    handler_div.style.position = 'fixed';
+    handler_div.style.position = 'absolute';
     handler_div.style.display = 'block';
 }

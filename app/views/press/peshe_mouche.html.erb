@@ -1,3 +1,5 @@
+<%= resizer_module %>
+
 <p class='page_title'>Peshe Mouche</p>
 
 <table align=center>
@@ -10,7 +12,11 @@
         <% row.each do |i| %>
         <td>
             <% if i %>
-                <%= image_tag("press/Peshe Muoche/"+i.to_s+".jpg", :width => 300) %>
+                <% img_tag = "../images/press/Peshe Muoche/"+i.to_s+".jpg" %>
+                <img src='<%= img_tag %>' width='300'
+                        onclick="show_full_image('<%= img_tag %>');" 
+                        onmouseover="document.body.style.cursor = 'pointer';"
+                        onmouseout="document.body.style.cursor = 'default';" />
             <% end %>
         </td>
         <% end %>

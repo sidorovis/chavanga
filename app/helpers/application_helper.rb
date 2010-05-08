@@ -65,4 +65,21 @@ module ApplicationHelper
         end
         return ""
     end
+    
+    def resizer_module
+        result = javascript_include_tag "image_resizer"
+        result += 
+"<div style='display:none;position:fixed;background-color:white' 
+    onclick=\"this.style.display='none';\" 
+    onmouseover=\"document.body.style.cursor = 'pointer';\",
+    onmouseout=\"document.body.style.cursor = 'default';\"
+    id='photo_zoomer_handler'>
+  <table bgcolor=black><tr><td bgcolor=white><p align=center><b>Click to hide</b></p>
+    <div id='photo_zoomer'>
+    </div>
+  </td></tr></table>
+</div>
+"
+    end
+    
 end
