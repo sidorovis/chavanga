@@ -5,6 +5,7 @@ ActionController::Routing::Routes.draw do |map|
 #        admin.resources :image_gallery_images
 #        admin.resources :image_gallery_groups, :has_many => [ :image_gallery_images ]
 #        admin.resources :partner_links
+#        admin.resources :fishing_programs
     end
 
 

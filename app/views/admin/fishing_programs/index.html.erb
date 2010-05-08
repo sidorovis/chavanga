@@ -1,0 +1,14 @@
+<%= stylesheet_link_tag 'fishing' %>
+
+<table>
+<% @fishing_programs.each do |fp| %>
+<tr>
+    <td><%= fp.title %></td>
+    <td><%= link_to 'Show', admin_fishing_program_path(fp) %></td>
+    <td><%= link_to 'Edit', edit_admin_fishing_program_path(fp) %></td>
+    <td><%= link_to 'Destroy', admin_fishing_program_path(fp), :confirm => 'Are you sure?', :method => :delete %></td>
+</tr>
+<% end %>
+</table>
+<br/>
+<%= link_to "New Fishing Program", new_admin_fishing_program_path %>

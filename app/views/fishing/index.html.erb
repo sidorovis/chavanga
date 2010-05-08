@@ -18,32 +18,28 @@ The season begins at the end of May and lasts till the end of September. It is d
 </td></tr></table>
 
 
-<table align='center' border='0'>
+<table align='center' border='0' cellpadding=0 cellspacing=0>
+<% @fishing_programs.each do |fp| %>
 <tr>
-    <% @fishing_programs.each do |fp| %>
-        <td class='fishing_program_title'>
-            <%= link_to fp.title, fp %>
-        </td>
+  <td align=center>
+<table border='0' cellpadding=0 cellspacing=0><tr>
+  <td class='fishing_program_title'> <%= link_to fp.title, fp %> </td>
+ </tr><tr>
+  <td class='fishing_program_description' valign='top'> <%= fp.description.split('\n').join('<br/>') %> </td>
+ </tr></table>
+  </td>
+
+  <td>
+    <table border=0 cellpadding=1 cellspacing=0>
+    <tr>
+    <% fp.FishingProgramImages.each do |fpi| %>
+      <td>
+        <%= image_tag 'fishing/'+fpi.tag, :width=>160 %>
+      </td>
     <% end %>
+    </tr>
+    </table>
+  </td>
 </tr>
-<tr>
-    <% @fishing_programs.each do |fp| %>
-        <td class='fishing_program_description' valign='top'>
-            <%= fp.description.split('\n').join('<br/>') %>
-        </td>
-    <% end %>
-</tr>
-<tr>
-    <% @fishing_programs.each do |fp| %>
-        <td>
-            <table width=100%>
-                <% fp.FishingProgramImages.each do |fpi| %>
-                <tr><td>
-                    <%= image_tag 'fishing/'+fpi.tag, :width=>160 %>
-                </td></tr>
-                <% end %>
-                </table>
-        </td>
-    <% end %>
-</tr>
+<% end %>
 </table>
