@@ -1,20 +1,19 @@
+<br/>
 PARTNERS
+<br/><br/>
  <table width='100%' border=0>
  <% for pl in @left_column_partner_links %>
-   <tr valign='top'>
+   <tr valign='top' align='center'>
      <td class='partner_link_list'>
-       <%= link_to pl.title, pl.tag %><br/>
+       <div align=center>
+       <% if pl.publish_image %>
+          <%= link_to( image_tag(pl.image, :border => 0, :width => 100 ), pl.tag ) %>
+       <% else %>
+          <%= link_to pl.title, pl.tag %><br/>
+       <% end %>
+        </div>
      </td>
    </tr>
  <% end %>
-    <tr>
-     <td>
-     <div>  
-        <a href="http://www.cndspey.eu">  
-            <img src="http://www.cndspey.eu/CNDBANNERPICTURE_123.jpg" style="border:none;"/>  
-        </a>  
-     </div> 
-     </td>
-    </tr>
  </table>
  <br/>
