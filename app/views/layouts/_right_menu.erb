@@ -1,13 +1,24 @@
-<td width='155' class='right_menu' align='center'>
-    <table width='145' border='0' class='left_menu' cellspacing='0' cellpadding='0' align='left'>
-    <tr valign=top>
-        <td>
-            <p><%= link_to "FLIES", @flies_all %></p>
-            <%= link_to image_tag('right_menu/flies/f1.jpg', :width=>'145'), @flies_1 %><br/>
-            <%= link_to image_tag('right_menu/flies/f2.jpg', :width=>'145'), @flies_2 %><br/>
-            <%= link_to image_tag('right_menu/flies/f3.jpg', :width=>'145'), @flies_3 %><hr size='1' />            
-            <%= link_to "<p>THE BEST!</p>"+image_tag('right_menu/the best/best_main.jpg', :width=>'145'), @the_best_image_gallery %><br/><br/>
-        </td>
-    </tr>
-    </table>
-</td>
+<div class="right_menu_widget" id="right_menu_div">
+ <div class="right_menu_widget_element">
+  <div class="right_menu_widget_element_title">
+    <%= link_to "FLIES", @flies_all %><br/>
+  </div>
+    <%= link_to image_tag('right_menu/flies/f1.jpg', :width=>'145'), @flies_1 %><br/>
+    <%= link_to image_tag('right_menu/flies/f2.jpg', :width=>'145'), @flies_2 %><br/>
+    <%= link_to image_tag('right_menu/flies/f3.jpg', :width=>'145'), @flies_3 %>
+ </div>
+ <div class="right_menu_widget_element">
+  <div class="right_menu_widget_element_title">
+    <%= link_to "THE BEST!", @the_best_image_gallery %>
+  </div>
+  <%= link_to image_tag('right_menu/the best/best_main.jpg', :width=>'145'), @the_best_image_gallery %>
+ </div> 
+</div>
+<script>
+    new Effect.Appear('right_menu_div', { duration: 3.0,
+            afterFinish: function (obj) 
+            {
+                right_menu_div.style.opacity = 1.0;
+            }
+        });
+</script>

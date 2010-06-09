@@ -29,9 +29,12 @@ function addCodeToFunction(func,code){
     }
 }
 
-window.onload = addCodeToFunction(window.onload,function() {
-    setTimeout( 'changeLogoImage( 1 );', logo_image_change_interval )
-});
+window.onload = addCodeToFunction(
+    window.onload,function() 
+    {
+        setTimeout( 'changeLogoImage( 1 );', logo_image_change_interval )
+    }
+);
 
 function showSubMenu( menu_id )
 {

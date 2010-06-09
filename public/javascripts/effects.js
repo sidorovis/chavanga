@@ -555,6 +555,7 @@ Effect.Appear = function(element) {
   beforeSetup: function(effect) {
     effect.element.setOpacity(effect.options.from).show();
   }}, arguments[1] || { });
+ 
   return new Effect.Opacity(element,options);
 };
 

@@ -1,7 +1,182 @@
 body { 
-    background-color: #000000; 
+/*    background-color: #444444; 
+    background-color: #f6f6ff; 
+*/
+    background-color: #000000;
     font-align:arial;
 }
+
+div.full_page
+{
+    position:static;
+    width:1128px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* ------------------------------------------------------------------
+// LOGO -------------------------------------------------------------
+// ------------------------------------------------------------------
+*/
+div.full_logo
+{
+    left:0px;
+    position:static;
+    width:1128px;
+    height:290px;
+}
+div.logo {
+    position:absolute;
+    margin-left:950px;
+    top:15px;
+}
+
+/* ------------------------------------------------------------------
+// MAIN MENU --------------------------------------------------------
+// ------------------------------------------------------------------
+*/
+div.main_menu
+{
+    width:1128px;
+    background-color:#000000;
+    position:static;
+    left:0px;
+}
+
+div.main_menu_button
+{
+    float:left;
+    background-color:#000000;
+    width:161px;
+    font-family:arial;
+    text-align:center;
+    font-size:11pt;
+}
+
+/* ------------------------------------------------------------------
+// SUB ELEMENTS - Change it carefully -------------------------------
+// ------------------------------------------------------------------
+*/
+div.drop_down_menu_element, div.left_menu_widget_element, div.main_body_widget_element, div.right_menu_widget_element,
+div.main_menu_button_element, div.main_menu_button_element_mouse_over
+{
+    position:static;
+    text-align:center;
+    color:black;
+    border-style:solid;
+    border-color:#aeeeff;
+    background-color: #f9f9ff;
+    border-width:1px;
+    margin:3px;
+    margin-left:5px;
+    margin-right:3px;
+    padding:3px;
+    padding-bottom:8px;
+    font-family:arial;
+    font-size:10pt;
+    font-weight:bold;
+
+}
+/* Menu menu element mouse out */
+div.main_menu_button_element
+{
+    background-color:#dddddd;
+    border-color:#f6f6ff;
+    padding-bottom:3px;
+}
+/* Menu menu element mouse over */
+div.main_menu_button_element_mouse_over
+{
+    border-color:#0000ff;
+    padding-bottom:3px;
+}
+
+div.drop_down_menu
+{
+    opacity:0.9;
+    position:absolute;
+    display:none;
+    text-align:left;
+    background-color:#000000;
+}
+
+div.drop_down_menu_element
+{
+    font-weight:normal;
+    text-align:left;
+    padding-right:9px;
+}
+a.drop_down_main_menu { 
+    font-family:Verdana, Geneva, Arial;
+    color: #111111;
+}
+a.drop_down_main_menu:visited { 
+    color: #111111;
+}
+a.drop_down_main_menu:hover { 
+    color: #222222;
+}
+
+/* ------------------------------------------------------------------
+// Full Widget ------------------------------------------------------
+// ------------------------------------------------------------------
+*/
+div.full_widget
+{
+    position:static;
+    left:0px;
+    width:1128px;
+    background-color:#ffffff;
+}
+
+div.left_menu_widget, div.main_body_widget, div.right_menu_widget
+{
+    position:static;
+    float:left;
+    padding-top:1px;
+    padding-bottom:1px;
+    max-width:164px;
+    min-width:164px;
+    background-color: #000000;
+}
+
+div.left_menu_widget_element_title, div.right_menu_widget_element_title
+{
+    margin-top:3px;
+    margin-bottom:5px;
+}
+div.main_body_widget
+{
+    display:block;
+    min-width:800px;
+    max-width:800px; 
+}
+
+div.main_body_widget_element
+{
+    padding:6px;
+    text-align:left;
+    font-weight:normal;
+}
+
+div.left_menu_widget
+{
+    display:block;
+    opacity:0.0;
+}
+
+div.right_menu_widget
+{
+    display:block;
+    opacity:0.0;
+}
+
+
+
+
+
+
+
 
 table.main { 
     background-color: #ffffff; 
@@ -23,13 +198,6 @@ td.main_menu_button_mouse_out {
 }
 td.main_menu_button_mouse_over {
     background-color:#000000;
-}
-
-div.drop_down_menu{
-    position:absolute;
-    display:none;
-    text-align:left;
-    background-color:black;
 }
 
 td.left_menu {
@@ -86,25 +254,6 @@ a:visited {
 a:hover {
     color:#555555;
 }
-
-a.main_menu { 
-    font-family:Verdana, Geneva, Arial;
-    color: #999999;
-    font-size:12pt;
-}
-a.main_menu:visited { 
-    color: #999999;
-}
-a.main_menu:hover { 
-    color: #ffffff;
-}
-
-div.logo {
-    position:absolute;
-    margin-left:950px;
-    top:15px;
-}
-
 
 .fieldWithErrors {
   padding: 2px;

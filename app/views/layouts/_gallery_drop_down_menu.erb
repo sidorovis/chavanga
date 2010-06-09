@@ -1,5 +1,5 @@
 <% if gallery_drop_down_menu.id != gallery_drop_down_menu.parent_group_id %>
-    <li><%= link_to gallery_drop_down_menu.title, gallery_drop_down_menu, :class => 'main_menu' %></li>
+    <li><%= link_to gallery_drop_down_menu.title, gallery_drop_down_menu, :class => 'drop_down_main_menu' %></li>
 <% end %>
 <% gallery_drop_down_menu.subgroups.each do |group| %>
     <% if group.visible %>

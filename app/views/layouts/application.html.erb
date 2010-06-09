@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-    <title> Chavanga - <%= controller.controller_name.capitalize.split("_").join(" ") %></title>
+    <%= title_tag %>
     
     <meta name="Description" content="Fishing at chavanga river stays in your heart forever">
     <meta name="Keywords" content="fishing, fishes, fish, chavanga fishing, chavanga, flies, Murmansk, Varguza, Kitsa, Indiora, Kamchatka, Bystraya, Opala, Zypanova, Zhurovaya, Bolshaya, Pulonga, Pialitsa, Chapoma, Habarovsk region, Bichy, Tugur, Ketanda, Urak, Uda ">
@@ -21,23 +21,17 @@
     <% @map.to_html unless @map.blank? %>
 
     <%= javascript_include_tag "application" %>
+    <%= javascript_include_tag "prototype", "effects" %>
 
 </head>
 
 <body >
 
- <table width='1100' height='100%' border='0' align='center' 
-        class='main' cellspacing='0' cellpadding='0' >
-  <tr>
-    <%= render :partial => 'layouts/logo' %>
-  </tr>
-  <tr>
-    <%= render :partial => 'layouts/main_menu' %>
-  </tr>
-  <tr>
-    <%= render :partial => 'layouts/full_widget' %>
-  </tr>
- </table>
+<div class="full_page">
+ <%= render :partial => 'layouts/logo' %>
+ <%= render :partial => 'layouts/main_menu' %>
+ <%= render :partial => 'layouts/full_widget' %>
+<div>
 
 </body>
 </html>
