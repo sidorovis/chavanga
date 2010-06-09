@@ -244,6 +244,10 @@ td.right_menu {
     background-color:#ffffff;
 }
 
+img
+{
+    border:0;
+}
 
 a { 
     color: #000000;
