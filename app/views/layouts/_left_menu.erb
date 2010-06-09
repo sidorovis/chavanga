@@ -18,7 +18,9 @@
   <div class="left_menu_widget_element">
         <%= render :partial => 'layouts/additional_link_list' %>
   </div>
-  <%= weather_widget %>
+  <div class="left_menu_widget_element">
+        <%= weather_widget %>
+  </div>
 </div>
 <script>
     new Effect.Appear('left_menu_div', { duration: 3.0,
