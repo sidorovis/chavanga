@@ -70,9 +70,9 @@ module ApplicationHelper
     
     def weather_widget
         if ENV['RAILS_ENV'] == 'production'
-            return '<div class="left_menu_widget_element">'+
+            return ''+
             '<div align="center"><script src="http://www.weatherforecastmap.com/weather100.php?zona=russia_murmansk"></script></div>'+
-            '</div>'
+            ''
         end
         return ""
     end
