@@ -1,30 +1,33 @@
-<td width='155' class='left_menu'>
-  <table width='150' border='0' class='left_menu' cellspacing='0' cellpadding='0' align='right'>
-  <tr valign=top>
-    <td>
-        <p>MAPS</p>
+<div class="left_menu_widget" id="left_menu_div">
+  <div class="left_menu_widget_element">
+   <div class="left_menu_widget_element_title">
+    MAPS
+   </div>
         <%= link_to (
                 image_tag(
                     'map/name map.jpg', :height => 145, :width => 145, :alt => 'Chavanga map example'), 
-                    :controller => :image_gallery_groups, 
-                    :action => :show,
-                    :id => 44) %>
-    </td>
-  </tr>
-  <tr valign=top>
-    <td>
+                    :controller => :maps, 
+                    :action => :index,
+                    :module => :admin) %>
+  </div>
+  <div class="left_menu_widget_element">
         <%= render :partial => 'layouts/event_list' %>
-    </td>
-  </tr>
-  <tr>
-    <td>
+  </div>
+  <div class="left_menu_widget_element">
         <%= render :partial => 'layouts/partner_link_list' %>
-    </td>
-  </tr>
-  <tr>
-    <td>
-        <%= weather_widget %>
-    </td>
-  </tr>
-  </table>
-</td> 
+  </div>
+  <div class="left_menu_widget_element">
+        <%= render :partial => 'layouts/additional_link_list' %>
+  </div>
+  <div class="left_menu_widget_element">
+    <%= weather_widget %>
+  </div>
+</div>
+<script>
+    new Effect.Appear('left_menu_div', { duration: 3.0,
+            afterFinish: function (obj) 
+            {
+                $('left_menu_div').style.opacity = 1.0;
+            }
+        });
+</script>
