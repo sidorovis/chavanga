@@ -1,6 +1,6 @@
 <h1>Editing image_gallery_image</h1>
 
-<% form_for([@image_gallery_group, @image_gallery_image]) do |f| %>
+<% form_for([:admin,@image_gallery_group, @image_gallery_image]) do |f| %>
   <%= f.error_messages %>
 
   <p>
@@ -28,4 +28,4 @@
   </p>
 <% end %>
 
-<%= link_to 'Back', @image_gallery_group %>
+<%= link_to 'Back', [:admin,@image_gallery_group] %>

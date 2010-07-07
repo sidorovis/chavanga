@@ -1,17 +1,17 @@
 <div class="right_menu_widget" id="right_menu_div">
  <div class="right_menu_widget_element">
   <div class="right_menu_widget_element_title">
-    <%= link_to "FLIES", @flies_all %><br/>
+    <%= link_to "FLIES", [:admin,@flies_all] %><br/>
   </div>
-    <%= link_to image_tag('right_menu/flies/f1.jpg', :width=>'145'), @flies_1 %><br/>
-    <%= link_to image_tag('right_menu/flies/f2.jpg', :width=>'145'), @flies_2 %><br/>
-    <%= link_to image_tag('right_menu/flies/f3.jpg', :width=>'145'), @flies_3 %>
+    <%= link_to image_tag('right_menu/flies/f1.jpg', :width=>'145'), [:admin,@flies_1] %><br/>
+    <%= link_to image_tag('right_menu/flies/f2.jpg', :width=>'145'), [:admin,@flies_2] %><br/>
+    <%= link_to image_tag('right_menu/flies/f3.jpg', :width=>'145'), [:admin,@flies_3] %>
  </div>
  <div class="right_menu_widget_element">
   <div class="right_menu_widget_element_title">
-    <%= link_to "THE BEST!", @the_best_image_gallery %>
+    <%= link_to "THE BEST!", [:admin,@the_best_image_gallery] %>
   </div>
-  <%= link_to image_tag('right_menu/the best/best_main.jpg', :width=>'145'), @the_best_image_gallery %>
+  <%= link_to image_tag('right_menu/the best/best_main.jpg', :width=>'145'), [:admin,@the_best_image_gallery] %>
  </div> 
 </div>
 <script>

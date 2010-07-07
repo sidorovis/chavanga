@@ -1,0 +1,13 @@
+<div align='center'>
+    <hr size='0' width='640' />
+ <% [ ["Habarovsk programs","habarovsk_region"],
+      ["Kamchatka peninsula","kamchatka_peninsula"],
+      ["Kola programs","kola_peninsula"]].each do |map_program| %>
+    <b><%= map_program[0] %></b><br/><br/>
+    <%= link_to(
+        image_tag('map/'+map_program[0]+'.jpg', :alt => map_program[0], :width => 600),
+        :controller=>'maps',
+        :action=>map_program[1] ) %><br/><br/>
+        <hr size='0' width='640' />
+ <% end %>
+</div>

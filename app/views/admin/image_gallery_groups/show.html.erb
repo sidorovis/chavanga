@@ -1,12 +1,12 @@
 <%= (@image_gallery_group.id != @image_gallery_group.parent_group_id)?
-        (link_to(@image_gallery_group.parent_group.title,@image_gallery_group.parent_group)+"<br/>"):
+        (link_to(@image_gallery_group.parent_group.title,[:admin,@image_gallery_group.parent_group])+"<br/>"):
         ("") %>
 <p class='page_title'><%= @image_gallery_group.title %></p>
 <% if @image_gallery_group.subgroups.size > 0 %>
     <ul>
     Sub Groups:
     <% @image_gallery_group.subgroups.each do |group| %>
-        <li><%= link_to group.title, group %> ( images: <%= group.all_images_size %> )</li>
+        <li><%= link_to group.title, [:admin,group] %> ( images: <%= group.all_images_size %> )</li>
     <% end %>
     </ul>
 <% end %>
@@ -15,7 +15,6 @@
 <%= link_to 'Gallery Groups List', admin_image_gallery_groups_path %>
 
 <table align='center'>
-<% puts methods %>
 <% @all_images.in_groups_of(PER_COLUMN(),nil) do |row| %>
 <tr>
     <% row.each do |image| %>

@@ -1,0 +1,6 @@
+module Admin
+  class ContactController < ApplicationController
+    def index
+    end
+  end
+end

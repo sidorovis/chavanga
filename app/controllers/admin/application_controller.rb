@@ -58,5 +58,6 @@ module Admin
     def go_home
         redirect_to( :controller => :home )
     end
+        
  end
 end

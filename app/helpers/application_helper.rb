@@ -1,4 +1,5 @@
 # Methods added to this helper will be available to all templates in the application.
+#module Admin
 module ApplicationHelper
     def title_tag
         if ENV['RAILS_ENV'] == 'production'
@@ -13,7 +14,7 @@ module ApplicationHelper
     def main_menu_link_to( _name, link_path )
         link_to( 
                 _name, 
-                link_path, 
+                link_path,
                 :class => 'main_menu'
                 )
     end
@@ -92,3 +93,4 @@ module ApplicationHelper
     end
     
 end
+#end
