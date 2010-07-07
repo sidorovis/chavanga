@@ -1,14 +1,14 @@
 ActionController::Routing::Routes.draw do |map|
 
-    map.namespace :admin do |admin|
-        admin.root      :controller => "home"
-        admin.resources :articles
-        admin.resources :image_gallery_images
-        admin.resources :image_gallery_groups, :has_many => [ :image_gallery_images ]
-        admin.resources :partner_links
-        admin.resources :fishing_programs
-        admin.resources :guest_room
-    end
+ #   map.namespace :admin do |admin|
+ #       admin.root      :controller => "home"
+ #       admin.resources :articles
+ #       admin.resources :image_gallery_images
+ #       admin.resources :image_gallery_groups, :has_many => [ :image_gallery_images ]
+ #       admin.resources :partner_links
+ #       admin.resources :fishing_programs
+ #       admin.resources :guest_room
+ #   end
 
 
   map.connect 'fishing_information/:id', :controller => 'FishingSubprogram', :action => 'show'
