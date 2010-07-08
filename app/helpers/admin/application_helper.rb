@@ -32,7 +32,7 @@ module Admin::ApplicationHelper
     def admin_main_menu_fishing_button(  )
         _name = "FISHING"
         id = _name
-        _controller_name = { :controller => :fishing }
+        _controller_name = { :controller => :fishing_programs }
         result = "<div class='main_menu_button'>
                     <div id='main_menu_td_"+id+"' class='main_menu_button_element'
                     onmouseover='showSubMenu(\"fishing_programs\");main_menu_td_"+id+".setAttribute(\"class\",\"main_menu_button_element_mouse_over\");' 

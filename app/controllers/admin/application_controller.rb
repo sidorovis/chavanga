@@ -7,24 +7,38 @@
 #require 'rubygems'
 #require 'google_geocode'
 module Admin
- class ApplicationController < ActionController::Base
+  class ApplicationController < ActionController::Base
     helper :all # include all helpers, all the time
     protect_from_forgery # See ActionController::RequestForgeryProtection for details
      
-    before_filter :load_events, :load_partner_links, :load_additional_links, :load_google_map, :load_fishing_programs, :load_gallery_groups, :load_image_gallery_flies, :load_image_gallery_the_best
+    # admin
+    before_filter :authorization
+    # load left menu data
+    before_filter :load_events, :load_partner_links, :load_additional_links
+    
+    # load main menu data
+    before_filter :load_fishing_programs, :load_gallery_groups
+    
+    # load right menu data
+    before_filter :load_image_gallery_flies, :load_image_gallery_the_best
+    
+    # google map loadin
+    before_filter :load_google_map
   
+    def authorization
+        authenticate_or_request_with_http_basic("Admin Section") do |username, password|
+            @user = (username == "Admin" && password == "Password")
+        end
+    end
     def load_events
         @left_column_events = Event.all :limit => 5, :conditions => { :published => true }, :order => 'created_at DESC'
     end
-
     def load_partner_links
         @left_column_partner_links = PartnerLink.all( :conditions => { :visible => true } )
     end
-  
     def load_additional_links
         @left_column_additional_links = AdditionalLink.all( :conditions => { :published => true } )
     end
-
     def load_google_map
 #        @application_key = YAML.load_file(RAILS_ROOT + '/config/gmaps_api_key.yml')[ENV['RAILS_ENV']]
 #        if (ENV['RAILS_ENV'] == "production")
@@ -35,29 +49,23 @@ module Admin
 #    @map.control_init(:smapp_map => true, :map_type => true, :owerview_map => false)
 #    @map.center_zoom_init([66.126005,37.747779], 13)
     end
-
     def load_fishing_programs
         @menu_fishing_programs = FishingProgram.all
     end
-  
     def load_gallery_groups
         @gallery_group = ImageGalleryGroup.first( :conditions => [ "parent_group_id = id" ])
     end
-
     def load_image_gallery_flies
         @flies_all = ImageGalleryGroup.first( :conditions => { "id" => 55 } )
         @flies_1 = ImageGalleryGroup.first( :conditions => { "id" => 56 } )
         @flies_2 = ImageGalleryGroup.first( :conditions => { "id" => 57 } )
         @flies_3 = ImageGalleryGroup.first( :conditions => { "id" => 58 } )
     end
-    
     def load_image_gallery_the_best
         @the_best_image_gallery = ImageGalleryGroup.first( :conditions => { "id" => 59 } )
     end
-  
     def go_home
         redirect_to( :controller => :home )
     end
-        
- end
+  end
 end
