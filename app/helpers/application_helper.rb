@@ -71,7 +71,7 @@ module ApplicationHelper
     
     def weather_widget
         if ENV['RAILS_ENV'] == 'production'
-            return '<div align="center" style="text-align:center;width:130px;border:1px solid #ccc;background:#fff;font-color:#ddd;font-weight:bold;margin:0px 0px 0px 0px;"><script src="http://www.weatherforecastmap.com/weather2000.php?zona=russia_murmansk"></script></div>';
+            return '<iframe id="WeatherBugSticker_125x125_v2" src="http://weather.weatherbug.com/desktop-weather/web-widgets/getSticker.html?CityCode=74463&ZCode=z5545&Size=125x125&StationID=ULMM&units=1&Version=2" width="123" height="70" frameborder="0" scrolling="no" allowtransparency="yes"></iframe> ';
         end
         return ""
     end
