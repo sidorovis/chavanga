@@ -157,6 +157,7 @@ div.main_body_widget_element
     padding:6px;
     text-align:left;
     font-weight:normal;
+    min-height:700px;
 }
 
 div.left_menu_widget
