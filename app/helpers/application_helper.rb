@@ -71,7 +71,14 @@ module ApplicationHelper
     
     def weather_widget
         if ENV['RAILS_ENV'] == 'production'
-		return '<div align="center" style="text-align:center;width:130px;border:1px solid #ccc;background:#fff;font-color:#ddd;font-weight:bold;margin:0px 0px 0px 0px;"><script src="http://www.weatherforecastmap.com/weather2000.php?zona=russia_murmansk"></script></div>';
+            return '<div align="center" style="text-align:center;width:130px;border:1px solid #ccc;background:#fff;font-color:#ddd;font-weight:bold;margin:0px 0px 0px 0px;"><script src="http://www.weatherforecastmap.com/weather2000.php?zona=russia_murmansk"></script></div>';
+        end
+        return ""
+    end
+    
+    def counter_widget
+        if ENV['RAILS_ENV'] == 'production'
+            return '<img src="http://www.easycounter.com/counter.php?rilley_elf" border="0" alt="visit counter">';
         end
         return ""
     end
