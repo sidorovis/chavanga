@@ -14,7 +14,7 @@ class ImageGalleryGroup < ActiveRecord::Base
     validates_presence_of :title
     def all_images(limit = 20)
         places = limit
-        result = images.all( :conditions => { :visible => true }, :limit => places )
+        result = images.all( :limit => places )
         places = places - result.size
         subgroups.each do |group| 
             group_images = group.all_images( places )
@@ -24,7 +24,7 @@ class ImageGalleryGroup < ActiveRecord::Base
         result
     end
     def all_images_size
-        result = images.count( :conditions => { :visible => true } )
+        result = images.count( )
         subgroups.each do |group| 
             result += group.all_images_size
         end

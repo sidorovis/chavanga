@@ -13,7 +13,8 @@
   </p>
   <p>
     <%= f.label :parent_group_id %><br />
-    <%= f.select :parent_group_id, ImageGalleryGroup.all.collect { |group| [group.title, group.id] } %>
+    <%= f.select :parent_group_id, 
+        ImageGalleryGroup.all.collect { |group| [group.title, group.id] }, :selected => params[ :parent_group_id ].to_i %>
   </p>
   <p>
     <%= f.label :visible %><br />

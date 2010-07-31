@@ -11,16 +11,18 @@
     </ul>
 <% end %>
 <br/>
-<%= link_to 'New Image', new_admin_image_gallery_group_image_gallery_image_path( @image_gallery_group) %><br/>
-<%= link_to 'Gallery Groups List', admin_image_gallery_groups_path %>
+<%= link_to 'Add Image To Current Group', new_admin_image_gallery_group_image_gallery_image_path( @image_gallery_group) %><br/>
+<% # link_to 'Gallery Groups List', admin_image_gallery_groups_path %><br/>
+<%= link_to 'Edit Current Group', edit_admin_image_gallery_group_path(@image_gallery_group) %><br/>
+<%= link_to 'Create Image Subgroup', new_admin_image_gallery_group_path(:parent_group => @image_gallery_group.id)  %><br/><br/>
 
 <table align='center'>
 <% @all_images.in_groups_of(PER_COLUMN(),nil) do |row| %>
 <tr>
     <% row.each do |image| %>
-    <td>
+    <td align=center>
         <% if image %>
-            <%= image_tag image.tag, :width => '170' %>
+            <%= image_tag image.tag, :width => '170' %><br/>
             <%= link_to 'Edit', edit_admin_image_gallery_group_image_gallery_image_path( image.group, image ) %>
         <% end %>
     </td>
