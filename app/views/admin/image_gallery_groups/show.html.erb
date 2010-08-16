@@ -1,3 +1,5 @@
+<%= resizer_module %>
+
 <%= (@image_gallery_group.id != @image_gallery_group.parent_group_id)?
         (link_to(@image_gallery_group.parent_group.title,[:admin,@image_gallery_group.parent_group])+"<br/>"):
         ("") %>
@@ -22,7 +24,10 @@
     <% row.each do |image| %>
     <td align=center>
         <% if image %>
-            <%= image_tag image.tag, :width => '170' %><br/>
+            <img src='../../images/<%= image.tag %>' width='170' 
+                onclick="show_full_image('../../images/<%= image.tag %>');" 
+                onmouseover="document.body.style.cursor = 'pointer';"
+                onmouseout="document.body.style.cursor = 'default';" /><br/>
             <%= link_to 'Edit', edit_admin_image_gallery_group_image_gallery_image_path( image.group, image ) %>
         <% end %>
     </td>

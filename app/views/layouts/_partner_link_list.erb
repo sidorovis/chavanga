@@ -7,7 +7,7 @@ PARTNERS
      <td class='partner_link_list'>
        <div align=center>
        <% if pl.publish_image %>
-          <%= link_to( image_tag(pl.image, :border => 0, :width => 100 ), pl.tag ) %>
+          <%= link_to( image_tag(pl.image, :border => 0, :width => 100, :alt => pl.title ), pl.tag ) %>
        <% else %>
           <%= link_to pl.title, pl.tag %><br/>
        <% end %>

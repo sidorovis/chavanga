@@ -1,5 +1,7 @@
 class MapsController < ApplicationController
+
   def index
+    @map_categories = MapCategory.all
   end
 
   def habarovsk_region

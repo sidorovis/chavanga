@@ -216,6 +216,64 @@ INSERT INTO `image_gallery_images` VALUES (1,'main willage camp image','first im
 UNLOCK TABLES;
 
 --
+-- Table structure for table `map_categories`
+--
+
+DROP TABLE IF EXISTS `map_categories`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `map_categories` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `body` text COLLATE utf8_unicode_ci,
+  `tag` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `map_categories`
+--
+
+LOCK TABLES `map_categories` WRITE;
+/*!40000 ALTER TABLE `map_categories` DISABLE KEYS */;
+INSERT INTO `map_categories` VALUES (1,'Habarovsk programs',NULL,'habarovsk_region','2010-08-16 19:04:27','2010-08-16 19:04:27'),(2,'Kamchatka peninsula',NULL,'kamchatka_peninsula','2010-08-16 19:04:27','2010-08-16 19:04:27'),(3,'Kola programs',NULL,'kola_peninsula','2010-08-16 19:04:27','2010-08-16 19:04:27');
+/*!40000 ALTER TABLE `map_categories` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `maps`
+--
+
+DROP TABLE IF EXISTS `maps`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `maps` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `body` text COLLATE utf8_unicode_ci,
+  `tag` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `visible` tinyint(1) DEFAULT NULL,
+  `map_category_id` int(11) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `maps`
+--
+
+LOCK TABLES `maps` WRITE;
+/*!40000 ALTER TABLE `maps` DISABLE KEYS */;
+INSERT INTO `maps` VALUES (1,'Program 1',NULL,'map/habarovsk_region/h1.jpg',1,1,'2010-08-16 20:15:59','2010-08-16 20:15:59'),(2,'Program 1',NULL,'map/habarovsk_region/h2.jpg',0,1,'2010-08-16 20:15:59','2010-08-16 20:15:59'),(3,'Program 2',NULL,'map/kamchatka_peninsula/k1.jpg',1,2,'2010-08-16 20:15:59','2010-08-16 20:15:59'),(4,'Program 2',NULL,'map/kamchatka_peninsula/k2.jpg',0,2,'2010-08-16 20:15:59','2010-08-16 20:15:59'),(5,'Program 2',NULL,'map/kamchatka_peninsula/k3.jpg',0,2,'2010-08-16 20:15:59','2010-08-16 20:15:59'),(6,'Program 2',NULL,'map/kamchatka_peninsula/k4.jpg',0,2,'2010-08-16 20:15:59','2010-08-16 20:15:59'),(7,'Program 3',NULL,'map/kola_peninsula/ko1.jpg',1,3,'2010-08-16 20:15:59','2010-08-16 20:15:59');
+/*!40000 ALTER TABLE `maps` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `partner_links`
 --
 
@@ -260,7 +318,7 @@ CREATE TABLE `posts` (
   `created_at` datetime DEFAULT NULL,
   `updated_at` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -269,7 +327,7 @@ CREATE TABLE `posts` (
 
 LOCK TABLES `posts` WRITE;
 /*!40000 ALTER TABLE `posts` DISABLE KEYS */;
-INSERT INTO `posts` VALUES (7,'Flies','Hi,\r\n\r\nMay friend is planing fishing trip in Jun in Chavanga river.\r\nWhat salmon flies would you recomend for this time of year.\r\n\r\nTight lines,\r\nTomas Kolesinskas\r\nwww.ffw.lt\r\n',1,'2010-04-02 06:30:38','2010-04-02 06:30:38'),(8,'flies','Tomas, hi! Early season first part of June- weighted bright flies like as Shrimp, Cascade on double hooks # 4-6. \r\nGood luck, Vasyl',1,'2010-04-02 07:25:37','2010-04-02 07:25:37'),(9,'Kamchatka','Do you have less expencive Opala tour?',1,'2010-04-03 15:50:44','2010-04-03 15:50:44'),(10,'Kamchatka','Yes, it`s possible to use smaller MI- 2 helico for 2-3-4 rods trip. One flight hour costs 1500$. ',1,'2010-04-03 16:31:35','2010-04-03 16:31:35'),(11,'Khabarovsk','Как я понял, можно и на русском? Как попасть в тур на Бичи в Хабаровском крае? Как записаться в группу и на какое время можно рассчитывать?',1,'2010-04-04 13:20:48','2010-04-04 13:20:48'),(12,'Khabarovsk','В этом году уже вряд ли. На 2011 на 5 июня были свободны 3 места. Это лучшее время и конец сентября, конечно.',1,'2010-04-04 14:55:04','2010-04-04 14:55:04'),(13,'trout fishing','Hi !I am interesting in program 6 fishing. What is the price and what time do you propose as prime time for big trouts? \r\nThank, Alex.',1,'2010-05-08 10:14:12','2010-05-08 10:14:12'),(14,'trout fiishing','Alex Hi! About prices and all detailes, please, ask me chavangafishing.@gmail.com \r\nAnd I think that the best time to fish trophy trouts is the end of June. Another best period is the beginning of summer, early June, but  this time is not so comfortable to fish.',1,'2010-05-09 19:52:07','2010-05-09 19:52:07'),(15,'Trout fishing','Alex, sorry! Not the end of June but the end of August, before spawn time.',1,'2010-05-09 19:55:00','2010-05-09 19:55:00'),(16,'Fly fishing','Hello, just want to find out is the middle of september still available for bookings? And also is september good enough for salmon fishing or not? Thanks David',1,'2010-05-15 19:56:42','2010-05-15 19:56:42'),(17,'Fly Fishing','David, we just have 3 free places in a tour from 14.09 till 22.09.2010. 7 days fishing in a village lodge (program 1). The middle of september is a beginning of new autumn run of salmon and usually is a interesting time to fish resident and fresh salmon. Plus trouts and graylings.',1,'2010-05-16 06:53:31','2010-05-16 06:53:31'),(18,'Chavanga','Greetings! Is it possible to combine few rivers in one or two weeks tour,to try for example Chavanga and Warzuga rivers! Cheers. Steve.',1,'2010-06-03 15:54:39','2010-06-03 15:54:39'),(19,'kola peninsula','+15 ))',1,'2010-06-04 06:55:22','2010-06-04 06:55:22'),(20,'chavanga','Yes, you have Program 2 and 3. If you wish we may combine an individual program Chavanga+another river, Indiora or Pialitsa for example, to get an exellent variant ( salmon and special trout fishing). Very interesting variant is to use mix Program 1 - our Lodge (salmon fishing) and Top Camp (salmon + special grayling fishing during 1-2-3 days, as you want). By this way we can get a mix programs to achieve the most interesting variants in depending of season and river conditions and your wishes.',1,'2010-06-04 08:01:54','2010-06-04 08:01:54'),(21,'Fly','Hi, i am fishing a lot in Germany, i may plan a small trip to Chavanga next summer, if you have a list of preferable flies for Kola Peninsula. Just want to compare mines with yours :)  Thanks Bastian',1,'2010-06-15 16:55:30','2010-06-15 16:55:30'),(22,'Hi how are you sasw','Hi VEry nice posts i\'sure i\'sts nice',1,'2010-06-18 16:58:00','2010-06-18 16:58:00'),(23,'Fly','Bastian Hi! You know in early season we need large bright flies like Ally`s shrimp or Cascade, much red and orange colors. In summer- smaller sizes and more black like in Green But and Red But. From another side you can use all assortment of salmon and trouts-grayling  flies to fish salmon successfully only need to find right method of presentation.',1,'2010-07-02 14:04:08','2010-07-02 14:04:08');
+INSERT INTO `posts` VALUES (7,'Flies','Hi,\r\n\r\nMay friend is planing fishing trip in Jun in Chavanga river.\r\nWhat salmon flies would you recomend for this time of year.\r\n\r\nTight lines,\r\nTomas Kolesinskas\r\nwww.ffw.lt\r\n',1,'2010-04-02 06:30:38','2010-04-02 06:30:38'),(8,'flies','Tomas, hi! Early season first part of June- weighted bright flies like as Shrimp, Cascade on double hooks # 4-6. \r\nGood luck, Vasyl',1,'2010-04-02 07:25:37','2010-04-02 07:25:37'),(9,'Kamchatka','Do you have less expencive Opala tour?',1,'2010-04-03 15:50:44','2010-04-03 15:50:44'),(10,'Kamchatka','Yes, it`s possible to use smaller MI- 2 helico for 2-3-4 rods trip. One flight hour costs 1500$. ',1,'2010-04-03 16:31:35','2010-04-03 16:31:35'),(11,'Khabarovsk','Как я понял, можно и на русском? Как попасть в тур на Бичи в Хабаровском крае? Как записаться в группу и на какое время можно рассчитывать?',1,'2010-04-04 13:20:48','2010-04-04 13:20:48'),(12,'Khabarovsk','В этом году уже вряд ли. На 2011 на 5 июня были свободны 3 места. Это лучшее время и конец сентября, конечно.',1,'2010-04-04 14:55:04','2010-04-04 14:55:04'),(13,'trout fishing','Hi !I am interesting in program 6 fishing. What is the price and what time do you propose as prime time for big trouts? \r\nThank, Alex.',1,'2010-05-08 10:14:12','2010-05-08 10:14:12'),(14,'trout fiishing','Alex Hi! About prices and all detailes, please, ask me chavangafishing.@gmail.com \r\nAnd I think that the best time to fish trophy trouts is the end of June. Another best period is the beginning of summer, early June, but  this time is not so comfortable to fish.',1,'2010-05-09 19:52:07','2010-05-09 19:52:07'),(15,'Trout fishing','Alex, sorry! Not the end of June but the end of August, before spawn time.',1,'2010-05-09 19:55:00','2010-05-09 19:55:00'),(16,'Fly fishing','Hello, just want to find out is the middle of september still available for bookings? And also is september good enough for salmon fishing or not? Thanks David',1,'2010-05-15 19:56:42','2010-05-15 19:56:42'),(17,'Fly Fishing','David, we just have 3 free places in a tour from 14.09 till 22.09.2010. 7 days fishing in a village lodge (program 1). The middle of september is a beginning of new autumn run of salmon and usually is a interesting time to fish resident and fresh salmon. Plus trouts and graylings.',1,'2010-05-16 06:53:31','2010-05-16 06:53:31'),(18,'Chavanga','Greetings! Is it possible to combine few rivers in one or two weeks tour,to try for example Chavanga and Warzuga rivers! Cheers. Steve.',1,'2010-06-03 15:54:39','2010-06-03 15:54:39'),(19,'kola peninsula','+15 ))',1,'2010-06-04 06:55:22','2010-06-04 06:55:22'),(20,'chavanga','Yes, you have Program 2 and 3. If you wish we may combine an individual program Chavanga+another river, Indiora or Pialitsa for example, to get an exellent variant ( salmon and special trout fishing). Very interesting variant is to use mix Program 1 - our Lodge (salmon fishing) and Top Camp (salmon + special grayling fishing during 1-2-3 days, as you want). By this way we can get a mix programs to achieve the most interesting variants in depending of season and river conditions and your wishes.',1,'2010-06-04 08:01:54','2010-06-04 08:01:54'),(21,'Fly','Hi, i am fishing a lot in Germany, i may plan a small trip to Chavanga next summer, if you have a list of preferable flies for Kola Peninsula. Just want to compare mines with yours :)  Thanks Bastian',1,'2010-06-15 16:55:30','2010-06-15 16:55:30'),(22,'Hi how are you sasw','Hi VEry nice posts i\'sure i\'sts nice',1,'2010-06-18 16:58:00','2010-06-18 16:58:00'),(23,'Fly','Bastian Hi! You know in early season we need large bright flies like Ally`s shrimp or Cascade, much red and orange colors. In summer- smaller sizes and more black like in Green But and Red But. From another side you can use all assortment of salmon and trouts-grayling  flies to fish salmon successfully only need to find right method of presentation.',1,'2010-07-02 14:04:08','2010-07-02 14:04:08'),(24,'Chavanga trip','Hi there. I found your web link on the Uk flyfishing forum : http://flyforums.co.uk, i\'ve looked through the fishing trips you\'ve got, looks interesting to me. I\'ve got some friends to join me, so would probably contact you in the middle of october. Cheers Daniel',1,'2010-08-10 15:46:39','2010-08-10 15:46:39');
 /*!40000 ALTER TABLE `posts` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -292,7 +350,7 @@ CREATE TABLE `schema_migrations` (
 
 LOCK TABLES `schema_migrations` WRITE;
 /*!40000 ALTER TABLE `schema_migrations` DISABLE KEYS */;
-INSERT INTO `schema_migrations` VALUES ('20100207192339'),('20100208113900'),('20100213200140'),('20100213200417'),('20100218114331'),('20100218133835'),('20100218144744'),('20100223184001'),('20100228165842'),('20100307101319'),('20100307101422'),('20100307123131'),('20100322134813'),('20100523202210'),('20100608202943');
+INSERT INTO `schema_migrations` VALUES ('20100207192339'),('20100208113900'),('20100213200140'),('20100213200417'),('20100218114331'),('20100218133835'),('20100218144744'),('20100223184001'),('20100228165842'),('20100307101319'),('20100307101422'),('20100307123131'),('20100322134813'),('20100523202210'),('20100608202943'),('20100816183145'),('20100816183218');
 /*!40000 ALTER TABLE `schema_migrations` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -334,4 +392,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2010-07-31 21:56:28
+-- Dump completed on 2010-08-16 23:19:55

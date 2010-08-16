@@ -12,7 +12,7 @@
         <% row.each do |i| %>
         <td>
             <% if i %>
-                <% img_tag = "../images/press/Peshe Muoche/"+i.to_s+".jpg" %>
+                <% img_tag = "../../images/press/Peshe Muoche/"+i.to_s+".jpg" %>
                 <img src='<%= img_tag %>' width='300'
                         onclick="show_full_image('<%= img_tag %>');" 
                         onmouseover="document.body.style.cursor = 'pointer';"
