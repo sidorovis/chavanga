@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100608202943) do
+ActiveRecord::Schema.define(:version => 20100816183218) do
 
   create_table "additional_links", :force => true do |t|
     t.string   "title"
@@ -68,6 +68,24 @@ ActiveRecord::Schema.define(:version => 20100608202943) do
     t.string   "tag"
     t.boolean  "visible"
     t.integer  "image_gallery_group_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "map_categories", :force => true do |t|
+    t.string   "title"
+    t.text     "body"
+    t.string   "tag"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "maps", :force => true do |t|
+    t.string   "title"
+    t.text     "body"
+    t.string   "tag"
+    t.boolean  "visible"
+    t.integer  "map_category_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
