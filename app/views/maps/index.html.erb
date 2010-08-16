@@ -3,7 +3,7 @@
 <div align='center'>
     <hr size='0' width='640' />
  <% @map_categories.each do |mc| %>
-    <b><%= link_to mc.title, :controller => 'maps', :action => mc.tag %></b><br />
+    <b><%= image_tag('home/more.gif')%> <%= link_to ( mc.title), :controller => 'maps', :action => mc.tag %></b><br />
     <% @maps = mc.maps.all(:conditions => { :visible => true }) %>
     <% @maps.each do |m| %>
       <div class='map'>
