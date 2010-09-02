@@ -1,0 +1,24 @@
+<h1>Listing text_effects</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Effect code</th>
+    <th>Example code</th>
+  </tr>
+
+<% @text_effects.each do |text_effect| %>
+  <tr>
+    <td><%=h text_effect.title %></td>
+    <td><%=h text_effect.effect_code %></td>
+    <td><%=h text_effect.example_code %></td>
+    <td><%= link_to 'Show', admin_text_effect_path(text_effect) %></td>
+    <td><%= link_to 'Edit', edit_admin_text_effect_path(text_effect) %></td>
+    <td><%= link_to 'Destroy', [:admin,text_effect], :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New text_effect', new_admin_text_effect_path %>

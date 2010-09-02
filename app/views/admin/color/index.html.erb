@@ -1,0 +1,5 @@
+<b>Color list</b>
+<% @all_colors.each do |color| %>
+    <p style='color:#<%= color.value.to_s(16).rjust(6,'0') %>;'>color</p>
+<% end %>
+

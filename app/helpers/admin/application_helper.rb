@@ -19,9 +19,9 @@ module Admin::ApplicationHelper
                 :class => 'main_menu'
                 )
     end
-    def admin_main_menu_button( _name, _controller_name )
+    def admin_main_menu_button( _name, _controller_name, style_name = "main_menu_admin_button" )
         id = _name.split(" ").join("_")
-        result = "<div class='main_menu_button'>
+        result = "<div class='" + style_name + "'> 
                     <div id='main_menu_td_"+id+"' class='main_menu_button_element'
             onmouseover='main_menu_td_"+id+".setAttribute(\"class\",\"main_menu_button_element_mouse_over\");'
             onmouseout='main_menu_td_"+id.to_s+".setAttribute(\"class\",\"main_menu_button_element\");' >"
@@ -29,11 +29,11 @@ module Admin::ApplicationHelper
         result += "</div></div>";
     end
 
-    def admin_main_menu_fishing_button(  )
+    def admin_main_menu_fishing_button( style_name = "main_menu_admin_button" )
         _name = "FISHING"
         id = _name
         _controller_name = { :controller => :fishing_programs }
-        result = "<div class='main_menu_button'>
+        result = "<div class='" + style_name + "'> 
                     <div id='main_menu_td_"+id+"' class='main_menu_button_element'
                     onmouseover='showSubMenu(\"fishing_programs\");main_menu_td_"+id+".setAttribute(\"class\",\"main_menu_button_element_mouse_over\");' 
                     onmouseout='hideSubMenu(\"fishing_programs\");main_menu_td_"+id+".setAttribute(\"class\",\"main_menu_button_element\");'>"
@@ -53,11 +53,11 @@ module Admin::ApplicationHelper
 
     end
 
-    def admin_main_menu_gallery_button()
+    def admin_main_menu_gallery_button( style_name = "main_menu_admin_button" )
         _name = "GALLERY"
         id = _name
         _controller_name = [:admin,@gallery_group]
-        result = "<div class='main_menu_button'>
+        result = "<div class='" + style_name + "'> 
                     <div id='main_menu_td_"+_name+"' class='main_menu_button_element'
                     onmouseover='showSubMenu(\"gallery_groups\");main_menu_td_"+id+".setAttribute(\"class\",\"main_menu_button_element_mouse_over\");' 
                     onmouseout='hideSubMenu(\"gallery_groups\");main_menu_td_"+id+".setAttribute(\"class\",\"main_menu_button_element\");'>"

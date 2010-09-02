@@ -1,0 +1,24 @@
+<h1>Editing text_effect</h1>
+
+<% form_for([:admin,@text_effect]) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :effect_code %><br />
+    <%= f.text_area :effect_code %>
+  </p>
+  <p>
+    <%= f.label :example_code %><br />
+    <%= f.text_area :example_code %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', [:admin,@text_effect] %> |
+<%= link_to 'Back', admin_text_effects_path %>

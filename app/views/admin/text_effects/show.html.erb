@@ -1,0 +1,21 @@
+<p>
+  <b>Title:</b>
+  <%=h @text_effect.title %>
+</p>
+
+<p>
+  <b>Effect code:</b>
+  <%=h @text_effect.effect_code %>
+</p>
+
+<p>
+  <b>Example code:</b>
+  <%=h @text_effect.example_code %>
+</p>
+
+Example:
+<br/><br/>
+<div <%=@text_effect.effect_code%> > <%= @text_effect.example_code %> </div>
+<br/>
+<%= link_to 'Edit', edit_admin_text_effect_path(@text_effect) %> |
+<%= link_to 'Back', admin_text_effects_path %>

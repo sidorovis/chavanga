@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: MyString
+  effect_code: MyText
+  example_code: MyText
+
+two:
+  title: MyString
+  effect_code: MyText
+  example_code: MyText

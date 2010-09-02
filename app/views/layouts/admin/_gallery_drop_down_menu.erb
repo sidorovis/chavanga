@@ -1,5 +1,7 @@
 <% if gallery_drop_down_menu.id != gallery_drop_down_menu.parent_group_id %>
-    <li><%= link_to gallery_drop_down_menu.title, [:admin,gallery_drop_down_menu], :class => 'drop_down_main_menu' %></li>
+    <li><%= link_to gallery_drop_down_menu.title, [:admin,gallery_drop_down_menu], :class => 'drop_down_main_menu' %>
+    <%= image_tag('home/new.png') if Time.now - gallery_drop_down_menu.created_at < 4.month %>
+    </li>
 <% end %>
 <% gallery_drop_down_menu.subgroups.each do |group| %>
     <% if group.visible %>
