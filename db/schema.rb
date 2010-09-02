@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100901190354) do
+ActiveRecord::Schema.define(:version => 20100902221016) do
 
   create_table "additional_links", :force => true do |t|
     t.string   "title"
@@ -25,6 +25,17 @@ ActiveRecord::Schema.define(:version => 20100901190354) do
     t.boolean  "published"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "banners", :force => true do |t|
+    t.string   "title"
+    t.boolean  "does_image"
+    t.string   "value"
+    t.string   "href"
+    t.string   "alt"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "image"
   end
 
   create_table "colors", :force => true do |t|

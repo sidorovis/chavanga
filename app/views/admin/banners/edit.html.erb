@@ -1,0 +1,32 @@
+<h1>Editing banner</h1>
+
+<% form_for([:admin,@banner]) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :does_image %><br />
+    <%= f.check_box :does_image %>
+  </p>
+  <p>
+    <%= f.label :value %><br />
+    <%= f.text_field :value %>
+  </p>
+  <p>
+    <%= f.label :href %><br />
+    <%= f.text_field :href %>
+  </p>
+  <p>
+    <%= f.label :alt %><br />
+    <%= f.text_field :alt %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', [:admin,@banner] %> |
+<%= link_to 'Back', admin_banners_path %>

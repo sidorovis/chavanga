@@ -1,8 +1,8 @@
--- MySQL dump 10.11
+-- MySQL dump 10.13  Distrib 5.1.48, for apple-darwin10.4.0 (i386)
 --
--- Host: localhost    Database: chavanga_production
+-- Host: localhost    Database: chavanga_development
 -- ------------------------------------------------------
--- Server version	5.0.90-log
+-- Server version	5.1.48
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -23,13 +23,13 @@ DROP TABLE IF EXISTS `additional_links`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `additional_links` (
-  `id` int(11) NOT NULL auto_increment,
-  `title` varchar(255) collate utf8_unicode_ci default NULL,
-  `tag` varchar(255) collate utf8_unicode_ci default NULL,
-  `published` tinyint(1) default NULL,
-  `created_at` datetime default NULL,
-  `updated_at` datetime default NULL,
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `tag` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `published` tinyint(1) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -51,13 +51,13 @@ DROP TABLE IF EXISTS `articles`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `articles` (
-  `id` int(11) NOT NULL auto_increment,
-  `title` varchar(255) collate utf8_unicode_ci default NULL,
-  `body` text collate utf8_unicode_ci,
-  `published` tinyint(1) default NULL,
-  `created_at` datetime default NULL,
-  `updated_at` datetime default NULL,
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `body` text COLLATE utf8_unicode_ci,
+  `published` tinyint(1) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -71,6 +71,63 @@ LOCK TABLES `articles` WRITE;
 UNLOCK TABLES;
 
 --
+-- Table structure for table `banners`
+--
+
+DROP TABLE IF EXISTS `banners`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `banners` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `does_image` tinyint(1) DEFAULT NULL,
+  `value` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `href` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `alt` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  `image` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `banners`
+--
+
+LOCK TABLES `banners` WRITE;
+/*!40000 ALTER TABLE `banners` DISABLE KEYS */;
+INSERT INTO `banners` VALUES (1,'See News Banner',0,'Do You Want To Know More? Read Chavanga Blog','http://blog.chavanga.com/','Chavanga Blog','2010-09-02 20:43:34','2010-09-02 21:12:55',NULL),(2,'Another way to fish salmon ',0,'Another way to fish salmon!','http://blog.chavanga.com/2010/08/different-view-on-catching-of-salmon.html','Salmon Fishing Post 1','2010-09-02 21:09:16','2010-09-02 21:09:16',NULL),(3,'Pikes in a salmon rivers.',0,'Pikes in a salmon rivers.','http://blog.chavanga.com/2010/08/pikes-in-salmon-rivers.html','Pikes in a salmon rivers.','2010-09-02 21:18:55','2010-09-02 21:18:55',NULL);
+/*!40000 ALTER TABLE `banners` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `colors`
+--
+
+DROP TABLE IF EXISTS `colors`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `colors` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `value` int(11) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `colors`
+--
+
+LOCK TABLES `colors` WRITE;
+/*!40000 ALTER TABLE `colors` DISABLE KEYS */;
+INSERT INTO `colors` VALUES (1,16711680,'2010-09-01 19:11:18','2010-09-01 19:11:18'),(2,0,'2010-09-01 19:11:18','2010-09-01 19:11:18'),(3,16776960,'2010-09-01 19:11:18','2010-09-01 19:11:18'),(4,65535,'2010-09-01 19:11:18','2010-09-01 19:11:18'),(5,65280,'2010-09-01 19:11:18','2010-09-01 19:11:18');
+/*!40000 ALTER TABLE `colors` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `events`
 --
 
@@ -78,13 +135,13 @@ DROP TABLE IF EXISTS `events`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `events` (
-  `id` int(11) NOT NULL auto_increment,
-  `title` varchar(255) collate utf8_unicode_ci default NULL,
-  `body` text collate utf8_unicode_ci,
-  `published` tinyint(1) default NULL,
-  `created_at` datetime default NULL,
-  `updated_at` datetime default NULL,
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `body` text COLLATE utf8_unicode_ci,
+  `published` tinyint(1) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -106,13 +163,13 @@ DROP TABLE IF EXISTS `fishing_program_images`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `fishing_program_images` (
-  `id` int(11) NOT NULL auto_increment,
-  `title` varchar(255) collate utf8_unicode_ci default NULL,
-  `tag` varchar(255) collate utf8_unicode_ci default NULL,
-  `fishing_program_id` int(11) default NULL,
-  `created_at` datetime default NULL,
-  `updated_at` datetime default NULL,
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `tag` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `fishing_program_id` int(11) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -134,15 +191,15 @@ DROP TABLE IF EXISTS `fishing_programs`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `fishing_programs` (
-  `id` int(11) NOT NULL auto_increment,
-  `title` varchar(255) collate utf8_unicode_ci default NULL,
-  `description` text collate utf8_unicode_ci,
-  `created_at` datetime default NULL,
-  `updated_at` datetime default NULL,
-  `page_content` text collate utf8_unicode_ci,
-  `image_gallery_group_id` int(11) default NULL,
-  `hidden` tinyint(1) default NULL,
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `description` text COLLATE utf8_unicode_ci,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  `page_content` text COLLATE utf8_unicode_ci,
+  `image_gallery_group_id` int(11) DEFAULT NULL,
+  `hidden` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -164,14 +221,14 @@ DROP TABLE IF EXISTS `image_gallery_groups`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `image_gallery_groups` (
-  `id` int(11) NOT NULL auto_increment,
-  `title` varchar(255) collate utf8_unicode_ci default NULL,
-  `description` text collate utf8_unicode_ci,
-  `parent_group_id` int(11) default NULL,
-  `created_at` datetime default NULL,
-  `updated_at` datetime default NULL,
-  `visible` tinyint(1) default '0',
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `description` text COLLATE utf8_unicode_ci,
+  `parent_group_id` int(11) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  `visible` tinyint(1) DEFAULT '0',
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=63 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -193,15 +250,15 @@ DROP TABLE IF EXISTS `image_gallery_images`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `image_gallery_images` (
-  `id` int(11) NOT NULL auto_increment,
-  `title` varchar(255) collate utf8_unicode_ci default NULL,
-  `description` text collate utf8_unicode_ci,
-  `tag` varchar(255) collate utf8_unicode_ci default NULL,
-  `visible` tinyint(1) default NULL,
-  `image_gallery_group_id` int(11) default NULL,
-  `created_at` datetime default NULL,
-  `updated_at` datetime default NULL,
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `description` text COLLATE utf8_unicode_ci,
+  `tag` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `visible` tinyint(1) DEFAULT NULL,
+  `image_gallery_group_id` int(11) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=492 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -223,13 +280,13 @@ DROP TABLE IF EXISTS `map_categories`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `map_categories` (
-  `id` int(11) NOT NULL auto_increment,
-  `title` varchar(255) collate utf8_unicode_ci default NULL,
-  `body` text collate utf8_unicode_ci,
-  `tag` varchar(255) collate utf8_unicode_ci default NULL,
-  `created_at` datetime default NULL,
-  `updated_at` datetime default NULL,
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `body` text COLLATE utf8_unicode_ci,
+  `tag` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -251,15 +308,15 @@ DROP TABLE IF EXISTS `maps`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `maps` (
-  `id` int(11) NOT NULL auto_increment,
-  `title` varchar(255) collate utf8_unicode_ci default NULL,
-  `body` text collate utf8_unicode_ci,
-  `tag` varchar(255) collate utf8_unicode_ci default NULL,
-  `visible` tinyint(1) default NULL,
-  `map_category_id` int(11) default NULL,
-  `created_at` datetime default NULL,
-  `updated_at` datetime default NULL,
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `body` text COLLATE utf8_unicode_ci,
+  `tag` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `visible` tinyint(1) DEFAULT NULL,
+  `map_category_id` int(11) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -281,15 +338,15 @@ DROP TABLE IF EXISTS `partner_links`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `partner_links` (
-  `id` int(11) NOT NULL auto_increment,
-  `title` varchar(255) collate utf8_unicode_ci default NULL,
-  `tag` varchar(255) collate utf8_unicode_ci default NULL,
-  `visible` tinyint(1) default NULL,
-  `created_at` datetime default NULL,
-  `updated_at` datetime default NULL,
-  `image` varchar(255) collate utf8_unicode_ci default NULL,
-  `publish_image` tinyint(1) default NULL,
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `tag` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `visible` tinyint(1) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  `image` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `publish_image` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -299,7 +356,7 @@ CREATE TABLE `partner_links` (
 
 LOCK TABLES `partner_links` WRITE;
 /*!40000 ALTER TABLE `partner_links` DISABLE KEYS */;
-INSERT INTO `partner_links` VALUES (2,'Chawanga.com','http://www.bios.pl/chawanga',1,'2010-03-07 12:08:53','2010-03-07 12:08:53','left_menu/chawanga_logo.png',1),(3,'Chavanga Blog','http://blog.chavanga.com',1,'2010-04-14 21:07:28','2010-04-14 21:07:28','left_menu/blog_chavanga_logo.png',1),(4,'Cnd','http://www.cndspey.eu',1,'2010-05-23 23:31:28','2010-05-23 23:31:28','left_menu/cnd_logo.jpg',1),(5,'Чаваньга Блог','http://blog-ru.chavanga.com',1,'2010-05-23 23:31:28','2010-05-23 23:31:28','left_menu/blog_ru_chavanga.png',1);
+INSERT INTO `partner_links` VALUES (2,'Chawanga.com','http://www.bios.pl/chawanga',1,'2010-03-07 12:08:53','2010-03-07 12:08:53','left_menu/chawanga_logo.png',1),(3,'Chavanga Blog','http://blog.chavanga.com',1,'2010-04-14 21:07:28','2010-09-02 22:00:31','left_menu/blog_chavanga_logo.gif',1),(4,'Cnd','http://www.cndspey.eu',1,'2010-05-23 23:31:28','2010-05-23 23:31:28','left_menu/cnd_logo.jpg',1),(5,'Чаваньга Блог','http://blog-ru.chavanga.com',1,'2010-05-23 23:31:28','2010-05-23 23:31:28','left_menu/blog_ru_chavanga.png',1);
 /*!40000 ALTER TABLE `partner_links` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -311,13 +368,13 @@ DROP TABLE IF EXISTS `posts`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `posts` (
-  `id` int(11) NOT NULL auto_increment,
-  `title` varchar(255) collate utf8_unicode_ci default NULL,
-  `body` text collate utf8_unicode_ci,
-  `published` tinyint(1) default NULL,
-  `created_at` datetime default NULL,
-  `updated_at` datetime default NULL,
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `body` text COLLATE utf8_unicode_ci,
+  `published` tinyint(1) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -339,7 +396,7 @@ DROP TABLE IF EXISTS `schema_migrations`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `schema_migrations` (
-  `version` varchar(255) collate utf8_unicode_ci NOT NULL,
+  `version` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   UNIQUE KEY `unique_schema_migrations` (`version`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -350,7 +407,7 @@ CREATE TABLE `schema_migrations` (
 
 LOCK TABLES `schema_migrations` WRITE;
 /*!40000 ALTER TABLE `schema_migrations` DISABLE KEYS */;
-INSERT INTO `schema_migrations` VALUES ('20100207192339'),('20100208113900'),('20100213200140'),('20100213200417'),('20100218114331'),('20100218133835'),('20100218144744'),('20100223184001'),('20100228165842'),('20100307101319'),('20100307101422'),('20100307123131'),('20100322134813'),('20100523202210'),('20100608202943'),('20100816183145'),('20100816183218');
+INSERT INTO `schema_migrations` VALUES ('20100207192339'),('20100208113900'),('20100213200140'),('20100213200417'),('20100218114331'),('20100218133835'),('20100218144744'),('20100223184001'),('20100228165842'),('20100307101319'),('20100307101422'),('20100307123131'),('20100322134813'),('20100523202210'),('20100608202943'),('20100816183145'),('20100816183218'),('20100901184820'),('20100901190354'),('20100902203730'),('20100902221016');
 /*!40000 ALTER TABLE `schema_migrations` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -362,14 +419,14 @@ DROP TABLE IF EXISTS `sub_fishing_programs`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `sub_fishing_programs` (
-  `id` int(11) NOT NULL auto_increment,
-  `title` varchar(255) collate utf8_unicode_ci default NULL,
-  `body` text collate utf8_unicode_ci,
-  `visible` tinyint(1) default NULL,
-  `fishing_program_id` int(11) default NULL,
-  `created_at` datetime default NULL,
-  `updated_at` datetime default NULL,
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `body` text COLLATE utf8_unicode_ci,
+  `visible` tinyint(1) DEFAULT NULL,
+  `fishing_program_id` int(11) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -382,6 +439,34 @@ LOCK TABLES `sub_fishing_programs` WRITE;
 INSERT INTO `sub_fishing_programs` VALUES (1,'A hotel complex -  Apacha hot springs ','<p class=\'fishing_main_text\'>\nWe offer a comfortable rest in a hotel complex \"Apacha hot springs\" which is located on   Apacha hot springs. \n</p>\nThe rooms of the hotel are various:\n<p class=\'fishing_main_text\'>\nSingle rooms, double rooms, family rooms and \"Suite\". All rooms have a shower and a toilet room, beds with orthopedic mattresses. Rooms dry and smell as the forest. \n</p>\n<p class=\'fishing_main_text\'>\nIn hotel there is a restaurant with excellent home dishes, a bar, a cinema hall and a grotto (a place for rest and relax). There is a table for tennis game, a chess and backgammons.\n</p>\nIn 2008 the \"hunting lodges\" were built.  <br/>\n<p class=\'fishing_main_text\'>\nThe thermal pool open-air with night illumination will present you unforgettable minutes of pleasure! Healing properties of water are applied to treatment of illnesses of joints, bones, muscles, nervous system, vessels (phlebitises, \nthrombophlebitises), gynecologic diseases (!) and chronic intoxications. \n</p>\nThe hotel complex is far from the noisy city, the calmness and silence there reigns!  <br/>\n<p class=\'fishing_main_text\'>\n     Our hotel`s rivers are:  \n</p>\n<p class=\'fishing_main_text\'>\n<b>1.  Plotnikov river , 15 km distance.</b>\n</p>\n<p class=\'fishing_main_text\'>\n<b>2.  Karymchina river, 25 km distance.</b>\n</p>\n<p class=\'fishing_main_text\'>\n<b>3.  Bystraja river, 80 km distance. </b>\n</p>',1,5,'2010-03-22 16:10:00','2010-03-22 16:10:00'),(2,'Opala river plus program','<h3 class=\'fishing_river_title\'>(3 trips in one program).</h3>\n<p align=center>10 days fishing. </p>\n\n<p class=\'fishing_main_text\'>\n<b>Opala river area:</b> Southwest coast. The Opala river flows in a mountainous part of the south-west of Kamchatka and runs into the Okhotsk sea.  It originates on a high-mountainous plateau of a volcano Burnt. The length of the river - 161 km, the river channel occupies 4070km.sq. River proceeds at bottom of a volcano Opala. This volcano, height of 2460 metres above sea level, is predominating object of a landscape.\n</p>\n<p class=\'fishing_main_text\'>\nThe river is far from settlements and roads. Flying by helicopter to the fishing place and return back by helicopter as well. Fishing will be organized from the bank of the river and from inflatable rafts during rafting. The fishing bank lasting around 80km. At the beginning of an alloy the width of the river is from 20 to 40 m, in the bottom part of the river is around 50 to 80 m. Wind current speed is - 1,6 - 1,8 km/s, in the bottom  - 0,6 km/s., depth - 0,8 - 4 m., the water temperature is 5-8.\n</p>\n<p class=\'fishing_main_text\'>\nThe alloy begins with accompanied by beautiful kinds of volcanoes Burnt, Asachi, Mutnovsky. Further, the river cuts volcano Opala, about 20 km flows in it along the left board, everything is 5 km from volcano slopes. This part of an alloy is accompanied by a magnificent Opala volcano, which height - 2475 m. The exit on the Western Kamchatka lowland comes to the end with a threshold of 3 categories after which the river breaks into channels, forming numerous islands.\n</p>\n<p class=\'fishing_main_text\'>\nHere are all the kinds of salmon:   King Salmon,   Sockeye Salmon, a humpback salmon (Pink Salmon), a Siberian salmon (Chum Salmon),   Silver Salmon. There is a lot of  Char, Malma,   Grayling, a vein   (Rainbow Trout) and   East Siberian Char. The successful fisherman can catch    mikizha   (Rainbow Trout) or (Parasalmo mykiss), the Kamchatka salmon (Steelhead).\n</p>\n<b>Kind of fish</b><br/>\n<table align=center bgcolor=black cellpadding=1 cellspacing=1>\n<tr bgcolor=white>\n  <td> </td><td>May</td><td>June</td><td>July</td><td>August</td><td>September</td><td>October</td>\n</tr>\n<tr bgcolor=white>\n  <td>Chavycha to 30 kg, to 1m</td><td>*</td><td>****</td><td>**</td><td>*</td><td></td><td></td>\n</tr>\n<tr bgcolor=white>\n  <td>Nerka 6-7 kg to 80sm</td><td></td><td>**</td><td>****</td><td></td><td></td><td></td>\n</tr>\n<tr bgcolor=white>\n  <td>Siberian salmon 6-8 kg to 90sm</td><td></td><td></td><td>****</td><td>***</td><td></td><td></td>\n</tr>\n<tr bgcolor=white>\n  <td>Kizhuch to 7 kg to 80sm</td><td></td><td></td><td></td><td>**</td><td>****</td><td>****</td>\n</tr>\n<tr bgcolor=white>\n  <td>Golets to 1,5kg to 50sm</td><td>****</td><td>****</td><td>****</td><td>****</td><td>****</td><td>****</td>\n</tr>\n<tr bgcolor=white>\n  <td>Mikizha to 2,5kg to 65sm</td><td>****</td><td>****</td><td>****</td><td>****</td><td>****</td><td>****</td>\n</tr>\n<tr bgcolor=white>\n  <td>Humpback salmon to 2,5kg</td><td></td><td></td><td>****</td><td>****</td><td></td><td></td>\n</tr>\n<tr bgcolor=white>\n  <td>Kundza</td><td>****</td><td>****</td><td>****</td><td>****</td><td>****</td><td>****</td>\n</tr>\n<tr bgcolor=white>\n  <td>Grayling</td><td>****</td><td>****</td><td>****</td><td>****</td><td>****</td><td>****</td>\n</tr>\n<tr bgcolor=white>\n  <td>Char</td><td>****</td><td>****</td><td>****</td><td>****</td><td>****</td><td>****</td>\n</tr>\n</table>\n<b>Delivery</b> to the river and back – helicopter, distance is one hour of helicopter flight.<br/>\n<b>Accommodation</b> - hotel, tent camps and fisherman house.<br/><br/>\n<hr size=1 />\n<p class=\'fishing_main_text\'>\n<b>The Bystraya (Fast) river is</b> located in the central part of Kamchatka peninsula, it is the western coast. The river Fast (Malkinsky) the right inflow of the river, it is the typical mountain river, has 3simple thresholds, proceeds among picturesque woody mountains, in the bottom parts - among islands. The alloy passes out of settlements, among the wild nature. On tourist sports classification natural obstacles (thresholds), meeting on the river during an alloy correspond to the second category of complexity. During an alloy meetings with a brown Kamchatka bear are frequent. \n</p>\n<p class=\'fishing_main_text\'>\nThe route is calculated for 3 to 5 days, the general extent makes - 114 km.  \n</p>\n<p class=\'fishing_main_text\'>\nAccommodate in the 2-4 local tents. Food, tables, chairs- everything are supplied and carried in the big special tent. The tent-toilet is established. If it is not an alloy fishing, there is a hot shower established. The food prepares on the fire and gas.\n</p>\n<p class=\'fishing_main_text\'>\nFishing will be organized with airboats (rafts) during movement and from coast on parking.\n</p>\n<p class=\'fishing_main_text\'>\n<b>Delivery</b> to the river and back – by bus.\n</p>\n<p class=\'fishing_main_text\'>\n<b>Accommodation</b> - hotel, tent camps.  \n</p>\n<hr size=1 />\n<p class=\'fishing_main_text\'>\n<b>The river Plotnikova</b> is the left inflow of the river Big. It follows from Nachikinsky lake. In comparison with Bystraja (Malkinsky) flows in more flat places, also dissects Central range, has some inflows, in the bottom part there is a lot of channels and islands. At the beginning of an alloy the width of the river is from 20 to 40 m, in the bottom part - from 80 to 150 m. Current wind speed is 0,5 - 1,2 km/s, depth - 1,5 - 8 m., the water temperature 5-8 hailstones.\n</p>\nDistance - 20 km from our hotel, one hour by minibus. <br/>\nFishing is organized as 1-2-3 days raft alloy. <br/>\n<b>Accommodation</b> - hotel, tent camp. <br/><br/>\n\n<hr size=1 />\n<p class=\'fishing_main_text\'>\n<b>The river Karymchina</b> is the inflow of Plotnikova river. The river originates on slopes of the ridge of Balaganchik. Karymchinsky hot wells are located in the river valley Right Karymchina proceeding to the south of the river Bannoj\n</p>\nDistance - 20 km from our hotel, one hour by minibus.<br/>\nFishing is organized as 1-2-3 days raft alloy.<br/>\n<b>Accommodation</b> -  hotel, tent camp.<br/><br/>\n\n\n<h3 class=\'fishing_river_title\'>Description of a tour. </h3>\n\n1 day: the meeting at the airport, placing in hotel Apachinsky thermal sources, rest, bathing pool with thermal water. <br/>\n\n<p class=\'fishing_main_text\'>\n<b>The rooms of hotel are various:</b><br/>\n-Single rooms,<br/>\n-Twin rooms,<br/>\n-Family rooms and \"Suite\".  <br/>\n</p>\n\n<p class=\'fishing_main_text\'>\nAll rooms have a shower and a toilet room, beds with orthopedic mattresses. Rooms dry and smell as the forest. In the hotel there is a restaurant with excellent home dishes, a bar, a cinema hall and a grotto (a place for rest and relax). There is a table-tennis,  chess and backgammons are also available.\n</p>\nIn 2008 the \"hunting lodges\" were built.  <br/>\n<p class=\'fishing_main_text\'>\nOur open-air thermal pool has night illumination. A healthy  properties of water are applied to treatment of illnesses of joints, bones, muscles, nervous system, vessels (phlebitises, thrombophlebitises),   and chronic intoxications.\n</p>\n<table>\n<tr>\n<td><img src=\'../images/fishing/p5/sub_fishing_opala/i1.jpg\' width=150 /></td>\n<td><img src=\'../images/fishing/p5/sub_fishing_opala/i2.jpg\' width=150  /></td>\n<td><img src=\'../images/fishing/p5/sub_fishing_opala/i3.jpg\' width=150  /></td>\n<td><img src=\'../images/fishing/p5/sub_fishing_opala/i4.jpg\' width=150  /></td>\n</tr>\n<tr>\n<td><img src=\'../images/fishing/p5/sub_fishing_opala/i5.jpg\' width=150  /></td>\n<td><img src=\'../images/fishing/p5/sub_fishing_opala/i6.jpg\' width=150  /></td>\n<td><img src=\'../images/fishing/p5/sub_fishing_opala/i7.jpg\' width=150  /></td>\n<td><img src=\'../images/fishing/p5/sub_fishing_opala/i8.jpg\' width=150  /></td>\n</tr>\n</table>\n\n<p class=\'fishing_main_text\'>\n2 day: start by helicopter MI-8 (1 hour) on the river Opala. During a flight you can observe the volcanoes: Viljujchinsky, Burnt, Mutnovsky, Tolmachyov, Asacha, Opala. After a landing descent to water, an alloy begins with fishing. In the evening - camp installation, supper. Spending the night. \n</p>\n<p class=\'fishing_main_text\'>\n3 day: the breakfast. The alloy starts. Fishing from boats and coast, observing the bears. An easy dinner or sandwich during an alloy. Continue of an alloy. \nCamp installation. A supper. Spending the night. \n</p>\n<p class=\'fishing_main_text\'>\n4 day: the breakfast. Alloy continuation under the program. A stop at a fisherman house on stationary camp. Bank fishing. Supper. Spending the night. \n</p>\n<p class=\'fishing_main_text\'>\n5 day: the breakfast. Bank fishing. Rest. Spending the night. \n</p>\n<p class=\'fishing_main_text\'>\n6 day: the alloy termination. Flight to the hotel .  Rest, a supper, bathing in pool. \n</p>\n<p class=\'fishing_main_text\'>\n7-8-9 day: the breakfast. Departure to the river Tolmachevka. The alloy beginning. Descent \non the river Tolmachevka further to the river Karymchina then on the river Plotnikova. Returning to the hotel. \n</p>\n<p class=\'fishing_main_text\'>\n10 day: the breakfast. Departure to the river Bystraja. The beginning of an alloy. Fishing on the boats and also bank fishing available. In the evening- camp installation. Spending the night. \n</p>\n<p class=\'fishing_main_text\'>\n11 day: Continuation of an alloy with fishing. In the evening returning to the hotel. \n</p>\n<p class=\'fishing_main_text\'>\n12 day: the Transfer to the airport.\n</p>\n<b> The tour price includes:</b><br/>\n<ul>\n<li>Registration, delivery from the airport and back.</li>\n<li>Accommodation in a hotel, tents camps, sleeping bags etc.</li>\n<li>3 meals a day during all tour , services of the cook.</li>\n<li>Fishing guide.</li>\n<li>Transport for movement on the river (off-road cars, the cross-country vehicle, rafts, motor    boats, a minibus). </li>\n<li>Cost of fishing licenses.</li>\n</ul>\n<b>Not  included:</b>\n<ul>\n<li>Helicopter flights (4 hours for Opala river fishing) cost  9700 Euro for a team.</li>\n<li>The airplane ticket from Moscow to Petropavlovsk-Kamchatsky  and back  costs near  630 Euro for one person.</li>\n</ul>',1,5,'2010-03-22 16:10:00','2010-03-22 16:10:00'),(3,'Bolshaja river','<h3 class=\'fishing_river_title\'>King salmon fishing </h3>\n\n<p class=\'fishing_main_text\'>\nThe Bolshaya (Big) River is located in the central part of Kamchatka peninsula and on its western coast. It is formed by confluence of two large rivers: Bystraya and Plotnikova.  This is one of the most easily accessible and interesting place for king salmon fishing. The river has a lot of deep and wide parts which make the river comfortable for fish runs. King salmon fishing available on the river bank or floating (1 motor boat for 2 anglers).  \n</p>\n\n<b>Tour group:</b> 2 - 8 people.<br/>\n<b>Period of realization</b> – From May till July.<br/>\n<b>Accommodation</b> - Village house, 500 m from the river, sauna.<br/>\n\nMobile communication is possible almost everywhere.<br/>\n\nDelivery to the river by motorboat (0.5 - 1.5 hours to fishing areas) <br/>\n\nDay 1. Meeting at the airport. Transfer by car to the Bolshaya River (200 km).<br/>\n\nDays 2-3-4-5-6-7.  Surface float fishing on motor boats on the flows and the main part of the river. Bank river fishing. Lunch options on the river.<br/>\n\nDay 8. End of king salmon fishing. Return to the town or to  our hotel . During the journey, swimming in the thermal water pool.<br/>\n\nDay 9.  Transfer to the airport Big farewell. <br/>\n\n<p class=\'fishing_main_text\'>\n<b>The tour cost includes: </b><br/>\n<ul>\n<li>Registration, delivery from the airport and back.</li>\n<li>Accommodation in a fisherman house.</li>\n<li>3 meals a day during all tour , services of the cook.</li>\n<li>fishing guide.</li>\n<li>Transport for movement on the river (off-road cars, the cross-country vehicle, rafts, motorboats, a minibus).</li>\n<li>Cost of fishing licenses.</li>\n</ul>\n</p> \n<p class=\'fishing_main_text\'>\n<b>The tour cost not includes: </b><br/>\nThe airplane ticket from Moscow to Petropavlovsk-Kamchatsky  and back. <br/>\nPurchase of alcoholic drinks, beer, cigarettes.<br/>\nPurchase of souvenirs<br/>\n</p>',1,5,'2010-03-22 16:10:00','2010-03-22 16:10:00'),(4,'The river Zhirovaja (Fatty)','<p class=\'fishing_main_text\'>\nThe river Zhirovaja originates near an ancient plateau of an extinct volcano Zhirovsky and runs into a bay Fatty. The river Fatty has received the name owing to a confluence of the bay with the same name. The initial Russian name of the bay - Southern Fatty. Territory on which we invite you, is in the south of Kamchatka, in 80 km from a city of Petropavlovsk-Kamchatskij. You have a unique possibility to visit wild, untouched by civilization place. A narrow valley of the river Fatty runs into a volcanic plateau. In the valley, two groups of hot wells are located. The river area Fatty draws attention the most beautiful mountain, tundra and sea landscapes occupied by typically Kamchatka representatives of an animal and flora, high cleanliness and air transparency.  \n</p>\n<p class=\'fishing_main_text\'>\nHere we offer different types of relaxing: bathing in thermal sources, possibility of the mud bathing, the pedestrian journeys to the valley of pools of the rivers Fatty, Mutnovsky with visiting Top - and Nizhne-Zhirovsky thermal sources, falls, the organization of sea walks on adjoining bays, the organization of sports-amateur fishing.   \n</p>\n\nA <b>delivery</b> by sea from a bay Avachinsky to a bay Fatty is possible during the summer period. <br/>\n(1 hour of 30 minutes), then by off-road car.  <br/>\n<b>Tour group:</b> 2 - 8 people.<br/>\n<b>Period of realization</b> – from May  till October.<br/>\n<b>Fishing</b> - It is a rich spawning area of a salmon -a humpback salmon, a Siberian salmon, silver salmon ,  char (Salvelinus) and so on. <br/>\n<p class=\'fishing_main_text\'> \n<b>Accommodation</b> - The base is in a valley of the river Fatty between two ridges, consists of several structures: two 2 floor wooden houses for visitors (2 rooms and a verandah, capacity  8 persons), heating oven, cold water supply, conveniences in the street, a bath, a room for rest (a fireplace, a table with benches from an oak file), a natural bathroom with cold water. A covered wooden tant on 10 persons and semi-covered on 20 persons (are used for preparation of dishes from trophies, a barbecue) kitchen.<br/>\nIn territory of the hunting site there are also 2 hunting lodges on 10 persons, everyone who are during hunting, fishing and the pedestrian trip, can use it for lodging for the night in case of need. <br/>\nFor carrying out of hunting, fishing and the organization of tours, at the disposal of the company there is boat STRINGER for 6 persons, 2 river boats, two 16 foot rafts, and also a trade boat for carrying out 5 hour sea fishing.  \n</p>\n\n<p class=\'fishing_main_text\'> \n<b>The tour price includes:</b>\n<ul>\n<li>Registration, delivery from the airport and back.</li>\n<li>Accommodation.  </li>\n<li>3 meals a day during all tour , services of the cook,</li>\n<li>fishing guide.</li>\n<li>Transport for movement on the river (off-road cars, the cross-country vehicle, rafts, motorboats, a minibus).</li>\n<li>Cost of fishing licenses.</li>\n </ul>\n</p>\n<p class=\'fishing_main_text\'> \n<b>Not  included:</b>\n<ul>\n<li>Helicopter flights.</li>\n<li>The airplane ticket from Moscow to Petropavlovsk-Kamchatsky  and back.</li>\n</ul>\n</p>',1,5,'2010-03-22 16:10:00','2010-03-22 16:10:00'),(5,'The river Plotnikova and Karymchina ','<p class=\'fishing_main_text\'>\n<b>The river Plotnikova</b> is the left inflow of the river Big. It follows from Nachikinsky lake. In comparison with Fast (Malkinsky) flows in more flat places, also dissects Central range, has some inflows, in the bottom current it is a lot of channel and islands. Along the river there passes a highway connecting Petropavlovsk with the western coast along which some settlements are located. Therefore here often enough it is possible to meet fishermen and having a rest.\n</p>\n<p class=\'fishing_main_text\'>\nIn the beginning of an alloy the width of the river makes from 20 to 40 m, in the bottom part - from 80 to 150 m. Speed of a current 0,5 - 1,2 km/s, depth - 1,5 - 8 m. the Water temperature 5-8\nhailstones.  \n</p>\n<p class=\'fishing_main_text\'>\n<b>The river Karymchina</b> is river Plotnikova inflow. The river originates on slopes of a ridge of Balaganchik. Karymchinsky hot wells are located in the river valley Right Karymchina proceeding to the south of the river Bannoj. \n</p>\nOn Plotnikova and Karymchina rivers   probably to leave on one-day alloys with fishing.<br/>\n<br/>\n<b>Tour group:</b> 2 - 8 people.<br/>\n<b>Period of realization</b> – from May  till October. <br/> \n<b>Alloy on the rivers Plotnikova and Karymchina </b><br/>\n\n<p class=\'fishing_main_text\'>\n<b>2 days:</b><br/>\n1st day: arrival on base of rest \"On Apachinsky thermal sources\", settling in hotel, a free time, bathing in pool, walk, a supper.<br/>\n2nd day: a breakfast, departure from base of rest , delivery to a place of the beginning of an alloy, an alloy with stops on fishing and a dinner, returning to base.  \n</p>\n<p class=\'fishing_main_text\'>\n<b>3 days  </b><br/>\n1st day: arrival on base of rest \"On Apachinsky thermal sources\", settling in hotel, a free time, bathing in pool, walk, a supper.<br/>\n2nd day: a breakfast, departure from base of rest, delivery to a place of the beginning of an alloy, an alloy with stops on fishing and a dinner, in the evening camp installation, a supper.<br/>\n3rd day: alloy and fishing continuation, returning to base.<br/>\n</p>\n<b>The cost includes: </b><br/>\n<ul>\n<li>Registration, delivery from the airport and back.</li>\n<li>3 time meal a day on a \"fishing\" part of round.</li>\n<li>Service of the guide (the whole tour).</li>\n<li>Service of the cook (the whole tour).</li>\n<li>Base equipment (tents, rafts etc.).</li>\n<li>Transport service (the bus, automobile).</li>\n<li>Residence at a hotel and at a resort.</li>\n<li>Payment of licenses.</li>\n</ul>\n<b>The cost does not includes: </b><br/>\n<ul>\n<li>The airplane ticket from Moscow to Petropavlovsk-Kamchatsky  and back. </li>\n<li>Purchase of alcoholic drinks, beer, cigarettes.</li>\n<li>Purchase of souvenirs. </li>\n</ul>',1,5,'2010-03-22 16:10:00','2010-03-22 16:10:00'),(6,' Bystraya river','<h3 class=\'fishing_river_title\'>Salmon fishing trip </h3>\n\n<p class=\'fishing_main_text\'>\nThe Bystraya (Fast)  river is located in the central part of the peninsula of Kamchatka,\nat its western coast. The river is the right inflow of the river Bolshay(Big), it  is the typical mountain river, has 3 simple thresholds, proceeds among picturesque woody mountains, in the bottom current - among islands. Fishing kingdom: king salmon, silver, chum, red. cherry salmons,   a humpback salmon. Here are numerous of chars, graylings, rainbow trout.\n</p>\n<p class=\'fishing_main_text\'>\nThe alloy passes out of settlements, among the wild nature. On tourist sports classification natural obstacles (thresholds, waterfalls), meeting on the river during an alloy correspond to the second category of complexity. During an alloy, meetings with a brown Kamchatka bear are frequent. At desire visiting of Malkinsky and Apachinsky hot wells is possible. \n</p>\nThe route is calculated for 3 - 5 days, the general extent makes - 114 km. <br/>\n<p class=\'fishing_main_text\'>\nPlacing on a route is  in a 2-4 local tents, food intake in a big table tent . The tent-toilet is established. If it is not an alloy fishing, there is hot shower is established on the bank of the river. The food cooked on a fire and gas. \n</p>\nFishing will be organized with rafts during the movement and from coast on parking.<br/>\nDelivery to the river and back – by bus. <br/>\nWeekly profile of a course of a fish on the rivers Opala and Bistraya.<br/>\n\n<b>Kind of fish</b><br/>\n<table align=center bgcolor=black cellpadding=1 cellspacing=1>\n<tr bgcolor=white>\n  <td> </td><td>May</td><td>June</td><td>July</td><td>August</td><td>September</td><td>October</td>\n</tr>\n<tr bgcolor=white>\n  <td>Chavycha to 30 kg, to 1m</td><td>*</td><td>****</td><td>**</td><td>*</td><td></td><td></td>\n</tr>\n<tr bgcolor=white>\n  <td>Nerka 6-7 kg to 80sm</td><td></td><td>**</td><td>****</td><td></td><td></td><td></td>\n</tr>\n<tr bgcolor=white>\n  <td>Siberian salmon 6-8 kg to 90sm</td><td></td><td></td><td>****</td><td>***</td><td></td><td></td>\n</tr>\n<tr bgcolor=white>\n  <td>Kizhuch to 7 kg to 80sm</td><td></td><td></td><td></td><td>**</td><td>****</td><td>****</td>\n</tr>\n<tr bgcolor=white>\n  <td>Golets to 1,5kg to 50sm</td><td>****</td><td>****</td><td>****</td><td>****</td><td>****</td><td>****</td>\n</tr>\n<tr bgcolor=white>\n  <td>Mikizha to 2,5kg to 65sm</td><td>****</td><td>****</td><td>****</td><td>****</td><td>****</td><td>****</td>\n</tr>\n<tr bgcolor=white>\n  <td>Humpback salmon to 2,5kg</td><td></td><td></td><td>****</td><td>****</td><td></td><td></td>\n</tr>\n<tr bgcolor=white>\n  <td>Kundza</td><td>****</td><td>****</td><td>****</td><td>****</td><td>****</td><td>****</td>\n</tr>\n<tr bgcolor=white>\n  <td>Grayling</td><td>****</td><td>****</td><td>****</td><td>****</td><td>****</td><td>****</td>\n</tr>\n<tr bgcolor=white>\n  <td>Char</td><td>****</td><td>****</td><td>****</td><td>****</td><td>****</td><td>****</td>\n</tr>\n</table>\n\n<p class=\'fishing_main_text\'>\n<b>Period of realization:</b> From May till October. <br/>\n1st day. Arrival at the airport. Transfer to the hotel, accommodation, rest, swimming in the pools with thermal water. <br/>\n2nd day. Driving a motor vehicle to the settlement Malki, to the Upper Bystraya (145km). The beginning of rafting and fishing. Spending the night in tents. <br/>\n3-4-5-6-7th days. Fishing while rafting. The rafting takes place among majestic mountains of a median ridge along the river with rapids, secure enough for beginners. The main thing is that nature is virtually unspoiled. Spending the night in tents. </br>\n8th day. The ending of rafting and fishing. Driving to the recreation department in our hotel. Accommodation, rest, bathing in swimming-pools with hot thermal water. <br/>\n9th day. Guided city tour. Arrival to the airport. <br/>\n</p>\n<b>The cost includes: </b><br/>\n<ul>\n<li>Registration, delivery from the airport and back.</li>\n<li>3 time meal a day on a \"fishing\" part of round.</li>\n<li>Service of the guide (the whole tour).</li>\n<li>Service of the cook (the whole tour).</li>\n<li>Base equipment (tents, rafts etc.).</li>\n<li>Transport service (the bus, automobile).</li>\n<li>Residence at a hotel and at a resort.</li>\n<li>Payment of licenses.</li>\n</ul>\n<b>The cost does not includes: </b><br/>\n<ul>\n<li>The airplane ticket from Moscow to Petropavlovsk-Kamchatsky  and back. </li>\n<li>Purchase of alcoholic drinks, beer, cigarettes.</li>\n<li>Purchase of souvenirs. </li>\n</ul>',1,5,'2010-03-22 16:10:00','2010-03-22 16:10:00');
 /*!40000 ALTER TABLE `sub_fishing_programs` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Table structure for table `text_effects`
+--
+
+DROP TABLE IF EXISTS `text_effects`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `text_effects` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `effect_code` text COLLATE utf8_unicode_ci,
+  `example_code` text COLLATE utf8_unicode_ci,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `text_effects`
+--
+
+LOCK TABLES `text_effects` WRITE;
+/*!40000 ALTER TABLE `text_effects` DISABLE KEYS */;
+INSERT INTO `text_effects` VALUES (2,'Big Text Effect','style=\"font-size:14px;font-weight:bold\"','big and bold text','2010-09-01 19:45:25','2010-09-01 19:46:21');
+/*!40000 ALTER TABLE `text_effects` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -392,4 +477,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2010-09-01 18:33:10
+-- Dump completed on 2010-09-03  1:25:15

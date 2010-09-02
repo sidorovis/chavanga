@@ -98,6 +98,12 @@ module ApplicationHelper
 </div>
 "
     end
-    
+    def show_banner( banner )
+        result = link_to( banner.value, banner.href, :alt => banner.alt, :class => 'banner' )
+        if (banner.image && banner.image.size != 0)
+            result += image_tag( banner.image )
+        end
+        result
+    end
 end
 #end

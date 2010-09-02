@@ -14,7 +14,7 @@ module Admin
     # admin
     before_filter :authorization
     # load left menu data
-    before_filter :load_events, :load_partner_links, :load_additional_links
+    before_filter :load_events, :load_partner_links, :load_additional_links, :load_banners
     
     # load main menu data
     before_filter :load_fishing_programs, :load_gallery_groups
@@ -64,6 +64,13 @@ module Admin
     def load_image_gallery_the_best
         @the_best_image_gallery = ImageGalleryGroup.first( :conditions => { "id" => 59 } )
     end
+    def load_banners
+        @all_banners = Banner.all
+        puts @all_banners
+    end
+
+    
+    
     def go_home
         redirect_to( :controller => :home )
     end

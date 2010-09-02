@@ -1,7 +1,4 @@
 body { 
-/*    background-color: #444444; 
-    background-color: #f6f6ff; 
-*/
     background-color: #000000;
     font-align:arial;
 }
@@ -32,6 +29,35 @@ div.logo {
 }
 
 /* ------------------------------------------------------------------
+// BANNERS --------------------------------------------------------
+// ------------------------------------------------------------------
+*/
+div.banners
+{
+    background-color:#000000;
+    color:white;
+    width:1128px;
+    height:19px;
+    position:static;
+    left:0px;
+    text-weight:bold;
+    font-family:arial;
+    font-size:14px;
+}
+a.banner
+{
+    color:white;
+    weight:bold;
+}
+a.banner:visited
+{
+    color:white;
+}
+a.banner:hover
+{
+    color:#AAAAAA;
+}
+/* ------------------------------------------------------------------
 // MAIN MENU --------------------------------------------------------
 // ------------------------------------------------------------------
 */
@@ -43,7 +69,7 @@ div.main_menu
     left:0px;
 }
 
-div.main_menu_button
+div.main_menu_button, div.main_menu_admin_button, div.main_menu_just_admin_button
 {
     float:left;
     background-color:#000000;
@@ -51,6 +77,14 @@ div.main_menu_button
     font-family:arial;
     text-align:center;
     font-size:11pt;
+}
+div.main_menu_admin_button, div.main_menu_just_admin_button
+{
+    width:112px;
+}
+div.main_menu_just_admin_button
+{
+    background-color:#5F5F5F;
 }
 
 /* ------------------------------------------------------------------
