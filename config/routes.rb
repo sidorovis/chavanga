@@ -1,4 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
+
     map.namespace :admin do |admin|
         admin.root      :controller => "home"
  #       admin.resources :articles
@@ -9,6 +10,9 @@ ActionController::Routing::Routes.draw do |map|
         admin.resources :sub_fishing_programs
         admin.resources :guest_room
         admin.resources :events
+        admin.resources :color
+        admin.resources :text_effects
+        admin.resources :banners
     end
 
   map.connect 'fishing_information/:id', :controller => 'FishingSubprogram', :action => 'show'
