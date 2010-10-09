@@ -5,4 +5,8 @@ class PressController < ApplicationController
   end
   def peshe_mouche
   end
+  def wedkarstwo39
+  end
+  def wedkarstwo56
+  end
 end
