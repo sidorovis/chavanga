@@ -1,7 +1,7 @@
 class GuestRoomController < ApplicationController
   def index
     @new_post = Post.new
-    @posts = Post.all( :conditions => { :published => true } )
+    @posts = Post.all( :conditions => { :published => true }, :order => "id DESC" )
     
   end
   def create

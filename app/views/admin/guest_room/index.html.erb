@@ -2,26 +2,6 @@
 
 <p class='page_title'>GuestRoom</p>
 
-<% form_for(:post, @new_post) do |f| %>
-  <%= f.error_messages %>
-  <table align=center border='0'>
-  <tr>
-    <td><%= f.label :title %>: <br/>
-    <%= f.text_field :title, :size=>'52' %></td>
-  </tr>
-  <tr>
-    <td colspan=2>
-        <%= f.label :body %><br />
-        <%= f.text_area :body, :cols => 50, :rows => 7 %>
-    </td>
-  </tr>
-  <tr>
-    <td colspan=2 align=center>
-        <%= f.submit 'Post' %>
-    </td>
-  </tr>
-  </table>
-<% end %>
 <table width=86% align=center>
 <tr><td align=justify>
     <hr size=0 />
