@@ -20,9 +20,24 @@ class HomeController < ApplicationController
         description = get_description doc
         [title, link, description]
     end
+    def get_image
+        data = open("http://blog.chavanga.com").read
+
+        ind_begin = data.index("<img")
+        href_begin = data.index("src=", ind_begin)+5
+        ind_end = data.index("\"",href_begin)
+
+        image_link = data[ href_begin, ind_end - href_begin ]
+
+        if image_link.include?("blogspot.com")
+            return image_link
+        end
+        return nil
+    end
   public
     def load_news_from_blog
         @title, @link, @description = get_data
+        @image_link = get_image
         render :partial => 'news'
     end
   

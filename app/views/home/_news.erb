@@ -1,5 +1,13 @@
 <p class='home_main_text'>
-<b>News at chavanga: <%= @title %></b><br/>
-<%= @description %>...<br/>
-<%= link_to "... read more", @link %><br/><br/>
+<table width=80% align=center>
+<tr><td width=60%>
+<b>News at chavanga: <%= @title %></b><br/><br/>
+<%= @description %>
+<%= link_to "... read more", @link %>
+<% if @image_link %>
+</td><td>
+    <img src='<%= @image_link %>' width = 200 />
+<% end %>
+</td></tr>
+</table>
 </p>
