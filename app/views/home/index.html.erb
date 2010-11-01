@@ -3,6 +3,10 @@
 <p class='page_title'>Chavanga company</p>
 <table align=center width=94%><tr><td>
 
+<div id='news_data' style="position:static;">
+Loading news...
+</div>
+
 <p align=center>
  <%= image_tag 'home/main.jpg', :width => 700 %>
 </p>
@@ -11,7 +15,7 @@
 There are a lot of salmon rivers, in Scandinavia, on Kola, in the east of<br/>
 Russia and on Alaska. There are a lot of salmon rivers and all of them are <br/>
 different. Few of them sink down in soul, on some of them we never come back.</p>
-
+    
 <p class='home_why_chavanga'>
     Why Chavanga river stays in your heart forever?
 <p>
@@ -63,3 +67,7 @@ Unless something else is necessary?
 </tr>
 </table>
 <br/>
+
+<script>
+<%= remote_function( :url => { :action => :load_news_from_blog }, :update => 'news_data' ) %>
+</script>
