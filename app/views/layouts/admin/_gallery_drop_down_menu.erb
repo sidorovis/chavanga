@@ -1,10 +1,2 @@
-<% if gallery_drop_down_menu.id != gallery_drop_down_menu.parent_group_id %>
-    <li><%= link_to gallery_drop_down_menu.title, [:admin,gallery_drop_down_menu], :class => 'drop_down_main_menu' %>
-    <%= image_tag('home/new.png') if Time.now - gallery_drop_down_menu.created_at < 4.month %>
-    </li>
-<% end %>
-<% gallery_drop_down_menu.subgroups.each do |group| %>
-    <% if group.visible %>
-        <ul style='margin-left:-15px;'><%= render :partial=>'layouts/admin/gallery_drop_down_menu', :object => group %></ul>
-    <% end %>
-<% end %>
+<% if gallery_drop_down_menu.id != gallery_drop_down_menu.parent_group_id %><%= print_gallery_drop_down_menu_link gallery_drop_down_menu %><% end %>
+<% gallery_drop_down_menu.subgroups.each do |group| %><%= print_gallery_drop_down_menu_group( group ) %><% end %>

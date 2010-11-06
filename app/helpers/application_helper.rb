@@ -96,6 +96,18 @@ module ApplicationHelper
   </td></tr></table>
 </div>"
     end
+    def print_gallery_drop_down_menu_group( group )
+        if group.visible
+            return "<ul style='margin-left:-15px;'>" + render(:partial=>'layouts/admin/gallery_drop_down_menu', :object => group) +"</ul>"
+        end
+        ""
+    end
+    def print_gallery_drop_down_menu_link gallery_drop_down_menu
+        result = "<li>"+ link_to(gallery_drop_down_menu.title, [:admin,gallery_drop_down_menu], :class => 'drop_down_main_menu')
+        result += image_tag('home/new.png') if Time.now - gallery_drop_down_menu.created_at < 4.month
+        result += "</li>"
+        
+    end
     def show_banner( banner )
         result = link_to( banner.value, banner.href, :alt => banner.alt, :class => 'banner' )
         if (banner.image && banner.image.size != 0)
