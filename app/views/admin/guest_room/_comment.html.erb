@@ -1,0 +1,5 @@
+<div class="comment">
+<b><%=h comment.title %></b>
+[<%= generate_time(comment.created_at) %>]<br/>
+<%= h(comment.answer).split("\n").join("<br/>") %>
+</div>

@@ -1,5 +1,3 @@
-# Methods added to this helper will be available to all templates in the application.
-#module Admin
 module ApplicationHelper
     def title_tag
         if ENV['RAILS_ENV'] == 'production'
@@ -106,4 +104,3 @@ module ApplicationHelper
         result
     end
 end
-#end

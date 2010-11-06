@@ -1,13 +1,14 @@
 <p class='home_main_text'>
-<table width=80% align=center>
-<tr><td width=60%>
-<b>News at chavanga: <%= @title %></b><br/><br/>
-<%= @description %>
-<%= link_to "... read more", @link %>
-<% if @image_link %>
-</td><td>
-    <img src='<%= @image_link %>' width = 200 />
+<% @blogNews.each do |bn| %>
+<div>
+<div class="blog_news_description" >
+<b><%= bn.title %></b><br/>
+<%= bn.description %>...
+<%= link_to "read more", bn.link %>
+</div>
+<div>
+<%= generate_link_to_image bn %>
+</div>
+<hr size='1' />
+</div>
 <% end %>
-</td></tr>
-</table>
-</p>

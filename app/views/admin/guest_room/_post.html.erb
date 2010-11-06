@@ -1,5 +1,9 @@
 <font class='guest_room_title'><%=h post.title %></font> 
 <font class='guest_room_time'> [<%= generate_time(post.created_at) %>]</font><br/>
 <p class='guest_room_body'><%= h(post.body).split("\n").join("<br/>") %></p>
+<%= render :partial => 'comment', :collection => post.comments %>
+<div id="new_comment_to_<%= post.id %>">
+</div>
+<%= link_to_remote "Comment it", :url => { :action => :load_form, :id => post.id }, :update => "new_comment_to_"+post.id.to_s %> | 
 <%= link_to "Delete Post", admin_guest_room_path( post.id ), :confirm => 'Are you sure?', :method => :delete %>
 <hr size='0' />

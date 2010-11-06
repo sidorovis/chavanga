@@ -25,6 +25,12 @@ module Admin
       format.xml  { head :ok }
     end
   end
+  def load_form
+    @post = Post.find(params[:id])
+    @new_comment = @post.comments.new
+    render :partial => 'new_comment_form'
+  end
+    
 
  end
 end

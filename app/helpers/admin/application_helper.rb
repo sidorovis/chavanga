@@ -1,7 +1,8 @@
 # Methods added to this helper will be available to all templates in the application.
 #module Admin
 
-module Admin::ApplicationHelper
+module Admin
+module ApplicationHelper
     def admin_title_tag
         if ENV['RAILS_ENV'] == 'production'
             return "<title> Admin Chavanga - "+ 
@@ -67,7 +68,6 @@ module Admin::ApplicationHelper
         result += render :partial => 'layouts/admin/gallery_drop_down_menu', :object => @gallery_group
         result += "</div></div>"+
                 "</div></div>"
-        
     end
-    
+end
 end

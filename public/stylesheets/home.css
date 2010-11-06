@@ -11,3 +11,11 @@ p.home_main_text {
     text-indent:40px;
     text-size:11pt;
 }
+
+div.blog_news_description {
+    width:500px;
+    text-align:justify;
+    float:left;
+    margin-left:9px;
+    margin-right:9px;
+}
