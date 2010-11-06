@@ -118,7 +118,7 @@ ActiveRecord::Schema.define(:version => 20101031095053) do
   end
 
   create_table "post_comments", :force => true do |t|
-    t.string   "title"
+    t.string   "author"
     t.text     "answer"
     t.integer  "post_id"
     t.datetime "created_at"

@@ -66,11 +66,7 @@ module Admin
     end
     def load_banners
         @all_banners = Banner.all
-        puts @all_banners
     end
-
-    
-    
     def go_home
         redirect_to( :controller => :home )
     end

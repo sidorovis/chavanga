@@ -1,8 +1,8 @@
--- MySQL dump 10.11
+-- MySQL dump 10.13  Distrib 5.1.48, for apple-darwin10.4.0 (i386)
 --
--- Host: localhost    Database: chavanga_production
+-- Host: localhost    Database: chavanga_development
 -- ------------------------------------------------------
--- Server version	5.0.90-log
+-- Server version	5.1.48
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -23,13 +23,13 @@ DROP TABLE IF EXISTS `additional_links`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `additional_links` (
-  `id` int(11) NOT NULL auto_increment,
-  `title` varchar(255) collate utf8_unicode_ci default NULL,
-  `tag` varchar(255) collate utf8_unicode_ci default NULL,
-  `published` tinyint(1) default NULL,
-  `created_at` datetime default NULL,
-  `updated_at` datetime default NULL,
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `tag` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `published` tinyint(1) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -51,13 +51,13 @@ DROP TABLE IF EXISTS `articles`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `articles` (
-  `id` int(11) NOT NULL auto_increment,
-  `title` varchar(255) collate utf8_unicode_ci default NULL,
-  `body` text collate utf8_unicode_ci,
-  `published` tinyint(1) default NULL,
-  `created_at` datetime default NULL,
-  `updated_at` datetime default NULL,
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `body` text COLLATE utf8_unicode_ci,
+  `published` tinyint(1) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -78,16 +78,16 @@ DROP TABLE IF EXISTS `banners`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `banners` (
-  `id` int(11) NOT NULL auto_increment,
-  `title` varchar(255) collate utf8_unicode_ci default NULL,
-  `does_image` tinyint(1) default NULL,
-  `value` varchar(255) collate utf8_unicode_ci default NULL,
-  `href` varchar(255) collate utf8_unicode_ci default NULL,
-  `alt` varchar(255) collate utf8_unicode_ci default NULL,
-  `created_at` datetime default NULL,
-  `updated_at` datetime default NULL,
-  `image` varchar(255) collate utf8_unicode_ci default NULL,
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `does_image` tinyint(1) DEFAULT NULL,
+  `value` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `href` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `alt` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  `image` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -109,11 +109,11 @@ DROP TABLE IF EXISTS `colors`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `colors` (
-  `id` int(11) NOT NULL auto_increment,
-  `value` int(11) default NULL,
-  `created_at` datetime default NULL,
-  `updated_at` datetime default NULL,
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `value` int(11) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -135,13 +135,13 @@ DROP TABLE IF EXISTS `events`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `events` (
-  `id` int(11) NOT NULL auto_increment,
-  `title` varchar(255) collate utf8_unicode_ci default NULL,
-  `body` text collate utf8_unicode_ci,
-  `published` tinyint(1) default NULL,
-  `created_at` datetime default NULL,
-  `updated_at` datetime default NULL,
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `body` text COLLATE utf8_unicode_ci,
+  `published` tinyint(1) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -163,13 +163,13 @@ DROP TABLE IF EXISTS `fishing_program_images`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `fishing_program_images` (
-  `id` int(11) NOT NULL auto_increment,
-  `title` varchar(255) collate utf8_unicode_ci default NULL,
-  `tag` varchar(255) collate utf8_unicode_ci default NULL,
-  `fishing_program_id` int(11) default NULL,
-  `created_at` datetime default NULL,
-  `updated_at` datetime default NULL,
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `tag` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `fishing_program_id` int(11) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -191,15 +191,15 @@ DROP TABLE IF EXISTS `fishing_programs`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `fishing_programs` (
-  `id` int(11) NOT NULL auto_increment,
-  `title` varchar(255) collate utf8_unicode_ci default NULL,
-  `description` text collate utf8_unicode_ci,
-  `created_at` datetime default NULL,
-  `updated_at` datetime default NULL,
-  `page_content` text collate utf8_unicode_ci,
-  `image_gallery_group_id` int(11) default NULL,
-  `hidden` tinyint(1) default NULL,
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `description` text COLLATE utf8_unicode_ci,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  `page_content` text COLLATE utf8_unicode_ci,
+  `image_gallery_group_id` int(11) DEFAULT NULL,
+  `hidden` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -221,14 +221,14 @@ DROP TABLE IF EXISTS `image_gallery_groups`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `image_gallery_groups` (
-  `id` int(11) NOT NULL auto_increment,
-  `title` varchar(255) collate utf8_unicode_ci default NULL,
-  `description` text collate utf8_unicode_ci,
-  `parent_group_id` int(11) default NULL,
-  `created_at` datetime default NULL,
-  `updated_at` datetime default NULL,
-  `visible` tinyint(1) default '0',
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `description` text COLLATE utf8_unicode_ci,
+  `parent_group_id` int(11) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  `visible` tinyint(1) DEFAULT '0',
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=63 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -250,15 +250,15 @@ DROP TABLE IF EXISTS `image_gallery_images`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `image_gallery_images` (
-  `id` int(11) NOT NULL auto_increment,
-  `title` varchar(255) collate utf8_unicode_ci default NULL,
-  `description` text collate utf8_unicode_ci,
-  `tag` varchar(255) collate utf8_unicode_ci default NULL,
-  `visible` tinyint(1) default NULL,
-  `image_gallery_group_id` int(11) default NULL,
-  `created_at` datetime default NULL,
-  `updated_at` datetime default NULL,
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `description` text COLLATE utf8_unicode_ci,
+  `tag` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `visible` tinyint(1) DEFAULT NULL,
+  `image_gallery_group_id` int(11) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=492 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -280,13 +280,13 @@ DROP TABLE IF EXISTS `map_categories`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `map_categories` (
-  `id` int(11) NOT NULL auto_increment,
-  `title` varchar(255) collate utf8_unicode_ci default NULL,
-  `body` text collate utf8_unicode_ci,
-  `tag` varchar(255) collate utf8_unicode_ci default NULL,
-  `created_at` datetime default NULL,
-  `updated_at` datetime default NULL,
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `body` text COLLATE utf8_unicode_ci,
+  `tag` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -308,15 +308,15 @@ DROP TABLE IF EXISTS `maps`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `maps` (
-  `id` int(11) NOT NULL auto_increment,
-  `title` varchar(255) collate utf8_unicode_ci default NULL,
-  `body` text collate utf8_unicode_ci,
-  `tag` varchar(255) collate utf8_unicode_ci default NULL,
-  `visible` tinyint(1) default NULL,
-  `map_category_id` int(11) default NULL,
-  `created_at` datetime default NULL,
-  `updated_at` datetime default NULL,
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `body` text COLLATE utf8_unicode_ci,
+  `tag` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `visible` tinyint(1) DEFAULT NULL,
+  `map_category_id` int(11) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -338,15 +338,15 @@ DROP TABLE IF EXISTS `partner_links`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `partner_links` (
-  `id` int(11) NOT NULL auto_increment,
-  `title` varchar(255) collate utf8_unicode_ci default NULL,
-  `tag` varchar(255) collate utf8_unicode_ci default NULL,
-  `visible` tinyint(1) default NULL,
-  `created_at` datetime default NULL,
-  `updated_at` datetime default NULL,
-  `image` varchar(255) collate utf8_unicode_ci default NULL,
-  `publish_image` tinyint(1) default NULL,
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `tag` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `visible` tinyint(1) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  `image` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `publish_image` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -361,6 +361,33 @@ INSERT INTO `partner_links` VALUES (2,'Chawanga.com','http://www.bios.pl/chawang
 UNLOCK TABLES;
 
 --
+-- Table structure for table `post_comments`
+--
+
+DROP TABLE IF EXISTS `post_comments`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `post_comments` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `author` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `answer` text COLLATE utf8_unicode_ci,
+  `post_id` int(11) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `post_comments`
+--
+
+LOCK TABLES `post_comments` WRITE;
+/*!40000 ALTER TABLE `post_comments` DISABLE KEYS */;
+/*!40000 ALTER TABLE `post_comments` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `posts`
 --
 
@@ -368,13 +395,13 @@ DROP TABLE IF EXISTS `posts`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `posts` (
-  `id` int(11) NOT NULL auto_increment,
-  `title` varchar(255) collate utf8_unicode_ci default NULL,
-  `body` text collate utf8_unicode_ci,
-  `published` tinyint(1) default NULL,
-  `created_at` datetime default NULL,
-  `updated_at` datetime default NULL,
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `body` text COLLATE utf8_unicode_ci,
+  `published` tinyint(1) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=82 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -396,7 +423,7 @@ DROP TABLE IF EXISTS `schema_migrations`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `schema_migrations` (
-  `version` varchar(255) collate utf8_unicode_ci NOT NULL,
+  `version` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   UNIQUE KEY `unique_schema_migrations` (`version`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -407,7 +434,7 @@ CREATE TABLE `schema_migrations` (
 
 LOCK TABLES `schema_migrations` WRITE;
 /*!40000 ALTER TABLE `schema_migrations` DISABLE KEYS */;
-INSERT INTO `schema_migrations` VALUES ('20100207192339'),('20100208113900'),('20100213200140'),('20100213200417'),('20100218114331'),('20100218133835'),('20100218144744'),('20100223184001'),('20100228165842'),('20100307101319'),('20100307101422'),('20100307123131'),('20100322134813'),('20100523202210'),('20100608202943'),('20100816183145'),('20100816183218'),('20100901184820'),('20100901190354'),('20100902203730'),('20100902221016');
+INSERT INTO `schema_migrations` VALUES ('20100207192339'),('20100208113900'),('20100213200140'),('20100213200417'),('20100218114331'),('20100218133835'),('20100218144744'),('20100223184001'),('20100228165842'),('20100307101319'),('20100307101422'),('20100307123131'),('20100322134813'),('20100523202210'),('20100608202943'),('20100816183145'),('20100816183218'),('20100901184820'),('20100901190354'),('20100902203730'),('20100902221016'),('20101031095053');
 /*!40000 ALTER TABLE `schema_migrations` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -419,14 +446,14 @@ DROP TABLE IF EXISTS `sub_fishing_programs`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `sub_fishing_programs` (
-  `id` int(11) NOT NULL auto_increment,
-  `title` varchar(255) collate utf8_unicode_ci default NULL,
-  `body` text collate utf8_unicode_ci,
-  `visible` tinyint(1) default NULL,
-  `fishing_program_id` int(11) default NULL,
-  `created_at` datetime default NULL,
-  `updated_at` datetime default NULL,
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `body` text COLLATE utf8_unicode_ci,
+  `visible` tinyint(1) DEFAULT NULL,
+  `fishing_program_id` int(11) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -448,13 +475,13 @@ DROP TABLE IF EXISTS `text_effects`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `text_effects` (
-  `id` int(11) NOT NULL auto_increment,
-  `title` varchar(255) collate utf8_unicode_ci default NULL,
-  `effect_code` text collate utf8_unicode_ci,
-  `example_code` text collate utf8_unicode_ci,
-  `created_at` datetime default NULL,
-  `updated_at` datetime default NULL,
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `effect_code` text COLLATE utf8_unicode_ci,
+  `example_code` text COLLATE utf8_unicode_ci,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -477,4 +504,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2010-11-06 11:09:48
+-- Dump completed on 2010-11-06 14:47:58

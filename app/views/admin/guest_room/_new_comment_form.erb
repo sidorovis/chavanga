@@ -1,9 +1,10 @@
-<% form_for(:comment, @new_comment) do |f| %>
+<% form_for(:comment, @new_comment, :url => { :action => "create_comment" } ) do |f| %>
   <%= f.error_messages %>
+  <%= hidden_field(:comment, :post_id, :value => @new_comment.post_id ) %>
   <table align=center border='0'>
   <tr>
-    <td><%= f.label :title %>: <br/>
-    <%= f.text_field :title, :size=>'52' %></td>
+    <td><%= f.label :author %>: <br/>
+    <%= f.text_field :author, :value => "Chavanga", :size=>'52' %></td>
   </tr>
   <tr>
     <td colspan=2>

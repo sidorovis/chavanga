@@ -8,7 +8,8 @@ ActionController::Routing::Routes.draw do |map|
         admin.resources :partner_links
         admin.resources :fishing_programs
         admin.resources :sub_fishing_programs
-        admin.resources :guest_room
+#        admin.resources :guest_room
+#        admin.connect 'guest_room/destroy_comment', :controller => 'guest_room', :action => 'destroy_comment'
         admin.resources :events
         admin.resources :color
         admin.resources :text_effects
