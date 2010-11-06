@@ -1,8 +1,9 @@
 <p class='home_main_text'>
 <% @blogNews.each do |bn| %>
-<div>
+<div class="blog_news">
 <div class="blog_news_description" >
-<b><%= bn.title %></b><br/>
+<br/>
+<b><%= bn.title %></b><br/><br/>
 <%= bn.description %>...
 <%= link_to "read more", bn.link %>
 </div>

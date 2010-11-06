@@ -12,10 +12,17 @@ p.home_main_text {
     text-size:11pt;
 }
 
+div.blog_news {
+    width:700px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
 div.blog_news_description {
-    width:500px;
+    width:480px;
     text-align:justify;
     float:left;
     margin-left:9px;
+    margin-bottom:5px;
     margin-right:9px;
 }
