@@ -3,9 +3,11 @@
   <div class="right_menu_widget_element_title">
     <%= link_to "FLIES", @flies_all %><br/>
   </div>
-    <%= link_to image_tag('right_menu/flies/f1.jpg', :width=>'145'), @flies_1 %><br/>
-    <%= link_to image_tag('right_menu/flies/f2.jpg', :width=>'145'), @flies_2 %><br/>
-    <%= link_to image_tag('right_menu/flies/f3.jpg', :width=>'145'), @flies_3 %>
+    <% (0..@flies_images.size - 1).each do |i| %>
+       <div style="margin:2px">
+    	<%= link_to image_tag(@flies_images[i].tag, :width=>'145', :height => 125), @flies_links[i] %><br/>
+       </div>
+    <% end %>
  </div>
  <div class="right_menu_widget_element">
   <div class="right_menu_widget_element_title">

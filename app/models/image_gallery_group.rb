@@ -14,7 +14,7 @@ class ImageGalleryGroup < ActiveRecord::Base
     validates_presence_of :title
     def all_images(limit = 20)
         places = limit
-        result = images.all( :limit => places )
+        result = images.all( :limit => places, :order => "created_at DESC" )
         places = places - result.size
         subgroups.each do |group| 
             group_images = group.all_images( places )

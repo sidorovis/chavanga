@@ -12,7 +12,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
 
   before_filter :load_events, :load_partner_links, :load_additional_links, :load_google_map, :load_fishing_programs, :load_gallery_groups, :load_image_gallery_flies, :load_image_gallery_the_best, :load_banners
-  
+
   def load_events
     @left_column_events = Event.all :limit => 5, :conditions => { :published => true }, :order => 'created_at DESC'
   end
@@ -44,11 +44,26 @@ class ApplicationController < ActionController::Base
         @gallery_group = ImageGalleryGroup.first( :conditions => [ "parent_group_id = id" ])
     end
 
+
     def load_image_gallery_flies
+        @right_menu_flies_count = 5
+    
         @flies_all = ImageGalleryGroup.first( :conditions => { "id" => 55 } )
-        @flies_1 = ImageGalleryGroup.first( :conditions => { "id" => 56 } )
-        @flies_2 = ImageGalleryGroup.first( :conditions => { "id" => 57 } )
-        @flies_3 = ImageGalleryGroup.first( :conditions => { "id" => 58 } )
+        all_images = @flies_all.all_images
+        
+        @flies_links = []
+        @flies_images = []
+        selected_ids = []
+        
+        (0..@right_menu_flies_count - 1).each do |i|
+            image_id = (rand()*all_images.size).to_i
+            while ( selected_ids.include?( image_id ) )
+                image_id = (rand()*all_images.size).to_i
+            end
+            @flies_images << all_images[ image_id ]
+            @flies_links << @flies_images[i].group
+        end
+        
     end
     
     def load_image_gallery_the_best
@@ -57,7 +72,7 @@ class ApplicationController < ActionController::Base
     
     def load_banners
         @all_banners = Banner.all
-    end
+    	end
   
   def go_home
     redirect_to( :controller => :home )

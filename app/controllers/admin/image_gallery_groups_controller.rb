@@ -84,7 +84,7 @@ module Admin
     @image_gallery_group.destroy
 
     respond_to do |format|
-      format.html { redirect_to([:admin, image_gallery_groups_url]) }
+      format.html { redirect_to( admin_image_gallery_groups_url ) }
       format.xml  { head :ok }
     end
   end

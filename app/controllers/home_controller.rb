@@ -47,10 +47,9 @@ class HomeController < ApplicationController
         begin
             @blogNews = getBlogNews
             render :partial => 'news'
-#        rescue
-#            render :text => "Hello World"
-#            @blogNews = []
-#            render :partial => 'news'
+        rescue
+            @blogNews = []
+            render :partial => 'news'
         end
     end
   

@@ -16,7 +16,7 @@
     <td><%=h image_gallery_group.visible %></td>
     <td><%= link_to 'Show', image_gallery_group %></td>
     <td><%= link_to 'Edit', edit_admin_image_gallery_group_path(image_gallery_group) %></td>
-    <td><%= link_to 'Destroy', image_gallery_group, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Destroy', admin_image_gallery_group_url(image_gallery_group), :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
