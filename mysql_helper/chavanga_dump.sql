@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.1.48, for apple-darwin10.4.0 (i386)
+-- MySQL dump 10.11
 --
--- Host: localhost    Database: chavanga_development
+-- Host: localhost    Database: chavanga_production
 -- ------------------------------------------------------
--- Server version	5.1.48
+-- Server version	5.0.90-log
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -23,13 +23,13 @@ DROP TABLE IF EXISTS `additional_links`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `additional_links` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `tag` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `published` tinyint(1) DEFAULT NULL,
-  `created_at` datetime DEFAULT NULL,
-  `updated_at` datetime DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  `id` int(11) NOT NULL auto_increment,
+  `title` varchar(255) collate utf8_unicode_ci default NULL,
+  `tag` varchar(255) collate utf8_unicode_ci default NULL,
+  `published` tinyint(1) default NULL,
+  `created_at` datetime default NULL,
+  `updated_at` datetime default NULL,
+  PRIMARY KEY  (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -51,13 +51,13 @@ DROP TABLE IF EXISTS `articles`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `articles` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `body` text COLLATE utf8_unicode_ci,
-  `published` tinyint(1) DEFAULT NULL,
-  `created_at` datetime DEFAULT NULL,
-  `updated_at` datetime DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  `id` int(11) NOT NULL auto_increment,
+  `title` varchar(255) collate utf8_unicode_ci default NULL,
+  `body` text collate utf8_unicode_ci,
+  `published` tinyint(1) default NULL,
+  `created_at` datetime default NULL,
+  `updated_at` datetime default NULL,
+  PRIMARY KEY  (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -78,16 +78,16 @@ DROP TABLE IF EXISTS `banners`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `banners` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `does_image` tinyint(1) DEFAULT NULL,
-  `value` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `href` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `alt` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `created_at` datetime DEFAULT NULL,
-  `updated_at` datetime DEFAULT NULL,
-  `image` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  `id` int(11) NOT NULL auto_increment,
+  `title` varchar(255) collate utf8_unicode_ci default NULL,
+  `does_image` tinyint(1) default NULL,
+  `value` varchar(255) collate utf8_unicode_ci default NULL,
+  `href` varchar(255) collate utf8_unicode_ci default NULL,
+  `alt` varchar(255) collate utf8_unicode_ci default NULL,
+  `created_at` datetime default NULL,
+  `updated_at` datetime default NULL,
+  `image` varchar(255) collate utf8_unicode_ci default NULL,
+  PRIMARY KEY  (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -109,11 +109,11 @@ DROP TABLE IF EXISTS `colors`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `colors` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `value` int(11) DEFAULT NULL,
-  `created_at` datetime DEFAULT NULL,
-  `updated_at` datetime DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  `id` int(11) NOT NULL auto_increment,
+  `value` int(11) default NULL,
+  `created_at` datetime default NULL,
+  `updated_at` datetime default NULL,
+  PRIMARY KEY  (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -135,13 +135,13 @@ DROP TABLE IF EXISTS `events`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `events` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `body` text COLLATE utf8_unicode_ci,
-  `published` tinyint(1) DEFAULT NULL,
-  `created_at` datetime DEFAULT NULL,
-  `updated_at` datetime DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  `id` int(11) NOT NULL auto_increment,
+  `title` varchar(255) collate utf8_unicode_ci default NULL,
+  `body` text collate utf8_unicode_ci,
+  `published` tinyint(1) default NULL,
+  `created_at` datetime default NULL,
+  `updated_at` datetime default NULL,
+  PRIMARY KEY  (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -163,13 +163,13 @@ DROP TABLE IF EXISTS `fishing_program_images`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `fishing_program_images` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `tag` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `fishing_program_id` int(11) DEFAULT NULL,
-  `created_at` datetime DEFAULT NULL,
-  `updated_at` datetime DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  `id` int(11) NOT NULL auto_increment,
+  `title` varchar(255) collate utf8_unicode_ci default NULL,
+  `tag` varchar(255) collate utf8_unicode_ci default NULL,
+  `fishing_program_id` int(11) default NULL,
+  `created_at` datetime default NULL,
+  `updated_at` datetime default NULL,
+  PRIMARY KEY  (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -191,15 +191,15 @@ DROP TABLE IF EXISTS `fishing_programs`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `fishing_programs` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `description` text COLLATE utf8_unicode_ci,
-  `created_at` datetime DEFAULT NULL,
-  `updated_at` datetime DEFAULT NULL,
-  `page_content` text COLLATE utf8_unicode_ci,
-  `image_gallery_group_id` int(11) DEFAULT NULL,
-  `hidden` tinyint(1) DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  `id` int(11) NOT NULL auto_increment,
+  `title` varchar(255) collate utf8_unicode_ci default NULL,
+  `description` text collate utf8_unicode_ci,
+  `created_at` datetime default NULL,
+  `updated_at` datetime default NULL,
+  `page_content` text collate utf8_unicode_ci,
+  `image_gallery_group_id` int(11) default NULL,
+  `hidden` tinyint(1) default NULL,
+  PRIMARY KEY  (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -221,14 +221,14 @@ DROP TABLE IF EXISTS `image_gallery_groups`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `image_gallery_groups` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `description` text COLLATE utf8_unicode_ci,
-  `parent_group_id` int(11) DEFAULT NULL,
-  `created_at` datetime DEFAULT NULL,
-  `updated_at` datetime DEFAULT NULL,
-  `visible` tinyint(1) DEFAULT '0',
-  PRIMARY KEY (`id`)
+  `id` int(11) NOT NULL auto_increment,
+  `title` varchar(255) collate utf8_unicode_ci default NULL,
+  `description` text collate utf8_unicode_ci,
+  `parent_group_id` int(11) default NULL,
+  `created_at` datetime default NULL,
+  `updated_at` datetime default NULL,
+  `visible` tinyint(1) default '0',
+  PRIMARY KEY  (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=63 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -250,15 +250,15 @@ DROP TABLE IF EXISTS `image_gallery_images`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `image_gallery_images` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `description` text COLLATE utf8_unicode_ci,
-  `tag` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `visible` tinyint(1) DEFAULT NULL,
-  `image_gallery_group_id` int(11) DEFAULT NULL,
-  `created_at` datetime DEFAULT NULL,
-  `updated_at` datetime DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  `id` int(11) NOT NULL auto_increment,
+  `title` varchar(255) collate utf8_unicode_ci default NULL,
+  `description` text collate utf8_unicode_ci,
+  `tag` varchar(255) collate utf8_unicode_ci default NULL,
+  `visible` tinyint(1) default NULL,
+  `image_gallery_group_id` int(11) default NULL,
+  `created_at` datetime default NULL,
+  `updated_at` datetime default NULL,
+  PRIMARY KEY  (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=492 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -280,13 +280,13 @@ DROP TABLE IF EXISTS `map_categories`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `map_categories` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `body` text COLLATE utf8_unicode_ci,
-  `tag` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `created_at` datetime DEFAULT NULL,
-  `updated_at` datetime DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  `id` int(11) NOT NULL auto_increment,
+  `title` varchar(255) collate utf8_unicode_ci default NULL,
+  `body` text collate utf8_unicode_ci,
+  `tag` varchar(255) collate utf8_unicode_ci default NULL,
+  `created_at` datetime default NULL,
+  `updated_at` datetime default NULL,
+  PRIMARY KEY  (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -308,15 +308,15 @@ DROP TABLE IF EXISTS `maps`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `maps` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `body` text COLLATE utf8_unicode_ci,
-  `tag` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `visible` tinyint(1) DEFAULT NULL,
-  `map_category_id` int(11) DEFAULT NULL,
-  `created_at` datetime DEFAULT NULL,
-  `updated_at` datetime DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  `id` int(11) NOT NULL auto_increment,
+  `title` varchar(255) collate utf8_unicode_ci default NULL,
+  `body` text collate utf8_unicode_ci,
+  `tag` varchar(255) collate utf8_unicode_ci default NULL,
+  `visible` tinyint(1) default NULL,
+  `map_category_id` int(11) default NULL,
+  `created_at` datetime default NULL,
+  `updated_at` datetime default NULL,
+  PRIMARY KEY  (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -338,15 +338,15 @@ DROP TABLE IF EXISTS `partner_links`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `partner_links` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `tag` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `visible` tinyint(1) DEFAULT NULL,
-  `created_at` datetime DEFAULT NULL,
-  `updated_at` datetime DEFAULT NULL,
-  `image` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `publish_image` tinyint(1) DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  `id` int(11) NOT NULL auto_increment,
+  `title` varchar(255) collate utf8_unicode_ci default NULL,
+  `tag` varchar(255) collate utf8_unicode_ci default NULL,
+  `visible` tinyint(1) default NULL,
+  `created_at` datetime default NULL,
+  `updated_at` datetime default NULL,
+  `image` varchar(255) collate utf8_unicode_ci default NULL,
+  `publish_image` tinyint(1) default NULL,
+  PRIMARY KEY  (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -356,7 +356,7 @@ CREATE TABLE `partner_links` (
 
 LOCK TABLES `partner_links` WRITE;
 /*!40000 ALTER TABLE `partner_links` DISABLE KEYS */;
-INSERT INTO `partner_links` VALUES (2,'Chawanga.com','http://www.bios.pl/chawanga',1,'2010-03-07 12:08:53','2010-03-07 12:08:53','left_menu/chawanga_logo.png',1),(3,'Chavanga Blog','http://blog.chavanga.com',1,'2010-04-14 21:07:28','2010-09-02 22:00:31','left_menu/blog_chavanga_logo.gif',1),(4,'Cnd','http://www.cndspey.eu',1,'2010-05-23 23:31:28','2010-05-23 23:31:28','left_menu/cnd_logo.jpg',1),(5,'Чаваньга Блог','http://blog-ru.chavanga.com',1,'2010-05-23 23:31:28','2010-05-23 23:31:28','left_menu/blog_ru_chavanga.png',1);
+INSERT INTO `partner_links` VALUES (2,'Chawanga.com','http://www.bios.pl/chawanga',1,'2010-03-07 12:08:53','2010-03-07 12:08:53','left_menu/chawanga_logo.png',1),(3,'Chavanga Blog','http://blog.chavanga.com',1,'2010-04-14 21:07:28','2010-09-02 22:00:31','left_menu/blog_chavanga_logo.gif',1),(5,'Чаваньга Блог','http://blog-ru.chavanga.com',1,'2010-05-23 23:31:28','2010-05-23 23:31:28','left_menu/blog_ru_chavanga.png',1);
 /*!40000 ALTER TABLE `partner_links` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -368,14 +368,14 @@ DROP TABLE IF EXISTS `post_comments`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `post_comments` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `author` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `answer` text COLLATE utf8_unicode_ci,
-  `post_id` int(11) DEFAULT NULL,
-  `created_at` datetime DEFAULT NULL,
-  `updated_at` datetime DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+  `id` int(11) NOT NULL auto_increment,
+  `author` varchar(255) collate utf8_unicode_ci default NULL,
+  `answer` text collate utf8_unicode_ci,
+  `post_id` int(11) default NULL,
+  `created_at` datetime default NULL,
+  `updated_at` datetime default NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -384,6 +384,7 @@ CREATE TABLE `post_comments` (
 
 LOCK TABLES `post_comments` WRITE;
 /*!40000 ALTER TABLE `post_comments` DISABLE KEYS */;
+INSERT INTO `post_comments` VALUES (1,'Chavanga','Yes, it`s possible. But we are fishing in our own camp in the lowest part of the river. If you want to use official camps, please contact with Silver of Ponoj or another organization. Usually we get to the river by big motorboat from Chavanga. It`s less expensive than helicopter flights from Murmansk. If you need more info- please ask me.',80,'2010-11-06 12:46:59','2010-11-06 12:46:59'),(2,'Chavanga','Erwan Hi! Yes, Srimph is a fantastic agressive fly for trouts that are living in top parts of rivers and in lakes. It work as provocative lure. If trout is agressive too or you can provoke fish to attack - it may be an effective fly (beginning of a season, June or prespawn perion). But in a situation of natural feeding or selctive feeding we must to find another fly - insect imitation or fry. The best all year flies are nymphs!!! You need only to use correct presentation. Thanks!',77,'2010-11-06 12:52:42','2010-11-06 12:52:42'),(3,'Chavanga','Daniel Hi! OK, I hope I will have a good news for you. Thanks',24,'2010-11-06 12:52:58','2010-11-06 12:52:58'),(4,'Chavanga','Bastian Hi! You know in early season we need large bright flies like Ally`s shrimp or Cascade, much red and orange colors. In summer- smaller sizes and more black like in Green But and Red But. From another side you can use all assortment of salmon and trouts-grayling flies to fish salmon successfully only need to find right method of presentation.',21,'2010-11-06 12:53:23','2010-11-06 12:53:23'),(5,'Chavanga','Yes, you have Program 2 and 3. If you wish we may combine an individual program Chavanga+another river, Indiora or Pialitsa for example, to get an exellent variant ( salmon and special trout fishing). Very interesting variant is to use mix Program 1 - our Lodge (salmon fishing) and Top Camp (salmon + special grayling fishing during 1-2-3 days, as you want). By this way we can get a mix programs to achieve the most interesting variants in depending of season and river conditions and your wishes.',18,'2010-11-06 12:53:49','2010-11-06 12:53:49'),(6,'Chavanga','Tomas, hi! Early season first part of June- weighted bright flies like as Shrimp, Cascade on double hooks # 4-6. \r\nGood luck, Vasyl',7,'2010-11-06 12:54:17','2010-11-06 12:54:17'),(7,'Chavanga','Yes, it`s possible to use smaller MI- 2 helico for 2-3-4 rods trip. One flight hour costs 1500$.',9,'2010-11-06 12:54:33','2010-11-06 12:54:33'),(8,'Chavanga','В этом году уже вряд ли. На 2011 на 5 июня были свободны 3 места. Это лучшее время и конец сентября, конечно.',11,'2010-11-06 12:54:48','2010-11-06 12:54:48'),(9,'Chavanga','Alex Hi! About prices and all detailes, please, ask me chavangafishing.@gmail.com \r\nAnd I think that the best time to fish trophy trouts is the end of June. Another best period is the beginning of summer, early June, but this time is not so comfortable to fish.',13,'2010-11-06 12:55:08','2010-11-06 12:55:08'),(10,'Chavanga','Alex, sorry! Not the end of June but the end of August, before spawn time.',13,'2010-11-06 12:55:19','2010-11-06 12:55:19'),(11,'Chavanga','David, we just have 3 free places in a tour from 14.09 till 22.09.2010. 7 days fishing in a village lodge (program 1). The middle of september is a beginning of new autumn run of salmon and usually is a interesting time to fish resident and fresh salmon. Plus trouts and graylings.',16,'2010-11-06 12:55:41','2010-11-06 12:55:41'),(12,'Chavanga','Ok, please send me e-mail  chavangafishing@gmail.com, I will give you additional info, maps, description and prices. Thanks.',82,'2010-11-07 08:29:07','2010-11-07 08:29:07');
 /*!40000 ALTER TABLE `post_comments` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -395,14 +396,14 @@ DROP TABLE IF EXISTS `posts`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `posts` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `body` text COLLATE utf8_unicode_ci,
-  `published` tinyint(1) DEFAULT NULL,
-  `created_at` datetime DEFAULT NULL,
-  `updated_at` datetime DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=82 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+  `id` int(11) NOT NULL auto_increment,
+  `title` varchar(255) collate utf8_unicode_ci default NULL,
+  `body` text collate utf8_unicode_ci,
+  `published` tinyint(1) default NULL,
+  `created_at` datetime default NULL,
+  `updated_at` datetime default NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=83 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -411,7 +412,7 @@ CREATE TABLE `posts` (
 
 LOCK TABLES `posts` WRITE;
 /*!40000 ALTER TABLE `posts` DISABLE KEYS */;
-INSERT INTO `posts` VALUES (7,'Flies','Hi,\r\n\r\nMay friend is planing fishing trip in Jun in Chavanga river.\r\nWhat salmon flies would you recomend for this time of year.\r\n\r\nTight lines,\r\nTomas Kolesinskas\r\nwww.ffw.lt\r\n',1,'2010-04-02 06:30:38','2010-04-02 06:30:38'),(8,'flies','Tomas, hi! Early season first part of June- weighted bright flies like as Shrimp, Cascade on double hooks # 4-6. \r\nGood luck, Vasyl',1,'2010-04-02 07:25:37','2010-04-02 07:25:37'),(9,'Kamchatka','Do you have less expencive Opala tour?',1,'2010-04-03 15:50:44','2010-04-03 15:50:44'),(10,'Kamchatka','Yes, it`s possible to use smaller MI- 2 helico for 2-3-4 rods trip. One flight hour costs 1500$. ',1,'2010-04-03 16:31:35','2010-04-03 16:31:35'),(11,'Khabarovsk','Как я понял, можно и на русском? Как попасть в тур на Бичи в Хабаровском крае? Как записаться в группу и на какое время можно рассчитывать?',1,'2010-04-04 13:20:48','2010-04-04 13:20:48'),(12,'Khabarovsk','В этом году уже вряд ли. На 2011 на 5 июня были свободны 3 места. Это лучшее время и конец сентября, конечно.',1,'2010-04-04 14:55:04','2010-04-04 14:55:04'),(13,'trout fishing','Hi !I am interesting in program 6 fishing. What is the price and what time do you propose as prime time for big trouts? \r\nThank, Alex.',1,'2010-05-08 10:14:12','2010-05-08 10:14:12'),(14,'trout fiishing','Alex Hi! About prices and all detailes, please, ask me chavangafishing.@gmail.com \r\nAnd I think that the best time to fish trophy trouts is the end of June. Another best period is the beginning of summer, early June, but  this time is not so comfortable to fish.',1,'2010-05-09 19:52:07','2010-05-09 19:52:07'),(15,'Trout fishing','Alex, sorry! Not the end of June but the end of August, before spawn time.',1,'2010-05-09 19:55:00','2010-05-09 19:55:00'),(16,'Fly fishing','Hello, just want to find out is the middle of september still available for bookings? And also is september good enough for salmon fishing or not? Thanks David',1,'2010-05-15 19:56:42','2010-05-15 19:56:42'),(17,'Fly Fishing','David, we just have 3 free places in a tour from 14.09 till 22.09.2010. 7 days fishing in a village lodge (program 1). The middle of september is a beginning of new autumn run of salmon and usually is a interesting time to fish resident and fresh salmon. Plus trouts and graylings.',1,'2010-05-16 06:53:31','2010-05-16 06:53:31'),(18,'Chavanga','Greetings! Is it possible to combine few rivers in one or two weeks tour,to try for example Chavanga and Warzuga rivers! Cheers. Steve.',1,'2010-06-03 15:54:39','2010-06-03 15:54:39'),(19,'kola peninsula','+15 ))',1,'2010-06-04 06:55:22','2010-06-04 06:55:22'),(20,'chavanga','Yes, you have Program 2 and 3. If you wish we may combine an individual program Chavanga+another river, Indiora or Pialitsa for example, to get an exellent variant ( salmon and special trout fishing). Very interesting variant is to use mix Program 1 - our Lodge (salmon fishing) and Top Camp (salmon + special grayling fishing during 1-2-3 days, as you want). By this way we can get a mix programs to achieve the most interesting variants in depending of season and river conditions and your wishes.',1,'2010-06-04 08:01:54','2010-06-04 08:01:54'),(21,'Fly','Hi, i am fishing a lot in Germany, i may plan a small trip to Chavanga next summer, if you have a list of preferable flies for Kola Peninsula. Just want to compare mines with yours :)  Thanks Bastian',1,'2010-06-15 16:55:30','2010-06-15 16:55:30'),(22,'Hi how are you sasw','Hi VEry nice posts i\'sure i\'sts nice',1,'2010-06-18 16:58:00','2010-06-18 16:58:00'),(23,'Fly','Bastian Hi! You know in early season we need large bright flies like Ally`s shrimp or Cascade, much red and orange colors. In summer- smaller sizes and more black like in Green But and Red But. From another side you can use all assortment of salmon and trouts-grayling  flies to fish salmon successfully only need to find right method of presentation.',1,'2010-07-02 14:04:08','2010-07-02 14:04:08'),(24,'Chavanga trip','Hi there. I found your web link on the Uk flyfishing forum : http://flyforums.co.uk, i\'ve looked through the fishing trips you\'ve got, looks interesting to me. I\'ve got some friends to join me, so would probably contact you in the middle of october. Cheers Daniel',1,'2010-08-10 15:46:39','2010-08-10 15:46:39'),(25,'Chavanga trip','Daniel Hi! OK, I hope I will have a good news for you. Thanks',1,'2010-08-25 12:04:22','2010-08-25 12:04:22'),(77,'Brown Trout','Hi, i am writing from Lyon and i have got a question about brown and rainbow trout fishing on Kola Peninsula. Do they aggresive enough to fish them on Shrimp fly, if not which flies is the best choice for that region, or it is really depends on the season you are fishing. Thank you! Best regards ! Erwan Gouret',1,'2010-10-25 16:48:36','2010-10-25 16:48:36'),(78,'Broun trout','Erwan Hi! Yes, Srimph is a fantastic agressive fly for trouts that are living in top parts of rivers and in lakes. It work as provocative lure. If trout is agressive too or you can provoke fish to attack - it may be an effective fly (beginning of a season, June or prespawn perion). But in a situation of natural feeding or selctive feeding we must to find another  fly - insect imitation or fry. The best all year flies are   nymphs!!! You need only to use correct presentation. Thanks!',1,'2010-10-26 06:37:48','2010-10-26 06:37:48'),(80,'Panoy river','Hi, i am very interested in Panoy river, just wondering, do you do a Panoy river trips, and how much is it approximately cost? thanks',1,'2010-11-05 18:17:25','2010-11-05 18:17:25'),(81,'Panoy river','Yes, it`s possible. But we are fishing in our own camp in the lowest part of the river.  If you want to use official camps, please contact with Silver of Ponoj or another organization. Usually we get to the river by big motorboat from Chavanga. It`s less expensive than helicopter flights from Murmansk. If you need more info- please ask me.',1,'2010-11-05 19:58:33','2010-11-05 19:58:33');
+INSERT INTO `posts` VALUES (7,'Flies','Hi,\r\n\r\nMay friend is planing fishing trip in Jun in Chavanga river.\r\nWhat salmon flies would you recomend for this time of year.\r\n\r\nTight lines,\r\nTomas Kolesinskas\r\nwww.ffw.lt\r\n',1,'2010-04-02 06:30:38','2010-04-02 06:30:38'),(9,'Kamchatka','Do you have less expencive Opala tour?',1,'2010-04-03 15:50:44','2010-04-03 15:50:44'),(11,'Khabarovsk','Как я понял, можно и на русском? Как попасть в тур на Бичи в Хабаровском крае? Как записаться в группу и на какое время можно рассчитывать?',1,'2010-04-04 13:20:48','2010-04-04 13:20:48'),(13,'trout fishing','Hi !I am interesting in program 6 fishing. What is the price and what time do you propose as prime time for big trouts? \r\nThank, Alex.',1,'2010-05-08 10:14:12','2010-05-08 10:14:12'),(16,'Fly fishing','Hello, just want to find out is the middle of september still available for bookings? And also is september good enough for salmon fishing or not? Thanks David',1,'2010-05-15 19:56:42','2010-05-15 19:56:42'),(18,'Chavanga','Greetings! Is it possible to combine few rivers in one or two weeks tour,to try for example Chavanga and Warzuga rivers! Cheers. Steve.',1,'2010-06-03 15:54:39','2010-06-03 15:54:39'),(19,'kola peninsula','+15 ))',1,'2010-06-04 06:55:22','2010-06-04 06:55:22'),(21,'Fly','Hi, i am fishing a lot in Germany, i may plan a small trip to Chavanga next summer, if you have a list of preferable flies for Kola Peninsula. Just want to compare mines with yours :)  Thanks Bastian',1,'2010-06-15 16:55:30','2010-06-15 16:55:30'),(24,'Chavanga trip','Hi there. I found your web link on the Uk flyfishing forum : http://flyforums.co.uk, i\'ve looked through the fishing trips you\'ve got, looks interesting to me. I\'ve got some friends to join me, so would probably contact you in the middle of october. Cheers Daniel',1,'2010-08-10 15:46:39','2010-08-10 15:46:39'),(77,'Brown Trout','Hi, i am writing from Lyon and i have got a question about brown and rainbow trout fishing on Kola Peninsula. Do they aggresive enough to fish them on Shrimp fly, if not which flies is the best choice for that region, or it is really depends on the season you are fishing. Thank you! Best regards ! Erwan Gouret',1,'2010-10-25 16:48:36','2010-10-25 16:48:36'),(80,'Panoy river','Hi, i am very interested in Panoy river, just wondering, do you do a Panoy river trips, and how much is it approximately cost? thanks',1,'2010-11-05 18:17:25','2010-11-05 18:17:25'),(82,'Panoy river','Thanks, could you please give me some info about this lower part of Panoy, Thanks',1,'2010-11-06 21:09:41','2010-11-06 21:09:41');
 /*!40000 ALTER TABLE `posts` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -423,7 +424,7 @@ DROP TABLE IF EXISTS `schema_migrations`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `schema_migrations` (
-  `version` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `version` varchar(255) collate utf8_unicode_ci NOT NULL,
   UNIQUE KEY `unique_schema_migrations` (`version`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -446,14 +447,14 @@ DROP TABLE IF EXISTS `sub_fishing_programs`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `sub_fishing_programs` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `body` text COLLATE utf8_unicode_ci,
-  `visible` tinyint(1) DEFAULT NULL,
-  `fishing_program_id` int(11) DEFAULT NULL,
-  `created_at` datetime DEFAULT NULL,
-  `updated_at` datetime DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  `id` int(11) NOT NULL auto_increment,
+  `title` varchar(255) collate utf8_unicode_ci default NULL,
+  `body` text collate utf8_unicode_ci,
+  `visible` tinyint(1) default NULL,
+  `fishing_program_id` int(11) default NULL,
+  `created_at` datetime default NULL,
+  `updated_at` datetime default NULL,
+  PRIMARY KEY  (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -475,13 +476,13 @@ DROP TABLE IF EXISTS `text_effects`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `text_effects` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `effect_code` text COLLATE utf8_unicode_ci,
-  `example_code` text COLLATE utf8_unicode_ci,
-  `created_at` datetime DEFAULT NULL,
-  `updated_at` datetime DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  `id` int(11) NOT NULL auto_increment,
+  `title` varchar(255) collate utf8_unicode_ci default NULL,
+  `effect_code` text collate utf8_unicode_ci,
+  `example_code` text collate utf8_unicode_ci,
+  `created_at` datetime default NULL,
+  `updated_at` datetime default NULL,
+  PRIMARY KEY  (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -504,4 +505,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2010-11-06 14:47:58
+-- Dump completed on 2010-11-07 19:30:38
