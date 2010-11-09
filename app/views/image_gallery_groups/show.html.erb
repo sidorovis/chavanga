@@ -20,7 +20,7 @@
     <% row.each do |image| %>
     <td>
         <% if image %>
-            <img src='../images/<%= image.tag %>' width='170' 
+            <img src='../images/<%= image.tag %>' width='170' height='120' 
                 onclick="show_full_image('../images/<%= image.tag %>');" 
                 onmouseover="document.body.style.cursor = 'pointer';"
                 onmouseout="document.body.style.cursor = 'default';" />
