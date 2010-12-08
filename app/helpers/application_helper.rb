@@ -21,8 +21,8 @@ module ApplicationHelper
         result = 
 "<div class='main_menu_button'>" +
     "<div id='main_menu_td_"+id+"' class='main_menu_button_element'"+
-    "onmouseover='main_menu_td_"+id+".setAttribute(\"class\",\"main_menu_button_element_mouse_over\");'"+
-    "onmouseout='main_menu_td_"+id.to_s+".setAttribute(\"class\",\"main_menu_button_element\");' >"
+    "onmouseover='document.getElementById(\"main_menu_td_"+id.to_s+"\").setAttribute(\"class\",\"main_menu_button_element_mouse_over\");'"+
+    "onmouseout='document.getElementById(\"main_menu_td_"+id.to_s+"\").setAttribute(\"class\",\"main_menu_button_element\");' >"
         result += main_menu_link_to( _name, { :controller => _controller_name } )
         result += "</div></div>";
     end
@@ -33,8 +33,8 @@ module ApplicationHelper
         _controller_name = { :controller => :fishing }
         result = "<div class='main_menu_button'>"+
                     "<div id='main_menu_td_"+id+"' class='main_menu_button_element'"+
-                    "onmouseover='showSubMenu(\"fishing_programs\");main_menu_td_"+id+".setAttribute(\"class\",\"main_menu_button_element_mouse_over\");' "+
-                    "onmouseout='hideSubMenu(\"fishing_programs\");main_menu_td_"+id+".setAttribute(\"class\",\"main_menu_button_element\");'>"
+                    "onmouseover='showSubMenu(\"fishing_programs\");document.getElementById(\"main_menu_td_"+id+"\").setAttribute(\"class\",\"main_menu_button_element_mouse_over\");' "+
+                    "onmouseout='hideSubMenu(\"fishing_programs\");document.getElementById(\"main_menu_td_"+id+"\").setAttribute(\"class\",\"main_menu_button_element\");'>"
         result += main_menu_link_to( _name, _controller_name )
         result += "<div id='fishing_programs' class='drop_down_menu'>"+
              "<div class='drop_down_menu_element'>"+
@@ -57,8 +57,8 @@ module ApplicationHelper
         _controller_name = @gallery_group
         result = "<div class='main_menu_button'>"+
                     "<div id='main_menu_td_"+_name+"' class='main_menu_button_element'"+
-                    "onmouseover='showSubMenu(\"gallery_groups\");main_menu_td_"+id+".setAttribute(\"class\",\"main_menu_button_element_mouse_over\");' "+
-                    "onmouseout='hideSubMenu(\"gallery_groups\");main_menu_td_"+id+".setAttribute(\"class\",\"main_menu_button_element\");'>"
+                    "onmouseover='showSubMenu(\"gallery_groups\");document.getElementById(\"main_menu_td_"+id+"\").setAttribute(\"class\",\"main_menu_button_element_mouse_over\");' "+
+                    "onmouseout='hideSubMenu(\"gallery_groups\");document.getElementById(\"main_menu_td_"+id+"\").setAttribute(\"class\",\"main_menu_button_element\");'>"
         result += main_menu_link_to( _name, _controller_name )
         result += "<div id='gallery_groups' class='drop_down_menu'>"+
                     "<div class='drop_down_menu_element'>"
