@@ -17,7 +17,7 @@ function show_full_image( image_tag )
     handler_div.style.left = '50px';
     handler_div.style.right = 'auto';
     y_place = window.pageYOffset+7;
-    handler_div.style.top = y_place+'px';
+//    handler_div.style.top = y_place+'px';
     handler_div.style.bottom = 'auto';
     handler_div.style.position = 'absolute';
     handler_div.style.display = 'block';
