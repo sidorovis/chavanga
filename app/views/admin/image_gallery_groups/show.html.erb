@@ -1,7 +1,12 @@
 <%= resizer_module %>
-
-<%= (@image_gallery_group.id != @image_gallery_group.parent_group_id)?
-        (link_to(@image_gallery_group.parent_group.title,[:admin,@image_gallery_group.parent_group])+"<br/>"):
+Pages: 
+<% (1..@page_count).each do |i| %>
+<% name = (i == @page)?("<b>#{i}</b>"):("#{i}") %>
+<%= link_to( raw(name), :controller => "image_gallery_groups", :action => "show", :id => @image_gallery_group.id, :page => i.to_s ) %>
+<% end %>
+<br/>
+<%= raw(@image_gallery_group.id != @image_gallery_group.parent_group_id)?
+        (link_to(@image_gallery_group.parent_group.title,[:admin,@image_gallery_group.parent_group])+ raw("<br/>")):
         ("") %>
 <p class='page_title'><%= @image_gallery_group.title %></p>
 <% if @image_gallery_group.subgroups.size > 0 %>
@@ -13,10 +18,9 @@
     </ul>
 <% end %>
 <br/>
-<%= link_to 'Add Image To Current Group', new_admin_image_gallery_group_image_gallery_image_path( @image_gallery_group) %><br/>
-<% # link_to 'Gallery Groups List', admin_image_gallery_groups_path %><br/>
-<%= link_to 'Edit Current Group', edit_admin_image_gallery_group_path(@image_gallery_group) %><br/>
-<%= link_to 'Create Image Subgroup', new_admin_image_gallery_group_path(:parent_group => @image_gallery_group.id)  %><br/><br/>
+<%= raw link_to("Add Image To Current Group", new_admin_image_gallery_group_image_gallery_image_path( @image_gallery_group )) %><br/>
+<%= raw link_to("Edit Current Group", edit_admin_image_gallery_group_path(@image_gallery_group)) %><br/>
+<%= raw link_to("Create Image Subgroup", new_admin_image_gallery_group_path(:parent_group => @image_gallery_group.id))  %><br/><br/>
 
 <table align='center'>
 <% @all_images.in_groups_of(PER_COLUMN(),nil) do |row| %>

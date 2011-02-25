@@ -1,6 +1,6 @@
 <p class='page_title'>
-  <%=h @event.title %>
+  <%=h raw @event.title %>
 </p>
 <p>
-  <%= @event.body.split("\n").join("<br/>") %>
+  <%= raw @event.body.split("\n").join("<br/>") %>
 </p>

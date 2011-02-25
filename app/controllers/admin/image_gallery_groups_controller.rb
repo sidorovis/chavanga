@@ -14,8 +14,14 @@ module Admin
   # GET /image_gallery_groups/1
   # GET /image_gallery_groups/1.xml
   def show
+    @@pict_per_page = 20
     @image_gallery_group = ImageGalleryGroup.find(params[:id])
-    @all_images = @image_gallery_group.all_images
+    @image_gallery_group = ImageGalleryGroup.find( params[ :id ] )
+    @page_count = 1 + @image_gallery_group.all_images_size / @@pict_per_page
+    pre = params[ :page ].to_i
+    pre = 1 if (pre <= 0 || pre > @page_count )
+    @page = pre
+    @all_images, d = @image_gallery_group.get_images( (@page - 1) * @@pict_per_page, @@pict_per_page )
 
     respond_to do |format|
       format.html # show.html.erb

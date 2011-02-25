@@ -1,3 +1,5 @@
+require 'dynamic_form'
+
 class GuestRoomController < ApplicationController
   def index
     @new_post = Post.new

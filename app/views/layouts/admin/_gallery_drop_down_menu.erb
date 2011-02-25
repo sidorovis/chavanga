@@ -1,2 +1,2 @@
-<% if gallery_drop_down_menu.id != gallery_drop_down_menu.parent_group_id %><%= print_gallery_drop_down_menu_link gallery_drop_down_menu %><% end %>
-<% gallery_drop_down_menu.subgroups.each do |group| %><%= print_gallery_drop_down_menu_group( group ) %><% end %>
+<% if gallery_drop_down_menu.id != gallery_drop_down_menu.parent_group_id %><%= raw(print_gallery_drop_down_menu_link gallery_drop_down_menu) %><% end %>
+<% gallery_drop_down_menu.subgroups.each do |group| %><%= raw(print_gallery_drop_down_menu_group( group )) %><% end %>

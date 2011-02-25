@@ -1,13 +1,36 @@
-ActionController::Routing::Routes.draw do |map|
+Chavanga::Application.routes.draw do
 
+    namespace :admin do
+        root :to => "home#index"
+        match 'team' => 'team#index'
+        resources :fishing_programs
+        resources :sub_fishing_programs
+        resources :image_gallery_images
+        
+        resources :image_gallery_groups do
+            resources :image_gallery_images
+        end
+        resources :partner_links
+        resources :events
+        match 'press(/:action)' => 'press#index'
+        match 'booking' => 'booking#index'
+        match 'contact' => 'contact#index'
+        resources :guest_room
+        match 'guest_room/destroy_comment', :controller => 'guest_room', :action => 'destroy_comment'
+        resources :color
+        resources :text_effects
+        resources :banners
+        match 'maps(/:action)' => 'maps#index'
+        match 'maps' => 'maps#index'
+    end
+
+=begin
     map.namespace :admin do |admin|
         admin.root      :controller => "home"
  #       admin.resources :articles
         admin.resources :image_gallery_images
         admin.resources :image_gallery_groups, :has_many => [ :image_gallery_images ]
         admin.resources :partner_links
-        admin.resources :fishing_programs
-        admin.resources :sub_fishing_programs
 #        admin.resources :guest_room
 #        admin.connect 'guest_room/destroy_comment', :controller => 'guest_room', :action => 'destroy_comment'
         admin.resources :events
@@ -26,46 +49,88 @@ ActionController::Routing::Routes.draw do |map|
 
   map.connect 'fishing', :controller => 'fishing', :action => 'index'
   map.connect 'fishing/:id', :controller => 'fishing', :action => 'show'
+=end
 
-  # The priority is based upon order of creation: first created -> highest priority.
+  match 'home' => 'home#index'
+  match 'home/load_news_from_blog'
+
+  match 'team' => 'team#index'
+  match 'fishing' => 'fishing#index'
+  match 'fishing/:id' => 'fishing#show'
+  match 'fishing_information/:id' => 'fishing_subprogram#show'
+  match 'image_gallery_groups(/:id)' => 'image_gallery_groups#show'
+  match 'press(/:action)' => 'press#index'
+  match 'maps(/:action)' => 'maps#index'
+  match 'maps' => 'maps#index'
+  match 'events/:id' => 'events#show'
+  match 'booking' => 'booking#index'
+  match 'contact' => 'contact#index'
+  
+  resources :guest_room do
+    resource :posts
+    collection do
+        get :long
+      end
+      member do
+        post :short
+      end
+  end
+  match 'contact' => 'contact#index'
+
+  # The priority is based upon order of creation:
+  # first created -> highest priority.
 
   # Sample of regular route:
-  #   map.connect 'products/:id', :controller => 'catalog', :action => 'view'
+  #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:
-  #   map.purchase 'products/:id/purchase', :controller => 'catalog', :action => 'purchase'
+  #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
   # This route can be invoked with purchase_url(:id => product.id)
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
-  #   map.resources :products
+  #   resources :products
 
   # Sample resource route with options:
-  #   map.resources :products, :member => { :short => :get, :toggle => :post }, :collection => { :sold => :get }
+  #   resources :products do
+  #     member do
+  #       get 'short'
+  #       post 'toggle'
+  #     end
+  #
+  #     collection do
+  #       get 'sold'
+  #     end
+  #   end
 
   # Sample resource route with sub-resources:
-  #   map.resources :products, :has_many => [ :comments, :sales ], :has_one => :seller
-  
+  #   resources :products do
+  #     resources :comments, :sales
+  #     resource :seller
+  #   end
+
   # Sample resource route with more complex sub-resources
-  #   map.resources :products do |products|
-  #     products.resources :comments
-  #     products.resources :sales, :collection => { :recent => :get }
+  #   resources :products do
+  #     resources :comments
+  #     resources :sales do
+  #       get 'recent', :on => :collection
+  #     end
   #   end
 
   # Sample resource route within a namespace:
-  #   map.namespace :admin do |admin|
-  #     # Directs /admin/products/* to Admin::ProductsController (app/controllers/admin/products_controller.rb)
-  #     admin.resources :products
+  #   namespace :admin do
+  #     # Directs /admin/products/* to Admin::ProductsController
+  #     # (app/controllers/admin/products_controller.rb)
+  #     resources :products
   #   end
 
-  # You can have the root of your site routed with map.root -- just remember to delete public/index.html.
-  map.root :controller => "home"
+  # You can have the root of your site routed with "root"
+  # just remember to delete public/index.html.
+  root :to => "home#index"
 
   # See how all your routes lay out with "rake routes"
 
-  # Install the default routes as the lowest priority.
-  # Note: These default routes make all actions in every controller accessible via GET requests. You should
-  # consider removing or commenting them out if you're using named routes and resources.
-  map.connect ':controller/:action/:id'
-  map.connect ':controller/:action/:id.:format'
+  # This is a legacy wild controller route that's not recommended for RESTful applications.
+  # Note: This route will make all actions in every controller accessible via GET requests.
+#  match ':controller(/:action(/:id(.:format)))'
 end

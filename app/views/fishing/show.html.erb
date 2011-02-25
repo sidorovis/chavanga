@@ -1,16 +1,16 @@
-<%= stylesheet_link_tag 'fishing' %>
-<%= javascript_include_tag "fishing" %>
+<%= raw stylesheet_link_tag 'fishing' %>
+<%= raw javascript_include_tag "fishing" %>
 
 <% if @fishing_program.page_content != "" %>
-    <%= @fishing_program.page_content %>
+    <%= raw @fishing_program.page_content %>
     <% if @fishing_program.image_gallery_group_id? %>
         <table align=center>
         <% @fishing_program.image_gallery_group.subgroups.first(4).each do |group| %>
             <% if group.images.size > 0 %>
             <tr><td>
-                <%= group.title %>
+                <%= raw group.title %>
             </td><td>
-                <%= image_tag( 
+                <%= raw image_tag( 
                         group.images[0].tag, 
                         :width => 250 ) %>
             </td></tr>

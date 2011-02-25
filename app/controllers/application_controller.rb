@@ -49,7 +49,7 @@ class ApplicationController < ActionController::Base
         @right_menu_flies_count = 5
     
         @flies_all = ImageGalleryGroup.first( :conditions => { "id" => 55 } )
-        all_images = @flies_all.all_images
+        all_images, d = @flies_all.get_images(0,1000)
         
         @flies_links = []
         @flies_images = []
