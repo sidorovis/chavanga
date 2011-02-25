@@ -50,20 +50,15 @@ class ApplicationController < ActionController::Base
     
         @flies_all = ImageGalleryGroup.first( :conditions => { "id" => 55 } )
         all_images, d = @flies_all.get_images(0,1000)
+
+        @selected_ids = {}
         
-        @flies_links = []
-        @flies_images = []
-        selected_ids = []
-        
-        (0..@right_menu_flies_count - 1).each do |i|
+        while ( @selected_ids.size < @right_menu_flies_count )
             image_id = (rand()*all_images.size).to_i
-            while ( selected_ids.include?( image_id ) )
-                image_id = (rand()*all_images.size).to_i
-            end
-            @flies_images << all_images[ image_id ]
-            @flies_links << @flies_images[i].group
+            puts image_id
+            puts all_images[ image_id ].tag
+            @selected_ids[ image_id ] = all_images[ image_id ]
         end
-        
     end
     
     def load_image_gallery_the_best

@@ -2,7 +2,7 @@
 // This file is automatically included by javascript_include_tag :defaults
 
 logo_image_change_interval = 5000;
-logo_image_size = 17;
+logo_image_size = 12;
 logo_pictures = new Array();
 for( i = 0 ; i < logo_image_size ; i++)
 {

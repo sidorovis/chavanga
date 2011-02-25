@@ -3,9 +3,9 @@
   <div class="right_menu_widget_element_title">
     <%= link_to "FLIES", @flies_all %><br/>
   </div>
-    <% (0..@flies_images.size - 1).each do |i| %>
+    <% @selected_ids.each do |k,i| %>
        <div style="margin:2px">
-    	<%= link_to image_tag(@flies_images[i].tag, :width=>'145', :height => 125), @flies_links[i] %><br/>
+    	<%= link_to image_tag(i.tag, :width=>'145', :height => 125), i.group %><br/>
        </div>
     <% end %>
  </div>
