@@ -1,6 +1,6 @@
 <h1>New image_gallery_image</h1>
 
-<% form_for([:admin, @image_gallery_group, @image_gallery_image]) do |f| %>
+<% form_for([:admin, @image_gallery_group, @image_gallery_image], :html => { :multipart => true } ) do |f| %>
   <%= f.error_messages %>
 
   <p>
@@ -23,6 +23,8 @@
     <%= f.label :image_gallery_group_id %><br />
     <%= f.select :image_gallery_group_id, ImageGalleryGroup.all.collect { |group| [group.title, group.id] } %>
   </p>
+    <%= f.label :photo %><br />
+    <%= f.file_field :photo %>
   <p>
     <%= f.submit 'Create' %>
   </p>

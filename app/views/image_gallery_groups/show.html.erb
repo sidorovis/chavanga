@@ -21,14 +21,21 @@ Pages:
 
 <table align='center'>
 <% @all_images.in_groups_of(PER_COLUMN(),nil) do |row| %>
-<tr>
+<tr height=170 >
     <% row.each do |image| %>
-    <td>
+    <td width=170 align=center>
         <% if image %>
-            <img src='../../images/<%= image.tag %>' width='170' height='120' 
-                onclick="show_full_image('../images/<%= image.tag %>');" 
-                onmouseover="document.body.style.cursor = 'pointer';"
-                onmouseout="document.body.style.cursor = 'default';" />
+            <% if image.photo.size %>
+                <img src='<%= image.photo.url(:small) %>'
+                 onclick="show_full_image('<%= image.photo.url %>');" 
+                 onmouseover="document.body.style.cursor = 'pointer';"
+                 onmouseout="document.body.style.cursor = 'default';" />
+            <% else %>
+                <img src='../../images/<%= image.tag %>' width='150' height='120'
+                    onclick="show_full_image('../../images/<%= image.tag %>');" 
+                    onmouseover="document.body.style.cursor = 'pointer';"
+                    onmouseout="document.body.style.cursor = 'default';" />
+            <% end %>
         <% end %>
     </td>
     <% end %>

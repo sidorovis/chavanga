@@ -13,7 +13,7 @@ Pages:
     <ul>
     Sub Groups:
     <% @image_gallery_group.subgroups.each do |group| %>
-        <li><%= link_to group.title, [:admin,group] %> ( images: <%= group.all_images_size %> )</li>
+        <li><%= link_to group.title, [:admin,group] %> ( images: <%= group.all_images_size %>, deprecated: <%= group.all_deprecated_images_size %> )</li>
     <% end %>
     </ul>
 <% end %>
@@ -22,17 +22,27 @@ Pages:
 <%= raw link_to("Edit Current Group", edit_admin_image_gallery_group_path(@image_gallery_group)) %><br/>
 <%= raw link_to("Create Image Subgroup", new_admin_image_gallery_group_path(:parent_group => @image_gallery_group.id))  %><br/><br/>
 
-<table align='center'>
+<table align='center' border=1>
 <% @all_images.in_groups_of(PER_COLUMN(),nil) do |row| %>
-<tr>
+<tr height=170>
     <% row.each do |image| %>
-    <td align=center>
+    <td align=center width=170>
         <% if image %>
-            <img src='../../images/<%= image.tag %>' width='170' 
-                onclick="show_full_image('../../images/<%= image.tag %>');" 
-                onmouseover="document.body.style.cursor = 'pointer';"
-                onmouseout="document.body.style.cursor = 'default';" /><br/>
+            <% if image.photo.size %>
+                <img src='<%= image.photo.url(:small) %>'
+                 onclick="show_full_image('<%= image.photo.url %>');" 
+                 onmouseover="document.body.style.cursor = 'pointer';"
+                 onmouseout="document.body.style.cursor = 'default';" />
+            <% else %>
+                deprecated<br/>
+                <img src='../../images/<%= image.tag %>' width='100' height='100'
+                    onclick="show_full_image('../../images/<%= image.tag %>');" 
+                    onmouseover="document.body.style.cursor = 'pointer';"
+                    onmouseout="document.body.style.cursor = 'default';" />
+            <% end %>
+            <br/>
             <%= link_to 'Edit', edit_admin_image_gallery_group_image_gallery_image_path( image.group, image ) %>
+            <%= link_to 'Destroy', [:admin, image.group, image ], :confirm => 'Are you sure?', :method => :delete %>
         <% end %>
     </td>
     <% end %>

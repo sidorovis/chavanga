@@ -55,8 +55,6 @@ class ApplicationController < ActionController::Base
         
         while ( @selected_ids.size < @right_menu_flies_count )
             image_id = (rand()*all_images.size).to_i
-            puts image_id
-            puts all_images[ image_id ].tag
             @selected_ids[ image_id ] = all_images[ image_id ]
         end
     end

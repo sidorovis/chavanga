@@ -40,5 +40,13 @@ class ImageGalleryGroup < ActiveRecord::Base
         end
         @size = result
     end
+    def all_deprecated_images_size
+        return @d_size if (@d_size != nil)
+        result = images.all( :conditions => " photo_file_size IS NULL" ).size
+        subgroups.each do |group| 
+            result += group.all_deprecated_images_size
+        end
+        @d_size = result
+    end
     
 end

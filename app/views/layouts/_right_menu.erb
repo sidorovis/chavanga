@@ -5,7 +5,7 @@
   </div>
     <% @selected_ids.each do |k,i| %>
        <div style="margin:2px">
-    	<%= link_to image_tag(i.tag, :width=>'145', :height => 125), i.group %><br/>
+    	<%= link_to image_tag(i.photo.url(:small), :width=>'145', :height => 125), i.group %><br/>
        </div>
     <% end %>
  </div>

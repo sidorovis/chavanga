@@ -18,6 +18,7 @@ module Admin
     @image_gallery_group = ImageGalleryGroup.find(params[:id])
     @image_gallery_group = ImageGalleryGroup.find( params[ :id ] )
     @page_count = 1 + @image_gallery_group.all_images_size / @@pict_per_page
+    @page_count -= 1 if (@image_gallery_group.all_images_size % @@pict_per_page == 0 && @page_count > 1)
     pre = params[ :page ].to_i
     pre = 1 if (pre <= 0 || pre > @page_count )
     @page = pre
