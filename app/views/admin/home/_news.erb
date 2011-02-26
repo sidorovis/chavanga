@@ -1,0 +1,15 @@
+<p class='home_main_text'>
+<% @blogNews.each do |bn| %>
+<div class="blog_news">
+<div class="blog_news_description" >
+<br/>
+<b><%= bn.title %></b><br/><br/>
+<%= bn.description %>...
+<%= link_to "read more", bn.link %>
+</div>
+<div>
+<%= raw generate_link_to_image bn %>
+</div>
+<hr size='1' />
+</div>
+<% end %>

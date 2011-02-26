@@ -115,4 +115,17 @@ module ApplicationHelper
         end
         result
     end
+    def id_tags( str, image_tag_params = {}, params = nil )
+        r = Regexp.new( /\[(\d+)\]/ )
+        while (match = str.match( r ))
+            index = match[1]
+            image = ImageGalleryImage.all( :conditions => {:id => index} )
+            if (image.size > 0)
+                str[r] = raw(image_tag( image[0].photo.url( params ), image_tag_params ))
+            else
+                str[r] = ""
+            end
+        end
+        raw str
+    end
 end

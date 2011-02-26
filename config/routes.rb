@@ -2,6 +2,7 @@ Chavanga::Application.routes.draw do
 
     namespace :admin do
         root :to => "home#index"
+        match 'home/load_news_from_blog'
         match 'team' => 'team#index'
         resources :fishing_programs
         resources :sub_fishing_programs
@@ -26,33 +27,6 @@ Chavanga::Application.routes.draw do
         match 'maps(/:action)' => 'maps#index'
         match 'maps' => 'maps#index'
     end
-
-=begin
-    map.namespace :admin do |admin|
-        admin.root      :controller => "home"
- #       admin.resources :articles
-        admin.resources :image_gallery_images
-        admin.resources :image_gallery_groups, :has_many => [ :image_gallery_images ]
-        admin.resources :partner_links
-#        admin.resources :guest_room
-#        admin.connect 'guest_room/destroy_comment', :controller => 'guest_room', :action => 'destroy_comment'
-        admin.resources :events
-        admin.resources :color
-        admin.resources :text_effects
-        admin.resources :banners
-    end
-
-  map.connect 'fishing_information/:id', :controller => 'FishingSubprogram', :action => 'show'
-
-  map.connect 'guest_room', :controller => 'GuestRoom', :action => 'create', :conditions => { :method => :post }
-  map.connect 'image_gallery_groups', :controller => 'ImageGalleryGroups', :action => 'index'
-  map.connect 'image_gallery_groups/:id', :controller => 'ImageGalleryGroups', :action => 'show'
-
-  map.connect 'events/:id', :controller => 'Events', :action => 'show'
-
-  map.connect 'fishing', :controller => 'fishing', :action => 'index'
-  map.connect 'fishing/:id', :controller => 'fishing', :action => 'show'
-=end
 
   match 'home' => 'home#index'
   match 'home/load_news_from_blog'

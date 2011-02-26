@@ -2,5 +2,5 @@
   <%=h raw @event.title %>
 </p>
 <p>
-  <%= raw @event.body.split("\n").join("<br/>") %>
+  <%= id_tags(@event.body.split("\n").join("<br/>"), :width => 500) %>
 </p>

@@ -56,10 +56,17 @@ module Admin
         @gallery_group = ImageGalleryGroup.first( :conditions => [ "parent_group_id = id" ])
     end
     def load_image_gallery_flies
+        @right_menu_flies_count = 5
+    
         @flies_all = ImageGalleryGroup.first( :conditions => { "id" => 55 } )
-        @flies_1 = ImageGalleryGroup.first( :conditions => { "id" => 56 } )
-        @flies_2 = ImageGalleryGroup.first( :conditions => { "id" => 57 } )
-        @flies_3 = ImageGalleryGroup.first( :conditions => { "id" => 58 } )
+        all_images, d = @flies_all.get_images(0,1000)
+
+        @selected_ids = {}
+        
+        while ( @selected_ids.size < @right_menu_flies_count )
+            image_id = (rand()*all_images.size).to_i
+            @selected_ids[ image_id ] = all_images[ image_id ]
+        end
     end
     def load_image_gallery_the_best
         @the_best_image_gallery = ImageGalleryGroup.first( :conditions => { "id" => 59 } )

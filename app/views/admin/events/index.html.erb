@@ -1,9 +1,10 @@
 <h1>Listing events</h1>
 
-<table>
+<table width=650 align=center>
   <tr>
     <th>Event data</th>
     <th>Published</th>
+    <th>Controls</th>
   </tr>
 
 <% @events.each do |event| %>
@@ -12,9 +13,10 @@
     <b><%=h event.title %></b><br/>
     <%=h event.body %></td>
     <td><%=h event.published %></td>
-    <td><%= link_to 'Show', admin_event_path(event) %></td>
-    <td><%= link_to 'Edit', edit_admin_event_path(event) %></td>
-    <td><%= link_to 'Destroy', admin_event_path(event), :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Show', admin_event_path(event) %><br/>
+        <%= link_to 'Edit', edit_admin_event_path(event) %><br/>
+        <%= link_to 'Destroy', admin_event_path(event), :confirm => 'Are you sure?', :method => :delete %>
+    </td>
   </tr>
 <% end %>
 </table>

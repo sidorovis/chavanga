@@ -28,6 +28,7 @@ Pages:
     <% row.each do |image| %>
     <td align=center width=170>
         <% if image %>
+            <%= "id: " + image.id.to_s %>
             <% if image.photo.size %>
                 <img src='<%= image.photo.url(:small) %>'
                  onclick="show_full_image('<%= image.photo.url %>');" 

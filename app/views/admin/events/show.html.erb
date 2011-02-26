@@ -1,8 +1,7 @@
 <p class='page_title'>
-  <%=h @event.title %>
+  <%=h raw @event.title %>
 </p>
 <p>
-  <%= @event.body.split("\n").join("<br/>") %>
-</p>
+  <%= id_tags(@event.body.split("\n").join("<br/>"), :width => 500) %>
 <%= link_to 'Edit', edit_admin_event_path(@event) %>
 
