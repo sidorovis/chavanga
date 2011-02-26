@@ -1,10 +1,9 @@
-source 'http://rubygems.org'
+source 'http://production.s3.rubygems.org'
 
 gem 'rails', '3.0.4'
 gem 'mysql', '2.8.1'
 gem 'kaminari', '0.10.4'
-
-#BBgem 'ruby-mysql', '2.9.4'
+gem 'paperclip', '2.3.8'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
