@@ -1,8 +1,8 @@
--- MySQL dump 10.11
+-- MySQL dump 10.13  Distrib 5.1.51, for pc-linux-gnu (i686)
 --
 -- Host: localhost    Database: chavanga_production
 -- ------------------------------------------------------
--- Server version	5.0.90-log
+-- Server version	5.1.51-log
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -23,13 +23,13 @@ DROP TABLE IF EXISTS `additional_links`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `additional_links` (
-  `id` int(11) NOT NULL auto_increment,
-  `title` varchar(255) collate utf8_unicode_ci default NULL,
-  `tag` varchar(255) collate utf8_unicode_ci default NULL,
-  `published` tinyint(1) default NULL,
-  `created_at` datetime default NULL,
-  `updated_at` datetime default NULL,
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `tag` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `published` tinyint(1) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -51,13 +51,13 @@ DROP TABLE IF EXISTS `articles`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `articles` (
-  `id` int(11) NOT NULL auto_increment,
-  `title` varchar(255) collate utf8_unicode_ci default NULL,
-  `body` text collate utf8_unicode_ci,
-  `published` tinyint(1) default NULL,
-  `created_at` datetime default NULL,
-  `updated_at` datetime default NULL,
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `body` text COLLATE utf8_unicode_ci,
+  `published` tinyint(1) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -78,16 +78,16 @@ DROP TABLE IF EXISTS `banners`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `banners` (
-  `id` int(11) NOT NULL auto_increment,
-  `title` varchar(255) collate utf8_unicode_ci default NULL,
-  `does_image` tinyint(1) default NULL,
-  `value` varchar(255) collate utf8_unicode_ci default NULL,
-  `href` varchar(255) collate utf8_unicode_ci default NULL,
-  `alt` varchar(255) collate utf8_unicode_ci default NULL,
-  `created_at` datetime default NULL,
-  `updated_at` datetime default NULL,
-  `image` varchar(255) collate utf8_unicode_ci default NULL,
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `does_image` tinyint(1) DEFAULT NULL,
+  `value` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `href` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `alt` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  `image` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -109,11 +109,11 @@ DROP TABLE IF EXISTS `colors`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `colors` (
-  `id` int(11) NOT NULL auto_increment,
-  `value` int(11) default NULL,
-  `created_at` datetime default NULL,
-  `updated_at` datetime default NULL,
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `value` int(11) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -135,14 +135,14 @@ DROP TABLE IF EXISTS `events`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `events` (
-  `id` int(11) NOT NULL auto_increment,
-  `title` varchar(255) collate utf8_unicode_ci default NULL,
-  `body` text collate utf8_unicode_ci,
-  `published` tinyint(1) default NULL,
-  `created_at` datetime default NULL,
-  `updated_at` datetime default NULL,
-  PRIMARY KEY  (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=45 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `body` text COLLATE utf8_unicode_ci,
+  `published` tinyint(1) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -151,7 +151,7 @@ CREATE TABLE `events` (
 
 LOCK TABLES `events` WRITE;
 /*!40000 ALTER TABLE `events` DISABLE KEYS */;
-INSERT INTO `events` VALUES (1,'Chavanga Project Initialized','This is first try of Chavanga Project on Heroku. It\'s not so big as we think, but all news and events and activities are going go here.',1,'2010-02-08 10:31:32','2010-02-08 10:31:32'),(2,'Chavanga Project Style Changing','Style page changed: table border hidded.\r\nRight menu added.',0,'2010-02-13 18:52:52','2010-07-08 14:21:36'),(3,'Fishing Program 1 Page content Added','Now text for first fishing program added.\r\ntext stored into db like page_content value',0,'2010-02-16 23:36:08','2010-07-08 14:21:49'),(4,'Guest Room Added','Now this web site have ability to add guest posts to web site administration.\r\nIt is not so big possobility.\r\n\r\nBut still fonts changed, and a lot of things done',1,'2010-02-28 19:44:00','2010-02-28 19:44:00'),(5,'New DVD Chavanga 2009','W Krolewstwie Lososia film released. Please see it on YouTube: <a href=\"http://www.youtube.com/watch?v=siPZkOTNnZM\">W Krolestwie Lososia</a>.\r\n<p style=\"text-align:center;\">\r\n<img src=\"../../images/events/DVD Chavanga 2009.jpg\"/>\r\n</p>',1,'2010-07-08 14:22:39','2010-07-08 14:22:39'),(6,'Huge grayling and etc.','<b>Huge grayling</b><br/>\r\n<p style=\"text-align:center;\">\r\n<img src=\"../../images/events/huge_grayling/20.jpg\" width=400px/>\r\n<a href=http://blog.chavanga.com/2010/07/chavangas-huge-grayling.html>read more</a>\r\n</p>\r\n<hr size=1 />\r\n\r\n<b>Provocative salmon method</b><br/>\r\n<p style=\"text-align:center;\">\r\n<img src=\"../../images/events/huge_grayling/14.jpg\" width=400px/>\r\n<a href=http://blog.chavanga.com/2010/07/provocative-salmon-method.html>read more</a>\r\n</p>\r\n<hr size=1 />\r\n\r\n\r\n<b>Big fly – big trout</b><br/>\r\n<p style=\"text-align:center;\">\r\n<img src=\"../../images/events/huge_grayling/15.jpg\" width=400px/>\r\n<a href=http://blog.chavanga.com/2010/07/big-fly-big-trout.html>read more</a><br/>\r\n</p>\r\n',1,'2010-07-08 14:40:22','2010-07-08 14:44:41'),(7,'fresh or resident salmon','\r\n  The river is good that always other, as new. And this season too has begun with riddles. The fish finishing a spring course of a salmon was late already on days 8-9. To catch on the estuary site, always successful in early season, it was boring. But on Chavanga river  always it is possible to try a fly on the top sites, there. Where there is a fish who has come into the river earlier. She is autumn fish, salmons who have come into the river in the winter and fish of spring run who has passed after an ice descent. This salmon differs from fresh, that has more dark, hardly a violet back. \r\n\r\n',0,'2010-07-09 16:08:59','2010-07-09 16:08:59'),(8,'fresh or resident salmon','  The river is good that always other, as new. And this season too has begun with riddles. The fish finishing a spring course of a salmon was late already on days 8-9. To catch on the estuary site, always successful in early season, it was boring. But on Chavanga river  always it is possible to try a fly on the top sites, there. Where there is a fish who has come into the river earlier. She is autumn fish, salmons who have come into the river in the winter and fish of spring run who has passed after an ice descent. This salmon differs from fresh, that has more dark, hardly a violet back. \r\n\r\n',1,'2010-07-09 16:18:40','2010-07-09 16:20:00'),(9,'Big trout fishing','\r\n The far rivers of the Southeast of Kola peninsula in the middle of a season are of special interest for fans of catching of a trout. The affinity of the sea provides circulation of this fish in a current of all season. The end of May and the beginning of June in high cold water a local and sea trout meets on all bottom sites of the rivers Pulonga, Bab`ja, Lihodeevka. The small   river Kumzhevaja bears a name meaning Trout river. In the middle of summer are most interesting estuary of  these rivers. Quite good copies of the trout who have come from the sea come across. Dry fly fishing  may be a best   way to catch biggest one. But August and the beginning of September will be the most interesting time for catching. At this time it is possible to count on capture of the present monsters in 2,5-3 kg rising on spawning. \r\n',1,'2010-07-09 18:05:29','2010-07-09 18:05:29'),(10,'Where is the biggest one? More..in Chavanga blog below','                            Where is the biggest one?\r\nI have paid attention to developed stereotypes of catching on familiar   rivers. Going near to the friend who has got for the first time to Chavanga (Chawanga), I saw its errors in a choice of places of catching. Without reading the river, it came into water not there where it is necessary, dipped \"fly\" in unpromising from my point of knowledge places and for some reason quickly left from the best sites which I showed it. But when, eventually, he has reconciled to my remarks and manuals to pleasure both has caught the first salmon. The next days it already not bad was guided and caught stably. \r\n  Read all article in Chavanga Blog below.',1,'2010-07-10 12:25:59','2010-07-10 12:25:59'),(11,'TUTTI I...SALMO (Salar ) FINISCONO IN GLORIA ','\" TUTTI I...SALMO (Salar ) FINISCONO IN GLORIA \"\r\n\r\nby Antonio Pozzolini read in Chavanga Blog below.\r\n\r\n Murmansk - penisola di Kola - fiume Chawanga   (Chavanga river)\r\n ',1,'2010-07-10 12:28:19','2010-07-10 12:28:19'),(12,'New DVD Chavanga 2009','W Krolewstwie Lososia film released. Please see it on YouTube: <a href=\"http://www.youtube.com/watch?v=siPZkOTNnZM\">W Krolestwie Lososia</a>. <p style=\"text-align:center;\"> <img src=\"../../images/events/DVD Chavanga 2009.jpg\"/> </p>',1,'2010-07-19 14:24:57','2010-07-19 14:24:57'),(13,'Chavanga map on salmonatlas.com','Now you can see a correct name of the Chavanga river and    detail maps from Google on   www.salmonatlas.com/atlanticsalmon/russia/kola/mapkola.html',1,'2010-07-19 16:51:26','2010-07-19 16:51:26'),(14,'The unique fishing route across Kamchatka ','The unique fishing route across Kamchatka within the limits of the program Opala river + on extreme became now accessible to reasonable price that speaks that was possible to avoid for the first time rent of the expensive helicopter. Details of a route more low. There are 3 places and month on gathering.\r\nHere that at us it has turned out:\r\n-1st day (on September, 16th): a meeting at the airport, moving to hotel    Thermal   \", rest, bathing in pool\r\n-2nd day (on September, 17th): departure to the river Fast, the beginning of an alloy with stops on \r\nFishing, in the evening camp installation, a lodging for the night in tents\r\n-3rd day (on September, 18th): continuation of an alloy with fishing, in the evening returning in \r\nHotel\r\n-4th day (on September, 19th): departure to the river Karymchina, the beginning of an alloy with stops \r\nOn fishing, in the evening camp installation, a lodging for the night in tents\r\n-5th day (on September, 20th): continuation of an alloy with fishing, transition in the river \r\nПлотникова, in the evening returning in hotel\r\n-6th day (on September, 21st): departure to the river Opala (on the journey approximately 3 hours), \r\nDelivery to the river to stationary camp (the house from a felling with conveniences), fishing \r\nOn the river on a motor boat upwards downstream\r\n-7-day (on September, 22nd): fishing on the river on a motor boat upwards downwards on \r\nTo current\r\n-8th day (on September, 23rd): fishing on the river on a motor boat upwards downwards on \r\nTo current\r\n-9th day (on September, 24th): fishing on the river on a motor boat upwards downwards on \r\nTo current, in the evening returning in hotel\r\n-10th day (on September, 25th): departure on fishing to Tolmachevsky lake (there it is possible \r\nflyfishing), in the evening returning in hotel\r\n-11th day (on September, 26th): a transfer in the airport\r\n  \r\nStill a question such, you wanted to fish on Zhupanova, it is essentially important? \r\nIf yes, it is possible instead of one day on Disgrace and Tolmachevsky lake to make, \r\nAnd the price will a little change.\r\n ',1,'2010-07-19 17:45:07','2010-07-19 17:45:07'),(15,'Dry fly salmon fishing ','   Some experiments seem deprived of practical sense, simply absurd. I about catching of a salmon by small dry flies. If it was a question about bombers and provokers similar to them then it would be not necessary to mention it. Interest of a salmon to objects on a surface - history old and peculiar not only to the rivers of the north Kola. The same curiosity is shown by a salmon everywhere to the most different subjects dragged at a surface. Bomber it is only known in flyfishing a variant of a superficial bait. On a surface catch and metal lures.  \r\n\r\n<p align=center>\r\n<img src=\"../../images/events/dry_fly_fishing.jpg\" />\r\n</p>\r\nRead more in <a href=http://blog.chavanga.com/2010/07/dry-fly-salmon-fishing.html>Chavanga blog</a>.',1,'2010-07-23 10:45:45','2010-07-31 15:25:46'),(16,' Nymph salmon fishing ',' In most cases, we catch a salmon equally, a method of a classical wet fly, we throw downwards and across, selecting further speed, a direction and depth. \r\n\r\nThe method of a wet fly in all variants is productive enough. \"The salmon\" fly in usual, habitual execution, was created just for such technics. But…\r\n\r\n<p align=center>\r\n<img src=\"../../images/events/nymph_salmon_fishing.jpg\" />\r\n</p>\r\nRead more at <a href=http://blog.chavanga.com/2010/07/nymph-salmon-fishing.html>Chavanga blog</a>.',1,'2010-07-23 10:47:31','2010-07-31 15:23:57'),(17,'Arctic char paradise','After several years of exploring Greenland’s rivers we’ve managed to locate literary the most prolific fisheries on that harsh island and the most efficient means for reaching them. Our fishing grounds are quite away from civilization and can be reached either by sea or air. \r\n\r\n<p align=center>\r\n<img src=\"../../images/events/arctic_char_paradise/3.jpg\" width=600 /><br/>\r\n<img src=\"../../images/events/arctic_char_paradise/5.jpg\" width=600  /><br/>\r\n<img src=\"../../images/events/arctic_char_paradise/7.jpg\" width=600  /><br/>\r\n</p>\r\n<big>\r\nSee more photos at <a href=http://blog.chavanga.com/2010/07/arctic-char-paradise.html>Chavanga blog</a>.</big>',1,'2010-07-27 10:33:51','2010-07-31 15:22:21'),(18,'Kola autumn- NEW article on  www.globalflyfisher.com','Kola autumn - Horses, bears and fly-fishing \r\n\r\nWith the fly rod in the Kola Peninsula\r\n\r\nBy Mindaugas Banelisn \r\n\r\nSeptember, while sizzling my lard on the Turkish beach and sipping Efes Pilsen, I was thinking about the fact that I had already fulfilled one of the annual duties of a father and husband - having had a family holiday “in the South”.\r\nSo it was high time to take care of the truly manly rest, which is fishing somewhere in the North. The target was salmon. I had decided that Kola Peninsula was the ideal place to travel to. So I set off. It was not the first time I was traveling to Kola, but it was the first time in the autumn.\r\n\r\nMore.... in <a href=http://blog.chavanga.com/2010/07/with-fly-rod-in-kola-peninsula.html>Chavanga Blog</a>\r\n<p align=center><img src=\"../../images/events/global_flyfisher.png\"  /></p>',1,'2010-07-27 11:19:23','2010-07-31 15:13:12'),(19,'Pikes in a  salmon rivers.','The pike always was considered as undesirable fish there where there is a salmon or a trout. But in the nature they adjoined always. And if fishing pressure does not change this balance no trouble in the presence of a pike and is not present for the salmon. \r\n\r\nPlease, read more in Chavanga Blog, you can see it below Partners...',1,'2010-08-25 11:56:45','2010-08-25 11:56:45'),(20,' Less  water -   more fishes.','The hot summer was observed not only in Europe, but also on Kola Peninsula. A heat and absence of rains have led to falling of a water level and its warming up to 23 degrees. It was possible to expect sharp decrease in activity of fish. But it has not occurred....\r\n\r\n<a href=\'http://blog.chavanga.com/2010/08/there-is-less-than-water-more-fishes.html\'>Please, read more in Chavanga Blog</a>\r\n\r\n<p align=center>\r\n<img src=\'http://1.bp.blogspot.com/_1bVgby4N7Wk/THUHqXoQ9xI/AAAAAAAAAQ4/MLJbHLVpaok/s400/2.jpg\'/>\r\n</p>',1,'2010-08-25 11:58:41','2010-09-03 15:07:21'),(21,'Hungry diet or over effective digestion?','The low water level in the end of July and in the beginning of August has led to appreciable reduction of places of parking for Chavanga`sgraylings. Many reaches and wide floods of the river, pre threshold sites have lost water.  Probably, the forage lack has led to sharp increase of aggression of fish. \r\n\r\n<a href=\'http://blog.chavanga.com/2010/08/hungry-diet-or-over-effective-digestion.html\'>Read more...</a>\r\n\r\n<p align=center>\r\n<img src=\'http://3.bp.blogspot.com/_1bVgby4N7Wk/THULoVWKiPI/AAAAAAAAASw/XfKIlXQlKkI/s400/5.jpg\'/>\r\n</p>',1,'2010-08-25 12:01:32','2010-09-03 15:06:24'),(22,'Another way to fish salmon !!!',' Last   of 10 years me are carried away by catching of a salmon on flies which usually do not carry to the salmon. First of all   flies of the small sizes, in the second it often imitating flies, wet flies, nymphs. In the third, catching   to these flies is interesting to me by methods.    Last years  I collect a material on catching of a salmon on dry imitations of mayflies  and sedges. If you have an information on this theme - please, share it. Completely illustrated article\r\n\r\n\"Different view on catching of a salmon\"\r\n<a href=\'http://blog.chavanga.com/2010/08/different-view-on-catching-of-salmon.html\'>Part 1</a>\r\n<a href=\'http://blog.chavanga.com/2010/08/different-view-on-catching-of-salmon_28.html\'>Part 2</a>\r\n<a href=\'http://blog.chavanga.com/2010/08/different-view-on-catching-of-salmon_9081.html\'>Part 3</a>\r\n<a href=\'http://blog.chavanga.com/2010/08/different-view-on-catching-of-salmon_8587.html\'>Part 4</a>\r\n\r\nAbout theoretical preconditions of catching on not salmon flies it is possible to read more low in Chavanga Blog.\r\n<p align=center>\r\n<img src=\'http://4.bp.blogspot.com/_1bVgby4N7Wk/THj0A5vSG6I/AAAAAAAAAT4/yz3Qz76je20/s400/4.jpg\' />\r\n</p>',1,'2010-08-28 11:29:24','2010-09-03 15:05:11'),(23,'Latest News from Chavanga. Salmon activity.','Rather long hot summer with extremely low water level has led to the early beginning of spawning of a salmon. Already to the middle of September activity of resident fish has sharply fallen, began to come across already empty fishes.\r\n\r\nMore..... in Chavanga Blog below.',1,'2010-10-06 14:52:35','2010-10-06 14:52:35'),(24,'Kamchatka- full of fishes!!!','The first impressions after 10 day rounds are that - here full waters, is full some fish and it is possible to lose the way. The rivers even located near to dirt roads are so inaccessible that advancement is possible only by boats.\r\n\r\n<p align=\"center\">\r\n<img src=\"http://1.bp.blogspot.com/_1bVgby4N7Wk/TKx7engEpNI/AAAAAAAAAVM/yRpyhpPRZ2o/s320/5.jpg\" />\r\n</p>\r\n\r\n Please, more in <a href=\"http://blog.chavanga.com/2010/10/kamchatka-full-of-rivers-waters-and.html\">Chavanga Blog</a>',1,'2010-10-06 14:55:37','2010-10-09 11:40:37'),(25,'Kamchatka BIG GAME. First part of our program. River Big fishing.','There was an impression that here it is a lot of fish, as from one place it was possible to catch 3-5 pieces, after an hour 2-3 more silver big fishes came across on a hook, and the others did not stop to lap at a surface. From a motor boat it was visible that the river really big, in it set of islands and branches with shelters for fishes. It is possible to tell that it is variant Big Game for Kamchatka. Two days have seemed too small term to understand and master all variants of catching. \r\n<p align=\"center\">\r\n<img src=\"http://1.bp.blogspot.com/_1bVgby4N7Wk/TK4PPavnTeI/AAAAAAAAAWc/RwNPGUcroP0/s320/1.jpg\" /></p>\r\n\r\n Read more \r\n<a href=\"http://blog.chavanga.com/2010/10/kamchatka-catching-of-salmon-on-river.html\">http://blog.chavanga.com/2010/10/kamchatka-catching-of-salmon-on-river.html</a>',1,'2010-10-07 19:03:04','2010-10-09 11:39:03'),(26,'New territory. Chavanga top part adventure.','This site of the river is located above falls and is almost unknown to fishers. Under the preliminary information, the falls are high and impassable for a salmon, therefore this top part of the river is isolated. Here meet coregonus, a pike, a perch, fish usual for 2 lakes located here - Chavangsky and Zhilin\'s lake. But it was not believed that here, hardly above falls and already absolutely there is no salmon and a trout, grayling. \r\n\r\n<p align=\"center\">\r\n<img src=\"http://3.bp.blogspot.com/_1bVgby4N7Wk/TKyBrR93xdI/AAAAAAAAAWE/PvG6GztFDdE/s320/5.jpg\" />\r\n</p>\r\nMore in Chavanga jumping Blog in this left columne. Thank.',1,'2010-10-07 19:07:25','2010-10-09 11:37:37'),(27,'All NEWS about Chavanga tours! Don\'t forget to read our blog!','<p align=center>\r\n<img src=\"http://4.bp.blogspot.com/_1bVgby4N7Wk/TK4XkJ1DU5I/AAAAAAAAAY0/rDVcY7_-Z54/s320/11.jpg\" />\r\n</p>\r\n<a href=\"http://blog.chavanga.com/2010_04_01_archive.html\">April Archive: How to get to Russia?</a><br/>\r\n<a href=\"http://blog.chavanga.com/2010_05_01_archive.html\">May Archive: Foreign Posts</a><br/>\r\n<a href=\"http://blog.chavanga.com/2010_07_01_archive.html\">July Archive: A lot of different posts; Where is the biggest one?, Arctic char paradise, Big fly – big trout, Chavanga`s huge grayling...</a><br/>\r\n<a href=\"http://blog.chavanga.com/2010_08_01_archive.html\">August Archive: Different view on catching of a salmon</a><br/>\r\n\r\nAll info by Chavanga Blog in jumping window at left menu. \r\n<p align=center>\r\nJust Find that Image: <br/>\r\n<img src=\"http://chavanga.com/images/left_menu/blog_chavanga_logo.gif\" /></p>',1,'2010-10-07 19:13:09','2010-10-09 11:36:07'),(28,'Read about us at Wedkarstwo magazines.','Do you like to get more information about our tours?\r\nJust read fishing related magazines!\r\n<p align=center>\r\n<img src=\"http://chavanga.com/images/press/Wedkarstwo39/cover_small.jpg\" width=300/>\r\n<a href=\"http://chavanga.com/press/wedkarstwo39\">Wedkarstwo 39</a>\r\n</p>\r\n<p align=center>\r\n<img src=\"http://chavanga.com/images/press/Wedkarstwo56/cover_small.jpg\" width=300/>\r\n<a href=\"http://chavanga.com/press/wedkarstwo56\">Wedkarstwo 56</a>\r\n</p>\r\n',1,'2010-10-11 14:49:30','2010-10-11 14:49:55'),(29,'Kamchatka. Second part.River  Fast  fishing','Second part of our Kamchatka fishing trip. Not so far, but very interesting fishing program. Big river system, a lot of beautyfull places, verious fishes, all variants and methods of flyfishing + spinning, if you want.\r\nThis is an excellent opportunity to get a great fishing  in a low price.\r\nSee more, please, in Chavanga Blog below(jumping window).',1,'2010-10-18 11:47:18','2010-10-18 11:47:18'),(30,'Ouickly and angrily. Kamchatka once again. Plotnikova river.','Quickly - because the interesting site of the river can be passed for 1-2 days. The river is located absolutely near to our hotel and it is possible to reach water hour. The top site in the alloy beginning too represents an interlacing of sleeves of the river, big and fast, suddenly absolutely narrow and small. The river shares on some parts and set of its sleeves remain uninspected. Behind stones come across quite good chars and mikiza -   Kamchatka kind of rainbow trout. In places deeper and quiet on I will flash came across Silver salmons  in the spawning dress. Here too everywhere traces of summer abundance, remains of salmons, the bear tracks on coast. \r\nMore...in Chavanga Blog below - jumping   Chavanga.',1,'2010-10-18 14:47:16','2010-10-18 14:47:16'),(31,'The huge number of fresh fish has risen in the rivers of the White sea! ','The huge number of fresh fish has risen in the rivers of the White sea!\r\n\r\nThe latest news from the Chavanga river.\r\n\r\nThe most intensive has begun with the end of September during the last years calling of a salmon from the sea in the river. The set of fresh fish has risen from the sea. Such quantity it was not observed within several years. \r\n\r\nRead more in Chavanga Blog. Jumping window in a left columne. Thanks!',1,'2010-10-20 09:56:46','2010-10-20 09:56:46'),(32,'How to catch grayling? Here there is a help!','How to catch grayling? Here there is a help!\r\n Chavanga River has the big population of this fish. Many fishers consider as one of important advantages of the river that it is possible to catch not only a salmon, but also graylings. The problem is that northern summer is very short also a river condition changes very quickly. The behaviour  of graylings, their places of feeding and a forage changes also. Therefore we should search for each time a new suitable method of catching, and it happens hardly. Here, on a blog \"Chavanga\"  you will find a series of small articles with the review of a diet of this fish, the recommendation for choice places of catching and a catching method.\r\n\r\nClick the jumping window Chavanga below!',1,'2010-10-29 07:15:02','2010-10-29 07:15:02'),(33,'Grayling diet. We need to knew! View  #1 and #2','The greatest difficulty is  the cases of a selective  feeding of graylings. During such periods it don`t react on ordinary flies. If it is possible to find out character of its food then it is possible to find parking lots of fish and to pick up good fly. \r\nPlease, look in to the Chavanga Blog below.',1,'2010-10-29 09:43:29','2010-10-29 09:43:29'),(34,'Nothing to eat! Low water diet #3.','Stomachs of the studied fishes contained very   small amount of forage.    Here the rests of small insects and worm Gordius aquaticus are visible.  Usual  bottom fauna is  absent. In such conditions fish was active and reacted to bait immediately.\r\n\r\nPhotos and text in Chavanga Blog below. Thanks.',1,'2010-10-30 12:04:45','2010-10-30 12:04:45'),(35,'Biggest trouts!!!! North Kola program #6','We managed to organize fishing of these largest trouts on Kola Peninsula. It undoubtedly one of the best places for catching! Varzina Top camp.\r\nMore in Blog Chavanga, thanks!',1,'2010-11-03 14:32:13','2010-11-03 14:32:13'),(36,'New Photos At Gallery. Kamchatka River gallery.','See new photos at <a href=\'http://chavanga.com/image_gallery_groups/14\'>Kamchatka River gallery</a>.\r\n\r\n<a href=\'http://chavanga.com/image_gallery_groups/63\'> Big river ( images: 9 )</a>\r\n<a href=\'http://chavanga.com/image_gallery_groups/64\'>Karymchina river ( images: 8 )</a>\r\n<a href=\'http://chavanga.com/image_gallery_groups/65\'>Our hotel ( images: 9 )</a>\r\n<a href=\'http://chavanga.com/image_gallery_groups/66\'>Plotnikova river ( images: 11 ) </a>\r\n<a href=\'http://chavanga.com/image_gallery_groups/67\'>River Bystraja ( images: 17 )</a>',1,'2010-11-09 18:47:58','2010-11-09 18:48:08'),(37,'Very short news!','Very short news! But good news from Chavanga river! Good weather, good water level and a lot of good fishes in the river! We are waiting spring 2011 to open a new season!',1,'2010-11-22 20:25:07','2010-11-22 20:25:23'),(38,' 10 years! You can find yourself on Chavanga river!!   ','We start new photo gallery with you and your fish! From 2001 till 2010 year! 10 years we fish together on Chavanga river. All Europe, Island, Canada, USSR countries fish this famous part of the salmon world! Find yourself, may be you forgot this nice moment of your life. \r\n \r\nIn Blog Chavanga we put photo of our friends from 2001 year.\r\nThanks. ',1,'2010-11-26 15:43:25','2010-11-26 15:43:25'),(40,'common info ---  how to get to the Russia? ','Here is a common info about first problems of all our guests, \r\n                   how to get to the Russia? \r\n\r\nYour visa support.\r\n\r\n  After receiving your booking form correctly completed and signed we \r\nwill send the special Russian invitation that is needed to get the visa. We will mail \r\nyou the invitation form and this form has to be filled out and returned to us.\r\n\r\nEveryone traveling to Russia is responsible for obtaining his or her own visa.\r\nPlease notice that regulations require that you can only do so within three months \r\nof the start.  \r\n\r\nTo process your visa application it must to be sent to a consulate or local \r\nvisa agent and contact one of the specialist travel company in your country\r\n that deal with this.\r\n\r\nThe normal time to get a visa is 7 working days plus mail, which means \r\napprox. 2 weeks. The Russian embassy will stamp the visa direct into your passport \r\nand we feel it is both safer and more convenient for everyone that you send the paper\r\n to one of the many specialist travel companies in your country that deals with this.\r\nIf you have problems with your invitation paper or visa, please contact us \r\nImmediately.\r\n\r\n\r\n  You will need:  \r\n \r\n1. Russian invitation.\r\n2. Questionnaire form must to be filled out and signed at the bottom. You can \r\n  download this questionnaire from your local consulate or travel agency web page.\r\n3. Your passport.\r\n4. Four Passport photos (with some embassies it is enough with two.\r\n\r\nThe Russian visa application form will require you to confirm that you have \r\nboth travel insurance and medical evacuation cover valid in Russia.\r\n\r\nPlease double check your passport and visa in plenty of time before departure from \r\nyour country. Remember a passport must be valid for six months after date \r\nof planned departure from Russia. Your visa must have your name exactly as it is \r\nwritten in your passport and the dates in your visa must cover your entire visit to \r\nRussia. If these details are not correct, you could be refused entry into Russia.\r\n\r\n\r\n\r\nWe are traveling to Murmansk. \r\n\r\n\r\n Our representative will meet you in the Airport or railway station and arrange \r\na further transport to the camp. If you arrive earlier or later we can arrange a \r\nprivate transport for you. \r\n\r\nBy airplane \r\n\r\n1. Helsinki (Finland) – Murmansk, our bus to the river\r\n \r\n2. Helsinki – Rovaniemi (Finland), our bus to the river\r\n\r\n2. Saint Petersburg – Murmansk, our bus to the river\r\n\r\n  For info contact – http://www.pulkovo.dk/ \r\n\r\n3. Moscow – Murmansk, our bus to the river\r\n\r\n  For info contact – http://www.aeroflot.ru/eng/\r\n\r\nBy train\r\n\r\n1. Saint Petersburg – Murmansk (to Murmansk city or to Kandalaksha station),\r\n  our bus to the river\r\n\r\n\r\n\r\nAll about it - in Blog Archive \\ April 2010',1,'2011-01-01 16:33:13','2011-01-01 16:33:13'),(41,'1 and 2 parts of Huco taimen fishing.',' All about taimen  fishing - in our BLOG CHAVANGA. \r\n',1,'2011-01-02 11:15:37','2011-01-02 11:15:37'),(42,'All articles about fishing - in Blog archives','You can read all articles during 2010 - 2011 years in Blog archives, not only on Main Page of site. Please, push \" ..read more...\" or \" CHAVANGA\" below  to get in Blog Archives. Thanks!',1,'2011-01-14 14:40:13','2011-01-14 14:40:13'),(43,'Huco taimen fishing in our program 4.','Taimen fishing is one of the most exotic and inaccessible directions in fishing. All three small articles  \"Huco taimen fishing\" Part 1, 2, 3 are published to give on purpose to you a necessary minimum of the information on this fish and conditions of its fishing. Despite remoteness of this territory, its extensiveness and inaccessibility, here there is no possibility to accept tourists in unlimited quantity. Therefore, preparation for such tours is spent beforehand. Places in fishing commands, routes, the personnel and means are reserved in advance. In spite of the fact that the program on the river Tugur already is completely filled, I am glad to inform you that we still have possibility to provide a trip for 3 commands on the river Bichy. It is one of the best rivers of Khabarovsk territory for taimen fishing. Character of the river allows to fish with comfort already from the end of June. Specify details you can using the information  \"Contacts\" on our site. Thanks.',1,'2011-02-05 18:56:13','2011-02-05 18:56:13'),(44,'New offer for big salmon and huge trout fanats!','\r\n\r\nI want to inform you that  we offer you also some northern rivers of pool of Barents sea. Under the arrangement with company Sportfish we are engaged in working out of new camp on river Penka which is located with more known river Varzina. It is the new project. In 2010 the first test fishing on the river has been organized, the place for camp is found. Since July, 2011 the standard camp on 6 fishers will work. The additional information with   the description of the river and about work of camp you can find in the Chavanga Blog. Delivery by helicopter, cost 1250 Euro from Murmansk. This very interesting offer for fans of a large salmon and a trout.  \r\n ',1,'2011-02-17 15:04:06','2011-02-17 15:04:06');
+INSERT INTO `events` VALUES (1,'Chavanga Project Initialized','This is first try of Chavanga Project on Heroku. It\'s not so big as we think, but all news and events and activities are going go here.',1,'2010-02-08 10:31:32','2010-02-08 10:31:32'),(2,'Chavanga Project Style Changing','Style page changed: table border hidded.\r\nRight menu added.',0,'2010-02-13 18:52:52','2010-07-08 14:21:36'),(3,'Fishing Program 1 Page content Added','Now text for first fishing program added.\r\ntext stored into db like page_content value',0,'2010-02-16 23:36:08','2010-07-08 14:21:49'),(4,'Guest Room Added','Now this web site have ability to add guest posts to web site administration.\r\nIt is not so big possobility.\r\n\r\nBut still fonts changed, and a lot of things done',1,'2010-02-28 19:44:00','2010-02-28 19:44:00'),(5,'New DVD Chavanga 2009','W Krolewstwie Lososia film released. Please see it on YouTube: <a href=\"http://www.youtube.com/watch?v=siPZkOTNnZM\">W Krolestwie Lososia</a>.\r\n<p style=\"text-align:center;\">\r\n<img src=\"../../images/events/DVD Chavanga 2009.jpg\"/>\r\n</p>',1,'2010-07-08 14:22:39','2010-07-08 14:22:39'),(6,'Huge grayling and etc.','<b>Huge grayling</b><br/>\r\n<p style=\"text-align:center;\">\r\n<img src=\"../../images/events/huge_grayling/20.jpg\" width=400px/>\r\n<a href=http://blog.chavanga.com/2010/07/chavangas-huge-grayling.html>read more</a>\r\n</p>\r\n<hr size=1 />\r\n\r\n<b>Provocative salmon method</b><br/>\r\n<p style=\"text-align:center;\">\r\n<img src=\"../../images/events/huge_grayling/14.jpg\" width=400px/>\r\n<a href=http://blog.chavanga.com/2010/07/provocative-salmon-method.html>read more</a>\r\n</p>\r\n<hr size=1 />\r\n\r\n\r\n<b>Big fly – big trout</b><br/>\r\n<p style=\"text-align:center;\">\r\n<img src=\"../../images/events/huge_grayling/15.jpg\" width=400px/>\r\n<a href=http://blog.chavanga.com/2010/07/big-fly-big-trout.html>read more</a><br/>\r\n</p>\r\n',1,'2010-07-08 14:40:22','2010-07-08 14:44:41'),(7,'fresh or resident salmon','\r\n  The river is good that always other, as new. And this season too has begun with riddles. The fish finishing a spring course of a salmon was late already on days 8-9. To catch on the estuary site, always successful in early season, it was boring. But on Chavanga river  always it is possible to try a fly on the top sites, there. Where there is a fish who has come into the river earlier. She is autumn fish, salmons who have come into the river in the winter and fish of spring run who has passed after an ice descent. This salmon differs from fresh, that has more dark, hardly a violet back. \r\n\r\n',0,'2010-07-09 16:08:59','2010-07-09 16:08:59'),(8,'fresh or resident salmon','  The river is good that always other, as new. And this season too has begun with riddles. The fish finishing a spring course of a salmon was late already on days 8-9. To catch on the estuary site, always successful in early season, it was boring. But on Chavanga river  always it is possible to try a fly on the top sites, there. Where there is a fish who has come into the river earlier. She is autumn fish, salmons who have come into the river in the winter and fish of spring run who has passed after an ice descent. This salmon differs from fresh, that has more dark, hardly a violet back. \r\n\r\n',1,'2010-07-09 16:18:40','2010-07-09 16:20:00'),(9,'Big trout fishing','\r\n The far rivers of the Southeast of Kola peninsula in the middle of a season are of special interest for fans of catching of a trout. The affinity of the sea provides circulation of this fish in a current of all season. The end of May and the beginning of June in high cold water a local and sea trout meets on all bottom sites of the rivers Pulonga, Bab`ja, Lihodeevka. The small   river Kumzhevaja bears a name meaning Trout river. In the middle of summer are most interesting estuary of  these rivers. Quite good copies of the trout who have come from the sea come across. Dry fly fishing  may be a best   way to catch biggest one. But August and the beginning of September will be the most interesting time for catching. At this time it is possible to count on capture of the present monsters in 2,5-3 kg rising on spawning. \r\n',1,'2010-07-09 18:05:29','2010-07-09 18:05:29'),(10,'Where is the biggest one? More..in Chavanga blog below','                            Where is the biggest one?\r\nI have paid attention to developed stereotypes of catching on familiar   rivers. Going near to the friend who has got for the first time to Chavanga (Chawanga), I saw its errors in a choice of places of catching. Without reading the river, it came into water not there where it is necessary, dipped \"fly\" in unpromising from my point of knowledge places and for some reason quickly left from the best sites which I showed it. But when, eventually, he has reconciled to my remarks and manuals to pleasure both has caught the first salmon. The next days it already not bad was guided and caught stably. \r\n  Read all article in Chavanga Blog below.',1,'2010-07-10 12:25:59','2010-07-10 12:25:59'),(11,'TUTTI I...SALMO (Salar ) FINISCONO IN GLORIA ','\" TUTTI I...SALMO (Salar ) FINISCONO IN GLORIA \"\r\n\r\nby Antonio Pozzolini read in Chavanga Blog below.\r\n\r\n Murmansk - penisola di Kola - fiume Chawanga   (Chavanga river)\r\n ',1,'2010-07-10 12:28:19','2010-07-10 12:28:19'),(12,'New DVD Chavanga 2009','W Krolewstwie Lososia film released. Please see it on YouTube: <a href=\"http://www.youtube.com/watch?v=siPZkOTNnZM\">W Krolestwie Lososia</a>. <p style=\"text-align:center;\"> <img src=\"../../images/events/DVD Chavanga 2009.jpg\"/> </p>',1,'2010-07-19 14:24:57','2010-07-19 14:24:57'),(13,'Chavanga map on salmonatlas.com','Now you can see a correct name of the Chavanga river and    detail maps from Google on   www.salmonatlas.com/atlanticsalmon/russia/kola/mapkola.html',1,'2010-07-19 16:51:26','2010-07-19 16:51:26'),(14,'The unique fishing route across Kamchatka ','The unique fishing route across Kamchatka within the limits of the program Opala river + on extreme became now accessible to reasonable price that speaks that was possible to avoid for the first time rent of the expensive helicopter. Details of a route more low. There are 3 places and month on gathering.\r\nHere that at us it has turned out:\r\n-1st day (on September, 16th): a meeting at the airport, moving to hotel    Thermal   \", rest, bathing in pool\r\n-2nd day (on September, 17th): departure to the river Fast, the beginning of an alloy with stops on \r\nFishing, in the evening camp installation, a lodging for the night in tents\r\n-3rd day (on September, 18th): continuation of an alloy with fishing, in the evening returning in \r\nHotel\r\n-4th day (on September, 19th): departure to the river Karymchina, the beginning of an alloy with stops \r\nOn fishing, in the evening camp installation, a lodging for the night in tents\r\n-5th day (on September, 20th): continuation of an alloy with fishing, transition in the river \r\nПлотникова, in the evening returning in hotel\r\n-6th day (on September, 21st): departure to the river Opala (on the journey approximately 3 hours), \r\nDelivery to the river to stationary camp (the house from a felling with conveniences), fishing \r\nOn the river on a motor boat upwards downstream\r\n-7-day (on September, 22nd): fishing on the river on a motor boat upwards downwards on \r\nTo current\r\n-8th day (on September, 23rd): fishing on the river on a motor boat upwards downwards on \r\nTo current\r\n-9th day (on September, 24th): fishing on the river on a motor boat upwards downwards on \r\nTo current, in the evening returning in hotel\r\n-10th day (on September, 25th): departure on fishing to Tolmachevsky lake (there it is possible \r\nflyfishing), in the evening returning in hotel\r\n-11th day (on September, 26th): a transfer in the airport\r\n  \r\nStill a question such, you wanted to fish on Zhupanova, it is essentially important? \r\nIf yes, it is possible instead of one day on Disgrace and Tolmachevsky lake to make, \r\nAnd the price will a little change.\r\n ',1,'2010-07-19 17:45:07','2010-07-19 17:45:07'),(15,'Dry fly salmon fishing ','   Some experiments seem deprived of practical sense, simply absurd. I about catching of a salmon by small dry flies. If it was a question about bombers and provokers similar to them then it would be not necessary to mention it. Interest of a salmon to objects on a surface - history old and peculiar not only to the rivers of the north Kola. The same curiosity is shown by a salmon everywhere to the most different subjects dragged at a surface. Bomber it is only known in flyfishing a variant of a superficial bait. On a surface catch and metal lures.  \r\n\r\n<p align=center>\r\n<img src=\"../../images/events/dry_fly_fishing.jpg\" />\r\n</p>\r\nRead more in <a href=http://blog.chavanga.com/2010/07/dry-fly-salmon-fishing.html>Chavanga blog</a>.',1,'2010-07-23 10:45:45','2010-07-31 15:25:46'),(16,' Nymph salmon fishing ',' In most cases, we catch a salmon equally, a method of a classical wet fly, we throw downwards and across, selecting further speed, a direction and depth. \r\n\r\nThe method of a wet fly in all variants is productive enough. \"The salmon\" fly in usual, habitual execution, was created just for such technics. But…\r\n\r\n<p align=center>\r\n<img src=\"../../images/events/nymph_salmon_fishing.jpg\" />\r\n</p>\r\nRead more at <a href=http://blog.chavanga.com/2010/07/nymph-salmon-fishing.html>Chavanga blog</a>.',1,'2010-07-23 10:47:31','2010-07-31 15:23:57'),(17,'Arctic char paradise','After several years of exploring Greenland’s rivers we’ve managed to locate literary the most prolific fisheries on that harsh island and the most efficient means for reaching them. Our fishing grounds are quite away from civilization and can be reached either by sea or air. \r\n\r\n<p align=center>\r\n<img src=\"../../images/events/arctic_char_paradise/3.jpg\" width=600 /><br/>\r\n<img src=\"../../images/events/arctic_char_paradise/5.jpg\" width=600  /><br/>\r\n<img src=\"../../images/events/arctic_char_paradise/7.jpg\" width=600  /><br/>\r\n</p>\r\n<big>\r\nSee more photos at <a href=http://blog.chavanga.com/2010/07/arctic-char-paradise.html>Chavanga blog</a>.</big>',1,'2010-07-27 10:33:51','2010-07-31 15:22:21'),(18,'Kola autumn- NEW article on  www.globalflyfisher.com','Kola autumn - Horses, bears and fly-fishing \r\n\r\nWith the fly rod in the Kola Peninsula\r\n\r\nBy Mindaugas Banelisn \r\n\r\nSeptember, while sizzling my lard on the Turkish beach and sipping Efes Pilsen, I was thinking about the fact that I had already fulfilled one of the annual duties of a father and husband - having had a family holiday “in the South”.\r\nSo it was high time to take care of the truly manly rest, which is fishing somewhere in the North. The target was salmon. I had decided that Kola Peninsula was the ideal place to travel to. So I set off. It was not the first time I was traveling to Kola, but it was the first time in the autumn.\r\n\r\nMore.... in <a href=http://blog.chavanga.com/2010/07/with-fly-rod-in-kola-peninsula.html>Chavanga Blog</a>\r\n<p align=center><img src=\"../../images/events/global_flyfisher.png\"  /></p>',1,'2010-07-27 11:19:23','2010-07-31 15:13:12'),(19,'Pikes in a  salmon rivers.','The pike always was considered as undesirable fish there where there is a salmon or a trout. But in the nature they adjoined always. And if fishing pressure does not change this balance no trouble in the presence of a pike and is not present for the salmon. \r\n\r\nPlease, read more in Chavanga Blog, you can see it below Partners...',1,'2010-08-25 11:56:45','2010-08-25 11:56:45'),(20,' Less  water -   more fishes.','The hot summer was observed not only in Europe, but also on Kola Peninsula. A heat and absence of rains have led to falling of a water level and its warming up to 23 degrees. It was possible to expect sharp decrease in activity of fish. But it has not occurred....\r\n\r\n<a href=\'http://blog.chavanga.com/2010/08/there-is-less-than-water-more-fishes.html\'>Please, read more in Chavanga Blog</a>\r\n\r\n<p align=center>\r\n<img src=\'http://1.bp.blogspot.com/_1bVgby4N7Wk/THUHqXoQ9xI/AAAAAAAAAQ4/MLJbHLVpaok/s400/2.jpg\'/>\r\n</p>',1,'2010-08-25 11:58:41','2010-09-03 15:07:21'),(21,'Hungry diet or over effective digestion?','The low water level in the end of July and in the beginning of August has led to appreciable reduction of places of parking for Chavanga`sgraylings. Many reaches and wide floods of the river, pre threshold sites have lost water.  Probably, the forage lack has led to sharp increase of aggression of fish. \r\n\r\n<a href=\'http://blog.chavanga.com/2010/08/hungry-diet-or-over-effective-digestion.html\'>Read more...</a>\r\n\r\n<p align=center>\r\n<img src=\'http://3.bp.blogspot.com/_1bVgby4N7Wk/THULoVWKiPI/AAAAAAAAASw/XfKIlXQlKkI/s400/5.jpg\'/>\r\n</p>',1,'2010-08-25 12:01:32','2010-09-03 15:06:24'),(22,'Another way to fish salmon !!!',' Last   of 10 years me are carried away by catching of a salmon on flies which usually do not carry to the salmon. First of all   flies of the small sizes, in the second it often imitating flies, wet flies, nymphs. In the third, catching   to these flies is interesting to me by methods.    Last years  I collect a material on catching of a salmon on dry imitations of mayflies  and sedges. If you have an information on this theme - please, share it. Completely illustrated article\r\n\r\n\"Different view on catching of a salmon\"\r\n<a href=\'http://blog.chavanga.com/2010/08/different-view-on-catching-of-salmon.html\'>Part 1</a>\r\n<a href=\'http://blog.chavanga.com/2010/08/different-view-on-catching-of-salmon_28.html\'>Part 2</a>\r\n<a href=\'http://blog.chavanga.com/2010/08/different-view-on-catching-of-salmon_9081.html\'>Part 3</a>\r\n<a href=\'http://blog.chavanga.com/2010/08/different-view-on-catching-of-salmon_8587.html\'>Part 4</a>\r\n\r\nAbout theoretical preconditions of catching on not salmon flies it is possible to read more low in Chavanga Blog.\r\n<p align=center>\r\n<img src=\'http://4.bp.blogspot.com/_1bVgby4N7Wk/THj0A5vSG6I/AAAAAAAAAT4/yz3Qz76je20/s400/4.jpg\' />\r\n</p>',1,'2010-08-28 11:29:24','2010-09-03 15:05:11'),(23,'Latest News from Chavanga. Salmon activity.','Rather long hot summer with extremely low water level has led to the early beginning of spawning of a salmon. Already to the middle of September activity of resident fish has sharply fallen, began to come across already empty fishes.\r\n\r\nMore..... in Chavanga Blog below.',1,'2010-10-06 14:52:35','2010-10-06 14:52:35'),(24,'Kamchatka- full of fishes!!!','The first impressions after 10 day rounds are that - here full waters, is full some fish and it is possible to lose the way. The rivers even located near to dirt roads are so inaccessible that advancement is possible only by boats.\r\n\r\n<p align=\"center\">\r\n<img src=\"http://1.bp.blogspot.com/_1bVgby4N7Wk/TKx7engEpNI/AAAAAAAAAVM/yRpyhpPRZ2o/s320/5.jpg\" />\r\n</p>\r\n\r\n Please, more in <a href=\"http://blog.chavanga.com/2010/10/kamchatka-full-of-rivers-waters-and.html\">Chavanga Blog</a>',1,'2010-10-06 14:55:37','2010-10-09 11:40:37'),(25,'Kamchatka BIG GAME. First part of our program. River Big fishing.','There was an impression that here it is a lot of fish, as from one place it was possible to catch 3-5 pieces, after an hour 2-3 more silver big fishes came across on a hook, and the others did not stop to lap at a surface. From a motor boat it was visible that the river really big, in it set of islands and branches with shelters for fishes. It is possible to tell that it is variant Big Game for Kamchatka. Two days have seemed too small term to understand and master all variants of catching. \r\n<p align=\"center\">\r\n<img src=\"http://1.bp.blogspot.com/_1bVgby4N7Wk/TK4PPavnTeI/AAAAAAAAAWc/RwNPGUcroP0/s320/1.jpg\" /></p>\r\n\r\n Read more \r\n<a href=\"http://blog.chavanga.com/2010/10/kamchatka-catching-of-salmon-on-river.html\">http://blog.chavanga.com/2010/10/kamchatka-catching-of-salmon-on-river.html</a>',1,'2010-10-07 19:03:04','2010-10-09 11:39:03'),(26,'New territory. Chavanga top part adventure.','This site of the river is located above falls and is almost unknown to fishers. Under the preliminary information, the falls are high and impassable for a salmon, therefore this top part of the river is isolated. Here meet coregonus, a pike, a perch, fish usual for 2 lakes located here - Chavangsky and Zhilin\'s lake. But it was not believed that here, hardly above falls and already absolutely there is no salmon and a trout, grayling. \r\n\r\n<p align=\"center\">\r\n<img src=\"http://3.bp.blogspot.com/_1bVgby4N7Wk/TKyBrR93xdI/AAAAAAAAAWE/PvG6GztFDdE/s320/5.jpg\" />\r\n</p>\r\nMore in Chavanga jumping Blog in this left columne. Thank.',1,'2010-10-07 19:07:25','2010-10-09 11:37:37'),(27,'All NEWS about Chavanga tours! Don\'t forget to read our blog!','<p align=center>\r\n<img src=\"http://4.bp.blogspot.com/_1bVgby4N7Wk/TK4XkJ1DU5I/AAAAAAAAAY0/rDVcY7_-Z54/s320/11.jpg\" />\r\n</p>\r\n<a href=\"http://blog.chavanga.com/2010_04_01_archive.html\">April Archive: How to get to Russia?</a><br/>\r\n<a href=\"http://blog.chavanga.com/2010_05_01_archive.html\">May Archive: Foreign Posts</a><br/>\r\n<a href=\"http://blog.chavanga.com/2010_07_01_archive.html\">July Archive: A lot of different posts; Where is the biggest one?, Arctic char paradise, Big fly – big trout, Chavanga`s huge grayling...</a><br/>\r\n<a href=\"http://blog.chavanga.com/2010_08_01_archive.html\">August Archive: Different view on catching of a salmon</a><br/>\r\n\r\nAll info by Chavanga Blog in jumping window at left menu. \r\n<p align=center>\r\nJust Find that Image: <br/>\r\n<img src=\"http://chavanga.com/images/left_menu/blog_chavanga_logo.gif\" /></p>',1,'2010-10-07 19:13:09','2010-10-09 11:36:07'),(28,'Read about us at Wedkarstwo magazines.','Do you like to get more information about our tours?\r\nJust read fishing related magazines!\r\n<p align=center>\r\n<img src=\"http://chavanga.com/images/press/Wedkarstwo39/cover_small.jpg\" width=300/>\r\n<a href=\"http://chavanga.com/press/wedkarstwo39\">Wedkarstwo 39</a>\r\n</p>\r\n<p align=center>\r\n<img src=\"http://chavanga.com/images/press/Wedkarstwo56/cover_small.jpg\" width=300/>\r\n<a href=\"http://chavanga.com/press/wedkarstwo56\">Wedkarstwo 56</a>\r\n</p>\r\n',1,'2010-10-11 14:49:30','2010-10-11 14:49:55'),(29,'Kamchatka. Second part.River  Fast  fishing','Second part of our Kamchatka fishing trip. Not so far, but very interesting fishing program. Big river system, a lot of beautyfull places, verious fishes, all variants and methods of flyfishing + spinning, if you want.\r\nThis is an excellent opportunity to get a great fishing  in a low price.\r\nSee more, please, in Chavanga Blog below(jumping window).',1,'2010-10-18 11:47:18','2010-10-18 11:47:18'),(30,'Ouickly and angrily. Kamchatka once again. Plotnikova river.','Quickly - because the interesting site of the river can be passed for 1-2 days. The river is located absolutely near to our hotel and it is possible to reach water hour. The top site in the alloy beginning too represents an interlacing of sleeves of the river, big and fast, suddenly absolutely narrow and small. The river shares on some parts and set of its sleeves remain uninspected. Behind stones come across quite good chars and mikiza -   Kamchatka kind of rainbow trout. In places deeper and quiet on I will flash came across Silver salmons  in the spawning dress. Here too everywhere traces of summer abundance, remains of salmons, the bear tracks on coast. \r\nMore...in Chavanga Blog below - jumping   Chavanga.',1,'2010-10-18 14:47:16','2010-10-18 14:47:16'),(31,'The huge number of fresh fish has risen in the rivers of the White sea! ','The huge number of fresh fish has risen in the rivers of the White sea!\r\n\r\nThe latest news from the Chavanga river.\r\n\r\nThe most intensive has begun with the end of September during the last years calling of a salmon from the sea in the river. The set of fresh fish has risen from the sea. Such quantity it was not observed within several years. \r\n\r\nRead more in Chavanga Blog. Jumping window in a left columne. Thanks!',1,'2010-10-20 09:56:46','2010-10-20 09:56:46'),(32,'How to catch grayling? Here there is a help!','How to catch grayling? Here there is a help!\r\n Chavanga River has the big population of this fish. Many fishers consider as one of important advantages of the river that it is possible to catch not only a salmon, but also graylings. The problem is that northern summer is very short also a river condition changes very quickly. The behaviour  of graylings, their places of feeding and a forage changes also. Therefore we should search for each time a new suitable method of catching, and it happens hardly. Here, on a blog \"Chavanga\"  you will find a series of small articles with the review of a diet of this fish, the recommendation for choice places of catching and a catching method.\r\n\r\nClick the jumping window Chavanga below!',1,'2010-10-29 07:15:02','2010-10-29 07:15:02'),(33,'Grayling diet. We need to knew! View  #1 and #2','The greatest difficulty is  the cases of a selective  feeding of graylings. During such periods it don`t react on ordinary flies. If it is possible to find out character of its food then it is possible to find parking lots of fish and to pick up good fly. \r\nPlease, look in to the Chavanga Blog below.',1,'2010-10-29 09:43:29','2010-10-29 09:43:29'),(34,'Nothing to eat! Low water diet #3.','Stomachs of the studied fishes contained very   small amount of forage.    Here the rests of small insects and worm Gordius aquaticus are visible.  Usual  bottom fauna is  absent. In such conditions fish was active and reacted to bait immediately.\r\n\r\nPhotos and text in Chavanga Blog below. Thanks.',1,'2010-10-30 12:04:45','2010-10-30 12:04:45'),(35,'Biggest trouts!!!! North Kola program #6','We managed to organize fishing of these largest trouts on Kola Peninsula. It undoubtedly one of the best places for catching! Varzina Top camp.\r\nMore in Blog Chavanga, thanks!',1,'2010-11-03 14:32:13','2010-11-03 14:32:13'),(36,'New Photos At Gallery. Kamchatka River gallery.','See new photos at <a href=\'http://chavanga.com/image_gallery_groups/14\'>Kamchatka River gallery</a>.\r\n\r\n<a href=\'http://chavanga.com/image_gallery_groups/63\'> Big river ( images: 9 )</a>\r\n<a href=\'http://chavanga.com/image_gallery_groups/64\'>Karymchina river ( images: 8 )</a>\r\n<a href=\'http://chavanga.com/image_gallery_groups/65\'>Our hotel ( images: 9 )</a>\r\n<a href=\'http://chavanga.com/image_gallery_groups/66\'>Plotnikova river ( images: 11 ) </a>\r\n<a href=\'http://chavanga.com/image_gallery_groups/67\'>River Bystraja ( images: 17 )</a>',1,'2010-11-09 18:47:58','2010-11-09 18:48:08'),(37,'Very short news!','Very short news! But good news from Chavanga river! Good weather, good water level and a lot of good fishes in the river! We are waiting spring 2011 to open a new season!',1,'2010-11-22 20:25:07','2010-11-22 20:25:23'),(38,' 10 years! You can find yourself on Chavanga river!!   ','We start new photo gallery with you and your fish! From 2001 till 2010 year! 10 years we fish together on Chavanga river. All Europe, Island, Canada, USSR countries fish this famous part of the salmon world! Find yourself, may be you forgot this nice moment of your life. \r\n \r\nIn Blog Chavanga we put photo of our friends from 2001 year.\r\nThanks. ',1,'2010-11-26 15:43:25','2010-11-26 15:43:25'),(40,'common info ---  how to get to the Russia? ','Here is a common info about first problems of all our guests, \r\n                   how to get to the Russia? \r\n\r\nYour visa support.\r\n\r\n  After receiving your booking form correctly completed and signed we \r\nwill send the special Russian invitation that is needed to get the visa. We will mail \r\nyou the invitation form and this form has to be filled out and returned to us.\r\n\r\nEveryone traveling to Russia is responsible for obtaining his or her own visa.\r\nPlease notice that regulations require that you can only do so within three months \r\nof the start.  \r\n\r\nTo process your visa application it must to be sent to a consulate or local \r\nvisa agent and contact one of the specialist travel company in your country\r\n that deal with this.\r\n\r\nThe normal time to get a visa is 7 working days plus mail, which means \r\napprox. 2 weeks. The Russian embassy will stamp the visa direct into your passport \r\nand we feel it is both safer and more convenient for everyone that you send the paper\r\n to one of the many specialist travel companies in your country that deals with this.\r\nIf you have problems with your invitation paper or visa, please contact us \r\nImmediately.\r\n\r\n\r\n  You will need:  \r\n \r\n1. Russian invitation.\r\n2. Questionnaire form must to be filled out and signed at the bottom. You can \r\n  download this questionnaire from your local consulate or travel agency web page.\r\n3. Your passport.\r\n4. Four Passport photos (with some embassies it is enough with two.\r\n\r\nThe Russian visa application form will require you to confirm that you have \r\nboth travel insurance and medical evacuation cover valid in Russia.\r\n\r\nPlease double check your passport and visa in plenty of time before departure from \r\nyour country. Remember a passport must be valid for six months after date \r\nof planned departure from Russia. Your visa must have your name exactly as it is \r\nwritten in your passport and the dates in your visa must cover your entire visit to \r\nRussia. If these details are not correct, you could be refused entry into Russia.\r\n\r\n\r\n\r\nWe are traveling to Murmansk. \r\n\r\n\r\n Our representative will meet you in the Airport or railway station and arrange \r\na further transport to the camp. If you arrive earlier or later we can arrange a \r\nprivate transport for you. \r\n\r\nBy airplane \r\n\r\n1. Helsinki (Finland) – Murmansk, our bus to the river\r\n \r\n2. Helsinki – Rovaniemi (Finland), our bus to the river\r\n\r\n2. Saint Petersburg – Murmansk, our bus to the river\r\n\r\n  For info contact – http://www.pulkovo.dk/ \r\n\r\n3. Moscow – Murmansk, our bus to the river\r\n\r\n  For info contact – http://www.aeroflot.ru/eng/\r\n\r\nBy train\r\n\r\n1. Saint Petersburg – Murmansk (to Murmansk city or to Kandalaksha station),\r\n  our bus to the river\r\n\r\n\r\n\r\nAll about it - in Blog Archive \\ April 2010',1,'2011-01-01 16:33:13','2011-01-01 16:33:13'),(41,'1 and 2 parts of Huco taimen fishing.',' All about taimen  fishing - in our BLOG CHAVANGA. \r\n',1,'2011-01-02 11:15:37','2011-01-02 11:15:37'),(42,'All articles about fishing - in Blog archives','You can read all articles during 2010 - 2011 years in Blog archives, not only on Main Page of site. Please, push \" ..read more...\" or \" CHAVANGA\" below  to get in Blog Archives. Thanks!',1,'2011-01-14 14:40:13','2011-01-14 14:40:13'),(43,'Huco taimen fishing in our program 4.','Taimen fishing is one of the most exotic and inaccessible directions in fishing. All three small articles  \"Huco taimen fishing\" Part 1, 2, 3 are published to give on purpose to you a necessary minimum of the information on this fish and conditions of its fishing. Despite remoteness of this territory, its extensiveness and inaccessibility, here there is no possibility to accept tourists in unlimited quantity. Therefore, preparation for such tours is spent beforehand. Places in fishing commands, routes, the personnel and means are reserved in advance. In spite of the fact that the program on the river Tugur already is completely filled, I am glad to inform you that we still have possibility to provide a trip for 3 commands on the river Bichy. It is one of the best rivers of Khabarovsk territory for taimen fishing. Character of the river allows to fish with comfort already from the end of June. Specify details you can using the information  \"Contacts\" on our site. Thanks.',1,'2011-02-05 18:56:13','2011-02-05 18:56:13'),(44,'New offer for big salmon and huge trout fanats!','\r\n\r\nI want to inform you that  we offer you also some northern rivers of pool of Barents sea. Under the arrangement with company Sportfish we are engaged in working out of new camp on river Penka which is located with more known river Varzina. It is the new project. In 2010 the first test fishing on the river has been organized, the place for camp is found. Since July, 2011 the standard camp on 6 fishers will work. The additional information with   the description of the river and about work of camp you can find in the Chavanga Blog. Delivery by helicopter, cost 1250 Euro from Murmansk. This very interesting offer for fans of a large salmon and a trout.  \r\n ',1,'2011-02-17 15:04:06','2011-02-17 15:04:06'),(45,'A lot of images','You can find up to 500+ images at out gallery!\r\nvisit it now!\r\n<a href=http://chavanga.com/image_gallery_groups/3>Gallery</a>\r\n<p align=center>\r\n<img src= http://chavanga.com/images/fishing/p6/North%20Kola/4.jpg width=500 />\r\n\r\n<img src=http://chavanga.com/images/gallery/Chavanga%20best/spring/15.jpg width=500  />\r\n</p>',1,'2011-02-25 21:43:17','2011-02-25 21:44:23');
 /*!40000 ALTER TABLE `events` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -163,13 +163,13 @@ DROP TABLE IF EXISTS `fishing_program_images`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `fishing_program_images` (
-  `id` int(11) NOT NULL auto_increment,
-  `title` varchar(255) collate utf8_unicode_ci default NULL,
-  `tag` varchar(255) collate utf8_unicode_ci default NULL,
-  `fishing_program_id` int(11) default NULL,
-  `created_at` datetime default NULL,
-  `updated_at` datetime default NULL,
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `tag` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `fishing_program_id` int(11) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -191,15 +191,15 @@ DROP TABLE IF EXISTS `fishing_programs`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `fishing_programs` (
-  `id` int(11) NOT NULL auto_increment,
-  `title` varchar(255) collate utf8_unicode_ci default NULL,
-  `description` text collate utf8_unicode_ci,
-  `created_at` datetime default NULL,
-  `updated_at` datetime default NULL,
-  `page_content` text collate utf8_unicode_ci,
-  `image_gallery_group_id` int(11) default NULL,
-  `hidden` tinyint(1) default NULL,
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `description` text COLLATE utf8_unicode_ci,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  `page_content` text COLLATE utf8_unicode_ci,
+  `image_gallery_group_id` int(11) DEFAULT NULL,
+  `hidden` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -221,14 +221,14 @@ DROP TABLE IF EXISTS `image_gallery_groups`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `image_gallery_groups` (
-  `id` int(11) NOT NULL auto_increment,
-  `title` varchar(255) collate utf8_unicode_ci default NULL,
-  `description` text collate utf8_unicode_ci,
-  `parent_group_id` int(11) default NULL,
-  `created_at` datetime default NULL,
-  `updated_at` datetime default NULL,
-  `visible` tinyint(1) default '0',
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `description` text COLLATE utf8_unicode_ci,
+  `parent_group_id` int(11) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  `visible` tinyint(1) DEFAULT '0',
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=68 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -250,15 +250,15 @@ DROP TABLE IF EXISTS `image_gallery_images`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `image_gallery_images` (
-  `id` int(11) NOT NULL auto_increment,
-  `title` varchar(255) collate utf8_unicode_ci default NULL,
-  `description` text collate utf8_unicode_ci,
-  `tag` varchar(255) collate utf8_unicode_ci default NULL,
-  `visible` tinyint(1) default NULL,
-  `image_gallery_group_id` int(11) default NULL,
-  `created_at` datetime default NULL,
-  `updated_at` datetime default NULL,
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `description` text COLLATE utf8_unicode_ci,
+  `tag` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `visible` tinyint(1) DEFAULT NULL,
+  `image_gallery_group_id` int(11) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=546 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -280,13 +280,13 @@ DROP TABLE IF EXISTS `map_categories`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `map_categories` (
-  `id` int(11) NOT NULL auto_increment,
-  `title` varchar(255) collate utf8_unicode_ci default NULL,
-  `body` text collate utf8_unicode_ci,
-  `tag` varchar(255) collate utf8_unicode_ci default NULL,
-  `created_at` datetime default NULL,
-  `updated_at` datetime default NULL,
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `body` text COLLATE utf8_unicode_ci,
+  `tag` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -308,15 +308,15 @@ DROP TABLE IF EXISTS `maps`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `maps` (
-  `id` int(11) NOT NULL auto_increment,
-  `title` varchar(255) collate utf8_unicode_ci default NULL,
-  `body` text collate utf8_unicode_ci,
-  `tag` varchar(255) collate utf8_unicode_ci default NULL,
-  `visible` tinyint(1) default NULL,
-  `map_category_id` int(11) default NULL,
-  `created_at` datetime default NULL,
-  `updated_at` datetime default NULL,
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `body` text COLLATE utf8_unicode_ci,
+  `tag` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `visible` tinyint(1) DEFAULT NULL,
+  `map_category_id` int(11) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -338,15 +338,15 @@ DROP TABLE IF EXISTS `partner_links`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `partner_links` (
-  `id` int(11) NOT NULL auto_increment,
-  `title` varchar(255) collate utf8_unicode_ci default NULL,
-  `tag` varchar(255) collate utf8_unicode_ci default NULL,
-  `visible` tinyint(1) default NULL,
-  `created_at` datetime default NULL,
-  `updated_at` datetime default NULL,
-  `image` varchar(255) collate utf8_unicode_ci default NULL,
-  `publish_image` tinyint(1) default NULL,
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `tag` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `visible` tinyint(1) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  `image` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `publish_image` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -368,13 +368,13 @@ DROP TABLE IF EXISTS `post_comments`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `post_comments` (
-  `id` int(11) NOT NULL auto_increment,
-  `author` varchar(255) collate utf8_unicode_ci default NULL,
-  `answer` text collate utf8_unicode_ci,
-  `post_id` int(11) default NULL,
-  `created_at` datetime default NULL,
-  `updated_at` datetime default NULL,
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `author` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `answer` text COLLATE utf8_unicode_ci,
+  `post_id` int(11) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -396,13 +396,13 @@ DROP TABLE IF EXISTS `posts`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `posts` (
-  `id` int(11) NOT NULL auto_increment,
-  `title` varchar(255) collate utf8_unicode_ci default NULL,
-  `body` text collate utf8_unicode_ci,
-  `published` tinyint(1) default NULL,
-  `created_at` datetime default NULL,
-  `updated_at` datetime default NULL,
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `body` text COLLATE utf8_unicode_ci,
+  `published` tinyint(1) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=85 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -424,7 +424,7 @@ DROP TABLE IF EXISTS `schema_migrations`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `schema_migrations` (
-  `version` varchar(255) collate utf8_unicode_ci NOT NULL,
+  `version` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   UNIQUE KEY `unique_schema_migrations` (`version`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -447,14 +447,14 @@ DROP TABLE IF EXISTS `sub_fishing_programs`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `sub_fishing_programs` (
-  `id` int(11) NOT NULL auto_increment,
-  `title` varchar(255) collate utf8_unicode_ci default NULL,
-  `body` text collate utf8_unicode_ci,
-  `visible` tinyint(1) default NULL,
-  `fishing_program_id` int(11) default NULL,
-  `created_at` datetime default NULL,
-  `updated_at` datetime default NULL,
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `body` text COLLATE utf8_unicode_ci,
+  `visible` tinyint(1) DEFAULT NULL,
+  `fishing_program_id` int(11) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -476,13 +476,13 @@ DROP TABLE IF EXISTS `text_effects`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `text_effects` (
-  `id` int(11) NOT NULL auto_increment,
-  `title` varchar(255) collate utf8_unicode_ci default NULL,
-  `effect_code` text collate utf8_unicode_ci,
-  `example_code` text collate utf8_unicode_ci,
-  `created_at` datetime default NULL,
-  `updated_at` datetime default NULL,
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `effect_code` text COLLATE utf8_unicode_ci,
+  `example_code` text COLLATE utf8_unicode_ci,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -505,4 +505,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2011-02-22 20:35:38
+-- Dump completed on 2011-02-26 11:44:10
