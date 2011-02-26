@@ -16,9 +16,12 @@ module Admin
     end
   end
   def create_comment
-    @comment = PostComment.new( params[:comment] )
+    @post = Post.find( params[:comment][:post_id].to_i )
+    @comment = @post.comments.new( params[:post_comment] )
     if @comment.save
         flash[:notice] = 'Comment was successfully created.'
+    else
+        flash[:error] = 'Comment was not created.'
     end
     redirect_to( :controller => :guest_room )
   end
@@ -39,7 +42,10 @@ module Admin
   def load_form
     @post = Post.find(params[:id])
     @new_comment = @post.comments.new
-    render :partial => 'new_comment_form'
+    render :update do |page|
+        page.replace_html params[:update], :partial => 'new_comment_form'
+    end
+    
   end
 
  end

@@ -15,8 +15,11 @@ Chavanga::Application.routes.draw do
         match 'press(/:action)' => 'press#index'
         match 'booking' => 'booking#index'
         match 'contact' => 'contact#index'
-        resources :guest_room
+        match 'guest_room' => 'guest_room#index'
+        match 'guest_room/destroy' => 'guest_room#destroy'
+        match 'guest_room/create_comment', :controller => 'guest_room', :action => 'create_comment'
         match 'guest_room/destroy_comment', :controller => 'guest_room', :action => 'destroy_comment'
+        match 'guest_room/load_form', :controller => 'guest_room', :action => 'load_form'
         resources :color
         resources :text_effects
         resources :banners

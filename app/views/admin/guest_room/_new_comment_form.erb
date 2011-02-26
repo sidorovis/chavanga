@@ -1,4 +1,4 @@
-<% form_for(:comment, @new_comment, :url => { :action => "create_comment" } ) do |f| %>
+<%= form_for(@new_comment, :name => :comment, :url => { :action => "create_comment" } ) do |f| %>
   <%= f.error_messages %>
   <%= hidden_field(:comment, :post_id, :value => @new_comment.post_id ) %>
   <table align=center border='0'>

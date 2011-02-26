@@ -4,7 +4,13 @@
 <%= render :partial => 'comment', :collection => post.comments %>
 <div id="new_comment_to_<%= post.id %>">
 </div>
-<%= link_to "Comment it", :url => { :action => :load_form, :id => post.id }, :update => "new_comment_to_"+post.id.to_s, :remote => true %> | 
+<%= link_to "Comment it",
+        {
+            :update => "new_comment_to_"+post.id.to_s,
+            :controller => 'admin/guest_room',
+            :action => 'load_form',
+            :id => post.id
+        }, :remote => true %>
 <%= link_to("Delete Post", 
         {   :action => :destroy , 
             :id => post.id }, 
