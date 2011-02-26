@@ -46,8 +46,7 @@ module ApplicationHelper
                 end
             result += "</li>"
         end
-        result += "</ul>"+
-             "</div></div></div></div>";
+        result += "</ul></div></div></div></div>";
 
     end
 

@@ -45,7 +45,7 @@ module ApplicationHelper
         @menu_fishing_programs.each do |fp|
             result += raw("<li>"+ raw(link_to( fp.title, [:admin,fp], :class => 'drop_down_main_menu' ) ))
                 fp.SubFishingPrograms.all(:conditions => { :visible => true } ).each do |sp|
-                    result += raw("<ul style='margin-left:-15px;'><li>" + link_to( sp.title, [:admin,sp], :class => 'drop_down_main_menu' ) + "</li></ul>")
+                    result += raw("<ul style='margin-left:-15px;'><li>" + link_to( sp.title, admin_sub_fishing_program_path( sp ), :class => 'drop_down_main_menu' ) + "</li></ul>")
                 end
             result += raw("</li>")
         end

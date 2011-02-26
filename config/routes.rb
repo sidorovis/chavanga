@@ -5,7 +5,7 @@ Chavanga::Application.routes.draw do
         match 'home/load_news_from_blog'
         match 'team' => 'team#index'
         resources :fishing_programs
-        resources :sub_fishing_programs
+        match 'fishing_information/:id' => 'fishing_subprogram#show'
         resources :image_gallery_images
         
         resources :image_gallery_groups do
