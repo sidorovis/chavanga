@@ -8,7 +8,7 @@
        <% t = event.created_at %>
        <%= t.day.to_s+"."+t.month.to_s+"."+t.year.to_s %>
        <%= image_tag('home/new.png') if Time.now - event.created_at < 1.month %><br/>
-       <%= link_to event.title, event_path(event) %>
+       <%= link_to event.title, admin_event_path(event) %>
        <hr/>
      </td>
    </tr>
