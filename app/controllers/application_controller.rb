@@ -8,22 +8,31 @@
 #require 'google_geocode'
 
 class ApplicationController < ActionController::Base
-  helper :all # include all helpers, all the time
-  protect_from_forgery # See ActionController::RequestForgeryProtection for details
+    helper :all # include all helpers, all the time
+    protect_from_forgery # See ActionController::RequestForgeryProtection for details
 
-  before_filter :load_events, :load_partner_links, :load_additional_links, :load_google_map, :load_fishing_programs, :load_gallery_groups, :load_image_gallery_flies, :load_image_gallery_the_best, :load_banners
+    before_filter :load_events, :load_partner_links, :load_additional_links, :load_google_map, :load_fishing_programs, :load_gallery_groups, :load_image_gallery_flies, :load_image_gallery_the_best, :load_banners
 
-  def load_events
-    @left_column_events = Event.all :limit => 5, :conditions => { :published => true }, :order => 'created_at DESC'
-  end
+    def title
+        controller_name.capitalize.split("_").join(" ")
+    end
+    def description
+        "Fishing at chavanga river stays in your heart forever. Chavanga fly fishing information. Chavanga, Varzuga, Kitsa, Indiora, Pulonga, Pialitsa, Chapoma, Kamchatka, Habarovsk region fishing, North Kola fishing, Greenland fishing program."
+    end
+    def keywords
+        "fishing, fishes, fish, chavanga fishing, chavanga, flies, Murmansk, Varguza, Kitsa, Indiora, Kamchatka, Bystraya, Opala, Zypanova, Zhurovaya, Bolshaya, Pulonga, Pialitsa, Chapoma, Habarovsk region, Bichy, Tugur, Ketanda, Urak, Uda "
+    end
+    def load_events
+        @left_column_events = Event.all :limit => 5, :conditions => { :published => true }, :order => 'created_at DESC'
+    end
 
-  def load_partner_links
-    @left_column_partner_links = PartnerLink.all( :conditions => { :visible => true } )
-  end
+    def load_partner_links
+        @left_column_partner_links = PartnerLink.all( :conditions => { :visible => true } )
+    end
   
-  def load_additional_links
-    @left_column_additional_links = AdditionalLink.all( :conditions => { :published => true } )
-  end
+    def load_additional_links
+        @left_column_additional_links = AdditionalLink.all( :conditions => { :published => true } )
+    end
 
     def load_google_map
 #        @application_key = YAML.load_file(RAILS_ROOT + '/config/gmaps_api_key.yml')[ENV['RAILS_ENV']]
@@ -67,9 +76,9 @@ class ApplicationController < ActionController::Base
         @all_banners = Banner.all
     	end
   
-  def go_home
-    redirect_to( :controller => :home )
-  end
+    def go_home
+        redirect_to( :controller => :home )
+    end
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
 end

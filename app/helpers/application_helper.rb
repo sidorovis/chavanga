@@ -1,13 +1,20 @@
 module ApplicationHelper
-    def title_tag
-        if ENV['RAILS_ENV'] == 'production'
-            return "<title> Chavanga - "+ 
-                controller.controller_name.capitalize.split("_").join(" ") +
-            "</title>"
+
+    def title_tag        
+        result = "<title>"
+        if (ENV['RAILS_ENV'] == 'production')
+            result += "Chavanga - "
+        else
+            result += "Development Localhost Chavanga - "
         end
-        return "<title> Developming Localhost Chavanga - "+
-                controller.controller_name.capitalize.split("_").join(" ") +
-            "</title>"
+        result += controller.title
+        return result + "</title>"
+    end
+    def description_tag
+        "<meta name=\"Description\" content=\"" + controller.description + "\">"
+    end
+    def keywords_tag
+        "<meta name=\"Keywords\" content=\"" + controller.keywords + "\">"
     end
     def main_menu_link_to( _name, link_path )
         link_to( 

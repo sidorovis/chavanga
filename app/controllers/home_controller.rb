@@ -6,6 +6,9 @@ class HomeController < ApplicationController
     def set_blog_news_count
         @blogNewsCount = 4
     end 
+    def title
+        "Fly Fishing"
+    end
     class BlogNews
         attr_reader :title, :link, :description, :image_link
         def initialize( title, link, description )
