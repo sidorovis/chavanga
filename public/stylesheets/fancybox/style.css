@@ -1,0 +1,30 @@
+
+#content {
+	width: 400px;
+	margin: 40px auto 0 auto;
+	padding: 0 60px 30px 60px;
+	border: solid 1px #cbcbcb;
+	background: #fafafa;
+	-moz-box-shadow: 0px 0px 10px #cbcbcb;
+	-webkit-box-shadow: 0px 0px 10px #cbcbcb;
+}
+
+a.gallery {
+	outline: none;
+}
+
+a.gallery img {
+	border: 1px solid #BBB;
+	padding: 2px;
+	margin: 5px 10px 4px 0;
+	vertical-align: top;
+}
+
+a.gallery img.last {
+	margin-right: 0;	
+}
+
+ul.gallery {
+	margin-bottom: 24px;
+	padding-left: 30px;
+}

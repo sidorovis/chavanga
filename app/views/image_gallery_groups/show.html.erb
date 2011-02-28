@@ -19,22 +19,16 @@ Pages:
 <% end %>
 <br/>
 
-<table align='center'>
+<table width=600>
 <% @all_images.in_groups_of(PER_COLUMN(),nil) do |row| %>
-<tr height=170 >
+<tr height=160 >
     <% row.each do |image| %>
-    <td width=170 align=center>
+    <td width=160 align=center>
         <% if image %>
             <% if image.photo.size %>
-                <img src='<%= image.photo.url(:small) %>'
-                 onclick="show_full_image('<%= image.photo.url %>');" 
-                 onmouseover="document.body.style.cursor = 'pointer';"
-                 onmouseout="document.body.style.cursor = 'default';" />
-            <% else %>
-                <img src='../../images/<%= image.tag %>' width='150' height='120'
-                    onclick="show_full_image('../../images/<%= image.tag %>');" 
-                    onmouseover="document.body.style.cursor = 'pointer';"
-                    onmouseout="document.body.style.cursor = 'default';" />
+                <%= raw "<a class=\"gallery\" rel=\"example_group\" title=\""+controller.title+"\" href=\""+image.photo.url+"\">" %>
+                <%= raw "<img class=\"gallery\" alt=\""+image.tag+"\" src=\""+image.photo.url(:small)+"\" />" %>
+                <%= raw "</a>" %>
             <% end %>
         <% end %>
     </td>
