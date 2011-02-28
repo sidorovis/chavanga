@@ -1,8 +1,8 @@
 <% if @group %>
     <div align='center'>
         <br/>
-        <% @group.all_images.each do |image| %>
-            <%= image_tag image.tag, :width => 600 %><br/><br/>
+        <% @group.get_images(0,1000)[0].each do |image| %>
+            <%= image_tag image.photo.url, :width => 600 %><br/><br/>
         <% end %>
         <br/>
     </div>
