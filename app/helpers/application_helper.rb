@@ -48,8 +48,12 @@ module ApplicationHelper
                 "<ul style='margin-left:-15px;'>"
         @menu_fishing_programs.each do |fp|
             result += "<li>"+ link_to( fp.title, fp, :class => 'drop_down_main_menu' )
+            if (Time.now - fp.created_at < 4.month)
+                result += image_tag('home/new.png')
+            end
                 fp.SubFishingPrograms.all(:conditions => { :visible => true } ).each do |sp|
-                    result += "<ul style='margin-left:-15px;'><li>" + link_to( sp.title, sp, :class => 'drop_down_main_menu' ) + "</li></ul>"
+                    result += "<ul style='margin-left:-15px;'><li>" + link_to( sp.title, sp, :class => 'drop_down_main_menu' );
+                    result += "</li></ul>"
                 end
             result += "</li>"
         end

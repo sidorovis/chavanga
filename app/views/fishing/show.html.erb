@@ -11,7 +11,7 @@
                 <%= raw group.title %>
             </td><td>
                 <%= raw image_tag( 
-                        group.images[0].tag, 
+                        group.images[0].photo.url(), 
                         :width => 250 ) %>
             </td></tr>
             <% end %>
