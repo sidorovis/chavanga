@@ -1,7 +1,7 @@
 source 'http://production.s3.rubygems.org'
 
 gem 'rails', '3.0.4'
-gem 'mysql', '2.8.1'
+gem 'mysql', '2.8.2'
 gem 'kaminari', '0.10.4'
 gem 'paperclip', '2.3.8'
 
