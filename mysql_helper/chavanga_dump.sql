@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.1.61, for pc-linux-gnu (i686)
+-- MySQL dump 10.13  Distrib 5.1.61, for apple-darwin10.8.0 (i386)
 --
--- Host: localhost    Database: chavanga_production
+-- Host: localhost    Database: chavanga_development
 -- ------------------------------------------------------
--- Server version	5.1.61-log
+-- Server version	5.1.61
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -351,7 +351,7 @@ CREATE TABLE `partner_links` (
   `image` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `publish_image` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -360,7 +360,7 @@ CREATE TABLE `partner_links` (
 
 LOCK TABLES `partner_links` WRITE;
 /*!40000 ALTER TABLE `partner_links` DISABLE KEYS */;
-INSERT INTO `partner_links` VALUES (2,'Chawanga.com','http://www.bios.pl/chawanga',1,'2010-03-07 12:08:53','2010-03-07 12:08:53','left_menu/chawanga_logo.png',1),(3,'Chavanga Blog','http://blog.chavanga.com',1,'2010-04-14 21:07:28','2010-09-02 22:00:31','left_menu/blog_chavanga_logo.gif',1),(5,'Чаваньга Блог','http://blog-ru.chavanga.com',1,'2010-05-23 23:31:28','2010-05-23 23:31:28','left_menu/blog_ru_chavanga.png',1);
+INSERT INTO `partner_links` VALUES (2,'Chawanga.com','http://www.chawanga.com ',1,'2010-03-07 12:08:53','2010-03-07 12:08:53','left_menu/chawanga_logo.png',1),(3,'Chavanga Blog','http://blog.chavanga.com',0,'2010-04-14 21:07:28','2010-09-02 22:00:31','left_menu/blog_chavanga_logo.gif',1),(5,'Чаваньга Блог','http://blog-ru.chavanga.com',0,'2010-05-23 23:31:28','2010-05-23 23:31:28','left_menu/blog_ru_chavanga.png',1),(6,'Plames','http://www.mouchesguyplas.com/',1,NULL,NULL,'left_menu/plames_logo.png',1),(7,'Delaplumeauvoyage','http://www.delaplumeauvoyage.com/',1,NULL,NULL,'left_menu/travel_logo.png',1);
 /*!40000 ALTER TABLE `partner_links` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -509,4 +509,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2012-04-16 20:32:10
+-- Dump completed on 2012-04-17  0:00:18

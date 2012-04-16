@@ -1,18 +1,19 @@
 <div class="left_menu_widget_element_title">
-PARTNERS
+BLOGS
 </div>
 <table width='100%' border=0>
-<% for pl in @left_column_partner_links %>
    <tr valign='top' align='center'>
      <td class='partner_link_list'>
        <div align=center>
-       <% if pl.publish_image %>
-          <%= link_to( image_tag(pl.image, :border => 0, :width => 130, :alt => pl.title ), pl.tag ) %>
-       <% else %>
-          <%= link_to pl.title, pl.tag %><br/>
-       <% end %>
+          <%= link_to( image_tag( "left_menu/blog_chavanga_logo.gif", :border => 0, :width => 130, :alt => "Chavanga Blog" ), "http://blog.chavanga.com" ) %>
         </div>
      </td>
    </tr>
-<% end %>
+   <tr valign='top' align='center'>
+     <td class='partner_link_list'>
+       <div align=center>
+          <%= link_to( image_tag( "left_menu/blog_ru_chavanga.png", :border => 0, :width => 130, :alt => "Russian Chavanga Blog" ), "http://blog-ru.chavanga.com" ) %>
+        </div>
+     </td>
+   </tr>
 </table>
