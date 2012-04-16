@@ -360,7 +360,7 @@ CREATE TABLE `partner_links` (
 
 LOCK TABLES `partner_links` WRITE;
 /*!40000 ALTER TABLE `partner_links` DISABLE KEYS */;
-INSERT INTO `partner_links` VALUES (2,'Chawanga.com','http://www.chawanga.com ',1,'2010-03-07 12:08:53','2010-03-07 12:08:53','left_menu/chawanga_logo.png',1),(3,'Chavanga Blog','http://blog.chavanga.com',0,'2010-04-14 21:07:28','2010-09-02 22:00:31','left_menu/blog_chavanga_logo.gif',1),(5,'Чаваньга Блог','http://blog-ru.chavanga.com',0,'2010-05-23 23:31:28','2010-05-23 23:31:28','left_menu/blog_ru_chavanga.png',1),(6,'Plames','http://www.mouchesguyplas.com/',1,NULL,NULL,'left_menu/plames_logo.png',1),(7,'Delaplumeauvoyage','http://www.delaplumeauvoyage.com/',1,NULL,NULL,'left_menu/travel_logo.png',1);
+INSERT INTO `partner_links` VALUES (2,'Chawanga.com','http://www.chawanga.com ',1,'2010-03-07 12:08:53','2010-03-07 12:08:53','left_menu/chawanga_logo.png',1),(3,'Chavanga Blog','http://blog.chavanga.com',0,'2010-04-14 21:07:28','2010-09-02 22:00:31','left_menu/blog_chavanga_logo.gif',1),(5,'Чаваньга Блог','http://blog-ru.chavanga.com',0,'2010-05-23 23:31:28','2010-05-23 23:31:28','left_menu/blog_ru_chavanga.png',1),(6,'Plames','http://www.moucheguyplas.com/',1,NULL,NULL,'left_menu/plames_logo.png',1),(7,'Delaplumeauvoyage','http://www.delaplumeauvoyage.com/',1,NULL,NULL,'left_menu/travel_logo.png',1);
 /*!40000 ALTER TABLE `partner_links` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -509,4 +509,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2012-04-17  0:00:18
+-- Dump completed on 2012-04-17  0:05:15
