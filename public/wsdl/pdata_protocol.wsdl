@@ -1,0 +1,50 @@
+<definitions name="pdata_protocol"
+   targetNamespace="http://66.249.5.47/wsdl/pdata_protocol.wsdl"
+   xmlns="http://schemas.xmlsoap.org/wsdl/"
+   xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+   xmlns:tns="http://66.249.5.47/wsdl/pdata_protocol.wsdl"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+ 
+	<message name="authenticate_request">
+		<part name="login" type="xsd:string"/>
+		<part name="password" type="xsd:string"/>
+	</message>
+	<message name="authenticate_response">
+		<part name="sessionIdentificator" type="xsd:unsignedInt"/>
+	</message>
+	<message name="is_alive_request">
+		<part name="expectedSessionIdentificator" type="xsd:unsignedInt"/>
+	</message>
+	<message name="is_alive_response">
+		<part name="actualSessionIdentificator" type="xsd:unsignedInt"/>
+	</message>
+
+	<portType name="pdata_protocol_port_type">
+		<operation name="authenticate">
+			<input message="tns:authenticate_request"/>
+			<output message="tns:authenticate_response"/>
+		</operation>
+		<operation name="isAlive">
+			<input message="tns:is_alive_request"/>
+			<output message="tns:is_alive_response"/>
+		</operation>
+	</portType>
+
+	<binding name="PDataProtocol" type="tns:pdata_protocol_port_type">
+		<soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="authenticate">
+			<soap:operation soapAction="authenticate"/>
+				<input><soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:pseaker:pdata_protocol" use="encoded"/></input>
+				<output><soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:pseaker:pdata_protocol" use="encoded"/></output>
+		</operation>
+		<operation name="isAlive">
+			<soap:operation soapAction="isAlive"/>
+				<input><soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:pseaker:pdata_protocol" use="encoded"/></input>
+				<output><soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:pseaker:pdata_protocol" use="encoded"/></output>
+		</operation>
+	</binding>
+
+	<service name="pdata_protocol">
+		<port binding="tns:PDataProtocol" name="authenticate_port"><soap:address location="http://127.0.0.1:9111/"/></port>
+	</service>
+</definitions>
