@@ -4,7 +4,7 @@ require 'open-uri'
 class HomeController < ApplicationController
     before_filter :set_blog_news_count
     def set_blog_news_count
-        @blogNewsCount = 4
+        @blogNewsCount = 8
     end 
     def title
         "Fly Fishing"
