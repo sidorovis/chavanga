@@ -46,7 +46,7 @@ class ApplicationController < ActionController::Base
     end
 
     def load_fishing_programs
-        @menu_fishing_programs = FishingProgram.all
+        @menu_fishing_programs = FishingProgram.all(:conditions => { :hidden => false } )
     end
   
     def load_gallery_groups

@@ -47,7 +47,8 @@ module ApplicationHelper
              "<div class='drop_down_menu_element'>"+
                 "<ul style='margin-left:-15px;'>"
         @menu_fishing_programs.each do |fp|
-            result += "<li>"+ link_to( fp.title, fp, :class => 'drop_down_main_menu' )
+            result += "<li>"
+            result += link_to( fp.title, fp, :class => 'drop_down_main_menu' )
             if (Time.now - fp.created_at < 4.month)
                 result += image_tag('home/new.png')
             end
