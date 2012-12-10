@@ -1,0 +1,31 @@
+<%= raw resizer_module %>
+
+<p class='page_title'>Peshe Mouche</p>
+
+<table align=center>
+<tr>
+<td>
+<%= image_tag("press/Peshe Mouche Dans/name.jpg", :width => 600) %><br/>
+<table width=100%>
+<% [1,2,3,4,5,6].in_groups_of(2,nil) do |row| %>
+    <tr>
+        <% row.each do |i| %>
+        <td>
+            <% if i %>
+                <% img_tag = "../images/press/Peshe Mouche Dans/"+i.to_s+".jpg" %>
+                <img src='<%= img_tag %>' width='300'
+                        onclick="show_full_image('<%= img_tag %>');" 
+                        onmouseover="document.body.style.cursor = 'pointer';"
+                        onmouseout="document.body.style.cursor = 'default';" />
+            <% end %>
+        </td>
+        <% end %>
+    </tr>
+    <% end %>
+</table>
+
+</td>
+</tr>
+</table>
+
+

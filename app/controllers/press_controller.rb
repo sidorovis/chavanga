@@ -13,4 +13,6 @@ class PressController < ApplicationController
     end
     def wedkarstwo56
     end
+    def peshe_mouche_dans
+    end
 end
