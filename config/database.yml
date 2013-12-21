@@ -8,7 +8,7 @@ development:
   pool: 5
   username: root
   password: nfryflj
-  socket: /opt/local/var/run/mysql5/mysqld.sock
+  host: localhost
 
 test:
   adapter: mysql
