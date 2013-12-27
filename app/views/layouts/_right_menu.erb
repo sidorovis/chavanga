@@ -5,7 +5,7 @@
   </div>
     <% @selected_ids.each do |k,i| %>
        <div style="margin:2px">
-    	<%= link_to image_tag(i.photo.url(:small), :width=>'145', :height => 125), i.group %><br/>
+    	<%= link_to(image_tag(i.photo.url(:small), :width=>'145', :height => 125), i.group) %><br/>
        </div>
     <% end %>
  </div>
@@ -16,11 +16,3 @@
     <%= link_to id_tags("[436]", {:width => '145'} ,:small ) %>
  </div> 
 </div>
-<script>
-/*    new Effect.Appear('right_menu_div', { duration: 3.0,
-            afterFinish: function (obj) 
-            {
-                $('right_menu_div').style.opacity = 1.0;
-            }
-        }); */
-</script>

@@ -31,7 +31,7 @@ module ApplicationHelper
     end
 
     def admin_main_menu_fishing_button( style_name = "main_menu_admin_button" )
-        _name = "FISHING"
+        _name = "FISHING TOURS"
         id = _name
         _controller_name = { :controller => :fishing_programs }
         result = raw ("<div class='" + style_name + "'> 

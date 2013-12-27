@@ -35,7 +35,7 @@ module ApplicationHelper
     end
 
     def main_menu_fishing_button(  )
-        _name = "FISHING"
+        _name = "FISHING TOURS"
         id = _name
         _controller_name = { :controller => :fishing }
         result = "<div class='main_menu_button'>"+
@@ -48,8 +48,12 @@ module ApplicationHelper
                 "<ul style='margin-left:-15px;'>"
         @menu_fishing_programs.each do |fp|
             result += "<li>"
-            result += link_to( fp.title, fp, :class => 'drop_down_main_menu' )
-            if (Time.now - fp.created_at < 4.month)
+			if ( fp.page_content == "" )
+				result += fp.title
+			else
+            	result += link_to( fp.title, fp, :class => 'drop_down_main_menu' )
+            end
+			if (Time.now - fp.created_at < 4.month)
                 result += image_tag('home/new.png')
             end
                 fp.SubFishingPrograms.all(:conditions => { :visible => true } ).each do |sp|

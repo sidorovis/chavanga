@@ -5,7 +5,7 @@ class FishingController < ApplicationController
     end
 
     def index
-        @fishing_programs = FishingProgram.all (:conditions => {:hidden => false})
+        @fishing_programs = FishingProgram.all( :conditions => {:hidden => false} )
     end
     def show
         @fishing_program = FishingProgram.find(params[:id])
