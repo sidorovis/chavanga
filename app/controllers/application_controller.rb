@@ -58,13 +58,13 @@ class ApplicationController < ActionController::Base
         @right_menu_flies_count = 5
     
         @flies_all = ImageGalleryGroup.first( :conditions => { "id" => 55 } )
-        all_images, d = @flies_all.get_images(0,1000)
+        @all_images, d = @flies_all.get_images(0,1000)
 
         @selected_ids = {}
         
         while ( @selected_ids.size < @right_menu_flies_count )
-            image_id = (rand()*all_images.size).to_i
-            @selected_ids[ image_id ] = all_images[ image_id ]
+            image_id = (rand()*@all_images.size).to_i
+            @selected_ids[ image_id ] = @all_images[ image_id ]
         end
     end
     

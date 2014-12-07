@@ -47,7 +47,8 @@ module ApplicationHelper
              "<div class='drop_down_menu_element'>"+
                 "<ul style='margin-left:-15px;'>"
         @menu_fishing_programs.each do |fp|
-            result += "<li>"
+            result += "<li>&nbsp;&nbsp;"
+    	    result += image_tag(@all_images[ (rand()*@all_images.size).to_i ].photo.url(:small), :height => 20 )
 			if ( fp.page_content == "" )
 				result += fp.title
 			else
@@ -57,7 +58,9 @@ module ApplicationHelper
                 result += image_tag('home/new.png')
             end
                 fp.SubFishingPrograms.all(:conditions => { :visible => true } ).each do |sp|
-                    result += "<ul style='margin-left:-15px;'><li>" + link_to( sp.title, sp, :class => 'drop_down_main_menu' );
+                    result += "<ul style='margin-left:-15px;'><li>&nbsp;&nbsp;"
+                    result += image_tag(@all_images[ (rand()*@all_images.size).to_i ].photo.url(:small), :height => 20 )
+                    result += link_to( sp.title, sp, :class => 'drop_down_main_menu' );
                     result += "</li></ul>"
                 end
             result += "</li>"
