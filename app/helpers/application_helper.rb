@@ -140,7 +140,7 @@ module ApplicationHelper
 		str = substitute_links(str,image_tag_params,params)
         raw str
     end
-	def substitute_images(str,image_tag_params,params)
+    def substitute_images(str,image_tag_params,params)
         r = Regexp.new( /\[(\d+)\]/ )
         while (match = str.match( r ))
             index = match[1]
@@ -151,14 +151,14 @@ module ApplicationHelper
                 str[r] = ""
             end
         end
-		str
-	end
-	def substitute_links(str,image_tag_params,params)
-        r = Regexp.new( /\{{(.+)\}}/ )
+	str
+    end
+    def substitute_links(str,image_tag_params,params)
+        r = Regexp.new( /\{\{([\w\d\/\:\.\-]+)\}\}/ )
         while (match = str.match( r ))
             m = match[1]
-            str[r] = "<a href=\"#{m}\">#{m}</a>"
+            str[r] = raw("<a href=\"#{m}\">#{m}</a>")
         end
-		str
-	end
+	str
+    end
 end
