@@ -6,7 +6,7 @@ module Admin
 
     before_filter :set_blog_news_count
     def set_blog_news_count
-        @blogNewsCount = 4
+        @blogNewsCount = 12
     end 
     class BlogNews
         attr_reader :title, :link, :description, :image_link
