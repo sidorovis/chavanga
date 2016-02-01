@@ -5,7 +5,7 @@ module ApplicationHelper
         if (ENV['RAILS_ENV'] == 'production')
             result += "Chavanga - "
         else
-            result += "Development Localhost Chavanga - "
+            result += "Development Localhost Chavanga - " + ENV['RAILS_ENV'] + " "
         end
         result += controller.title
         return result + "</title>"
