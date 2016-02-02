@@ -6,8 +6,8 @@ development:
   reconnect: false
   database: chavanga_development
   pool: 5
-  username: root
-  password: nfryflj
+  username: chavanga
+  password: <%= ENV['APPNAME_DATABASE_PASSWORD'] %>
   host: localhost
 
 test:
@@ -27,6 +27,6 @@ production:
   database: chavanga_production
   pool: 5
   username: chavanga
-  password: chavpass
+  password: <%= ENV['APPNAME_DATABASE_PASSWORD'] %>
   socket: /var/run/mysqld/mysqld.sock
 

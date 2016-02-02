@@ -27,7 +27,7 @@ module Admin
   
     def authorization
         authenticate_or_request_with_http_basic("Admin Section") do |username, password|
-            @user = (username == "Admin" && password == "Password")
+            @user = (username == "Admin" && password == ENV['APPNAME_DATABASE_PASSWORD'])
         end
     end
     def load_events
