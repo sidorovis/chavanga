@@ -182,8 +182,8 @@ div.left_menu_widget_element_title, div.right_menu_widget_element_title
 div.main_body_widget
 {
     display:block;
-    min-width:800px;
-    max-width:800px; 
+    min-width:964px;
+    max-width:964px; 
 }
 
 div.main_body_widget_element

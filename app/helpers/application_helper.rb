@@ -23,6 +23,18 @@ module ApplicationHelper
                 :class => 'main_menu'
                 )
     end
+
+    def main_menu_link( _name, link_path )
+        id = _name.split(" ").join("_")
+        result = 
+"<div class='main_menu_button'>" +
+    "<div id='main_menu_td_"+id+"' class='main_menu_button_element'"+
+    "onmouseover='document.getElementById(\"main_menu_td_"+id.to_s+"\").setAttribute(\"class\",\"main_menu_button_element_mouse_over\");'"+
+    "onmouseout='document.getElementById(\"main_menu_td_"+id.to_s+"\").setAttribute(\"class\",\"main_menu_button_element\");' >"
+        result += main_menu_link_to( _name, link_path )
+        result += "</div></div>";
+    end
+
     def main_menu_button( _name, _controller_name )
         id = _name.split(" ").join("_")
         result = 

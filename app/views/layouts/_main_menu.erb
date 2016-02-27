@@ -1,12 +1,9 @@
 <div class="main_menu">
-  <div style="position: absolute; margin-left: 130px; margin-top:-100px;">
-    <%= image_tag('logo/2015.png', :width=>"110", :alt => "Special offer on 2015" ) %>
-  </div>
   <%= raw main_menu_button("TEAM", :team ) %>
   <%= raw main_menu_fishing_button() %>
   <%= raw main_menu_gallery_button() %>
   <%= raw main_menu_button("PRESS", :press ) %>
-  <%= raw main_menu_button("BOOKING", :booking ) %>
+  <%= raw main_menu_link("BLOG", "http://blog.chavanga.com/" ) %>
   <%= raw main_menu_button("GUEST ROOM", :guest_room ) %>
   <%= raw main_menu_button("CONTACT", :contact ) %> 
 </div>
