@@ -1,6 +1,7 @@
 body { 
-    background-color: #000000;
+    background-image: url("http://chavanga.com/images/background.jpg");
     font-align:arial;
+    background-attachment: fixed;
 }
 
 div.full_page
@@ -9,6 +10,7 @@ div.full_page
     width:1128px;
     margin-left:auto;
     margin-right:auto;
+    opacity: 0.99;
 }
 
 /* ------------------------------------------------------------------
