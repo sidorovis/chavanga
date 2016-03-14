@@ -1,23 +1,6 @@
 // Place your application-specific JavaScript functions and classes here
 // This file is automatically included by javascript_include_tag :defaults
 
-logo_image_change_interval = 5000;
-logo_image_size = 12;
-logo_pictures = new Array();
-for( i = 0 ; i < logo_image_size ; i++)
-{
-    logo_pictures[i] = new Image()
-    logo_pictures[i].src = '/images/logo/1A-'+(i+1)+'.jpg';
-}
-
-function changeLogoImage(i)
-{
-    document.logo_image.src = logo_pictures[i].src;
-    if (i == logo_pictures.length - 1) i = -1;
-    nextImageFunc = "changeLogoImage( "+(i+1)+" );";
-    setTimeout( nextImageFunc, logo_image_change_interval );
-}
-
 function addCodeToFunction(func,code){
     if(func == undefined)
         return code;
@@ -29,12 +12,22 @@ function addCodeToFunction(func,code){
     }
 }
 
+function changeLogoImage(i)
+{
+    document.getElementById("under_construction").style.top=i+'px';
+    if (i >= -10) return;
+    nextImageFunc = "changeLogoImage( "+(i+1)+" );";
+    setTimeout( nextImageFunc, 5 );
+}
+
+
 window.onload = addCodeToFunction(
-    window.onload,function() 
+    window.onload,function()
     {
-        setTimeout( 'changeLogoImage( 1 );', logo_image_change_interval )
+        setTimeout( 'changeLogoImage(-250)', 700 )
     }
 );
+
 
 function showSubMenu( menu_id )
 {
