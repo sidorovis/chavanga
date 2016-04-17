@@ -17,17 +17,11 @@ div.full_page
 // LOGO -------------------------------------------------------------
 // ------------------------------------------------------------------
 */
-div.full_logo
-{
-    left:0px;
-    position:static;
-    width:1128px;
-    height:290px;
-}
 div.logo {
-    position:absolute;
-    margin-left:950px;
+    margin-right:15px;
     top:15px;
+    position:absolute;
+    right:0px;
 }
 
 /* ------------------------------------------------------------------

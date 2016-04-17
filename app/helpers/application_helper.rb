@@ -47,7 +47,7 @@ module ApplicationHelper
     end
 
     def main_menu_fishing_button(  )
-        _name = "FISHING TOURS"
+        _name = "DESTINATIONS"
         id = _name
         _controller_name = { :controller => :fishing }
         result = "<div class='main_menu_button'>"+
