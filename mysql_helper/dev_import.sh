@@ -1,2 +1,2 @@
-mysql -u root -p  --database=chavanga_development < chavanga_dump.sql
+mysql -u chavanga -p --database=chavanga_development < chavanga_dump.sql
 
